@@ -1,0 +1,13 @@
+{
+  "name": "food-grandma-specs-v2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.5.4"
+  }
+}

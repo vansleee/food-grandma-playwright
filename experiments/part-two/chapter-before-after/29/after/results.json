@@ -1,0 +1,163 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch29",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch29",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-price.spec.ts",
+      "file": "meal-price.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "改寫後",
+          "file": "meal-price.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH29-T01 以 Builder 指定這次測試需要的餐點資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 995,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:10:37.699Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "01-editor-before-change.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/artifacts/meal-price-改寫後-CH29-T01-以-Builder-指定這次測試需要的餐點資料/attachments/01-editor-before-change-png-c5d51d293d16eff5e8a8ba75dfe54b57fa7496d4.png"
+                        },
+                        {
+                          "name": "02-list-after-save.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/artifacts/meal-price-改寫後-CH29-T01-以-Builder-指定這次測試需要的餐點資料/attachments/02-list-after-save-png-2fb8e7a60db176daa73c9bdf5e9bcbe5efc36f4d.png"
+                        },
+                        {
+                          "name": "03-reopened.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/artifacts/meal-price-改寫後-CH29-T01-以-Builder-指定這次測試需要的餐點資料/attachments/03-reopened-png-1c221e64fa24f3e48f9948d3fbafdcb7dfc7797b.png"
+                        },
+                        {
+                          "name": "observation.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJjYXNlSWQiOiAiQ0gyOS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDI5LVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMjktVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gyOS1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gyOS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMjktVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gyOS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/artifacts/meal-price-改寫後-CH29-T01-以-Builder-指定這次測試需要的餐點資料/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after/artifacts/meal-price-改寫後-CH29-T01-以-Builder-指定這次測試需要的餐點資料/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-51a038f51646e34c0a93",
+              "file": "meal-price.spec.ts",
+              "line": 13,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T17:10:37.471Z",
+    "duration": 1422.087,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

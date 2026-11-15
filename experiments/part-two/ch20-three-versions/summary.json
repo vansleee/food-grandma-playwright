@@ -1,0 +1,27 @@
+{
+  "date_taipei": "2026-11-04",
+  "source": "./tests/e2e/chapters/test-results/20261103T175737Z-fb4e88",
+  "variants": {
+    "no-pom": {
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 1830.0200000000002
+    },
+    "v1": {
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 1366.8760000000002
+    },
+    "v2": {
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 1382.145
+    }
+  },
+  "original_v1_v2_unchanged": true,
+  "manuscript_modified": false,
+  "typecheck": "passed",
+  "identical_observations": true,
+  "owned_services_stopped": true,
+  "total_passed": 3
+}

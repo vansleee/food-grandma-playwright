@@ -1,0 +1,502 @@
+[
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connecting...",
+    "args": [
+      {
+        "preview": "[vite] connecting...",
+        "value": "[vite] connecting..."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/@vite/client",
+      "lineNumber": 494,
+      "columnNumber": 8
+    },
+    "time": 2516.818,
+    "pageId": "page@21cdc61843c01564ccc2d0e9061b8e9b"
+  },
+  {
+    "type": "console",
+    "messageType": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+    "args": [
+      {
+        "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+        "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+      },
+      {
+        "preview": "font-weight:bold",
+        "value": "font-weight:bold"
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/chunk-XPR23Y44.js?v=87fe53d5",
+      "lineNumber": 21548,
+      "columnNumber": 24
+    },
+    "time": 2529.929,
+    "pageId": "page@21cdc61843c01564ccc2d0e9061b8e9b"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2566.041,
+    "pageId": "page@21cdc61843c01564ccc2d0e9061b8e9b"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2566.058,
+    "pageId": "page@21cdc61843c01564ccc2d0e9061b8e9b"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connected.",
+    "args": [
+      {
+        "preview": "[vite] connected.",
+        "value": "[vite] connected."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/@vite/client",
+      "lineNumber": 617,
+      "columnNumber": 14
+    },
+    "time": 2566.4,
+    "pageId": "page@21cdc61843c01564ccc2d0e9061b8e9b"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connecting...",
+    "args": [
+      {
+        "preview": "[vite] connecting...",
+        "value": "[vite] connecting..."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/@vite/client",
+      "lineNumber": 494,
+      "columnNumber": 8
+    },
+    "time": 1310.774,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+    "args": [
+      {
+        "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+        "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+      },
+      {
+        "preview": "font-weight:bold",
+        "value": "font-weight:bold"
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/chunk-XPR23Y44.js?v=87fe53d5",
+      "lineNumber": 21548,
+      "columnNumber": 24
+    },
+    "time": 1324.119,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "error",
+    "text": "Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority \n    at img\n    at section\n    at StorefrontHero\n    at section\n    at div\n    at Restaurants (http://127.0.0.1:18082/src/pages/customer/Restaurants.tsx:25:41)\n    at RenderedRoute (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4110:5)\n    at Routes (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4580:5)\n    at main\n    at div\n    at AppLayout (http://127.0.0.1:18082/src/components/layout/AppLayout.tsx:22:37)\n    at CartProvider (http://127.0.0.1:18082/src/CartContext.tsx:37:32)\n    at App\n    at Router (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4523:15)\n    at BrowserRouter (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:5261:5)",
+    "args": [
+      {
+        "preview": "Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s",
+        "value": "Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s"
+      },
+      {
+        "preview": "fetchPriority",
+        "value": "fetchPriority"
+      },
+      {
+        "preview": "fetchpriority",
+        "value": "fetchpriority"
+      },
+      {
+        "preview": "\n    at img\n    at section\n    at StorefrontHero\n    at section\n    at div\n    at Restaurants (http://127.0.0.1:18082/src/pages/customer/Restaurants.tsx:25:41)\n    at RenderedRoute (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4110:5)\n    at Routes (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4580:5)\n    at main\n    at div\n    at AppLayout (http://127.0.0.1:18082/src/components/layout/AppLayout.tsx:22:37)\n    at CartProvider (http://127.0.0.1:18082/src/CartContext.tsx:37:32)\n    at App\n    at Router (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4523:15)\n    at BrowserRouter (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:5261:5)",
+        "value": "\n    at img\n    at section\n    at StorefrontHero\n    at section\n    at div\n    at Restaurants (http://127.0.0.1:18082/src/pages/customer/Restaurants.tsx:25:41)\n    at RenderedRoute (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4110:5)\n    at Routes (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4580:5)\n    at main\n    at div\n    at AppLayout (http://127.0.0.1:18082/src/components/layout/AppLayout.tsx:22:37)\n    at CartProvider (http://127.0.0.1:18082/src/CartContext.tsx:37:32)\n    at App\n    at Router (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:4523:15)\n    at BrowserRouter (http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5:5261:5)"
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/chunk-XPR23Y44.js?v=87fe53d5",
+      "lineNumber": 518,
+      "columnNumber": 37
+    },
+    "time": 1336.301,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 1364.706,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 1364.743,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connected.",
+    "args": [
+      {
+        "preview": "[vite] connected.",
+        "value": "[vite] connected."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/@vite/client",
+      "lineNumber": 617,
+      "columnNumber": 14
+    },
+    "time": 1364.911,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connecting...",
+    "args": [
+      {
+        "preview": "[vite] connecting...",
+        "value": "[vite] connecting..."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/@vite/client",
+      "lineNumber": 494,
+      "columnNumber": 8
+    },
+    "time": 2900.494,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connected.",
+    "args": [
+      {
+        "preview": "[vite] connected.",
+        "value": "[vite] connected."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/@vite/client",
+      "lineNumber": 617,
+      "columnNumber": 14
+    },
+    "time": 2935.064,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+    "args": [
+      {
+        "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+        "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+      },
+      {
+        "preview": "font-weight:bold",
+        "value": "font-weight:bold"
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/chunk-XPR23Y44.js?v=87fe53d5",
+      "lineNumber": 21548,
+      "columnNumber": 24
+    },
+    "time": 2936.299,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2938.546,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/node_modules/.vite/deps/react-router-dom.js?v=87fe53d5",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2938.603,
+    "pageId": "page@7d8e088ed8b66927290873d003889869"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connecting...",
+    "args": [
+      {
+        "preview": "[vite] connecting...",
+        "value": "[vite] connecting..."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/@vite/client",
+      "lineNumber": 494,
+      "columnNumber": 8
+    },
+    "time": 2085.741,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+    "args": [
+      {
+        "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+        "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+      },
+      {
+        "preview": "font-weight:bold",
+        "value": "font-weight:bold"
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/chunk-OOIH53S6.js?v=a002a8cb",
+      "lineNumber": 21548,
+      "columnNumber": 24
+    },
+    "time": 2097.933,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2140.872,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2140.908,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connected.",
+    "args": [
+      {
+        "preview": "[vite] connected.",
+        "value": "[vite] connected."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/@vite/client",
+      "lineNumber": 617,
+      "columnNumber": 14
+    },
+    "time": 2140.974,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connecting...",
+    "args": [
+      {
+        "preview": "[vite] connecting...",
+        "value": "[vite] connecting..."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/@vite/client",
+      "lineNumber": 494,
+      "columnNumber": 8
+    },
+    "time": 2806.49,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "debug",
+    "text": "[vite] connected.",
+    "args": [
+      {
+        "preview": "[vite] connected.",
+        "value": "[vite] connected."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/@vite/client",
+      "lineNumber": 617,
+      "columnNumber": 14
+    },
+    "time": 2835.942,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+    "args": [
+      {
+        "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+        "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+      },
+      {
+        "preview": "font-weight:bold",
+        "value": "font-weight:bold"
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/chunk-OOIH53S6.js?v=a002a8cb",
+      "lineNumber": 21548,
+      "columnNumber": 24
+    },
+    "time": 2836.454,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2839.582,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  },
+  {
+    "type": "console",
+    "messageType": "warning",
+    "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+    "args": [
+      {
+        "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+      }
+    ],
+    "location": {
+      "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+      "lineNumber": 4414,
+      "columnNumber": 12
+    },
+    "time": 2839.605,
+    "pageId": "page@abecb01b88ee814d60eb12dc19fa9c9b"
+  }
+]

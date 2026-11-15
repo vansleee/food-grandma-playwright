@@ -1,0 +1,9 @@
+{
+  "meal": {
+    "id": 1,
+    "name": "香煎雞腿便當",
+    "short_description": "附白飯與三樣配菜",
+    "image": "",
+    "price": 120
+  }
+}

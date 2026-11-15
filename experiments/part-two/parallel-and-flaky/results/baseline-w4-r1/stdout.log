@@ -1,0 +1,81 @@
+
+Running 27 tests using 4 workers
+
+(node:49772) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49774) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49775) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49773) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 baseline/tests/account.spec.ts:19:5 › ACCOUNT-T01 設定頁載入目前餐廳與聯絡人資料 (908ms)
+  ✓   3 baseline/tests/account.spec.ts:115:5 › ACCOUNT-T04 保存回應未完成時停用按鈕，之後 500 顯示錯誤並保留輸入 (999ms)
+  ✓   2 baseline/tests/account.spec.ts:36:5 › ACCOUNT-T02 修改電話與地址並保存，reload 後新值存在且其他欄位保持 (1.1s)
+  ✓   7 baseline/tests/auth.spec.ts:26:5 › AUTH-T02 沒有 token 直接開啟訂單頁會導向登入頁 (381ms)
+  ✓   5 baseline/tests/account.spec.ts:153:5 › ACCOUNT-T05 初次載入設定失敗時顯示無法載入訊息 (751ms)
+  ✓   6 baseline/tests/auth.spec.ts:5:5 › AUTH-T01 店家使用有效帳密登入後導向訂單管理 (769ms)
+  ✓   1 baseline/tests/account.spec.ts:76:5 › ACCOUNT-T03 清空必填欄位或輸入錯誤 email 時原生驗證不通過且不送出 (1.9s)
+  ✓   8 baseline/tests/auth.spec.ts:38:5 › AUTH-T03 登出後清除 token 並導向登入頁 (825ms)
+  ✓  11 baseline/tests/meals.spec.ts:17:5 › MEAL-T01 新增餐點後回到列表，重新整理仍存在 (889ms)
+  ✓   9 baseline/tests/driver-claim.spec.ts:6:5 › ROLE-T01 外送員接取未指派的待取餐訂單後進入進行中配送 (1.2s)
+  ✓  12 baseline/tests/meals.spec.ts:61:5 › MEAL-T02 編輯既有餐點價格為 150，更新同一個 ID 不新增 (781ms)
+  ✓  14 baseline/tests/meals.spec.ts:157:5 › MEAL-T04 價格為 0 的餐點可以儲存且 API 回讀仍為 0 (810ms)
+  ✓  13 baseline/tests/meals.spec.ts:102:5 › MEAL-T03 名稱留空、價格負數或小數時瀏覽器驗證不通過且不送出 (1.2s)
+  ✓  15 baseline/tests/meals.spec.ts:176:5 › MEAL-T05 依名稱或描述搜尋且不分大小寫，無符合時顯示提示 (767ms)
+  ✓  16 baseline/tests/meals.spec.ts:216:5 › MEAL-T06 儲存請求延遲後回傳 500：停用按鈕、保留輸入並可再次送出 (888ms)
+  ✓  17 baseline/tests/meals.spec.ts:273:5 › MEAL-T08 編輯頁載入餐點失敗時顯示提示而非正常空白表單 (927ms)
+  ✓  18 baseline/tests/order-ready.spec.ts:15:5 › READY-T02 在 UI 完成備餐後顯示待取餐且 reload 後仍保持 (1.0s)
+  ✓  19 baseline/tests/order-ready.spec.ts:43:5 › READY-T05 更新回應尚未完成時所有備餐完成按鈕停用且不重複送出 (1.3s)
+  ✓  20 baseline/tests/order-ready.spec.ts:85:5 › READY-T06 更新 API 失敗（HTTP 500 或 status:failed）時顯示失敗且不樂觀更新 (1.1s)
+  ✓  21 baseline/tests/order-search.spec.ts:17:5 › FIND-T02 分別以 ID、姓名、地址片段搜尋，忽略大小寫與前後空白 (1.1s)
+  ✓  22 baseline/tests/order-search.spec.ts:48:5 › FIND-T03 搜尋顧客後選「待取餐」只顯示同時匹配的列 (1.4s)
+  ✓  23 baseline/tests/order-search.spec.ts:89:5 › FIND-T04 改搜尋條件時頁尾筆數更新，頁籤維持各狀態總數 (1.3s)
+  ✓  24 baseline/tests/order-search.spec.ts:138:5 › FIND-T05 搜尋不存在的字串顯示無符合結果訊息 (1.2s)
+  ✓  25 baseline/tests/order-search.spec.ts:154:5 › FIND-T06 沒有訂單的餐廳顯示尚無訂單而非搜尋無結果 (646ms)
+  ✓  26 baseline/tests/order-search.spec.ts:168:5 › FIND-T07 首次回應延遲顯示載入中，失敗顯示錯誤而非空狀態 (805ms)
+  ✓  27 baseline/tests/order-search.spec.ts:210:5 › FIND-T08 固定篩選後重新整理發出新請求並依原條件顯示新資料 (1.3s)
+  ✘  10 baseline/tests/driver-claim.spec.ts:42:5 › ROLE-T02 外送員已有進行中配送時接單被拒 (9.4s)
+
+
+  1) baseline/tests/driver-claim.spec.ts:42:5 › ROLE-T02 外送員已有進行中配送時接單被拒 › 接單被拒：留在可接訂單頁並顯示提示 ───────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('orders-error')
+    Expected substring: "Your outstanding order is not delivered yet."
+    Timeout: 8000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" getByTestId('orders-error') with timeout 8000ms
+      - waiting for getByTestId('orders-error')
+
+
+      64 |
+      65 |   await test.step('接單被拒：留在可接訂單頁並顯示提示', async () => {
+    > 66 |     await expect(driverOrders.error()).toContainText(OUTSTANDING_MESSAGE);
+         |                                        ^
+      67 |     await expect(page).toHaveURL(/\/driver\/orders$/);
+      68 |     await expect(page.getByRole('heading', { name: '可接訂單', level: 1 })).toBeVisible();
+      69 |   });
+        at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:66:40
+        at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:65:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/baseline-w4-r1/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/baseline-w4-r1/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/baseline-w4-r1/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/baseline-w4-r1/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    baseline/tests/driver-claim.spec.ts:42:5 › ROLE-T02 外送員已有進行中配送時接單被拒 ────────────────────────────
+  26 passed (11.8s)

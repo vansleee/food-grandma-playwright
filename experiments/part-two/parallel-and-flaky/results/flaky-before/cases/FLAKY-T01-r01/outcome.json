@@ -1,0 +1,33 @@
+{
+  "case": "FLAKY-T01",
+  "repeat": 1,
+  "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+  "status": "failed",
+  "retry": 0,
+  "duration_ms": 981,
+  "worker_index": 0,
+  "errors": [
+    "Error: 餐點資料載入後，原價格應為 100\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"100\"\nReceived: \"0\"\n\n  45 |     });\n  46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });\n> 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');\n     |                                           ^\n  48 |     await expect(form.name()).toHaveValue(original.name);\n  49 |     await expect(form.description()).toHaveValue(original.short_description);\n  50 |\n    at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43"
+  ],
+  "observation": {
+    "repeat": 1,
+    "responseDelayMs": 900,
+    "mealId": 1,
+    "expectedPrice": "100",
+    "observedPrice": "0"
+  },
+  "api_requests": 4,
+  "browser_api_requests": 4,
+  "non_2xx": [
+    {
+      "n": 7,
+      "status": -1,
+      "url": "http://127.0.0.1:18082/api/restaurant/meals/1"
+    },
+    {
+      "n": 8,
+      "status": -1,
+      "url": "http://127.0.0.1:18082/api/restaurant/meals/1"
+    }
+  ]
+}

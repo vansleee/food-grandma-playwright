@@ -1,0 +1,1290 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/v1-labs/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.flaky.config.ts",
+      "--repeat-each=20",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/v1-labs/playwright.flaky.config.ts",
+    "rootDir": "./tests/e2e/v1-labs/ch35/after",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results",
+        "repeatEach": 20,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v1-labs/ch35/after",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "price-edit.spec.ts",
+      "file": "price-edit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1862,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:22.299Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxLAogICJyZXNwb25zZURlbGF5TXMiOiA5MDAsCiAgIm1lYWxJZCI6IDEsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-94ea73dd3a59023655d6",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:24.553Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAyLAogICJyZXNwb25zZURlbGF5TXMiOiA5MDAsCiAgIm1lYWxJZCI6IDIsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat1/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat1/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-25abac37a6b0a92f13d5",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:27.260Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAzLAogICJyZXNwb25zZURlbGF5TXMiOiA5MDAsCiAgIm1lYWxJZCI6IDMsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat2/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat2/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-cea529b2dfb6b05b4ed3",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1810,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:29.442Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiA0LAogICJyZXNwb25zZURlbGF5TXMiOiA5MDAsCiAgIm1lYWxJZCI6IDQsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat3/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat3/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-11efa93132566914ecf7",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:31.637Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiA1LAogICJyZXNwb25zZURlbGF5TXMiOiA5MDAsCiAgIm1lYWxJZCI6IDUsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat4/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat4/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-683e38318ea4727b9ec4",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 980,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:33.833Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiA2LAogICJyZXNwb25zZURlbGF5TXMiOiAwLAogICJtZWFsSWQiOiA2LAogICJleHBlY3RlZFByaWNlIjogIjEwMCIsCiAgIm9ic2VydmVkUHJpY2UiOiAiMTAwIgp9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat5/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat5/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-898e7f1f362be873311e",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:35.194Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiA3LAogICJyZXNwb25zZURlbGF5TXMiOiAwLAogICJtZWFsSWQiOiA3LAogICJleHBlY3RlZFByaWNlIjogIjEwMCIsCiAgIm9ic2VydmVkUHJpY2UiOiAiMTAwIgp9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat6/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat6/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-2482b83a6f156da81999",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 999,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:36.590Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiA4LAogICJyZXNwb25zZURlbGF5TXMiOiAwLAogICJtZWFsSWQiOiA4LAogICJleHBlY3RlZFByaWNlIjogIjEwMCIsCiAgIm9ic2VydmVkUHJpY2UiOiAiMTAwIgp9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat7/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat7/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-7006cb73925a5980cef7",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1867,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:37.968Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiA5LAogICJyZXNwb25zZURlbGF5TXMiOiA5MDAsCiAgIm1lYWxJZCI6IDksCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat8/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat8/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-91f5fada3abde2e3dd5e",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:40.241Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxMCwKICAicmVzcG9uc2VEZWxheU1zIjogOTAwLAogICJtZWFsSWQiOiAxMCwKICAiZXhwZWN0ZWRQcmljZSI6ICIxMDAiLAogICJvYnNlcnZlZFByaWNlIjogIjEwMCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat9/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat9/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-0d41c381a547879d281c",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:42.478Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxMSwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMTEsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat10/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat10/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-2c2b588d16b0b016513b",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:43.844Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxMiwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMTIsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat11/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat11/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-69539ffdd311e263437d",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1783,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:45.271Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxMywKICAicmVzcG9uc2VEZWxheU1zIjogOTAwLAogICJtZWFsSWQiOiAxMywKICAiZXhwZWN0ZWRQcmljZSI6ICIxMDAiLAogICJvYnNlcnZlZFByaWNlIjogIjEwMCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat12/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat12/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-a53916f8851bb6802ac9",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:47.446Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxNCwKICAicmVzcG9uc2VEZWxheU1zIjogOTAwLAogICJtZWFsSWQiOiAxNCwKICAiZXhwZWN0ZWRQcmljZSI6ICIxMDAiLAogICJvYnNlcnZlZFByaWNlIjogIjEwMCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat13/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat13/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-fdba823b5893d65973c7",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 968,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:50.118Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxNSwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMTUsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat14/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat14/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-6ad3ad9797b510b0c4ba",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:51.471Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxNiwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMTYsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat15/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat15/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-afaee4ff1579c1df47bb",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "900"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1803,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:52.810Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "900"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxNywKICAicmVzcG9uc2VEZWxheU1zIjogOTAwLAogICJtZWFsSWQiOiAxNywKICAiZXhwZWN0ZWRQcmljZSI6ICIxMDAiLAogICJvYnNlcnZlZFByaWNlIjogIjEwMCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat16/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat16/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-08f36874ec619c44a88d",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 968,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:54.994Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxOCwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMTgsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat17/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat17/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-a43ac5bc6d8d3602a00e",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 950,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:56.344Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAxOSwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMTksCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat18/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat18/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-3d80e2b7655fd4dccbcc",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "response-delay-ms",
+                  "description": "0"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1003,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:50:57.672Z",
+                  "annotations": [
+                    {
+                      "type": "response-delay-ms",
+                      "description": "0"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJyZXBlYXQiOiAyMCwKICAicmVzcG9uc2VEZWxheU1zIjogMCwKICAibWVhbElkIjogMjAsCiAgImV4cGVjdGVkUHJpY2UiOiAiMTAwIiwKICAib2JzZXJ2ZWRQcmljZSI6ICIxMDAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat19/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/flaky-after/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat19/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-6221f035d7706437dc97",
+          "file": "../support/price-case.ts",
+          "line": 10,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T15:50:22.040Z",
+    "duration": 36803.664000000004,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

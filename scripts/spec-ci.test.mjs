@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {specSlug,verifyReport} from './spec-ci.mjs';
+import {eligibleReview} from './merge-spec-tests.mjs';
+const result=()=>({suites:[{specs:[{title:'AUTH-T01 login',tests:[{expectedStatus:'passed',status:'expected',results:[{status:'passed'}]}]}]}]});
+test('safe spec slugs',()=>{assert.equal(specSlug('specs/login.md'),'login');for(const p of ['specs/../x.md','specs/README.md','other/x.md'])assert.throws(()=>specSlug(p));});
+test('requires actual execution and expected case',()=>{assert.equal(verifyReport(result(),['AUTH-T01']),1);assert.throws(()=>verifyReport({suites:[]}));assert.throws(()=>verifyReport(result(),['AUTH-T02']));});
+for(const status of ['skipped','failed','timedOut','interrupted'])test(`reject ${status}`,()=>{const r=result();r.suites[0].specs[0].tests[0].results[0].status=status;assert.throws(()=>verifyReport(r));});
+test('reject flaky even with passing final attempt',()=>{const r=result();r.suites[0].specs[0].tests[0].status='flaky';assert.throws(()=>verifyReport(r));});
+const review=(state='APPROVED',sha='head',type='User')=>({user:{login:'reviewer',type},state,commit_id:sha});
+test('only latest human approval for current commit counts',()=>{assert.equal(eligibleReview([review()],'head','Copilot').length,1);for(const rs of [[review('APPROVED','old')],[review('APPROVED','head','Bot')],[review(),review('DISMISSED')],[review(),review('CHANGES_REQUESTED')]])assert.equal(eligibleReview(rs,'head','Copilot').length,0);});
+test('a later comment does not erase an approval',()=>{assert.equal(eligibleReview([review(),review('COMMENTED')],'head','Copilot').length,1);});

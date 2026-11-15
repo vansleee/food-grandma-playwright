@@ -1,0 +1,57 @@
+{
+  "kind": "api",
+  "method": "GET",
+  "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+  "request_headers": [
+    {
+      "name": "user-agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "accept",
+      "value": "*/*"
+    },
+    {
+      "name": "accept-encoding",
+      "value": "gzip,deflate,br"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 16:12:07 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    },
+    {
+      "name": "content-length",
+      "value": "120"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    }
+  ],
+  "ms": 1.3929999999995744,
+  "started": "2026-11-03T16:12:07.797Z",
+  "request": null,
+  "response": {
+    "meals": [
+      {
+        "id": 2,
+        "name": "SCREEN-T02 meal",
+        "short_description": "SCREEN-T02 original description",
+        "image": "",
+        "price": 0
+      }
+    ]
+  },
+  "n": 14
+}

@@ -1,0 +1,39 @@
+{
+  "case": "RCON-T04",
+  "repeat": 1,
+  "title": "RCON-T04 修改取得的物件不會直接改動已儲存的資料",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 200,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "implementation": "api",
+    "mutatedReturnedMeal": {
+      "id": 4,
+      "name": "Changed only in the caller",
+      "short_description": "Keep this description",
+      "image": "",
+      "price": 100
+    },
+    "mutatedList": [
+      {
+        "id": 4,
+        "name": "Stored meal",
+        "short_description": "Keep this description",
+        "image": "",
+        "price": 999
+      }
+    ],
+    "stored": {
+      "id": 4,
+      "name": "Stored meal",
+      "short_description": "Keep this description",
+      "image": "",
+      "price": 100
+    }
+  },
+  "api_requests": 6,
+  "browser_api_requests": 0,
+  "non_2xx": []
+}

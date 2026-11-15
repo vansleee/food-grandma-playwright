@@ -1,0 +1,16 @@
+{
+  "n": 1,
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/social/token/",
+  "status": 200,
+  "ms": 220.66400002222508,
+  "request": {
+    "username": "lab-par-shared-restauranta",
+    "password": "<redacted>"
+  },
+  "response": {
+    "access_token": "<redacted>",
+    "token_type": "Bearer",
+    "scope": "read write"
+  }
+}

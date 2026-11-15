@@ -1,0 +1,28 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "8081:8081"
+    volumes:
+      - sqlite-data:/app/data
+    environment:
+      DATABASE_URL: sqlite:////app/data/food-grandma.db
+      SESSION_SECRET_KEY: dev-secret-key-change-me
+      STRIPE_API_KEY: sk_test_dummy
+      SEED_DEMO_DATA: "true"
+      # Local-only default; reset/seed/rebuild require X-Demo-Reset-Key to match.
+      DEMO_RESET_KEY: ${DEMO_RESET_KEY:-local-dev-reset-key}
+
+  management:
+    build: ../food-grandma-management
+    expose:
+      - "80"
+    depends_on:
+      - backend
+
+volumes:
+  sqlite-data:
+
+networks:
+  default:
+    name: food-grandma-network

@@ -1,0 +1,13 @@
+{
+  "kind": "browser",
+  "method": "POST",
+  "url": "http://127.0.0.1:18082/api/driver/orders/3/claim",
+  "status": 200,
+  "ms": 3.687,
+  "started": "2026-11-02T18:32:52.038Z",
+  "request": "------WebKitFormBoundarylKGhfWrlGLXLU1m8\r\nContent-Disposition: form-data; name=\"access_token\"\r\n\r\n<redacted>\r\n------WebKitFormBoundarylKGhfWrlGLXLU1m8--\r\n",
+  "response": {
+    "status": "success"
+  },
+  "n": 17
+}

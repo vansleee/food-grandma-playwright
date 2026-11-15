@@ -1,0 +1,377 @@
+
+Running 20 tests using 1 worker
+
+(node:82558) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (953ms)
+(node:82573) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.1s)
+(node:82581) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (923ms)
+(node:82590) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.1s)
+(node:82597) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (837ms)
+(node:82615) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (988ms)
+(node:82623) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (889ms)
+(node:82629) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.1s)
+(node:82636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   9 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (932ms)
+(node:82642) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.0s)
+(node:82651) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (873ms)
+(node:82657) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.1s)
+(node:82677) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (933ms)
+(node:82683) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.0s)
+(node:82693) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  15 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (930ms)
+(node:82700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.0s)
+(node:82707) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  17 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (963ms)
+(node:82716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (1.0s)
+(node:82723) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  19 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (831ms)
+(node:82730) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (987ms)
+
+
+  1) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 1"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 3"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat2/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat2/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 5"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat4/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat4/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 7"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat6/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat6/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat6/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat6/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 9"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat8/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat8/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat8/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat8/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 11"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat10/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat10/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat10/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat10/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 13"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat12/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat12/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat12/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat12/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 15"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat14/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat14/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat14/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat14/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ───────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 17"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat16/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat16/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat16/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat16/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ──────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "CH35-T01 meal 19"
+    Received: ""
+
+      20 |     await meals.row(original.id).getByTestId('meal-edit-link').click();
+      21 |     await page.waitForTimeout(200);
+    > 22 |     expect(await form.name().inputValue()).toBe(original.name);
+         |                                            ^
+      23 |     expect(await form.description().inputValue()).toBe(original.short_description);
+      24 |     expect(await form.price().inputValue()).toBe('100');
+      25 |     await page.unrouteAll({ behavior: 'wait' });
+        at ./tests/e2e/chapters/ch35/meal-load.spec.ts:22:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat18/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat18/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat18/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/none/artifacts/meal-load-未使用條件等待（固定等待反例）--1a1a7-將原價格-100-修改為-150，保留原餐點及其他資料-repeat18/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10 failed
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+    ch35/meal-load.spec.ts:7:7 › 未使用條件等待（固定等待反例） › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 ────────────
+  10 passed (26.6s)

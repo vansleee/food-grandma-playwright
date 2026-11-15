@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:82145) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch25/meal-price.spec.ts:76:7 › v2（Workflow 教學延伸） › CH25-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (864ms)
+
+  1 passed (1.2s)

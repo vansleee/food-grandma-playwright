@@ -1,0 +1,163 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch22",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch22",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-price.spec.ts",
+      "file": "meal-price.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "改寫前",
+          "file": "meal-price.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH22-T01 從 v1 擷取的餐點修改流程",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1015,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:10:03.742Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "01-editor-before-change.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/artifacts/meal-price-改寫前-CH22-T01-從-v1-擷取的餐點修改流程/attachments/01-editor-before-change-png-5c91cc8754c06dc020d35efe96dd265c47940365.png"
+                        },
+                        {
+                          "name": "02-list-after-save.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/artifacts/meal-price-改寫前-CH22-T01-從-v1-擷取的餐點修改流程/attachments/02-list-after-save-png-59fb6aece452a1beaa0c199afbd13b20ebabe528.png"
+                        },
+                        {
+                          "name": "03-reopened.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/artifacts/meal-price-改寫前-CH22-T01-從-v1-擷取的餐點修改流程/attachments/03-reopened-png-34b5eb8b0a23168b294c270546c16431e0b16741.png"
+                        },
+                        {
+                          "name": "observation.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJjYXNlSWQiOiAiQ0gyMi1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDIyLVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMjItVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gyMi1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gyMi1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMjItVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gyMi1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/artifacts/meal-price-改寫前-CH22-T01-從-v1-擷取的餐點修改流程/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before/artifacts/meal-price-改寫前-CH22-T01-從-v1-擷取的餐點修改流程/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-4e68d1ad0809d7e599ca",
+              "file": "meal-price.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T17:10:03.522Z",
+    "duration": 1401.641,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

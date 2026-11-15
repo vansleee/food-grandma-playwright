@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:83569) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch26/multi-role-order.spec.ts:197:3 › POM（角色分工） › CH26-T01 顧客下單、餐廳備餐完成、外送員接單並確認送達 (2.3s)
+
+  1 passed (2.8s)

@@ -1,0 +1,16 @@
+{
+  "caseId": "PAR-T01",
+  "mealId": 1,
+  "expectedPrice": 150,
+  "observedPrice": 150,
+  "saveResponse": {
+    "meal": {
+      "id": 1,
+      "name": "PAR-T01 meal",
+      "short_description": "PAR-T01 original description",
+      "image": "",
+      "price": 150
+    }
+  },
+  "workers": 2
+}

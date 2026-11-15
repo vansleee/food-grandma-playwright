@@ -1,0 +1,5 @@
+{
+  "tests/e2e/chapters/ch25/customer-order.spec.ts": "cd0a687c89739ea86c0261de080342a22cf191cb660d6696f79320c3f01ef246",
+  "tests/e2e/chapters/data/accounts.json": "20de2ecf41944fdf9b5989583b0afc6a886d0d13962f2d9d3957ec4710dc1200",
+  "tests/e2e/chapters/playwright.config.ts": "76d41768210ca569208c80ebca1ff3373dbf502e0e71e0c575995254bd5bedae"
+}

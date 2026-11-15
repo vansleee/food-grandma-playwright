@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:56082) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 examples/repository/contract/meal-repository.spec.ts:4:5 › RCON-T01 共用資料準備程式建立餐點後，可以依原編號查詢 (246ms)
+  ✓  2 examples/repository/contract/meal-repository.spec.ts:15:5 › RCON-T02 更新原餐點價格，其他欄位與另一筆餐點保持不變 (209ms)
+  ✓  3 examples/repository/contract/meal-repository.spec.ts:29:5 › RCON-T03 找不到的餐點回傳 undefined，更新時不新增資料 (201ms)
+  ✓  4 examples/repository/contract/meal-repository.spec.ts:37:5 › RCON-T04 修改取得的物件不會直接改動已儲存的資料 (200ms)
+
+  4 passed (1.1s)

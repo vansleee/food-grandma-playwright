@@ -1,0 +1,19 @@
+{
+  "command": [
+    "node",
+    "node_modules/playwright/cli.js",
+    "test",
+    "--config",
+    "playwright.config.ts",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "cwd": "./tests/e2e/v1-pattern-labs",
+  "group": "adapter",
+  "variant": "before",
+  "repository_kind": "api",
+  "database": "./work/v1-pattern-extensions-20261104/adapter-before.db",
+  "servers_started": true,
+  "password_source": "TEST_PASSWORD",
+  "source_instrumented": false
+}

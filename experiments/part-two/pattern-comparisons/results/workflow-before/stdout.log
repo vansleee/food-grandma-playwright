@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:55762) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 examples/workflow/before.spec.ts:6:7 › FLOW-T01 從網頁將既有餐點價格由 100 修改為 150 (1.0s)
+  ✓  2 examples/workflow/before.spec.ts:6:7 › FLOW-T02 從網頁將既有餐點價格由 100 修改為 0 (887ms)
+
+  2 passed (2.4s)

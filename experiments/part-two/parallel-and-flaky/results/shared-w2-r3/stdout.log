@@ -1,0 +1,46 @@
+
+Running 2 tests using 2 workers
+
+(node:50615) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:50614) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 ch34/support/price-cases.ts:10:5 › PAR-T02 修改餐點價格為 180 (966ms)
+  ✓  2 ch34/support/price-cases.ts:10:5 › PAR-T01 修改餐點價格為 150 (1.1s)
+
+
+  1) ch34/support/price-cases.ts:10:5 › PAR-T02 修改餐點價格為 180 ────────────────────────────────────────
+
+    Error: 餐點 1 應保留本案例儲存的價格
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 180
+    Received: 150
+
+      40 |       });
+      41 |       await page.screenshot({ path: testInfo.outputPath('02-after-save.png') });
+    > 42 |       expect(actual?.price, `餐點 ${meal.id} 應保留本案例儲存的價格`).toBe(scenario.price);
+         |                                                          ^
+      43 |       expect(actual).toMatchObject({ id: meal.id, name: meal.name, short_description: meal.short_description });
+      44 |       expect(all).toHaveLength(1);
+      45 |       await expect(meals.row(meal.id)).toContainText(`$${scenario.price}`);
+        at ./tests/e2e/v1-labs/ch34/support/price-cases.ts:42:58
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/shared-w2-r3/test-results/price-edit-PAR-T02-修改餐點價格為-180/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/shared-w2-r3/test-results/price-edit-PAR-T02-修改餐點價格為-180/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/shared-w2-r3/test-results/price-edit-PAR-T02-修改餐點價格為-180/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/shared-w2-r3/test-results/price-edit-PAR-T02-修改餐點價格為-180/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    ch34/support/price-cases.ts:10:5 › PAR-T02 修改餐點價格為 180 ─────────────────────────────────────────
+  1 passed (1.5s)

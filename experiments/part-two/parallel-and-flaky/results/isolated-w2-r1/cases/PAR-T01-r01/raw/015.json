@@ -1,0 +1,107 @@
+{
+  "kind": "browser",
+  "method": "GET",
+  "url": "http://127.0.0.1:18082/api/restaurant/meals/2",
+  "request_headers": [
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Host",
+      "value": "127.0.0.1:18082"
+    },
+    {
+      "name": "Referer",
+      "value": "http://127.0.0.1:18082/management/meals/2/edit"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "sec-ch-ua",
+      "value": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+    },
+    {
+      "name": "sec-ch-ua-mobile",
+      "value": "?0"
+    },
+    {
+      "name": "sec-ch-ua-platform",
+      "value": "\"Windows\""
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "Vary",
+      "value": "Origin"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "content-length",
+      "value": "113"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    },
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 15:49:39 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    }
+  ],
+  "ms": 7.536,
+  "started": "2026-11-03T15:49:40.348Z",
+  "request": null,
+  "response": {
+    "meal": {
+      "id": 2,
+      "name": "PAR-T01 meal",
+      "short_description": "PAR-T01 original description",
+      "image": "",
+      "price": 150
+    }
+  },
+  "n": 15
+}

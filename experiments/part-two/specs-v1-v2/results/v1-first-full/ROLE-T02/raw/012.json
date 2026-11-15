@@ -1,0 +1,43 @@
+{
+  "kind": "api",
+  "method": "PATCH",
+  "url": "http://127.0.0.1:18081/api/restaurant/orders/2",
+  "status": 200,
+  "ms": 1.9869999999991705,
+  "started": "2026-11-02T18:32:51.792Z",
+  "request": null,
+  "response": {
+    "order": {
+      "id": 2,
+      "customer": {
+        "id": 9,
+        "name": "customerA ROLE-T02",
+        "avatar": "",
+        "address": "ROLE-T02 customerA 示範地址"
+      },
+      "restaurant": {
+        "id": 9,
+        "name": "ROLE-T02 restaurantA 示範餐廳",
+        "phone": "DEMO-PHONE",
+        "address": "ROLE-T02 restaurantA 示範路 1 號"
+      },
+      "driver": null,
+      "order_details": [
+        {
+          "id": 2,
+          "meal": {
+            "id": 2,
+            "name": "Role T02 meal",
+            "price": 80
+          },
+          "quantity": 1,
+          "sub_total": 80
+        }
+      ],
+      "total": 80,
+      "status": "Ready",
+      "address": "role-current-ROLET02n1"
+    }
+  },
+  "n": 12
+}

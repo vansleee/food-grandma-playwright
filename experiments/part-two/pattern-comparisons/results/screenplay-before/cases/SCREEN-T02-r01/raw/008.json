@@ -1,0 +1,109 @@
+{
+  "kind": "browser",
+  "method": "GET",
+  "url": "http://127.0.0.1:18082/api/restaurant/meals/",
+  "request_headers": [
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Host",
+      "value": "127.0.0.1:18082"
+    },
+    {
+      "name": "Referer",
+      "value": "http://127.0.0.1:18082/management/meals"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "sec-ch-ua",
+      "value": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+    },
+    {
+      "name": "sec-ch-ua-mobile",
+      "value": "?0"
+    },
+    {
+      "name": "sec-ch-ua-platform",
+      "value": "\"Windows\""
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "Vary",
+      "value": "Origin"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "content-length",
+      "value": "122"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    },
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 16:12:03 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    }
+  ],
+  "ms": 5.059,
+  "started": "2026-11-03T16:12:04.059Z",
+  "request": null,
+  "response": {
+    "meals": [
+      {
+        "id": 2,
+        "name": "SCREEN-T02 meal",
+        "short_description": "SCREEN-T02 original description",
+        "image": "",
+        "price": 100
+      }
+    ]
+  },
+  "n": 8
+}

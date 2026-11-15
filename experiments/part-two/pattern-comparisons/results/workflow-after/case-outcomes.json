@@ -1,0 +1,102 @@
+[
+  {
+    "case": "FLOW-T01",
+    "repeat": 1,
+    "title": "FLOW-T01 從網頁將既有餐點價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1006,
+    "worker_index": 0,
+    "errors": [],
+    "observation": {
+      "caseId": "FLOW-T01",
+      "original": {
+        "id": 1,
+        "name": "FLOW-T01 meal",
+        "short_description": "FLOW-T01 original description",
+        "image": "",
+        "price": 100
+      },
+      "expectedPrice": 150,
+      "saved": {
+        "status": 200,
+        "body": {
+          "meal": {
+            "id": 1,
+            "name": "FLOW-T01 meal",
+            "short_description": "FLOW-T01 original description",
+            "image": "",
+            "price": 150
+          }
+        }
+      },
+      "idsBefore": [
+        1
+      ],
+      "idsAfter": [
+        1
+      ],
+      "readBack": {
+        "id": 1,
+        "name": "FLOW-T01 meal",
+        "short_description": "FLOW-T01 original description",
+        "image": "",
+        "price": 150
+      },
+      "reopenedPrice": "150"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 11,
+    "non_2xx": []
+  },
+  {
+    "case": "FLOW-T02",
+    "repeat": 1,
+    "title": "FLOW-T02 從網頁將既有餐點價格由 100 修改為 0",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 918,
+    "worker_index": 0,
+    "errors": [],
+    "observation": {
+      "caseId": "FLOW-T02",
+      "original": {
+        "id": 2,
+        "name": "FLOW-T02 meal",
+        "short_description": "FLOW-T02 original description",
+        "image": "",
+        "price": 100
+      },
+      "expectedPrice": 0,
+      "saved": {
+        "status": 200,
+        "body": {
+          "meal": {
+            "id": 2,
+            "name": "FLOW-T02 meal",
+            "short_description": "FLOW-T02 original description",
+            "image": "",
+            "price": 0
+          }
+        }
+      },
+      "idsBefore": [
+        2
+      ],
+      "idsAfter": [
+        2
+      ],
+      "readBack": {
+        "id": 2,
+        "name": "FLOW-T02 meal",
+        "short_description": "FLOW-T02 original description",
+        "image": "",
+        "price": 0
+      },
+      "reopenedPrice": "0"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 11,
+    "non_2xx": []
+  }
+]

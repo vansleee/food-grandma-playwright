@@ -1,0 +1,40 @@
+
+Running 1 test using 1 worker
+
+(node:48289) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/auth.spec.ts:5:5 › AUTH-T01 店家使用有效帳密登入後導向訂單管理 (228ms)
+
+
+  1) tests/auth.spec.ts:5:5 › AUTH-T01 店家使用有效帳密登入後導向訂單管理 ───────────────────────────────────────────
+
+    Error: ENOENT: no such file or directory, open './tests/spec-comparison/accounts.json'
+
+       at support/env.ts:17
+
+      15 | /** Usernames dedicated to one original case ID (see accounts.json). */
+      16 | export function accountsFor(caseId: string): CaseAccounts {
+    > 17 |   cache ??= JSON.parse(fs.readFileSync(accountsFile, 'utf-8'));
+         |                           ^
+      18 |   const accounts = cache![caseId];
+      19 |   if (!accounts) throw new Error(`No accounts defined for ${caseId}`);
+      20 |   return accounts;
+        at accountsFor (./tests/e2e/v1/tests/support/env.ts:17:27)
+        at ./tests/e2e/v1/tests/auth.spec.ts:6:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/auth.spec.ts:5:5 › AUTH-T01 店家使用有效帳密登入後導向訂單管理 ────────────────────────────────────────────

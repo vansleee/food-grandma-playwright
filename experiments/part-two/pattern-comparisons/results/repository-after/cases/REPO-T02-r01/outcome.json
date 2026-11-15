@@ -1,0 +1,50 @@
+{
+  "case": "REPO-T02",
+  "repeat": 1,
+  "title": "REPO-T02 從網頁將既有餐點價格由 100 修改為 0",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 934,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "caseId": "REPO-T02",
+    "original": {
+      "id": 2,
+      "name": "REPO-T02 meal",
+      "short_description": "REPO-T02 original description",
+      "image": "",
+      "price": 100
+    },
+    "expectedPrice": 0,
+    "saved": {
+      "status": 200,
+      "body": {
+        "meal": {
+          "id": 2,
+          "name": "REPO-T02 meal",
+          "short_description": "REPO-T02 original description",
+          "image": "",
+          "price": 0
+        }
+      }
+    },
+    "idsBefore": [
+      2
+    ],
+    "idsAfter": [
+      2
+    ],
+    "readBack": {
+      "id": 2,
+      "name": "REPO-T02 meal",
+      "short_description": "REPO-T02 original description",
+      "image": "",
+      "price": 0
+    },
+    "reopenedPrice": "0"
+  },
+  "api_requests": 5,
+  "browser_api_requests": 11,
+  "non_2xx": []
+}

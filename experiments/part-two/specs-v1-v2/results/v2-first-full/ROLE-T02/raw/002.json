@@ -1,0 +1,25 @@
+{
+  "kind": "api",
+  "method": "GET",
+  "url": "http://127.0.0.1:18081/api/restaurant/me/",
+  "status": 200,
+  "ms": 1.0929999999989377,
+  "started": "2026-11-02T18:34:49.072Z",
+  "request": null,
+  "response": {
+    "restaurant": {
+      "id": 9,
+      "name": "ROLE-T02 restaurantA 示範餐廳",
+      "phone": "DEMO-PHONE",
+      "address": "ROLE-T02 restaurantA 示範路 1 號",
+      "logo": ""
+    },
+    "user": {
+      "username": "spec-role-t02-restauranta",
+      "first_name": "restaurantA",
+      "last_name": "ROLE-T02",
+      "email": "spec-role-t02-restauranta@example.invalid"
+    }
+  },
+  "n": 2
+}

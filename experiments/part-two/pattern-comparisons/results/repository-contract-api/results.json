@@ -1,0 +1,269 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/v1-pattern-labs/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/v1-pattern-labs/playwright.config.ts",
+    "rootDir": "./tests/e2e/v1-pattern-labs/examples/repository/contract",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/v1-pattern-extensions-20261104/evidence/repository-contract-api/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v1-pattern-labs/examples/repository/contract",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/v1-pattern-extensions-20261104/evidence/repository-contract-api/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-repository.spec.ts",
+      "file": "meal-repository.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "RCON-T01 共用資料準備程式建立餐點後，可以依原編號查詢",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 246,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:12:22.724Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbXBsZW1lbnRhdGlvbiI6ImFwaSIsIm9yaWdpbmFsIjp7ImlkIjoxLCJuYW1lIjoiQ29udHJhY3QgbWVhbCIsInNob3J0X2Rlc2NyaXB0aW9uIjoiT3JpZ2luYWwgZGVzY3JpcHRpb24iLCJpbWFnZSI6IiIsInByaWNlIjoxMDB9LCJpZHNCZWZvcmUiOlsxXX0="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/repository-contract-api/test-results/meal-repository-RCON-T01-共用資料準備程式建立餐點後，可以依原編號查詢/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a76a9cefd297d83091aa-b881f78fe228f6095dab",
+          "file": "meal-repository.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "RCON-T02 更新原餐點價格，其他欄位與另一筆餐點保持不變",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:12:22.989Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbXBsZW1lbnRhdGlvbiI6ImFwaSIsImZpcnN0Ijp7ImlkIjoyLCJuYW1lIjoiRmlyc3QgbWVhbCIsInNob3J0X2Rlc2NyaXB0aW9uIjoiRmlyc3QgZGVzY3JpcHRpb24iLCJpbWFnZSI6IiIsInByaWNlIjoxMDB9LCJzZWNvbmQiOnsiaWQiOjMsIm5hbWUiOiJTZWNvbmQgbWVhbCIsInNob3J0X2Rlc2NyaXB0aW9uIjoiU2Vjb25kIGRlc2NyaXB0aW9uIiwiaW1hZ2UiOiIiLCJwcmljZSI6ODB9LCJ1cGRhdGVkIjp7ImlkIjoyLCJuYW1lIjoiRmlyc3QgbWVhbCIsInNob3J0X2Rlc2NyaXB0aW9uIjoiRmlyc3QgZGVzY3JpcHRpb24iLCJpbWFnZSI6IiIsInByaWNlIjoxNTB9LCJiZWZvcmUiOlsyLDNdLCJhZnRlciI6WzIsM119"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/repository-contract-api/test-results/meal-repository-RCON-T02-更新原餐點價格，其他欄位與另一筆餐點保持不變/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a76a9cefd297d83091aa-fd3261b7d3adc6487d03",
+          "file": "meal-repository.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "RCON-T03 找不到的餐點回傳 undefined，更新時不新增資料",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:12:23.207Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbXBsZW1lbnRhdGlvbiI6ImFwaSIsIm1pc3NpbmdJZCI6OTk5OTk5LCJtZWFscyI6W119"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/repository-contract-api/test-results/meal-repository-RCON-T03-找不到的餐點回傳-undefined，更新時不新增資料/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a76a9cefd297d83091aa-e4063fd38895b12c31b9",
+          "file": "meal-repository.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "RCON-T04 修改取得的物件不會直接改動已儲存的資料",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 200,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:12:23.416Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbXBsZW1lbnRhdGlvbiI6ImFwaSIsIm11dGF0ZWRSZXR1cm5lZE1lYWwiOnsiaWQiOjQsIm5hbWUiOiJDaGFuZ2VkIG9ubHkgaW4gdGhlIGNhbGxlciIsInNob3J0X2Rlc2NyaXB0aW9uIjoiS2VlcCB0aGlzIGRlc2NyaXB0aW9uIiwiaW1hZ2UiOiIiLCJwcmljZSI6MTAwfSwibXV0YXRlZExpc3QiOlt7ImlkIjo0LCJuYW1lIjoiU3RvcmVkIG1lYWwiLCJzaG9ydF9kZXNjcmlwdGlvbiI6IktlZXAgdGhpcyBkZXNjcmlwdGlvbiIsImltYWdlIjoiIiwicHJpY2UiOjk5OX1dLCJzdG9yZWQiOnsiaWQiOjQsIm5hbWUiOiJTdG9yZWQgbWVhbCIsInNob3J0X2Rlc2NyaXB0aW9uIjoiS2VlcCB0aGlzIGRlc2NyaXB0aW9uIiwiaW1hZ2UiOiIiLCJwcmljZSI6MTAwfX0="
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/repository-contract-api/test-results/meal-repository-RCON-T04-修改取得的物件不會直接改動已儲存的資料/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a76a9cefd297d83091aa-43d532afc44ddc1ee45b",
+          "file": "meal-repository.spec.ts",
+          "line": 37,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:12:22.497Z",
+    "duration": 1135.152,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

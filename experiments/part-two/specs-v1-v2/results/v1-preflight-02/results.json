@@ -1,0 +1,163 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/v1/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--grep",
+      "AUTH-T01"
+    ],
+    "configFile": "./tests/e2e/v1/playwright.config.ts",
+    "rootDir": "./tests/e2e/v1/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/specs-v1-v2-20261103/evidence/v1-preflight-02/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AUTH-T01 店家使用有效帳密登入後導向訂單管理",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 228,
+                  "error": {
+                    "message": "Error: ENOENT: no such file or directory, open './tests/spec-comparison/accounts.json'",
+                    "stack": "Error: ENOENT: no such file or directory, open './tests/spec-comparison/accounts.json'\n    at accountsFor (./tests/e2e/v1/tests/support/env.ts:17:27)\n    at ./tests/e2e/v1/tests/auth.spec.ts:6:38",
+                    "location": {
+                      "file": "./tests/e2e/v1/tests/support/env.ts",
+                      "column": 27,
+                      "line": 17
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport/env.ts:17\n\n  15 | /** Usernames dedicated to one original case ID (see accounts.json). */\n  16 | export function accountsFor(caseId: string): CaseAccounts {\n> 17 |   cache ??= JSON.parse(fs.readFileSync(accountsFile, 'utf-8'));\n     |                           ^\n  18 |   const accounts = cache![caseId];\n  19 |   if (!accounts) throw new Error(`No accounts defined for ${caseId}`);\n  20 |   return accounts;"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "./tests/e2e/v1/tests/support/env.ts",
+                        "column": 27,
+                        "line": 17
+                      },
+                      "message": "Error: ENOENT: no such file or directory, open './tests/spec-comparison/accounts.json'\n\n   at support/env.ts:17\n\n  15 | /** Usernames dedicated to one original case ID (see accounts.json). */\n  16 | export function accountsFor(caseId: string): CaseAccounts {\n> 17 |   cache ??= JSON.parse(fs.readFileSync(accountsFile, 'utf-8'));\n     |                           ^\n  18 |   const accounts = cache![caseId];\n  19 |   if (!accounts) throw new Error(`No accounts defined for ${caseId}`);\n  20 |   return accounts;\n    at accountsFor (./tests/e2e/v1/tests/support/env.ts:17:27)\n    at ./tests/e2e/v1/tests/auth.spec.ts:6:38"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T18:32:15.825Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "./work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/specs-v1-v2-20261103/evidence/v1-preflight-02/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "./tests/e2e/v1/tests/support/env.ts",
+                    "column": 27,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-1469f0ef2ca2d751e08d",
+          "file": "auth.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T18:32:15.597Z",
+    "duration": 743.17,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

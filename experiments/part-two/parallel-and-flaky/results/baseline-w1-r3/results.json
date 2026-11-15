@@ -1,0 +1,1746 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/v1-labs/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.baseline.config.ts",
+      "--workers=1",
+      "--fully-parallel",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/v1-labs/playwright.baseline.config.ts",
+    "rootDir": "./tests/e2e/v1-labs/baseline/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v1-labs/baseline/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "account.spec.ts",
+      "file": "account.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ACCOUNT-T01 設定頁載入目前餐廳與聯絡人資料",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 643,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:48:44.002Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T01-設定頁載入目前餐廳與聯絡人資料/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T01-設定頁載入目前餐廳與聯絡人資料/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad4620ead4e6d9cc2627-6c400c366a7b014cee8c",
+          "file": "account.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "ACCOUNT-T02 修改電話與地址並保存，reload 後新值存在且其他欄位保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 831,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "修改電話與地址並保存",
+                      "duration": 123
+                    },
+                    {
+                      "title": "顯示成功且仍在設定頁",
+                      "duration": 89
+                    },
+                    {
+                      "title": "reload 後新值存在，其他欄位保持",
+                      "duration": 89
+                    },
+                    {
+                      "title": "API 回讀確認",
+                      "duration": 3
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:44.790Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T02-修改電話與地址並保存，reload-後新值存在且其他欄位保持/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T02-修改電話與地址並保存，reload-後新值存在且其他欄位保持/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad4620ead4e6d9cc2627-196f6bcd297352dfd3a7",
+          "file": "account.spec.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "ACCOUNT-T03 清空必填欄位或輸入錯誤 email 時原生驗證不通過且不送出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "清空電子郵件",
+                      "duration": 423
+                    },
+                    {
+                      "title": "清空餐廳名稱",
+                      "duration": 200
+                    },
+                    {
+                      "title": "清空電話",
+                      "duration": 200
+                    },
+                    {
+                      "title": "清空地址",
+                      "duration": 180
+                    },
+                    {
+                      "title": "輸入明顯錯誤的 email",
+                      "duration": 203
+                    },
+                    {
+                      "title": "後端資料沒有被改動",
+                      "duration": 3
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:45.673Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T03-清空必填欄位或輸入錯誤-email-時原生驗證不通過且不送出/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T03-清空必填欄位或輸入錯誤-email-時原生驗證不通過且不送出/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad4620ead4e6d9cc2627-a265bc910fe794a85e2d",
+          "file": "account.spec.ts",
+          "line": 76,
+          "column": 5
+        },
+        {
+          "title": "ACCOUNT-T04 保存回應未完成時停用按鈕，之後 500 顯示錯誤並保留輸入",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 725,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "保存回應尚未完成時按鈕停用",
+                      "duration": 98
+                    },
+                    {
+                      "title": "回應 500：顯示錯誤、沒有成功提示、輸入保留",
+                      "duration": 11
+                    },
+                    {
+                      "title": "真實後端資料未被改動",
+                      "duration": 3
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:47.268Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T04-保存回應未完成時停用按鈕，之後-500-顯示錯誤並保留輸入/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T04-保存回應未完成時停用按鈕，之後-500-顯示錯誤並保留輸入/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad4620ead4e6d9cc2627-3fc8f2e4dba14ca15f7f",
+          "file": "account.spec.ts",
+          "line": 115,
+          "column": 5
+        },
+        {
+          "title": "ACCOUNT-T05 初次載入設定失敗時顯示無法載入訊息",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:48:48.058Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T05-初次載入設定失敗時顯示無法載入訊息/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/account-ACCOUNT-T05-初次載入設定失敗時顯示無法載入訊息/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ad4620ead4e6d9cc2627-b4f60984d5b2438d02dc",
+          "file": "account.spec.ts",
+          "line": 153,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AUTH-T01 店家使用有效帳密登入後導向訂單管理",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "沒有既存登入狀態",
+                      "duration": 141
+                    },
+                    {
+                      "title": "登入 /management/sign-in",
+                      "duration": 141
+                    },
+                    {
+                      "title": "導向 /management/orders 並顯示訂單管理內容",
+                      "duration": 291
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:48.777Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/auth-AUTH-T01-店家使用有效帳密登入後導向訂單管理/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-1469f0ef2ca2d751e08d",
+          "file": "auth.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "AUTH-T02 沒有 token 直接開啟訂單頁會導向登入頁",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 333,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:48:49.523Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/auth-AUTH-T02-沒有-token-直接開啟訂單頁會導向登入頁/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/auth-AUTH-T02-沒有-token-直接開啟訂單頁會導向登入頁/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-b10bad638eb54e2e532e",
+          "file": "auth.spec.ts",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "AUTH-T03 登出後清除 token 並導向登入頁",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "先登入管理站",
+                      "duration": 434
+                    },
+                    {
+                      "title": "登出：前端清除 token 並導向登入頁",
+                      "duration": 37
+                    },
+                    {
+                      "title": "重新開啟受保護頁面仍導向登入頁",
+                      "duration": 72
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:49.898Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/auth-AUTH-T03-登出後清除-token-並導向登入頁/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/auth-AUTH-T03-登出後清除-token-並導向登入頁/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-d43c273883a6a5db3b46",
+          "file": "auth.spec.ts",
+          "line": 38,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "driver-claim.spec.ts",
+      "file": "driver-claim.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ROLE-T01 外送員接取未指派的待取餐訂單後進入進行中配送",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1039,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "進入可接訂單頁，該筆訂單顯示在列表中",
+                      "duration": 250
+                    },
+                    {
+                      "title": "點選「接取訂單」",
+                      "duration": 94
+                    },
+                    {
+                      "title": "進入進行中配送頁並顯示該筆訂單、配送中、確認已送達",
+                      "duration": 25
+                    },
+                    {
+                      "title": "以訂單資料回讀接單者與狀態",
+                      "duration": 4
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:50.596Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/driver-claim-ROLE-T01-外送員接取未指派的待取餐訂單後進入進行中配送/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/driver-claim-ROLE-T01-外送員接取未指派的待取餐訂單後進入進行中配送/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cde6fe1b1327012892b9-11cfdaa16a8cd168847a",
+          "file": "driver-claim.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "ROLE-T02 外送員已有進行中配送時接單被拒",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9256,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('orders-error')\nExpected substring: \u001b[32m\"Your outstanding order is not delivered yet.\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('orders-error') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('orders-error')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('orders-error')\nExpected substring: \u001b[32m\"Your outstanding order is not delivered yet.\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('orders-error') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('orders-error')\u001b[22m\n\n    at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:66:40\n    at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:65:3",
+                    "location": {
+                      "file": "./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts",
+                      "column": 40,
+                      "line": 66
+                    },
+                    "snippet": "  64 |\n  65 |   await test.step('接單被拒：留在可接訂單頁並顯示提示', async () => {\n> 66 |     await expect(driverOrders.error()).toContainText(OUTSTANDING_MESSAGE);\n     |                                        ^\n  67 |     await expect(page).toHaveURL(/\\/driver\\/orders$/);\n  68 |     await expect(page.getByRole('heading', { name: '可接訂單', level: 1 })).toBeVisible();\n  69 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts",
+                        "column": 40,
+                        "line": 66
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('orders-error')\nExpected substring: \u001b[32m\"Your outstanding order is not delivered yet.\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('orders-error') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('orders-error')\u001b[22m\n\n\n  64 |\n  65 |   await test.step('接單被拒：留在可接訂單頁並顯示提示', async () => {\n> 66 |     await expect(driverOrders.error()).toContainText(OUTSTANDING_MESSAGE);\n     |                                        ^\n  67 |     await expect(page).toHaveURL(/\\/driver\\/orders$/);\n  68 |     await expect(page.getByRole('heading', { name: '可接訂單', level: 1 })).toBeVisible();\n  69 |   });\n    at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:66:40\n    at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:65:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "可接訂單列表有另一筆未指派的待取餐訂單",
+                      "duration": 241
+                    },
+                    {
+                      "title": "點選另一筆訂單的「接取訂單」",
+                      "duration": 110
+                    },
+                    {
+                      "title": "接單被拒：留在可接訂單頁並顯示提示",
+                      "duration": 8007,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('orders-error')\nExpected substring: \u001b[32m\"Your outstanding order is not delivered yet.\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('orders-error') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('orders-error')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('orders-error')\nExpected substring: \u001b[32m\"Your outstanding order is not delivered yet.\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('orders-error') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('orders-error')\u001b[22m\n\n    at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:66:40\n    at ./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts:65:3",
+                        "location": {
+                          "file": "./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts",
+                          "column": 40,
+                          "line": 66
+                        },
+                        "snippet": "  64 |\n  65 |   await test.step('接單被拒：留在可接訂單頁並顯示提示', async () => {\n> 66 |     await expect(driverOrders.error()).toContainText(OUTSTANDING_MESSAGE);\n     |                                        ^\n  67 |     await expect(page).toHaveURL(/\\/driver\\/orders$/);\n  68 |     await expect(page.getByRole('heading', { name: '可接訂單', level: 1 })).toBeVisible();\n  69 |   });"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:48:51.687Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/driver-claim-ROLE-T02-外送員已有進行中配送時接單被拒/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "./tests/e2e/v1-labs/baseline/tests/driver-claim.spec.ts",
+                    "column": 40,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cde6fe1b1327012892b9-5bd1d540ef7c508ba130",
+          "file": "driver-claim.spec.ts",
+          "line": 42,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "meals.spec.ts",
+      "file": "meals.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "MEAL-T01 新增餐點後回到列表，重新整理仍存在",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 844,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "從列表進入新增表單並填入名稱、描述與價格 120，圖片網址留空",
+                      "duration": 142
+                    },
+                    {
+                      "title": "返回列表並確認新餐點的 ID 與內容",
+                      "duration": 38
+                    },
+                    {
+                      "title": "重新整理頁面後仍能看到",
+                      "duration": 92
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:01.278Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T01-新增餐點後回到列表，重新整理仍存在/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T01-新增餐點後回到列表，重新整理仍存在/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-7c73a3e53b5d806d0e2c",
+          "file": "meals.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "MEAL-T02 編輯既有餐點價格為 150，更新同一個 ID 不新增",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 706,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "開啟既有餐點，表單先顯示原有資料",
+                      "duration": 110
+                    },
+                    {
+                      "title": "把價格改為 150 並儲存",
+                      "duration": 55
+                    },
+                    {
+                      "title": "同一個 ID 顯示新價格，沒有重複新增",
+                      "duration": 5
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:02.266Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T02-編輯既有餐點價格為-150，更新同一個-ID-不新增/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T02-編輯既有餐點價格為-150，更新同一個-ID-不新增/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-26824695f798ef4bb4c0",
+          "file": "meals.spec.ts",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "title": "MEAL-T03 名稱留空、價格負數或小數時瀏覽器驗證不通過且不送出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 967,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "名稱留空",
+                      "duration": 210
+                    },
+                    {
+                      "title": "價格為負數 -1",
+                      "duration": 124
+                    },
+                    {
+                      "title": "價格為小數 12.5",
+                      "duration": 124
+                    },
+                    {
+                      "title": "後端沒有任何新增的餐點",
+                      "duration": 3
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:03.021Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T03-名稱留空、價格負數或小數時瀏覽器驗證不通過且不送出/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T03-名稱留空、價格負數或小數時瀏覽器驗證不通過且不送出/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-428ee4d4292ff7464538",
+          "file": "meals.spec.ts",
+          "line": 102,
+          "column": 5
+        },
+        {
+          "title": "MEAL-T04 價格為 0 的餐點可以儲存且 API 回讀仍為 0",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 692,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:49:04.041Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T04-價格為-0-的餐點可以儲存且-API-回讀仍為-0/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T04-價格為-0-的餐點可以儲存且-API-回讀仍為-0/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-b7faf2e44f183c51b1cd",
+          "file": "meals.spec.ts",
+          "line": 157,
+          "column": 5
+        },
+        {
+          "title": "MEAL-T05 依名稱或描述搜尋且不分大小寫，無符合時顯示提示",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "搜尋名稱（小寫）：「spicy」",
+                      "duration": 56
+                    },
+                    {
+                      "title": "搜尋名稱（大寫）：「SPICY」",
+                      "duration": 22
+                    },
+                    {
+                      "title": "搜尋名稱（中文）：「牛肉」",
+                      "duration": 7
+                    },
+                    {
+                      "title": "搜尋描述（小寫）：「crispy」",
+                      "duration": 6
+                    },
+                    {
+                      "title": "搜尋描述（大寫）：「CRISPY」",
+                      "duration": 5
+                    },
+                    {
+                      "title": "搜尋描述原為大寫，以小寫搜尋：「broth」",
+                      "duration": 8
+                    },
+                    {
+                      "title": "搜尋描述（混合大小寫）：「bRaIsEd」",
+                      "duration": 5
+                    },
+                    {
+                      "title": "沒有符合條件時顯示搜尋無結果提示",
+                      "duration": 7
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:04.780Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T05-依名稱或描述搜尋且不分大小寫，無符合時顯示提示/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T05-依名稱或描述搜尋且不分大小寫，無符合時顯示提示/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-84dbdefc301740baed18",
+          "file": "meals.spec.ts",
+          "line": 176,
+          "column": 5
+        },
+        {
+          "title": "MEAL-T06 儲存請求延遲後回傳 500：停用按鈕、保留輸入並可再次送出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 845,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "送出後等待期間儲存按鈕停用",
+                      "duration": 68
+                    },
+                    {
+                      "title": "回傳 500 後仍停留在表單並保留輸入",
+                      "duration": 100
+                    },
+                    {
+                      "title": "可再次送出並成功儲存",
+                      "duration": 68
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:05.474Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T06-儲存請求延遲後回傳-500：停用按鈕、保留輸入並可再次送出/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T06-儲存請求延遲後回傳-500：停用按鈕、保留輸入並可再次送出/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-67b92b93e30d55f4f2c0",
+          "file": "meals.spec.ts",
+          "line": 216,
+          "column": 5
+        },
+        {
+          "title": "MEAL-T08 編輯頁載入餐點失敗時顯示提示而非正常空白表單",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 916,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "餐點資料載入回應 HTTP 500",
+                      "duration": 312
+                    },
+                    {
+                      "title": "餐點資料載入回應 HTTP 200 且 body status:failed",
+                      "duration": 211
+                    },
+                    {
+                      "title": "原餐點資料未被改動",
+                      "duration": 2
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:06.369Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T08-編輯頁載入餐點失敗時顯示提示而非正常空白表單/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/meals-MEAL-T08-編輯頁載入餐點失敗時顯示提示而非正常空白表單/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec8eabeeaf87d344ec9c-00dea0ee4067d66aa8d9",
+          "file": "meals.spec.ts",
+          "line": 273,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "order-ready.spec.ts",
+      "file": "order-ready.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "READY-T02 在 UI 完成備餐後顯示待取餐且 reload 後仍保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "按下指定訂單的「備餐完成 →」",
+                      "duration": 120
+                    },
+                    {
+                      "title": "顯示成功訊息、待取餐、按鈕消失",
+                      "duration": 94
+                    },
+                    {
+                      "title": "整頁 reload 後仍為待取餐",
+                      "duration": 95
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:07.333Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-ready-READY-T02-在-UI-完成備餐後顯示待取餐且-reload-後仍保持/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-ready-READY-T02-在-UI-完成備餐後顯示待取餐且-reload-後仍保持/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20bbe558b28ec21191b2-98b3aa8e6f25c08787a8",
+          "file": "order-ready.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "READY-T05 更新回應尚未完成時所有備餐完成按鈕停用且不重複送出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "送出更新後，回應未完成",
+                      "duration": 90
+                    },
+                    {
+                      "title": "所有備餐完成按鈕停用，嘗試再點擊也不會再送出",
+                      "duration": 31
+                    },
+                    {
+                      "title": "回應完成後只有第一筆被更新，且只送出一次",
+                      "duration": 34
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:08.423Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-ready-READY-T05-更新回應尚未完成時所有備餐完成按鈕停用且不重複送出/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-ready-READY-T05-更新回應尚未完成時所有備餐完成按鈕停用且不重複送出/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20bbe558b28ec21191b2-e3056ead8068ca654fcf",
+          "file": "order-ready.spec.ts",
+          "line": 43,
+          "column": 5
+        },
+        {
+          "title": "READY-T06 更新 API 失敗（HTTP 500 或 status:failed）時顯示失敗且不樂觀更新",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "更新 API 回應 HTTP 500",
+                      "duration": 163
+                    },
+                    {
+                      "title": "更新 API 回應 HTTP 200 且 body status:failed",
+                      "duration": 71
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:09.594Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-ready-READY-T06-更新-A-99d68-或-status-failed）時顯示失敗且不樂觀更新/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-ready-READY-T06-更新-A-99d68-或-status-failed）時顯示失敗且不樂觀更新/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20bbe558b28ec21191b2-fa9050af8f5a0a136886",
+          "file": "order-ready.spec.ts",
+          "line": 85,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "order-search.spec.ts",
+      "file": "order-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FIND-T02 分別以 ID、姓名、地址片段搜尋，忽略大小寫與前後空白",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "搜尋 訂單 ID：「8」",
+                      "duration": 60
+                    },
+                    {
+                      "title": "搜尋 顧客姓名：「customerA FIND-T02」",
+                      "duration": 8
+                    },
+                    {
+                      "title": "搜尋 顧客姓名（轉大寫）：「CUSTOMERA FIND-T02」",
+                      "duration": 20
+                    },
+                    {
+                      "title": "搜尋 地址片段（小寫）：「harbor lane」",
+                      "duration": 6
+                    },
+                    {
+                      "title": "搜尋 地址片段（大小寫混合）：「hARBOR lANe」",
+                      "duration": 7
+                    },
+                    {
+                      "title": "搜尋 地址片段（前後空白）：「   Harbor Lane   」",
+                      "duration": 5
+                    },
+                    {
+                      "title": "搜尋 ID（前後空白）：「  8  」",
+                      "duration": 5
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:10.648Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T02-分別以-ID、姓名、地址片段搜尋，忽略大小寫與前後空白/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T02-分別以-ID、姓名、地址片段搜尋，忽略大小寫與前後空白/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-976e5fa75fc9407d0330",
+          "file": "order-search.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "FIND-T03 搜尋顧客後選「待取餐」只顯示同時匹配的列",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1032,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "搜尋同時匹配兩筆訂單的字串（尚未篩選狀態）",
+                      "duration": 53
+                    },
+                    {
+                      "title": "選「待取餐」：僅留下同時匹配搜尋與 Ready 的列",
+                      "duration": 44
+                    },
+                    {
+                      "title": "改搜尋備餐中訂單的顧客並維持「待取餐」：只顯示同時匹配者",
+                      "duration": 29
+                    },
+                    {
+                      "title": "搜尋待取餐訂單的顧客並維持「待取餐」：顯示該筆",
+                      "duration": 6
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:11.724Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T03-搜尋顧客後選「待取餐」只顯示同時匹配的列/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T03-搜尋顧客後選「待取餐」只顯示同時匹配的列/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-619fab90ed815de9d934",
+          "file": "order-search.spec.ts",
+          "line": 48,
+          "column": 5
+        },
+        {
+          "title": "FIND-T04 改搜尋條件時頁尾筆數更新，頁籤維持各狀態總數",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "未搜尋時頁籤與頁尾皆為總數",
+                      "duration": 67
+                    },
+                    {
+                      "title": "改搜尋「只匹配第一筆的地址」",
+                      "duration": 17
+                    },
+                    {
+                      "title": "改搜尋「匹配兩筆的共同字串」",
+                      "duration": 12
+                    },
+                    {
+                      "title": "改搜尋「只匹配第二筆的地址」",
+                      "duration": 13
+                    },
+                    {
+                      "title": "改搜尋「不存在的字串」",
+                      "duration": 15
+                    },
+                    {
+                      "title": "確認兩筆訂單狀態不同，頁籤統計有意義",
+                      "duration": 0
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:12.808Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T04-改搜尋條件時頁尾筆數更新，頁籤維持各狀態總數/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T04-改搜尋條件時頁尾筆數更新，頁籤維持各狀態總數/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-3362a2c51e9e6ca5e85d",
+          "file": "order-search.spec.ts",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "FIND-T05 搜尋不存在的字串顯示無符合結果訊息",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:49:13.876Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T05-搜尋不存在的字串顯示無符合結果訊息/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T05-搜尋不存在的字串顯示無符合結果訊息/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-522546fd85c65b2bb831",
+          "file": "order-search.spec.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "title": "FIND-T06 沒有訂單的餐廳顯示尚無訂單而非搜尋無結果",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 570,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:49:14.871Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T06-沒有訂單的餐廳顯示尚無訂單而非搜尋無結果/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T06-沒有訂單的餐廳顯示尚無訂單而非搜尋無結果/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-08bfdf4b9320dae9a606",
+          "file": "order-search.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "FIND-T07 首次回應延遲顯示載入中，失敗顯示錯誤而非空狀態",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 750,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "首次回應延遲：顯示載入中，不顯示任何空狀態",
+                      "duration": 318
+                    },
+                    {
+                      "title": "首次回應失敗：顯示錯誤，不顯示成功的空狀態",
+                      "duration": 144
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:15.487Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T07-首次回應延遲顯示載入中，失敗顯示錯誤而非空狀態/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T07-首次回應延遲顯示載入中，失敗顯示錯誤而非空狀態/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-1c91a4148fbf3fc1e1d1",
+          "file": "order-search.spec.ts",
+          "line": 168,
+          "column": 5
+        },
+        {
+          "title": "FIND-T08 固定篩選後重新整理發出新請求並依原條件顯示新資料",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "固定搜尋與「待取餐」篩選：目前只有第二筆",
+                      "duration": 95
+                    },
+                    {
+                      "title": "資料在伺服器端變更（第一筆備餐完成）後按重新整理",
+                      "duration": 84
+                    },
+                    {
+                      "title": "回應完成後依原條件顯示新資料",
+                      "duration": 34
+                    }
+                  ],
+                  "startTime": "2026-11-03T15:49:16.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T08-固定篩選後重新整理發出新請求並依原條件顯示新資料/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/baseline-w1-r3/test-results/order-search-FIND-T08-固定篩選後重新整理發出新請求並依原條件顯示新資料/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea8aad640cda411a9572-f77aacdf7f85cf4cf63c",
+          "file": "order-search.spec.ts",
+          "line": 210,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T15:48:43.771Z",
+    "duration": 33789.685,
+    "expected": 26,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

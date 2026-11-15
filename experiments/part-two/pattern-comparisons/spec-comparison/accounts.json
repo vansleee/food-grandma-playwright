@@ -1,0 +1,114 @@
+{
+  "FACTORY-T01": {
+    "restaurantA": "pattern-factory-t01-restauranta",
+    "restaurantB": "pattern-factory-t01-restaurantb",
+    "customerA": "pattern-factory-t01-customera",
+    "customerB": "pattern-factory-t01-customerb",
+    "driverA": "pattern-factory-t01-drivera",
+    "driverB": "pattern-factory-t01-driverb"
+  },
+  "FACTORY-T02": {
+    "restaurantA": "pattern-factory-t02-restauranta",
+    "restaurantB": "pattern-factory-t02-restaurantb",
+    "customerA": "pattern-factory-t02-customera",
+    "customerB": "pattern-factory-t02-customerb",
+    "driverA": "pattern-factory-t02-drivera",
+    "driverB": "pattern-factory-t02-driverb"
+  },
+  "FLOW-T01": {
+    "restaurantA": "pattern-flow-t01-restauranta",
+    "restaurantB": "pattern-flow-t01-restaurantb",
+    "customerA": "pattern-flow-t01-customera",
+    "customerB": "pattern-flow-t01-customerb",
+    "driverA": "pattern-flow-t01-drivera",
+    "driverB": "pattern-flow-t01-driverb"
+  },
+  "FLOW-T02": {
+    "restaurantA": "pattern-flow-t02-restauranta",
+    "restaurantB": "pattern-flow-t02-restaurantb",
+    "customerA": "pattern-flow-t02-customera",
+    "customerB": "pattern-flow-t02-customerb",
+    "driverA": "pattern-flow-t02-drivera",
+    "driverB": "pattern-flow-t02-driverb"
+  },
+  "SCREEN-T01": {
+    "restaurantA": "pattern-screen-t01-restauranta",
+    "restaurantB": "pattern-screen-t01-restaurantb",
+    "customerA": "pattern-screen-t01-customera",
+    "customerB": "pattern-screen-t01-customerb",
+    "driverA": "pattern-screen-t01-drivera",
+    "driverB": "pattern-screen-t01-driverb"
+  },
+  "SCREEN-T02": {
+    "restaurantA": "pattern-screen-t02-restauranta",
+    "restaurantB": "pattern-screen-t02-restaurantb",
+    "customerA": "pattern-screen-t02-customera",
+    "customerB": "pattern-screen-t02-customerb",
+    "driverA": "pattern-screen-t02-drivera",
+    "driverB": "pattern-screen-t02-driverb"
+  },
+  "ADAPT-T01": {
+    "restaurantA": "pattern-adapt-t01-restauranta",
+    "restaurantB": "pattern-adapt-t01-restaurantb",
+    "customerA": "pattern-adapt-t01-customera",
+    "customerB": "pattern-adapt-t01-customerb",
+    "driverA": "pattern-adapt-t01-drivera",
+    "driverB": "pattern-adapt-t01-driverb"
+  },
+  "ADAPT-T02": {
+    "restaurantA": "pattern-adapt-t02-restauranta",
+    "restaurantB": "pattern-adapt-t02-restaurantb",
+    "customerA": "pattern-adapt-t02-customera",
+    "customerB": "pattern-adapt-t02-customerb",
+    "driverA": "pattern-adapt-t02-drivera",
+    "driverB": "pattern-adapt-t02-driverb"
+  },
+  "REPO-T01": {
+    "restaurantA": "pattern-repo-t01-restauranta",
+    "restaurantB": "pattern-repo-t01-restaurantb",
+    "customerA": "pattern-repo-t01-customera",
+    "customerB": "pattern-repo-t01-customerb",
+    "driverA": "pattern-repo-t01-drivera",
+    "driverB": "pattern-repo-t01-driverb"
+  },
+  "REPO-T02": {
+    "restaurantA": "pattern-repo-t02-restauranta",
+    "restaurantB": "pattern-repo-t02-restaurantb",
+    "customerA": "pattern-repo-t02-customera",
+    "customerB": "pattern-repo-t02-customerb",
+    "driverA": "pattern-repo-t02-drivera",
+    "driverB": "pattern-repo-t02-driverb"
+  },
+  "RCON-T01": {
+    "restaurantA": "pattern-rcon-t01-restauranta",
+    "restaurantB": "pattern-rcon-t01-restaurantb",
+    "customerA": "pattern-rcon-t01-customera",
+    "customerB": "pattern-rcon-t01-customerb",
+    "driverA": "pattern-rcon-t01-drivera",
+    "driverB": "pattern-rcon-t01-driverb"
+  },
+  "RCON-T02": {
+    "restaurantA": "pattern-rcon-t02-restauranta",
+    "restaurantB": "pattern-rcon-t02-restaurantb",
+    "customerA": "pattern-rcon-t02-customera",
+    "customerB": "pattern-rcon-t02-customerb",
+    "driverA": "pattern-rcon-t02-drivera",
+    "driverB": "pattern-rcon-t02-driverb"
+  },
+  "RCON-T03": {
+    "restaurantA": "pattern-rcon-t03-restauranta",
+    "restaurantB": "pattern-rcon-t03-restaurantb",
+    "customerA": "pattern-rcon-t03-customera",
+    "customerB": "pattern-rcon-t03-customerb",
+    "driverA": "pattern-rcon-t03-drivera",
+    "driverB": "pattern-rcon-t03-driverb"
+  },
+  "RCON-T04": {
+    "restaurantA": "pattern-rcon-t04-restauranta",
+    "restaurantB": "pattern-rcon-t04-restaurantb",
+    "customerA": "pattern-rcon-t04-customera",
+    "customerB": "pattern-rcon-t04-customerb",
+    "driverA": "pattern-rcon-t04-drivera",
+    "driverB": "pattern-rcon-t04-driverb"
+  }
+}

@@ -1,0 +1,237 @@
+[
+  {
+    "method": "GET",
+    "url": "https://www.openstreetmap.org/export/embed.html?bbox=121.5504%2C25.023%2C121.5804%2C25.043000000000003&layer=mapnik",
+    "status": -1
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/@vite/client",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/main.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/@react-refresh",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/node_modules/vite/dist/client/env.mjs",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/App.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/styles.css",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/CartContext.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/components/layout/AppLayout.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/RoleSelect.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/customer/Restaurants.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/customer/Meals.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/customer/Cart.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/customer/Checkout.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/customer/Delivery.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/driver/Orders.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/driver/Delivery.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/pages/driver/Earnings.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/components/layout/Brand.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/components/layout/Navigation.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/config/brand.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/api.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/components/storefront/StorefrontHero.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/components/storefront/RestaurantCard.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/components/DeliveryMap.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/services/http.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/services/session.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/src/services/demo.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/@vite/client",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/main.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/@react-refresh",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/node_modules/vite/dist/client/env.mjs",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/App.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/App.css",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/components/Layout.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/pages/Account.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/pages/MealForm.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/pages/Meals.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/pages/Orders.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/pages/SignIn.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/pages/SignUp.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/components/Brand.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/api.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/auth.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/components/PageHeader.tsx",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/hooks/useResource.ts",
+    "status": 304
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/management/src/components/OrderStatus.tsx",
+    "status": 304
+  }
+]

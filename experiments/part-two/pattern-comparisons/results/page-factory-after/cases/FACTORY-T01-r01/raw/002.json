@@ -1,0 +1,61 @@
+{
+  "kind": "api",
+  "method": "GET",
+  "url": "http://127.0.0.1:18081/api/restaurant/me/",
+  "request_headers": [
+    {
+      "name": "user-agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "accept",
+      "value": "*/*"
+    },
+    {
+      "name": "accept-encoding",
+      "value": "gzip,deflate,br"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 16:11:52 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    },
+    {
+      "name": "content-length",
+      "value": "317"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    }
+  ],
+  "ms": 2.7490000000000236,
+  "started": "2026-11-03T16:11:53.418Z",
+  "request": null,
+  "response": {
+    "restaurant": {
+      "id": 1,
+      "name": "FACTORY-T01 restaurantA 示範餐廳",
+      "phone": "DEMO-PHONE",
+      "address": "FACTORY-T01 restaurantA 示範路 1 號",
+      "logo": ""
+    },
+    "user": {
+      "username": "pattern-factory-t01-restauranta",
+      "first_name": "restaurantA",
+      "last_name": "FACTORY-T01",
+      "email": "pattern-factory-t01-restauranta@example.invalid"
+    }
+  },
+  "n": 2
+}

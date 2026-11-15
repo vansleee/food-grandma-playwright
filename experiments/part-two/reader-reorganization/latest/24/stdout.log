@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:64514) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch24/meal-price.spec.ts:5:5 › CH24-T01 等到表單原有資料出現後才修改價格 (967ms)
+
+  1 passed (1.4s)

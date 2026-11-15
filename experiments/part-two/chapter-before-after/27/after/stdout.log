@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:68988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch27/meal-price.spec.ts:12:7 › 改寫後 › CH27-T01 每個測試由 Fixture 準備自己的餐點 (949ms)
+
+  1 passed (1.3s)

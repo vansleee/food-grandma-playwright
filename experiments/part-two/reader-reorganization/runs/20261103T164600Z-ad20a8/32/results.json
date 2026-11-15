@@ -1,0 +1,332 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch32",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch32",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-price.spec.ts",
+      "file": "meal-price.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CH32-T01 以真實 Repository 準備資料後從網頁更新原餐點",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1001,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:30.724Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-editor-before-change.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-CH32-T01-以真實-Repository-準備資料後從網頁更新原餐點/attachments/01-editor-before-change-png-0e8a7014b8bf523ff37121bf289175d80ad04742.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-CH32-T01-以真實-Repository-準備資料後從網頁更新原餐點/attachments/02-list-after-save-png-95b987eec7e11f250064850ccc04459230140592.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-CH32-T01-以真實-Repository-準備資料後從網頁更新原餐點/attachments/03-reopened-png-c5a8c0df05c85de26c3628e12ce8a229b44e182b.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzMi1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDMyLVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzItVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gzMi1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzMi1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMzItVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzMi1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-CH32-T01-以真實-Repository-準備資料後從網頁更新原餐點/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-CH32-T01-以真實-Repository-準備資料後從網頁更新原餐點/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3e8b09834d30066a79b4-3813341d6474a548ed02",
+          "file": "meal-price.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ],
+      "suites": [
+        {
+          "title": "API",
+          "file": "meal-price.spec.ts",
+          "line": 28,
+          "column": 18,
+          "specs": [
+            {
+              "title": "CH32-T02 建立資料後能依回傳編號查到原餐點",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 201,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T16:46:31.886Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-API-CH32-T02-建立資料後能依回傳編號查到原餐點/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-2f9e1551e41b219e27f1",
+              "file": "meal-price.spec.ts",
+              "line": 30,
+              "column": 19
+            },
+            {
+              "title": "CH32-T03 更新原餐點而不新增資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 209,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T16:46:32.094Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-API-CH32-T03-更新原餐點而不新增資料/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-f5ad76c09877f03b80ce",
+              "file": "meal-price.spec.ts",
+              "line": 36,
+              "column": 19
+            }
+          ]
+        },
+        {
+          "title": "Fake",
+          "file": "meal-price.spec.ts",
+          "line": 28,
+          "column": 18,
+          "specs": [
+            {
+              "title": "CH32-T02 建立資料後能依回傳編號查到原餐點",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T16:46:32.311Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-Fake-CH32-T02-建立資料後能依回傳編號查到原餐點/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-62c2c2edcdc08a1c600c",
+              "file": "meal-price.spec.ts",
+              "line": 30,
+              "column": 19
+            },
+            {
+              "title": "CH32-T03 更新原餐點而不新增資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T16:46:32.329Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/32/artifacts/meal-price-Fake-CH32-T03-更新原餐點而不新增資料/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-c5dd486d445f04013390",
+              "file": "meal-price.spec.ts",
+              "line": 36,
+              "column": 19
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:46:30.428Z",
+    "duration": 1955.6479999999997,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

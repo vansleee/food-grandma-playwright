@@ -1,0 +1,26 @@
+{
+  "case": "RCON-T01",
+  "repeat": 1,
+  "title": "RCON-T01 共用資料準備程式建立餐點後，可以依原編號查詢",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 246,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "implementation": "api",
+    "original": {
+      "id": 1,
+      "name": "Contract meal",
+      "short_description": "Original description",
+      "image": "",
+      "price": 100
+    },
+    "idsBefore": [
+      1
+    ]
+  },
+  "api_requests": 5,
+  "browser_api_requests": 0,
+  "non_2xx": []
+}

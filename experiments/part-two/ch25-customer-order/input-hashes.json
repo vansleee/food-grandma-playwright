@@ -1,0 +1,12 @@
+{
+  "tests/e2e/chapters/ch25/customer-order.spec.ts": "ae4f70f6c1b0890e13c093a25a00154108c8f24b58fe8701d6508294b0d7cf4d",
+  "tests/e2e/chapters/playwright.config.ts": "76d41768210ca569208c80ebca1ff3373dbf502e0e71e0c575995254bd5bedae",
+  "tests/e2e/chapters/chapters.json": "8ef005b332887b862fef9920d90fcf21bb83c64cb8c7ef21cc75603ad7e0e1bf",
+  "tests/e2e/chapters/support/api.ts": "425fea1203b5973b7790ec5a40a9bb73b428eddd7cb23d79db3510e95a35fe56",
+  "tests/e2e/chapters/support/base-fixtures.ts": "6b08e73f4b8a6fb817831eefac3215cb2eb52dce5a88edb3d71e4a376da18fe1",
+  "tests/e2e/chapters/support/test.ts": "b71d8f369026fd3bd247feb0b99179d583377edf5ac53523c91150c1661f8444",
+  "tests/e2e/chapters/scripts/run_chapter.py": "fdf9cc10e0381f1f1386487bffce1369d7cd61248e91b45eb551ec01cc276505",
+  "tests/e2e/chapters/scripts/run-chapter.mjs": "ed50c08efcb0b1505765e925eddd84e7fae1427e8b4836eb458fb740c13850ba",
+  "tests/e2e/chapters/data/accounts.json": "d63b1aecee77d85ac11c65ee417065044fec28c885608eee1f75a78af65292c5",
+  "tests/e2e/chapters/data/seed_accounts.py": "a0b70e390d0dac5d07e61357bf33b552060e21bf8e57fbfc1e5b8c0767eac550"
+}

@@ -1,0 +1,2 @@
+{"type": "resource-snapshot", "snapshot": {"_monotonicTime": 1711.137, "time": -1, "timings": {"send": -1, "wait": -1, "receive": -1}, "request": {"method": "GET", "url": "http://127.0.0.1:18082/api/restaurant/meals/1"}, "response": {"status": -1}}}
+{"type": "resource-snapshot", "snapshot": {"_monotonicTime": 1711.266, "time": -1, "timings": {"send": -1, "wait": -1, "receive": -1}, "request": {"method": "GET", "url": "http://127.0.0.1:18082/api/restaurant/meals/1"}, "response": {"status": -1}}}

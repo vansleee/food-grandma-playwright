@@ -1,0 +1,15 @@
+{
+  "restaurant": {
+    "id": 11,
+    "name": "CH25-T01 restaurantA 示範餐廳",
+    "phone": "DEMO-PHONE",
+    "address": "CH25-T01 restaurantA 示範路 1 號",
+    "logo": ""
+  },
+  "user": {
+    "username": "reader-ch25-t01-restauranta",
+    "first_name": "restaurantA",
+    "last_name": "CH25-T01",
+    "email": "reader-ch25-t01-restauranta@example.invalid"
+  }
+}

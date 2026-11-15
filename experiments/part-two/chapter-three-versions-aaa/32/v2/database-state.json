@@ -1,0 +1,29 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "name": "CH32-T01 meal 1",
+      "short_description": "CH32-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch32-t01-restauranta"
+    },
+    {
+      "id": 2,
+      "name": "Repository meal",
+      "short_description": "Original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch32-t02-restauranta"
+    },
+    {
+      "id": 3,
+      "name": "Price contract",
+      "short_description": "",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch32-t03-restauranta"
+    }
+  ],
+  "orders": []
+}

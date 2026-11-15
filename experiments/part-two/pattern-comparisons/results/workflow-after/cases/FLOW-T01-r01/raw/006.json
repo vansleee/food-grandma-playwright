@@ -1,0 +1,95 @@
+{
+  "kind": "browser",
+  "method": "GET",
+  "url": "http://127.0.0.1:18082/api/test/config",
+  "request_headers": [
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Host",
+      "value": "127.0.0.1:18082"
+    },
+    {
+      "name": "Referer",
+      "value": "http://127.0.0.1:18082/management/sign-in"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "sec-ch-ua",
+      "value": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+    },
+    {
+      "name": "sec-ch-ua-mobile",
+      "value": "?0"
+    },
+    {
+      "name": "sec-ch-ua-platform",
+      "value": "\"Windows\""
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "Vary",
+      "value": "Origin"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "content-length",
+      "value": "59"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    },
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 16:11:59 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    }
+  ],
+  "ms": 3.705,
+  "started": "2026-11-03T16:11:59.882Z",
+  "request": null,
+  "response": {
+    "enabled": false,
+    "admin_required": true,
+    "public_demo": false
+  },
+  "n": 6
+}

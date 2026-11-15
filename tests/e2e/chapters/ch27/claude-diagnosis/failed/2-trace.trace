@@ -1,0 +1,19 @@
+{"type": "before", "callId": "call@40", "startTime": 1668.078, "class": "Frame", "method": "click", "params": {"selector": "[data-testid=\"meal-row\"][data-meal-id=\"1\"] >> internal:testid=[data-testid=\"meal-edit-link\"s]", "strict": true}, "stepId": "pw:api@58"}
+{"type": "log", "callId": "call@40", "time": 1668.567, "message": "waiting for locator('[data-testid=\"meal-row\"][data-meal-id=\"1\"]').getByTestId('meal-edit-link')"}
+{"type": "log", "callId": "call@40", "time": 1669.594, "message": "  locator resolved to <a class=\"meal-name\" data-testid=\"meal-edit-link\" href=\"/management/meals/1/edit\">…</a>"}
+{"type": "log", "callId": "call@40", "time": 1670.031, "message": "attempting click action"}
+{"type": "log", "callId": "call@40", "time": 1670.167, "message": "  waiting for element to be visible, enabled and stable"}
+{"type": "log", "callId": "call@40", "time": 1688.531, "message": "  element is visible, enabled and stable"}
+{"type": "log", "callId": "call@40", "time": 1688.535, "message": "  scrolling into view if needed"}
+{"type": "log", "callId": "call@40", "time": 1689.234, "message": "  done scrolling"}
+{"type": "log", "callId": "call@40", "time": 1693.069, "message": "  performing click action"}
+{"type": "log", "callId": "call@40", "time": 1728.358, "message": "  click action done"}
+{"type": "log", "callId": "call@40", "time": 1728.363, "message": "  waiting for scheduled navigations to finish"}
+{"type": "log", "callId": "call@40", "time": 1728.836, "message": "  navigations have finished"}
+{"type": "after", "callId": "call@40", "endTime": 1728.867}
+{"type": "before", "callId": "call@42", "startTime": 1729.664, "class": "Frame", "method": "waitForTimeout", "params": {"waitTimeout": 200}, "stepId": "pw:api@59"}
+{"type": "after", "callId": "call@42", "endTime": 1931.76}
+{"type": "before", "callId": "call@44", "startTime": 1933.817, "class": "Frame", "method": "inputValue", "params": {"selector": "internal:testid=[data-testid=\"meal-name\"s]", "strict": true}, "stepId": "pw:api@60"}
+{"type": "log", "callId": "call@44", "time": 1934.736, "message": "waiting for getByTestId('meal-name')"}
+{"type": "log", "callId": "call@44", "time": 1935.947, "message": "  locator resolved to <input value=\"\" id=\"name\" required=\"\" data-testid=\"meal-name\"/>"}
+{"type": "after", "callId": "call@44", "endTime": 1935.968, "result": {"value": ""}}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "./tests/e2e/chapters/node_modules/playwright/cli.js",
+    "test",
+    "--config",
+    "playwright.config.ts",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "cwd": "./tests/e2e/v1",
+  "target": "v1",
+  "database": "./work/reader-project-reorganization-20261104/runs/20261103T164819Z-8dff55/v1.db",
+  "password_source": "TEST_PASSWORD",
+  "source_instrumented": false
+}

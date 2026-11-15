@@ -1,0 +1,819 @@
+{
+  "versions": {
+    "v1": {
+      "metrics": {
+        "ts_files": 10,
+        "test_files": 6,
+        "helper_files": 4,
+        "total_lines": 1531,
+        "test_lines": 1011,
+        "helper_lines": 520,
+        "line_count_includes_comments_and_blank_lines": true
+      },
+      "stats": {
+        "startTime": "2026-11-02T18:32:42.600Z",
+        "duration": 33751.835,
+        "expected": 26,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "id": "ACCOUNT-T01",
+          "title": "ACCOUNT-T01 設定頁載入目前餐廳與聯絡人資料",
+          "file": "account.spec.ts",
+          "line": 19,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T02",
+          "title": "ACCOUNT-T02 修改電話與地址並保存，reload 後新值存在且其他欄位保持",
+          "file": "account.spec.ts",
+          "line": 36,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T03",
+          "title": "ACCOUNT-T03 清空必填欄位或輸入錯誤 email 時原生驗證不通過且不送出",
+          "file": "account.spec.ts",
+          "line": 76,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T04",
+          "title": "ACCOUNT-T04 保存回應未完成時停用按鈕，之後 500 顯示錯誤並保留輸入",
+          "file": "account.spec.ts",
+          "line": 115,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T05",
+          "title": "ACCOUNT-T05 初次載入設定失敗時顯示無法載入訊息",
+          "file": "account.spec.ts",
+          "line": 153,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "AUTH-T01",
+          "title": "AUTH-T01 店家使用有效帳密登入後導向訂單管理",
+          "file": "auth.spec.ts",
+          "line": 5,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "AUTH-T02",
+          "title": "AUTH-T02 沒有 token 直接開啟訂單頁會導向登入頁",
+          "file": "auth.spec.ts",
+          "line": 26,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "AUTH-T03",
+          "title": "AUTH-T03 登出後清除 token 並導向登入頁",
+          "file": "auth.spec.ts",
+          "line": 38,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ROLE-T01",
+          "title": "ROLE-T01 外送員接取未指派的待取餐訂單後進入進行中配送",
+          "file": "driver-claim.spec.ts",
+          "line": 6,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ROLE-T02",
+          "title": "ROLE-T02 外送員已有進行中配送時接單被拒",
+          "file": "driver-claim.spec.ts",
+          "line": 42,
+          "outcomes": [
+            "unexpected"
+          ]
+        },
+        {
+          "id": "MEAL-T01",
+          "title": "MEAL-T01 新增餐點後回到列表，重新整理仍存在",
+          "file": "meals.spec.ts",
+          "line": 17,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T02",
+          "title": "MEAL-T02 編輯既有餐點價格為 150，更新同一個 ID 不新增",
+          "file": "meals.spec.ts",
+          "line": 61,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T03",
+          "title": "MEAL-T03 名稱留空、價格負數或小數時瀏覽器驗證不通過且不送出",
+          "file": "meals.spec.ts",
+          "line": 102,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T04",
+          "title": "MEAL-T04 價格為 0 的餐點可以儲存且 API 回讀仍為 0",
+          "file": "meals.spec.ts",
+          "line": 157,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T05",
+          "title": "MEAL-T05 依名稱或描述搜尋且不分大小寫，無符合時顯示提示",
+          "file": "meals.spec.ts",
+          "line": 176,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T06",
+          "title": "MEAL-T06 儲存請求延遲後回傳 500：停用按鈕、保留輸入並可再次送出",
+          "file": "meals.spec.ts",
+          "line": 216,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T08",
+          "title": "MEAL-T08 編輯頁載入餐點失敗時顯示提示而非正常空白表單",
+          "file": "meals.spec.ts",
+          "line": 273,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "READY-T02",
+          "title": "READY-T02 在 UI 完成備餐後顯示待取餐且 reload 後仍保持",
+          "file": "order-ready.spec.ts",
+          "line": 15,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "READY-T05",
+          "title": "READY-T05 更新回應尚未完成時所有備餐完成按鈕停用且不重複送出",
+          "file": "order-ready.spec.ts",
+          "line": 43,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "READY-T06",
+          "title": "READY-T06 更新 API 失敗（HTTP 500 或 status:failed）時顯示失敗且不樂觀更新",
+          "file": "order-ready.spec.ts",
+          "line": 85,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T02",
+          "title": "FIND-T02 分別以 ID、姓名、地址片段搜尋，忽略大小寫與前後空白",
+          "file": "order-search.spec.ts",
+          "line": 17,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T03",
+          "title": "FIND-T03 搜尋顧客後選「待取餐」只顯示同時匹配的列",
+          "file": "order-search.spec.ts",
+          "line": 48,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T04",
+          "title": "FIND-T04 改搜尋條件時頁尾筆數更新，頁籤維持各狀態總數",
+          "file": "order-search.spec.ts",
+          "line": 89,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T05",
+          "title": "FIND-T05 搜尋不存在的字串顯示無符合結果訊息",
+          "file": "order-search.spec.ts",
+          "line": 138,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T06",
+          "title": "FIND-T06 沒有訂單的餐廳顯示尚無訂單而非搜尋無結果",
+          "file": "order-search.spec.ts",
+          "line": 154,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T07",
+          "title": "FIND-T07 首次回應延遲顯示載入中，失敗顯示錯誤而非空狀態",
+          "file": "order-search.spec.ts",
+          "line": 168,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T08",
+          "title": "FIND-T08 固定篩選後重新整理發出新請求並依原條件顯示新資料",
+          "file": "order-search.spec.ts",
+          "line": 210,
+          "outcomes": [
+            "expected"
+          ]
+        }
+      ],
+      "typecheck_exit_code": 0,
+      "session": {
+        "session_id": "d84cdb8c-41a4-48b0-809b-71393294c2b9",
+        "fresh_session": true,
+        "model": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 34,
+            "outputTokens": 45574,
+            "cacheReadInputTokens": 1185898,
+            "cacheCreationInputTokens": 122895,
+            "webSearchRequests": 0,
+            "costUSD": 1.0659778,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 12862,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 122895,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "specs_read": [
+          "./specs/01-restaurant-auth-all.md",
+          "./specs/01-restaurant-auth.md",
+          "./specs/02-order-search-filter.md",
+          "./specs/03-order-mark-ready.md",
+          "./specs/04-meal-management.md",
+          "./specs/05-restaurant-account.md",
+          "./specs/README.md"
+        ],
+        "chapters_read": [],
+        "cross_version_access_requested": [],
+        "out_of_scope_writes": [],
+        "read_paths": [
+          "./food-grandma-fastapi/app/auth.py",
+          "./food-grandma-fastapi/app/main.py",
+          "./food-grandma-fastapi/app/routers/customer.py",
+          "./food-grandma-fastapi/app/routers/driver.py",
+          "./food-grandma-fastapi/app/routers/restaurant.py",
+          "./food-grandma-fastapi/app/routers/social_auth.py",
+          "./food-grandma-fastapi/app/schemas.py",
+          "./food-grandma-fastapi/app/serializers.py",
+          "./food-grandma-management/src/App.tsx",
+          "./food-grandma-management/src/api.ts",
+          "./food-grandma-management/src/auth.ts",
+          "./food-grandma-management/src/components/Layout.tsx",
+          "./food-grandma-management/src/components/OrderStatus.tsx",
+          "./food-grandma-management/src/components/PageHeader.tsx",
+          "./food-grandma-management/src/hooks/useResource.ts",
+          "./food-grandma-management/src/pages/Account.tsx",
+          "./food-grandma-management/src/pages/MealForm.tsx",
+          "./food-grandma-management/src/pages/Meals.tsx",
+          "./food-grandma-management/src/pages/Orders.tsx",
+          "./food-grandma-management/src/pages/SignIn.tsx",
+          "./food-grandma-web/src/pages/driver/Delivery.tsx",
+          "./food-grandma-web/src/pages/driver/Orders.tsx",
+          "./food-grandma-web/src/services/http.ts",
+          "./specs/01-restaurant-auth-all.md",
+          "./specs/01-restaurant-auth.md",
+          "./specs/02-order-search-filter.md",
+          "./specs/03-order-mark-ready.md",
+          "./specs/04-meal-management.md",
+          "./specs/05-restaurant-account.md",
+          "./specs/README.md",
+          "./tests/e2e/spec-comparison/accounts.json",
+          "./tests/e2e/spec-comparison/cases.json",
+          "./tests/e2e/spec-comparison/cases.md",
+          "./tests/e2e/spec-comparison/environment.md",
+          "./tests/e2e/v1/package.json",
+          "./tests/e2e/v1/playwright.config.ts",
+          "./tests/e2e/v1/tsconfig.json"
+        ],
+        "write_paths": [
+          "./tests/e2e/v1/tests/account.spec.ts",
+          "./tests/e2e/v1/tests/auth.spec.ts",
+          "./tests/e2e/v1/tests/driver-claim.spec.ts",
+          "./tests/e2e/v1/tests/meals.spec.ts",
+          "./tests/e2e/v1/tests/order-ready.spec.ts",
+          "./tests/e2e/v1/tests/order-search.spec.ts",
+          "./tests/e2e/v1/tests/support/api.ts",
+          "./tests/e2e/v1/tests/support/env.ts",
+          "./tests/e2e/v1/tests/support/fixtures.ts",
+          "./tests/e2e/v1/tests/support/pages.ts"
+        ]
+      },
+      "source_hashes": {
+        "tests/account.spec.ts": "0da2ff18ab366081163afe8c064d6b1222e77023dcdde59469e4ca2c95639e11",
+        "tests/auth.spec.ts": "efb0547efd52d6f702efa885746fb23afcf0bb69202b821c2c08d0159d19ca2b",
+        "tests/driver-claim.spec.ts": "6cde71dbb0b215d06f4dd04d15f9d92cd4d41316858c751c93c74b34f53561f6",
+        "tests/meals.spec.ts": "bd3209d95bf84d2077bd489f8da7aad0de9725fa9c6ddb116015dbcbb2c6d240",
+        "tests/order-ready.spec.ts": "c0980962c14552666ab9002fb69ac90c9544bf38add350108dcd5e127fc57a51",
+        "tests/order-search.spec.ts": "4e5884495cb2242e43fd30ea3e2748dbfba3b3ea5bc0814740fb1d425d667df4",
+        "tests/support/api.ts": "425fea1203b5973b7790ec5a40a9bb73b428eddd7cb23d79db3510e95a35fe56",
+        "tests/support/env.ts": "5ae0b40a556168d0aeaba3311b01a8afbca8c0490540d14509eea461c4f5c1b8",
+        "tests/support/fixtures.ts": "6b08e73f4b8a6fb817831eefac3215cb2eb52dce5a88edb3d71e4a376da18fe1",
+        "tests/support/pages.ts": "5a1a605c0089f62c2b2035b64507d6ba8ccba9cbb145bac1d1e63cb4c3fa651c"
+      }
+    },
+    "v2": {
+      "metrics": {
+        "ts_files": 21,
+        "test_files": 6,
+        "helper_files": 15,
+        "total_lines": 1721,
+        "test_lines": 765,
+        "helper_lines": 956,
+        "line_count_includes_comments_and_blank_lines": true
+      },
+      "stats": {
+        "startTime": "2026-11-02T18:34:40.693Z",
+        "duration": 33170.468,
+        "expected": 26,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "id": "ACCOUNT-T01",
+          "title": "ACCOUNT-T01 開啟設定頁時欄位顯示目前的名字、email、餐廳名稱與地址",
+          "file": "specs/account.spec.ts",
+          "line": 13,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T02",
+          "title": "ACCOUNT-T02 修改電話與地址並保存，重新載入後新值存在且其他欄位不變",
+          "file": "specs/account.spec.ts",
+          "line": 27,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T03",
+          "title": "ACCOUNT-T03 清空必填欄位或輸入錯誤 email 時原生驗證不通過且沒有保存請求",
+          "file": "specs/account.spec.ts",
+          "line": 51,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T04",
+          "title": "ACCOUNT-T04 保存回應未完成時按鈕停用，之後 HTTP 500 顯示失敗、無成功提示、輸入保留",
+          "file": "specs/account.spec.ts",
+          "line": 81,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ACCOUNT-T05",
+          "title": "ACCOUNT-T05 初次載入設定失敗時顯示無法載入設定訊息",
+          "file": "specs/account.spec.ts",
+          "line": 116,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "AUTH-T01",
+          "title": "AUTH-T01 有效店家帳密登入後導向訂單管理",
+          "file": "specs/auth.spec.ts",
+          "line": 8,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "AUTH-T02",
+          "title": "AUTH-T02 沒有 token 直接開啟訂單頁會導向登入頁且不顯示受保護內容",
+          "file": "specs/auth.spec.ts",
+          "line": 23,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "AUTH-T03",
+          "title": "AUTH-T03 登出後前端清除 token，重新開啟受保護頁面導向登入頁",
+          "file": "specs/auth.spec.ts",
+          "line": 35,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ROLE-T01",
+          "title": "ROLE-T01 接取待取餐訂單後進入進行中配送",
+          "file": "specs/driver-claim.spec.ts",
+          "line": 11,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "ROLE-T02",
+          "title": "ROLE-T02 再接另一筆訂單被拒絕並留在可接訂單頁",
+          "file": "specs/driver-claim.spec.ts",
+          "line": 38,
+          "outcomes": [
+            "unexpected"
+          ]
+        },
+        {
+          "id": "MEAL-T01",
+          "title": "MEAL-T01 新增餐點（價格 120、圖片網址留空）後出現在列表，重新整理仍在",
+          "file": "specs/meals.spec.ts",
+          "line": 12,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T02",
+          "title": "MEAL-T02 編輯既有餐點價格為 150，同一個 ID 更新且不重複新增",
+          "file": "specs/meals.spec.ts",
+          "line": 43,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T03",
+          "title": "MEAL-T03 名稱留空、價格負數、價格小數時瀏覽器驗證不通過且不送出儲存請求",
+          "file": "specs/meals.spec.ts",
+          "line": 69,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T04",
+          "title": "MEAL-T04 新增價格為 0 的餐點可以儲存，API 重新查詢仍為 0",
+          "file": "specs/meals.spec.ts",
+          "line": 102,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T05",
+          "title": "MEAL-T05 依名稱或描述搜尋（不分大小寫），無符合時顯示無結果提示",
+          "file": "specs/meals.spec.ts",
+          "line": 119,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T06",
+          "title": "MEAL-T06 儲存延遲期間停用按鈕，HTTP 500 後留在表單保留輸入並可再次送出",
+          "file": "specs/meals.spec.ts",
+          "line": 159,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "MEAL-T08",
+          "title": "MEAL-T08 編輯頁餐點資料載入失敗時顯示載入失敗提示而非空白新增表單",
+          "file": "specs/meals.spec.ts",
+          "line": 200,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "READY-T02",
+          "title": "READY-T02 在 UI 完成備餐後顯示待取餐，重新載入仍為待取餐",
+          "file": "specs/order-ready.spec.ts",
+          "line": 14,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "READY-T05",
+          "title": "READY-T05 更新回應尚未完成時所有備餐完成按鈕停用且不重複送出",
+          "file": "specs/order-ready.spec.ts",
+          "line": 36,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "READY-T06",
+          "title": "READY-T06 更新失敗（HTTP 500 與 status:failed）顯示失敗且不樂觀改成待取餐",
+          "file": "specs/order-ready.spec.ts",
+          "line": 70,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T02",
+          "title": "FIND-T02 分別以 ID、姓名、地址片段搜尋（含大小寫與前後空白）",
+          "file": "specs/order-search.spec.ts",
+          "line": 16,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T03",
+          "title": "FIND-T03 搜尋顧客後選待取餐，只顯示同時符合顧客與待取餐的列",
+          "file": "specs/order-search.spec.ts",
+          "line": 52,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T04",
+          "title": "FIND-T04 改搜尋條件時頁尾筆數更新，頁籤維持未搜尋前的各狀態總數",
+          "file": "specs/order-search.spec.ts",
+          "line": 78,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T05",
+          "title": "FIND-T05 搜尋不存在的字串顯示無符合結果訊息",
+          "file": "specs/order-search.spec.ts",
+          "line": 107,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T06",
+          "title": "FIND-T06 沒有任何訂單的餐廳顯示尚無訂單而非搜尋無結果",
+          "file": "specs/order-search.spec.ts",
+          "line": 121,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T07",
+          "title": "FIND-T07 首次回應延遲顯示載入中，回應失敗顯示錯誤而非空狀態",
+          "file": "specs/order-search.spec.ts",
+          "line": 132,
+          "outcomes": [
+            "expected"
+          ]
+        },
+        {
+          "id": "FIND-T08",
+          "title": "FIND-T08 固定篩選後重新整理會發出新請求並依原條件顯示新資料",
+          "file": "specs/order-search.spec.ts",
+          "line": 165,
+          "outcomes": [
+            "expected"
+          ]
+        }
+      ],
+      "typecheck_exit_code": 0,
+      "session": {
+        "session_id": "75b3036e-5b82-410a-8187-9908047a1dc8",
+        "fresh_session": true,
+        "model": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 62,
+            "outputTokens": 98477,
+            "cacheReadInputTokens": 4367440,
+            "cacheCreationInputTokens": 229237,
+            "webSearchRequests": 0,
+            "costUSD": 2.3385860000000003,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 48058,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 229237,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "specs_read": [
+          "./specs/01-restaurant-auth-all.md",
+          "./specs/01-restaurant-auth.md",
+          "./specs/02-order-search-filter.md",
+          "./specs/03-order-mark-ready.md",
+          "./specs/04-meal-management.md",
+          "./specs/05-restaurant-account.md",
+          "./specs/README.md"
+        ],
+        "chapters_read": [
+          "../manuscript/content/chapter20.md",
+          "../manuscript/content/chapter21.md",
+          "../manuscript/content/chapter22.md",
+          "../manuscript/content/chapter23.md",
+          "../manuscript/content/chapter24.md",
+          "../manuscript/content/chapter25.md",
+          "../manuscript/content/chapter26.md",
+          "../manuscript/content/chapter27.md",
+          "../manuscript/content/chapter28.md",
+          "../manuscript/content/chapter29.md",
+          "../manuscript/content/chapter30.md",
+          "../manuscript/content/chapter31.md",
+          "../manuscript/content/chapter32.md",
+          "../manuscript/content/chapter33.md",
+          "../manuscript/content/chapter34.md",
+          "../manuscript/content/chapter35.md",
+          "../manuscript/content/chapter36.md"
+        ],
+        "cross_version_access_requested": [],
+        "out_of_scope_writes": [],
+        "read_paths": [
+          "../manuscript/content/chapter20.md",
+          "../manuscript/content/chapter21.md",
+          "../manuscript/content/chapter22.md",
+          "../manuscript/content/chapter23.md",
+          "../manuscript/content/chapter24.md",
+          "../manuscript/content/chapter25.md",
+          "../manuscript/content/chapter26.md",
+          "../manuscript/content/chapter27.md",
+          "../manuscript/content/chapter28.md",
+          "../manuscript/content/chapter29.md",
+          "../manuscript/content/chapter30.md",
+          "../manuscript/content/chapter31.md",
+          "../manuscript/content/chapter32.md",
+          "../manuscript/content/chapter33.md",
+          "../manuscript/content/chapter34.md",
+          "../manuscript/content/chapter35.md",
+          "../manuscript/content/chapter36.md",
+          "./food-grandma-fastapi/app/auth.py",
+          "./food-grandma-fastapi/app/demo_security.py",
+          "./food-grandma-fastapi/app/models.py",
+          "./food-grandma-fastapi/app/routers/customer.py",
+          "./food-grandma-fastapi/app/routers/driver.py",
+          "./food-grandma-fastapi/app/routers/restaurant.py",
+          "./food-grandma-fastapi/app/routers/social_auth.py",
+          "./food-grandma-fastapi/app/schemas.py",
+          "./food-grandma-fastapi/app/serializers.py",
+          "./food-grandma-management/src/App.tsx",
+          "./food-grandma-management/src/api.ts",
+          "./food-grandma-management/src/auth.ts",
+          "./food-grandma-management/src/components/Layout.tsx",
+          "./food-grandma-management/src/components/OrderStatus.tsx",
+          "./food-grandma-management/src/components/PageHeader.tsx",
+          "./food-grandma-management/src/hooks/useResource.ts",
+          "./food-grandma-management/src/pages/Account.tsx",
+          "./food-grandma-management/src/pages/MealForm.tsx",
+          "./food-grandma-management/src/pages/Meals.tsx",
+          "./food-grandma-management/src/pages/Orders.tsx",
+          "./food-grandma-management/src/pages/SignIn.tsx",
+          "./food-grandma-web/src/App.tsx",
+          "./food-grandma-web/src/api.ts",
+          "./food-grandma-web/src/components/layout/Navigation.tsx",
+          "./food-grandma-web/src/pages/RoleSelect.tsx",
+          "./food-grandma-web/src/pages/driver/Delivery.tsx",
+          "./food-grandma-web/src/pages/driver/Orders.tsx",
+          "./food-grandma-web/src/services/demo.ts",
+          "./food-grandma-web/src/services/http.ts",
+          "./food-grandma-web/src/services/session.ts",
+          "./specs/01-restaurant-auth-all.md",
+          "./specs/01-restaurant-auth.md",
+          "./specs/02-order-search-filter.md",
+          "./specs/03-order-mark-ready.md",
+          "./specs/04-meal-management.md",
+          "./specs/05-restaurant-account.md",
+          "./specs/README.md",
+          "./tests/e2e/spec-comparison/accounts.json",
+          "./tests/e2e/spec-comparison/cases.json",
+          "./tests/e2e/spec-comparison/cases.md",
+          "./tests/e2e/spec-comparison/environment.md",
+          "./tests/e2e/v2/package.json",
+          "./tests/e2e/v2/playwright.config.ts",
+          "./tests/e2e/v2/tsconfig.json"
+        ],
+        "write_paths": [
+          "./tests/e2e/v2/tests/design-notes.md",
+          "./tests/e2e/v2/tests/specs/account.spec.ts",
+          "./tests/e2e/v2/tests/specs/auth.spec.ts",
+          "./tests/e2e/v2/tests/specs/driver-claim.spec.ts",
+          "./tests/e2e/v2/tests/specs/meals.spec.ts",
+          "./tests/e2e/v2/tests/specs/order-ready.spec.ts",
+          "./tests/e2e/v2/tests/specs/order-search.spec.ts",
+          "./tests/e2e/v2/tests/support/api/repositories.ts",
+          "./tests/e2e/v2/tests/support/api/role-client.ts",
+          "./tests/e2e/v2/tests/support/api/stage.ts",
+          "./tests/e2e/v2/tests/support/assertions.ts",
+          "./tests/e2e/v2/tests/support/builders.ts",
+          "./tests/e2e/v2/tests/support/domain.ts",
+          "./tests/e2e/v2/tests/support/env.ts",
+          "./tests/e2e/v2/tests/support/fixtures.ts",
+          "./tests/e2e/v2/tests/support/network.ts",
+          "./tests/e2e/v2/tests/support/order-mother.ts",
+          "./tests/e2e/v2/tests/support/pages/account-page.ts",
+          "./tests/e2e/v2/tests/support/pages/driver-pages.ts",
+          "./tests/e2e/v2/tests/support/pages/management-shell.ts",
+          "./tests/e2e/v2/tests/support/pages/meals-pages.ts",
+          "./tests/e2e/v2/tests/support/pages/orders-page.ts"
+        ]
+      },
+      "source_hashes": {
+        "tests/specs/account.spec.ts": "183c0b4b9ac1d53937488c7c1298de38cafa876ed4bfaa584395d7a98c8d45c4",
+        "tests/specs/auth.spec.ts": "d479b0fa911aed09714aa1379fd3f11d307cf9853ed3fba1fd0bd208f710310d",
+        "tests/specs/driver-claim.spec.ts": "25074d1e7f13bb891cd712e15972469060070cf5745b896a832896e1c6590b85",
+        "tests/specs/meals.spec.ts": "0c25caba8e79b945d13e76fcc191b4fcc780fd64ed501cc91f697dbd8df7df30",
+        "tests/specs/order-ready.spec.ts": "0265f0bb9b570d55736b543a638b6136af92a597373f449a63ab5bc0490274b5",
+        "tests/specs/order-search.spec.ts": "b0342ad5160c9d032a1f853034145d8c8b5dafac1ff52ea1d035f02963eea027",
+        "tests/support/api/repositories.ts": "6d0748cc02748017d847c7c7ea6cde8a0eaa00980882da7f70f2f4fde771d21d",
+        "tests/support/api/role-client.ts": "5cda045c2138729a7351c747248fe4efa7ffcdb7accf3ac6c7ebf85c4228ff5a",
+        "tests/support/api/stage.ts": "209063b8858795e4f2c2fc41a1de27bd9e9ae1bc316db63426d11f539f017a2a",
+        "tests/support/assertions.ts": "0555e51101894e37528df15239e2dd3e781de3574484b78b738ea529414dc7df",
+        "tests/support/builders.ts": "a9519969ccd7d2d702c0ae33e4d5fe1acb1d111f409ef5eaa1e7aadeb7b7df7f",
+        "tests/support/domain.ts": "8aa431f8750b9eaac5273e9acef61886d3aec1fee4ee5025af3bb17e1d528df0",
+        "tests/support/env.ts": "02260d4d6bc595f390065cc42029fc7fd4ec5d424d90c418e9bc13567ac4ff8a",
+        "tests/support/fixtures.ts": "eff2bb73b08a9bb0a0ea1054c9b78db5052f2bb7315a0c5a31e156d195ca61b6",
+        "tests/support/network.ts": "9e7b67fb15b1b6ff7989d984501545e221963fc205cc4bae11181dffbc4336ad",
+        "tests/support/order-mother.ts": "bccf3e73eaad2bbf50eaece93a75775dc5a394fa410df6d0f3a84556720d8670",
+        "tests/support/pages/account-page.ts": "106fcfe798dec378b90640bb18eb76e872090fcb66ec8e64c9381b9ced96aa68",
+        "tests/support/pages/driver-pages.ts": "634be0e970620b205626442b7b79eaf751781e5c51fcadf954548ff15833cace",
+        "tests/support/pages/management-shell.ts": "9e86ca3b73a0f3111e55e6e0639d9a585a259b49dfa67c52ba8412482c646e73",
+        "tests/support/pages/meals-pages.ts": "2c1ab027a0b7ff9b34435e6b79ce741e25da2a04ac97d44effa0144fc95fc262",
+        "tests/support/pages/orders-page.ts": "318545069b2a2caf4f0164b55c7109b32ad5de6ecb68ec236b9c6809c1185c25"
+      }
+    }
+  },
+  "source_preservation": {
+    "changed_input_files": [],
+    "book": {
+      "head": "d515359d25e0e3f93731137dde55edc2db105b3a",
+      "diff_sha256": "2646e421ccd5c9391a68f83e04b9a252cf4a781dd5a5d86fc89ed420e3214b1a",
+      "status": "M content/chapter30.md",
+      "tracked_diff_unchanged": true
+    },
+    "companion": {
+      "head": "1a1e7a6f52e8e7c4aedbfb0562e228eb45b2049e",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "?? tests/e2e/spec-comparison/\n?? tests/e2e/v1/\n?? tests/e2e/v2/",
+      "tracked_diff_unchanged": true
+    }
+  },
+  "environment": {
+    "node": "v26.9.0",
+    "claude": "2.1.311 (Claude Code)",
+    "playwright": "Version 1.63.0",
+    "workers": 1,
+    "retries": 0,
+    "source_instrumented": false,
+    "database_seed_sha256": "aca9d30874e9cf51860c5f11bc141f4564e0dc51ea20a89a878c06de0930708f",
+    "web_base_url": "http://127.0.0.1:18082",
+    "api_base_url": "http://127.0.0.1:18081"
+  }
+}

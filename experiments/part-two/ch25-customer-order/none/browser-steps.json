@@ -1,0 +1,52 @@
+[
+  {
+    "method": "goto",
+    "params": {
+      "url": "/customer/restaurants"
+    }
+  },
+  {
+    "method": "fill",
+    "params": {
+      "selector": "internal:role=textbox[name=\"搜尋餐廳或地址\"i]",
+      "value": "CH25-T01 restaurantA 示範餐廳"
+    }
+  },
+  {
+    "method": "click",
+    "params": {
+      "selector": "internal:testid=[data-testid=\"restaurant-card\"s] >> internal:has=\"internal:role=heading[name=\\\"CH25-T01 restaurantA 示範餐廳\\\"s]\" >> internal:role=link"
+    }
+  },
+  {
+    "method": "click",
+    "params": {
+      "selector": "internal:testid=[data-testid=\"meal-card\"s] >> internal:has=\"internal:text=\\\"香煎雞腿便當\\\"s\" >> internal:testid=[data-testid=\"add-to-cart\"s]"
+    }
+  },
+  {
+    "method": "click",
+    "params": {
+      "selector": "internal:testid=[data-testid=\"view-cart\"s]"
+    }
+  },
+  {
+    "method": "click",
+    "params": {
+      "selector": "internal:testid=[data-testid=\"go-to-checkout\"s]"
+    }
+  },
+  {
+    "method": "fill",
+    "params": {
+      "selector": "internal:testid=[data-testid=\"checkout-address\"s]",
+      "value": "CH25-T01 測試用配送地址"
+    }
+  },
+  {
+    "method": "click",
+    "params": {
+      "selector": "internal:testid=[data-testid=\"place-order\"s]"
+    }
+  }
+]

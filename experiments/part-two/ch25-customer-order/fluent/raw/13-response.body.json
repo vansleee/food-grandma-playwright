@@ -1,0 +1,33 @@
+{
+  "last_order": {
+    "id": 1,
+    "customer": {
+      "id": 11,
+      "name": "customerA CH25-T01",
+      "avatar": "",
+      "address": "CH25-T01 customerA 示範地址"
+    },
+    "restaurant": {
+      "id": 11,
+      "name": "CH25-T01 restaurantA 示範餐廳",
+      "phone": "DEMO-PHONE",
+      "address": "CH25-T01 restaurantA 示範路 1 號"
+    },
+    "driver": null,
+    "order_details": [
+      {
+        "id": 1,
+        "meal": {
+          "id": 1,
+          "name": "香煎雞腿便當",
+          "price": 120
+        },
+        "quantity": 1,
+        "sub_total": 120
+      }
+    ],
+    "total": 120,
+    "status": "Cooking",
+    "address": "CH25-T01 測試用配送地址"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "case": "PAR-T01",
+  "repeat": 1,
+  "title": "PAR-T01 修改餐點價格為 150",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 1050,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "caseId": "PAR-T01",
+    "mealId": 1,
+    "expectedPrice": 150,
+    "observedPrice": 150,
+    "saveResponse": {
+      "meal": {
+        "id": 1,
+        "name": "PAR shared meal",
+        "short_description": "Both cases edit this same meal",
+        "image": "",
+        "price": 150
+      }
+    },
+    "workers": 2
+  },
+  "api_requests": 4,
+  "browser_api_requests": 11,
+  "non_2xx": []
+}

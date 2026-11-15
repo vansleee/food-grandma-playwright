@@ -1,0 +1,208 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch31",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch31",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-price.spec.ts",
+      "file": "meal-price.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "改寫後",
+          "file": "meal-price.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH31-T01 由 Adapter 轉換餐點欄位後仍從網頁修改價格",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 922,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:10:47.509Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "01-editor-before-change.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts/meal-price-改寫後-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/attachments/01-editor-before-change-png-217021938f6581bd62d0ff88e7d8acd9039fcab6.png"
+                        },
+                        {
+                          "name": "02-list-after-save.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts/meal-price-改寫後-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/attachments/02-list-after-save-png-51c2b7331706ead3cdd05bb58f8468f4d84c80cf.png"
+                        },
+                        {
+                          "name": "03-reopened.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts/meal-price-改寫後-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/attachments/03-reopened-png-c5c2c8a09f893abc6d560732823d9e133c45b709.png"
+                        },
+                        {
+                          "name": "observation.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJjYXNlSWQiOiAiQ0gzMS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDMxLVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzEtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gzMS1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzMS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMzEtVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzMS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts/meal-price-改寫後-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts/meal-price-改寫後-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-8eae4adf6700424c2ac8",
+              "file": "meal-price.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "CH31-T02 同一個 API client 使用不同認證方式取得角色資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 384,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:10:48.585Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "comparison.json",
+                          "contentType": "application/json",
+                          "body": "eyJjYXNlIjoiQ0gzMS1UMDIiLCJyZXN0YXVyYW50U3RhdHVzIjoyMDAsImRyaXZlclN0YXR1cyI6MjAwLCJyZXN0YXVyYW50SWQiOjI3LCJkcml2ZXJJZCI6Mjd9"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after/artifacts/meal-price-改寫後-CH31-T02-同一個-API-client-使用不同認證方式取得角色資料/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-91a51e66b0a9045f78eb",
+              "file": "meal-price.spec.ts",
+              "line": 39,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T17:10:47.274Z",
+    "duration": 1732.926,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

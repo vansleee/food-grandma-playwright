@@ -1,0 +1,165 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "name": "CH35-T01 meal 1",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 2,
+      "name": "CH35-T01 meal 2",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 3,
+      "name": "CH35-T01 meal 3",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 4,
+      "name": "CH35-T01 meal 4",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 5,
+      "name": "CH35-T01 meal 5",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 6,
+      "name": "CH35-T01 meal 6",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 7,
+      "name": "CH35-T01 meal 7",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 8,
+      "name": "CH35-T01 meal 8",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 9,
+      "name": "CH35-T01 meal 9",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 10,
+      "name": "CH35-T01 meal 10",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 11,
+      "name": "CH35-T01 meal 11",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 12,
+      "name": "CH35-T01 meal 12",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 13,
+      "name": "CH35-T01 meal 13",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 14,
+      "name": "CH35-T01 meal 14",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 15,
+      "name": "CH35-T01 meal 15",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 16,
+      "name": "CH35-T01 meal 16",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 17,
+      "name": "CH35-T01 meal 17",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 18,
+      "name": "CH35-T01 meal 18",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 19,
+      "name": "CH35-T01 meal 19",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch35-t01-restauranta"
+    },
+    {
+      "id": 20,
+      "name": "CH35-T01 meal 20",
+      "short_description": "CH35-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch35-t01-restauranta"
+    }
+  ],
+  "orders": []
+}

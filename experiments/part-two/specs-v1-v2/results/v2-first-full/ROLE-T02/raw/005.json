@@ -1,0 +1,15 @@
+{
+  "kind": "api",
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/social/token/",
+  "status": 200,
+  "ms": 175.58100000000013,
+  "started": "2026-11-02T18:34:49.078Z",
+  "request": "username=spec-role-t02-customera&password=<redacted>",
+  "response": {
+    "access_token": "<redacted>",
+    "token_type": "Bearer",
+    "scope": "read write"
+  },
+  "n": 5
+}

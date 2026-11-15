@@ -1,0 +1,28 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "name": "CH30-T01 meal",
+      "short_description": "",
+      "image": "",
+      "price": 100,
+      "owner": "reader-ch30-t01-restauranta"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "address": "Harbor Lane CommonCH30-T01",
+      "status": 1,
+      "total": 100,
+      "owner": "reader-ch30-t01-restauranta"
+    },
+    {
+      "id": 2,
+      "address": "Willow Court CommonCH30-T01",
+      "status": 2,
+      "total": 100,
+      "owner": "reader-ch30-t01-restauranta"
+    }
+  ]
+}

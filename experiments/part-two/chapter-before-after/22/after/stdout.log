@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:68854) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch22/meal-price.spec.ts:13:7 › 改寫後 › CH22-T01 由 Page Factory 建立本次測試使用的頁面物件 (974ms)
+
+  1 passed (1.4s)

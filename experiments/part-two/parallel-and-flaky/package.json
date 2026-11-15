@@ -1,0 +1,14 @@
+{
+  "name": "food-grandma-v1-ch34-ch35-labs",
+  "private": true,
+  "scripts": {
+    "baseline": "playwright test --config=playwright.baseline.config.ts",
+    "parallel": "playwright test --config=playwright.parallel.config.ts",
+    "flaky": "playwright test --config=playwright.flaky.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.5.4"
+  }
+}

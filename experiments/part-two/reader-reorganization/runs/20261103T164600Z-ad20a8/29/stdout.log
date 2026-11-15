@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:62692) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch29/meal-price.spec.ts:6:5 › CH29-T01 以 Builder 指定這次測試需要的餐點資料 (986ms)
+
+  1 passed (1.4s)

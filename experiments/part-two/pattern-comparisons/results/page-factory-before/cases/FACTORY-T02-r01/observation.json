@@ -1,0 +1,37 @@
+{
+  "caseId": "FACTORY-T02",
+  "original": {
+    "id": 2,
+    "name": "FACTORY-T02 meal",
+    "short_description": "FACTORY-T02 original description",
+    "image": "",
+    "price": 100
+  },
+  "expectedPrice": 0,
+  "saved": {
+    "status": 200,
+    "body": {
+      "meal": {
+        "id": 2,
+        "name": "FACTORY-T02 meal",
+        "short_description": "FACTORY-T02 original description",
+        "image": "",
+        "price": 0
+      }
+    }
+  },
+  "idsBefore": [
+    2
+  ],
+  "idsAfter": [
+    2
+  ],
+  "readBack": {
+    "id": 2,
+    "name": "FACTORY-T02 meal",
+    "short_description": "FACTORY-T02 original description",
+    "image": "",
+    "price": 0
+  },
+  "reopenedPrice": "0"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+data/
+*.db
+
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+.idea/
+.DS_Store

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "node",
+    "node_modules/playwright/cli.js",
+    "test",
+    "--config",
+    "playwright.flaky.config.ts",
+    "--repeat-each=20",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "cwd": "./tests/e2e/v1-labs",
+  "database": "./work/v1-ch34-ch35-20261103/flaky-after.db",
+  "password_source": "TEST_PASSWORD",
+  "variant": "after",
+  "source_instrumented": false
+}

@@ -1,0 +1,105 @@
+{
+  "date_taipei": "2026-11-03",
+  "planned_phases": 15,
+  "case_executions": 216,
+  "baseline": {
+    "1": {
+      "seconds": [
+        34.830256999999996,
+        33.875215000000004,
+        33.789685
+      ],
+      "median_seconds": 33.875215000000004,
+      "case_count_per_round": 27,
+      "pass_per_round": 26,
+      "failure_case": "ROLE-T02"
+    },
+    "4": {
+      "seconds": [
+        11.84366,
+        11.662880999999999,
+        11.803887000000001
+      ],
+      "median_seconds": 11.803887000000001,
+      "case_count_per_round": 27,
+      "pass_per_round": 26,
+      "failure_case": "ROLE-T02"
+    }
+  },
+  "controlled_collision": {
+    "serial": {
+      "passed": 2,
+      "failed": 0
+    },
+    "shared_parallel": {
+      "passed": 3,
+      "failed": 3,
+      "rounds": 3
+    },
+    "isolated_parallel": {
+      "passed": 6,
+      "failed": 0,
+      "rounds": 3
+    }
+  },
+  "flaky_detection": {
+    "nodeid": "FLAKY-T01",
+    "runs": 20,
+    "failures": 10,
+    "flake_rate": 0.5,
+    "classification": "wait-timing",
+    "suspected_root_cause": "fixed-wait-and-immediate-snapshot",
+    "controlled_network_delay": true,
+    "confidence": "high",
+    "not_a_production_failure_rate": true,
+    "after_runs": 20,
+    "after_failures": 0
+  },
+  "preservation": {
+    "changed_original_files": [],
+    "changed_baseline_test_files": [],
+    "git_after": {
+      ".": {
+        "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": "?? tests/e2e/spec-comparison/\n?? tests/e2e/v1-labs/\n?? tests/e2e/v1/\n?? tests/e2e/v2/\n"
+      },
+      "../manuscript": {
+        "tracked_diff_sha256": "2646e421ccd5c9391a68f83e04b9a252cf4a781dd5a5d86fc89ed420e3214b1a",
+        "status": " M content/chapter30.md\n"
+      }
+    }
+  },
+  "source_hashes": {
+    "playwright.baseline.config.ts": "f5a1369a8bbedc89caac3429ce5be64edd15ba66798d2a6733fd0b94e999a37f",
+    "lab-config.ts": "8f68546711de2fadde69fd4d55778a4d1fb26a2b83b6cf1ddeda7084dd4679da",
+    "package.json": "7b9b21ef9a8fee21d0dd33d3907dcc35d6bb003405ae4cc5ea79a4fb3c2ecc26",
+    "playwright.flaky.config.ts": "1ea99f11c9602422ae269edc5082bca48a1d41ca111a86eb16d3912a6b365572",
+    "experiment.json": "31468ba248b0c17dad53aa3d58bc6150f69a583c6a4a36d05c2cd990ba6c197c",
+    "tsconfig.json": "586972bf96d0420988baa431eb9a527a8d3a78cc8be968ca4513567c885624ce",
+    "playwright.parallel.config.ts": "fb7746adb7d44f62a38b5d831684fe9363a569c8869ad3cfc02123dc1122e6e6",
+    "spec-comparison/seed_accounts.py": "750d87a97c6185f8dac0af6fdb9ab6cc70c426d05de02423dea3dfeff22fd16a",
+    "spec-comparison/accounts.json": "62b9150b3bed48dd9f2b3be479e5b4ba7d6d8f9df56c8da58de2dfc06ff0cd5c",
+    "baseline/package.json": "5424b8c90984bed1f9d955cd06441fbd9117d5c0873f69360c70b3df5a9f1730",
+    "baseline/tsconfig.json": "fe5e0260ba760909bbc1a7891d84c1633100d56ae97eff2349485be9966eaa84",
+    "baseline/playwright.config.ts": "531aefb7495c85d4c25af1f485be88f47cb1d3adcd4211b907e90da21e379c0d",
+    "ch34/support/price-cases.ts": "af2dea8cd8d744f589e96d0cc5c4db6f9f71fa3eca5ed02ab329181e20c378f9",
+    "ch34/support/test-base.ts": "9f1f36edd7537905fa593843c497baf29ae4a6ce9aae06e23b70281041ce72f2",
+    "ch34/support/isolated-fixture.ts": "f6d618f60a94a320e8f316c324b5f644a9fb88cc871876eab93b991e3648ca8c",
+    "ch34/support/shared-fixture.ts": "c9cfe5c0a66da941a198c45cde428e98a062cb4236f9bff4cbb8f68d60354f56",
+    "ch34/before/price-edit.spec.ts": "82a7eb0aeacb02863bcaffef34a68c736b75cedfbbdaa6f3300f9699806af0c3",
+    "ch34/after/price-edit.spec.ts": "02ac0ac414b734655a0f537e162c8d896a85fa8fa8997b56104d84a6c5cb55b8",
+    "ch35/support/price-case.ts": "33df46bb3371441b338b7f05a9e248e2783843ba602a5948188fc739f78341ce",
+    "ch35/before/price-edit.spec.ts": "b6bc3981f0bbcbe723afc78a97e4827e1315bb68e132f1ec50f0b356bf0de4c3",
+    "ch35/after/price-edit.spec.ts": "f23853169e5c2de663f48c3ed3f135adf47e3a2e5d49bcba83da0d8920a185e3",
+    "baseline/tests/auth.spec.ts": "efb0547efd52d6f702efa885746fb23afcf0bb69202b821c2c08d0159d19ca2b",
+    "baseline/tests/meals.spec.ts": "bd3209d95bf84d2077bd489f8da7aad0de9725fa9c6ddb116015dbcbb2c6d240",
+    "baseline/tests/order-ready.spec.ts": "c0980962c14552666ab9002fb69ac90c9544bf38add350108dcd5e127fc57a51",
+    "baseline/tests/order-search.spec.ts": "4e5884495cb2242e43fd30ea3e2748dbfba3b3ea5bc0814740fb1d425d667df4",
+    "baseline/tests/account.spec.ts": "0da2ff18ab366081163afe8c064d6b1222e77023dcdde59469e4ca2c95639e11",
+    "baseline/tests/driver-claim.spec.ts": "6cde71dbb0b215d06f4dd04d15f9d92cd4d41316858c751c93c74b34f53561f6",
+    "baseline/tests/support/fixtures.ts": "6b08e73f4b8a6fb817831eefac3215cb2eb52dce5a88edb3d71e4a376da18fe1",
+    "baseline/tests/support/pages.ts": "5a1a605c0089f62c2b2035b64507d6ba8ccba9cbb145bac1d1e63cb4c3fa651c",
+    "baseline/tests/support/api.ts": "425fea1203b5973b7790ec5a40a9bb73b428eddd7cb23d79db3510e95a35fe56",
+    "baseline/tests/support/env.ts": "5ae0b40a556168d0aeaba3311b01a8afbca8c0490540d14509eea461c4f5c1b8"
+  }
+}

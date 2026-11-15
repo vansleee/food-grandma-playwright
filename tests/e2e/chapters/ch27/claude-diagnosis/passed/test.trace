@@ -1,0 +1,12 @@
+{"type": "before", "callId": "pw:api@58", "stepId": "pw:api@58", "startTime": 3248.656, "class": "Test", "method": "pw:api", "title": "Click", "subtitle": "locator('[data-testid=\"meal-row\"][data-meal-id=\"2\"]').getByTestId('meal-edit-link')", "params": {"locator": "locator('[data-testid=\"meal-row\"][data-meal-id=\"2\"]').getByTestId('meal-edit-link')"}, "stack": [{"file": "./tests/e2e/chapters/ch27/meal-load.spec.ts", "line": 20, "column": 64}]}
+{"type": "before", "callId": "pw:api@59", "stepId": "pw:api@59", "startTime": 3319.416, "class": "Test", "method": "pw:api", "title": "Continue request", "params": {}, "stack": [{"file": "./tests/e2e/chapters/ch27/meal-load.spec.ts", "line": 14, "column": 27}], "group": "route"}
+{"type": "before", "callId": "pw:api@60", "stepId": "pw:api@60", "startTime": 3319.602, "class": "Test", "method": "pw:api", "title": "Continue request", "params": {}, "stack": [{"file": "./tests/e2e/chapters/ch27/meal-load.spec.ts", "line": 14, "column": 27}], "group": "route"}
+{"type": "after", "callId": "pw:api@58", "endTime": 3320.01, "annotations": []}
+{"type": "before", "callId": "pw:api@61", "stepId": "pw:api@61", "startTime": 3320.187, "class": "Test", "method": "pw:api", "title": "Wait for timeout", "params": {"timeout": "200"}, "stack": [{"file": "./tests/e2e/chapters/ch27/meal-load.spec.ts", "line": 21, "column": 16}]}
+{"type": "after", "callId": "pw:api@59", "endTime": 3320.372, "annotations": []}
+{"type": "after", "callId": "pw:api@60", "endTime": 3320.388, "annotations": []}
+{"type": "after", "callId": "pw:api@61", "endTime": 3521.352, "annotations": []}
+{"type": "before", "callId": "pw:api@62", "stepId": "pw:api@62", "startTime": 3521.881, "class": "Test", "method": "pw:api", "title": "Get input value", "subtitle": "getByTestId('meal-name')", "params": {"locator": "getByTestId('meal-name')"}, "stack": [{"file": "./tests/e2e/chapters/ch27/meal-load.spec.ts", "line": 22, "column": 30}], "group": "getter"}
+{"type": "after", "callId": "pw:api@62", "endTime": 3524.406, "annotations": []}
+{"type": "before", "callId": "expect@63", "stepId": "expect@63", "startTime": 3524.621, "class": "Test", "method": "expect", "title": "Expect \"toBe\"", "params": {"expected": "CH35-T01 meal 2"}, "stack": [{"file": "./tests/e2e/chapters/ch27/meal-load.spec.ts", "line": 22, "column": 44}]}
+{"type": "after", "callId": "expect@63", "endTime": 3524.705, "annotations": []}

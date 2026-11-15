@@ -1,0 +1,65 @@
+
+Running 20 tests using 1 worker
+
+(node:50868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.9s)
+(node:50878) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (2.3s)
+(node:50892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.8s)
+(node:50911) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.8s)
+(node:50920) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.8s)
+(node:50928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (980ms)
+(node:50934) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.0s)
+(node:50941) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (999ms)
+(node:50947) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.9s)
+(node:50981) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.9s)
+(node:50988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (987ms)
+(node:50995) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.0s)
+(node:51002) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.8s)
+(node:51015) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (2.3s)
+(node:51035) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (968ms)
+(node:51041) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (958ms)
+(node:51048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  17 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.8s)
+(node:51055) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (968ms)
+(node:51065) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (950ms)
+(node:51083) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.0s)
+
+  20 passed (36.8s)

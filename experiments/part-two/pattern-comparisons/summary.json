@@ -1,0 +1,114 @@
+{
+  "date_taipei": "2026-11-04",
+  "phases": 12,
+  "case_executions": 28,
+  "e2e_case_executions": 20,
+  "real_repository_contracts": 4,
+  "fake_repository_contracts": 4,
+  "passed": 28,
+  "failed": 0,
+  "skipped": 0,
+  "retries": 0,
+  "typecheck_exit_code": 0,
+  "pairs": {
+    "page-factory": {
+      "case_ids": [
+        "FACTORY-T01",
+        "FACTORY-T02"
+      ],
+      "exact_observations_equal": true,
+      "before_test_lines": 22,
+      "after_test_lines": 24,
+      "additional_implementation_lines": 13
+    },
+    "workflow": {
+      "case_ids": [
+        "FLOW-T01",
+        "FLOW-T02"
+      ],
+      "exact_observations_equal": true,
+      "before_test_lines": 22,
+      "after_test_lines": 16,
+      "additional_implementation_lines": 28
+    },
+    "screenplay": {
+      "case_ids": [
+        "SCREEN-T01",
+        "SCREEN-T02"
+      ],
+      "exact_observations_equal": true,
+      "before_test_lines": 22,
+      "after_test_lines": 20,
+      "additional_implementation_lines": 42
+    },
+    "adapter": {
+      "case_ids": [
+        "ADAPT-T01",
+        "ADAPT-T02"
+      ],
+      "exact_observations_equal": true,
+      "before_test_lines": 26,
+      "after_test_lines": 26,
+      "additional_implementation_lines": 25
+    },
+    "repository": {
+      "case_ids": [
+        "REPO-T01",
+        "REPO-T02"
+      ],
+      "exact_observations_equal": true,
+      "before_test_lines": 22,
+      "after_test_lines": 24,
+      "additional_implementation_lines": 77
+    }
+  },
+  "fake_without_services_or_password": true,
+  "fake_http_requests": 0,
+  "preservation": {
+    "changed_original_files": [],
+    "changed_baseline_test_files": [],
+    "preserved_file_count": 593
+  },
+  "environment": {
+    "node": "v26.9.0",
+    "playwright": "Version 1.63.0",
+    "workers": 1,
+    "seed_sha256": "04f56f4f9ca008274022a45d62bd37318de5c28cc573b4f0719bab231051cb4d",
+    "web": "http://127.0.0.1:18082",
+    "api": "http://127.0.0.1:18081"
+  },
+  "source_hashes": {
+    "playwright.config.ts": "cb948783b144dd94c7245dbe19c3f8e5190b8872403b5701ee66c12c778738a4",
+    "baseline/playwright.config.ts": "531aefb7495c85d4c25af1f485be88f47cb1d3adcd4211b907e90da21e379c0d",
+    "support/fixtures.ts": "752028deb8af9311a1691e9c8ab8d3104c124c4fa07646acbfeae71c207b4b2d",
+    "support/meal-checks.ts": "d5c6285f9514b26f611c697a51d567620aff66f3100e91a77392d13ede18f035",
+    "examples/screenplay/after.spec.ts": "348bd3630d22a584ca2872f8c4b9e93169b824ebbf1849c78f8614641063cc41",
+    "examples/screenplay/before.spec.ts": "2a2415f4c757fa1095f9dc29b35888cf4cecfb7f7b96771daa39df2f927460cb",
+    "examples/screenplay/screenplay.ts": "796d02200d0d2c4adb816744047ec7e49223936b71dbd62d6f81ec283a275204",
+    "examples/repository/in-memory-meals-repository.ts": "35465d70ea5c499c2165c3201cf7dd6173e7a1919464fd1913e3e20360444255",
+    "examples/repository/after.spec.ts": "898b3c23abc0b9fb2c7e93adf9acdb59ad4130c33031a5fbc3ab8db4e4354167",
+    "examples/repository/before.spec.ts": "b1f2008a7a8328043d59ca06c116a695b263b0b23ab876d96e1ed89a277d48c9",
+    "examples/repository/meals-repository.ts": "8fad10d756e33d82a22dd0d7eb56c1a6d0e11500f788293f5248675858ddad56",
+    "examples/page-factory/after.spec.ts": "cea23c90655bc6af00ba1015892afe3feed87aacda5002e6ec8f165f1c0f142e",
+    "examples/page-factory/food-grandma-pages.ts": "b7f8a2f0e16d8c31101d8bc3f56c3cf137170056ca8c5c4e9a9f4c93e95e417f",
+    "examples/page-factory/before.spec.ts": "7365c3104fe4508847d8cabe8d6a5999835e2ffaa3e5f99fd9f1bd7d9e1390c2",
+    "examples/adapter/after.spec.ts": "b7cfb6757f0745d3583dcfbb6dc0a52b057f7c963525b2944388bae808c6222d",
+    "examples/adapter/before.spec.ts": "2ded7f0f46e4b454b0312b1908e9eaaebf8b86b5be29496ff5ec075ee36e95c8",
+    "examples/adapter/v1-meal-adapter.ts": "5db1a2d05d17de05e7bc51ba519034844232b58620ecbd1fdc27a3b394fef905",
+    "examples/workflow/after.spec.ts": "86d38d658babca8d6e8934582a6638971b3746dc2855c87d99c7e14890ca5eef",
+    "examples/workflow/meal-price-workflow.ts": "85b85d2519fde3b025ee6597bc2672a1448c0c3e0cca3277aab0babd6cb145af",
+    "examples/workflow/before.spec.ts": "c7e90a93dd50a7dbcdd37912567393ac2c1e2eebf1b9f2745996ec2fd9389c72",
+    "examples/repository/contract/fixtures.ts": "a0adaea9e9c0c9d7d6c122cf2ff79702655153d3441f0bdf79352b850aeb2d30",
+    "examples/repository/contract/meal-repository.spec.ts": "f75ded29835f56c9959ea55df168fb6c278c95c6a3ab6a474b8e4a8bffe676f0",
+    "baseline/tests/auth.spec.ts": "efb0547efd52d6f702efa885746fb23afcf0bb69202b821c2c08d0159d19ca2b",
+    "baseline/tests/meals.spec.ts": "bd3209d95bf84d2077bd489f8da7aad0de9725fa9c6ddb116015dbcbb2c6d240",
+    "baseline/tests/order-ready.spec.ts": "c0980962c14552666ab9002fb69ac90c9544bf38add350108dcd5e127fc57a51",
+    "baseline/tests/order-search.spec.ts": "4e5884495cb2242e43fd30ea3e2748dbfba3b3ea5bc0814740fb1d425d667df4",
+    "baseline/tests/account.spec.ts": "0da2ff18ab366081163afe8c064d6b1222e77023dcdde59469e4ca2c95639e11",
+    "baseline/tests/driver-claim.spec.ts": "6cde71dbb0b215d06f4dd04d15f9d92cd4d41316858c751c93c74b34f53561f6",
+    "baseline/tests/support/fixtures.ts": "6b08e73f4b8a6fb817831eefac3215cb2eb52dce5a88edb3d71e4a376da18fe1",
+    "baseline/tests/support/pages.ts": "5a1a605c0089f62c2b2035b64507d6ba8ccba9cbb145bac1d1e63cb4c3fa651c",
+    "baseline/tests/support/api.ts": "425fea1203b5973b7790ec5a40a9bb73b428eddd7cb23d79db3510e95a35fe56",
+    "baseline/tests/support/env.ts": "5ae0b40a556168d0aeaba3311b01a8afbca8c0490540d14509eea461c4f5c1b8"
+  }
+}

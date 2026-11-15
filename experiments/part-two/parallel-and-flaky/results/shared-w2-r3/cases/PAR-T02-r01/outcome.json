@@ -1,0 +1,31 @@
+{
+  "case": "PAR-T02",
+  "repeat": 1,
+  "title": "PAR-T02 修改餐點價格為 180",
+  "status": "failed",
+  "retry": 0,
+  "duration_ms": 966,
+  "worker_index": 1,
+  "errors": [
+    "Error: 餐點 1 應保留本案例儲存的價格\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 180\nReceived: 150\n\n  40 |       });\n  41 |       await page.screenshot({ path: testInfo.outputPath('02-after-save.png') });\n> 42 |       expect(actual?.price, `餐點 ${meal.id} 應保留本案例儲存的價格`).toBe(scenario.price);\n     |                                                          ^\n  43 |       expect(actual).toMatchObject({ id: meal.id, name: meal.name, short_description: meal.short_description });\n  44 |       expect(all).toHaveLength(1);\n  45 |       await expect(meals.row(meal.id)).toContainText(`$${scenario.price}`);\n    at ./tests/e2e/v1-labs/ch34/support/price-cases.ts:42:58"
+  ],
+  "observation": {
+    "caseId": "PAR-T02",
+    "mealId": 1,
+    "expectedPrice": 180,
+    "observedPrice": 150,
+    "saveResponse": {
+      "meal": {
+        "id": 1,
+        "name": "PAR shared meal",
+        "short_description": "Both cases edit this same meal",
+        "image": "",
+        "price": 180
+      }
+    },
+    "workers": 2
+  },
+  "api_requests": 4,
+  "browser_api_requests": 9,
+  "non_2xx": []
+}

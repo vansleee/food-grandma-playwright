@@ -1,0 +1,397 @@
+
+Running 20 tests using 1 worker
+
+(node:50665) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (981ms)
+(node:50672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (951ms)
+(node:50678) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.0s)
+(node:50688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   4 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (932ms)
+(node:50706) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (932ms)
+(node:50714) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50739) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50746) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   9 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (974ms)
+(node:50754) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (957ms)
+(node:50760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50777) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (928ms)
+(node:50806) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (970ms)
+(node:50812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50818) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  17 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (958ms)
+(node:50830) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.2s)
+(node:50843) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 (1.3s)
+
+
+  1) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat1/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat2/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat2/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat3/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat3/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat4/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat4/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat8/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat8/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat8/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat8/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat9/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat9/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat9/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat9/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat12/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat12/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat12/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat12/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ─────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat13/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ────────────────────
+
+    Error: 餐點資料載入後，原價格應為 100
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "100"
+    Received: "0"
+
+      45 |     });
+      46 |     await page.screenshot({ path: testInfo.outputPath('02-original-price-check.png') });
+    > 47 |     expect(observed, '餐點資料載入後，原價格應為 100').toBe('100');
+         |                                           ^
+      48 |     await expect(form.name()).toHaveValue(original.name);
+      49 |     await expect(form.description()).toHaveValue(original.short_description);
+      50 |
+        at ./tests/e2e/v1-labs/ch35/support/price-case.ts:47:43
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat16/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat16/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat16/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../../Documents/Codex/2026-10-25/new-chat/work/v1-ch34-ch35-20261103/evidence/flaky-before/test-results/price-edit-FLAKY-T01-等待原有餐點資料後，從網頁把價格由-100-修改為-150-repeat16/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10 failed
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+    ch35/support/price-case.ts:10:7 › FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150 ──────────────────────
+  10 passed (29.4s)

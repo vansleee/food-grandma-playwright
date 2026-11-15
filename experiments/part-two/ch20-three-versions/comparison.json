@@ -1,0 +1,113 @@
+{
+  "no-pom": {
+    "caseId": "CH20-T01",
+    "original": {
+      "id": 1,
+      "name": "CH20-T01 meal 1",
+      "short_description": "CH20-T01 original description",
+      "image": "",
+      "price": 100
+    },
+    "expectedPrice": 150,
+    "saved": {
+      "status": 200,
+      "body": {
+        "meal": {
+          "id": 1,
+          "name": "CH20-T01 meal 1",
+          "short_description": "CH20-T01 original description",
+          "image": "",
+          "price": 150
+        }
+      }
+    },
+    "idsBefore": [
+      1
+    ],
+    "idsAfter": [
+      1
+    ],
+    "readBack": {
+      "id": 1,
+      "name": "CH20-T01 meal 1",
+      "short_description": "CH20-T01 original description",
+      "image": "",
+      "price": 150
+    },
+    "reopenedPrice": "150"
+  },
+  "v1": {
+    "caseId": "CH20-T01",
+    "original": {
+      "id": 1,
+      "name": "CH20-T01 meal 1",
+      "short_description": "CH20-T01 original description",
+      "image": "",
+      "price": 100
+    },
+    "expectedPrice": 150,
+    "saved": {
+      "status": 200,
+      "body": {
+        "meal": {
+          "id": 1,
+          "name": "CH20-T01 meal 1",
+          "short_description": "CH20-T01 original description",
+          "image": "",
+          "price": 150
+        }
+      }
+    },
+    "idsBefore": [
+      1
+    ],
+    "idsAfter": [
+      1
+    ],
+    "readBack": {
+      "id": 1,
+      "name": "CH20-T01 meal 1",
+      "short_description": "CH20-T01 original description",
+      "image": "",
+      "price": 150
+    },
+    "reopenedPrice": "150"
+  },
+  "v2": {
+    "caseId": "CH20-T01",
+    "original": {
+      "id": 1,
+      "name": "CH20-T01 meal 1",
+      "short_description": "CH20-T01 original description",
+      "image": "",
+      "price": 100
+    },
+    "expectedPrice": 150,
+    "saved": {
+      "status": 200,
+      "body": {
+        "meal": {
+          "id": 1,
+          "name": "CH20-T01 meal 1",
+          "short_description": "CH20-T01 original description",
+          "image": "",
+          "price": 150
+        }
+      }
+    },
+    "idsBefore": [
+      1
+    ],
+    "idsAfter": [
+      1
+    ],
+    "readBack": {
+      "id": 1,
+      "name": "CH20-T01 meal 1",
+      "short_description": "CH20-T01 original description",
+      "image": "",
+      "price": 150
+    },
+    "reopenedPrice": "150"
+  }
+}

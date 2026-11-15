@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:62723) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch31/meal-price.spec.ts:8:5 › CH31-T01 由 Adapter 轉換餐點欄位後仍從網頁修改價格 (956ms)
+  ✓  2 ch31/meal-price.spec.ts:29:5 › CH31-T02 同一個 API client 使用不同認證方式取得角色資料 (385ms)
+
+  2 passed (1.8s)

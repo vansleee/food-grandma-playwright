@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:97884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch25/customer-order.spec.ts:203:3 › 流暢介面（Fluent Interface） › CH25-T01 顧客搜尋餐廳、選擇餐點並完成訂單 (1.1s)
+
+  1 passed (1.6s)

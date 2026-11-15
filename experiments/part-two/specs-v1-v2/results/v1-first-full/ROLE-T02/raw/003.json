@@ -1,0 +1,15 @@
+{
+  "kind": "api",
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/social/token/",
+  "status": 200,
+  "ms": 176.0020000000004,
+  "started": "2026-11-02T18:32:51.247Z",
+  "request": "username=spec-role-t02-driverb&password=<redacted>",
+  "response": {
+    "access_token": "<redacted>",
+    "token_type": "Bearer",
+    "scope": "read write"
+  },
+  "n": 3
+}

@@ -1,0 +1,13 @@
+{
+  "implementation": "api",
+  "original": {
+    "id": 1,
+    "name": "Contract meal",
+    "short_description": "Original description",
+    "image": "",
+    "price": 100
+  },
+  "idsBefore": [
+    1
+  ]
+}

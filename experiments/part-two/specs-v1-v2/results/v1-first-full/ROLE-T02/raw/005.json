@@ -1,0 +1,24 @@
+{
+  "kind": "api",
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+  "status": 200,
+  "ms": 1.6700000000000728,
+  "started": "2026-11-02T18:32:51.426Z",
+  "request": {
+    "short_description": "",
+    "image": "",
+    "price": 80,
+    "name": "Role T02 meal"
+  },
+  "response": {
+    "meal": {
+      "id": 2,
+      "name": "Role T02 meal",
+      "short_description": "",
+      "image": "",
+      "price": 80
+    }
+  },
+  "n": 5
+}

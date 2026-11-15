@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "node_modules/playwright/cli.js",
+    "test",
+    "--config",
+    "playwright.parallel.config.ts",
+    "--workers=2",
+    "--retries=0"
+  ],
+  "cwd": "./tests/e2e/v1-labs",
+  "database": "./work/v1-ch34-ch35-20261103/isolated-w2-r3.db",
+  "password_source": "TEST_PASSWORD",
+  "variant": "after",
+  "source_instrumented": false
+}

@@ -1,0 +1,811 @@
+[
+  {
+    "case": "CH30-T01",
+    "title": "CH30-T01 搜尋與待取餐篩選同時生效",
+    "status": "passed",
+    "retry": 0,
+    "start_time": "2026-11-03T17:10:42.591Z",
+    "duration_ms": 1234,
+    "worker": 0,
+    "supplementary_fake": false,
+    "payload": {
+      "case": "CH30-T01",
+      "sourceCase": "FIND-T03",
+      "statuses": [
+        "Cooking",
+        "Ready"
+      ],
+      "addresses": [
+        "Harbor Lane CommonCH30-T01",
+        "Willow Court CommonCH30-T01"
+      ],
+      "cookingCustomer": "customerA CH30-T01",
+      "readyCustomer": "customerB CH30-T01",
+      "initialCount": 2,
+      "readyMatches": [
+        2
+      ]
+    },
+    "load_timing": null,
+    "requests": [
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/test/config",
+        "status": 200,
+        "ms": 3.041,
+        "request": null,
+        "response": {
+          "enabled": false,
+          "admin_required": true,
+          "public_demo": false
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/test/config",
+        "status": 200,
+        "ms": 3.919,
+        "request": null,
+        "response": {
+          "enabled": false,
+          "admin_required": true,
+          "public_demo": false
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/orders/",
+        "status": 200,
+        "ms": 4.618,
+        "request": null,
+        "response": {
+          "orders": [
+            {
+              "id": 2,
+              "customer": {
+                "id": 24,
+                "name": "customerB CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerB 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 2,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Ready",
+              "address": "Willow Court CommonCH30-T01"
+            },
+            {
+              "id": 1,
+              "customer": {
+                "id": 23,
+                "name": "customerA CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerA 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 1,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Harbor Lane CommonCH30-T01"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/orders/",
+        "status": 200,
+        "ms": 7.253,
+        "request": null,
+        "response": {
+          "orders": [
+            {
+              "id": 2,
+              "customer": {
+                "id": 24,
+                "name": "customerB CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerB 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 2,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Ready",
+              "address": "Willow Court CommonCH30-T01"
+            },
+            {
+              "id": 1,
+              "customer": {
+                "id": 23,
+                "name": "customerA CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerA 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 1,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Harbor Lane CommonCH30-T01"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/social/token/",
+        "status": 200,
+        "ms": 209.55900000000008,
+        "request": "username=reader-ch30-t01-restauranta&password=<redacted>",
+        "response": {
+          "access_token": "<redacted>",
+          "token_type": "Bearer",
+          "scope": "read write"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/me/",
+        "status": 200,
+        "ms": 2.3500000000000227,
+        "request": null,
+        "response": {
+          "restaurant": {
+            "id": 23,
+            "name": "CH30-T01 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH30-T01 restaurantA 示範路 1 號",
+            "logo": ""
+          },
+          "user": {
+            "username": "reader-ch30-t01-restauranta",
+            "first_name": "restaurantA",
+            "last_name": "CH30-T01",
+            "email": "reader-ch30-t01-restauranta@example.invalid"
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 2.536999999999921,
+        "request": {
+          "short_description": "",
+          "image": "",
+          "price": 100,
+          "name": "CH30-T01 meal"
+        },
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH30-T01 meal",
+            "short_description": "",
+            "image": "",
+            "price": 100
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/social/token/",
+        "status": 200,
+        "ms": 179.25300000000004,
+        "request": "username=reader-ch30-t01-customera&password=<redacted>",
+        "response": {
+          "access_token": "<redacted>",
+          "token_type": "Bearer",
+          "scope": "read write"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/customer/orders/",
+        "status": 200,
+        "ms": 3.951000000000022,
+        "request": "access_token=<redacted>&restaurant_id=23&address=Harbor+Lane+CommonCH30-T01&order_details=%5B%7B%22meal_id%22%3A1%2C%22quantity%22%3A1%7D%5D",
+        "response": {
+          "status": "success"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/orders/",
+        "status": 200,
+        "ms": 2.5579999999999927,
+        "request": null,
+        "response": {
+          "orders": [
+            {
+              "id": 1,
+              "customer": {
+                "id": 23,
+                "name": "customerA CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerA 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 1,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Harbor Lane CommonCH30-T01"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/social/token/",
+        "status": 200,
+        "ms": 179.4419999999999,
+        "request": "username=reader-ch30-t01-customerb&password=<redacted>",
+        "response": {
+          "access_token": "<redacted>",
+          "token_type": "Bearer",
+          "scope": "read write"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/customer/orders/",
+        "status": 200,
+        "ms": 2.175999999999931,
+        "request": "access_token=<redacted>&restaurant_id=23&address=Willow+Court+CommonCH30-T01&order_details=%5B%7B%22meal_id%22%3A1%2C%22quantity%22%3A1%7D%5D",
+        "response": {
+          "status": "success"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/orders/",
+        "status": 200,
+        "ms": 1.7719999999999345,
+        "request": null,
+        "response": {
+          "orders": [
+            {
+              "id": 2,
+              "customer": {
+                "id": 24,
+                "name": "customerB CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerB 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 2,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Willow Court CommonCH30-T01"
+            },
+            {
+              "id": 1,
+              "customer": {
+                "id": 23,
+                "name": "customerA CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerA 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 1,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Harbor Lane CommonCH30-T01"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "PATCH",
+        "url": "http://127.0.0.1:18081/api/restaurant/orders/2",
+        "status": 200,
+        "ms": 3.115000000000009,
+        "request": null,
+        "response": {
+          "order": {
+            "id": 2,
+            "customer": {
+              "id": 24,
+              "name": "customerB CH30-T01",
+              "avatar": "",
+              "address": "CH30-T01 customerB 示範地址"
+            },
+            "restaurant": {
+              "id": 23,
+              "name": "CH30-T01 restaurantA 示範餐廳",
+              "phone": "DEMO-PHONE",
+              "address": "CH30-T01 restaurantA 示範路 1 號"
+            },
+            "driver": null,
+            "order_details": [
+              {
+                "id": 2,
+                "meal": {
+                  "id": 1,
+                  "name": "CH30-T01 meal",
+                  "price": 100
+                },
+                "quantity": 1,
+                "sub_total": 100
+              }
+            ],
+            "total": 100,
+            "status": "Ready",
+            "address": "Willow Court CommonCH30-T01"
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/orders/",
+        "status": 200,
+        "ms": 1.4649999999999181,
+        "request": null,
+        "response": {
+          "orders": [
+            {
+              "id": 2,
+              "customer": {
+                "id": 24,
+                "name": "customerB CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerB 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 2,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Ready",
+              "address": "Willow Court CommonCH30-T01"
+            },
+            {
+              "id": 1,
+              "customer": {
+                "id": 23,
+                "name": "customerA CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerA 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 1,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Harbor Lane CommonCH30-T01"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/orders/",
+        "status": 200,
+        "ms": 1.6769999999999072,
+        "request": null,
+        "response": {
+          "orders": [
+            {
+              "id": 2,
+              "customer": {
+                "id": 24,
+                "name": "customerB CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerB 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 2,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Ready",
+              "address": "Willow Court CommonCH30-T01"
+            },
+            {
+              "id": 1,
+              "customer": {
+                "id": 23,
+                "name": "customerA CH30-T01",
+                "avatar": "",
+                "address": "CH30-T01 customerA 示範地址"
+              },
+              "restaurant": {
+                "id": 23,
+                "name": "CH30-T01 restaurantA 示範餐廳",
+                "phone": "DEMO-PHONE",
+                "address": "CH30-T01 restaurantA 示範路 1 號"
+              },
+              "driver": null,
+              "order_details": [
+                {
+                  "id": 1,
+                  "meal": {
+                    "id": 1,
+                    "name": "CH30-T01 meal",
+                    "price": 100
+                  },
+                  "quantity": 1,
+                  "sub_total": 100
+                }
+              ],
+              "total": 100,
+              "status": "Cooking",
+              "address": "Harbor Lane CommonCH30-T01"
+            }
+          ]
+        }
+      }
+    ],
+    "console": [
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connecting...",
+        "args": [
+          {
+            "preview": "[vite] connecting...",
+            "value": "[vite] connecting..."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 494,
+          "columnNumber": 8
+        },
+        "time": 1281.603,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "info",
+        "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+        "args": [
+          {
+            "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+            "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+          },
+          {
+            "preview": "font-weight:bold",
+            "value": "font-weight:bold"
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/chunk-OOIH53S6.js?v=a002a8cb",
+          "lineNumber": 21548,
+          "columnNumber": 24
+        },
+        "time": 1293.699,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+            "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 1319.386,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+            "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 1319.408,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connected.",
+        "args": [
+          {
+            "preview": "[vite] connected.",
+            "value": "[vite] connected."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 617,
+          "columnNumber": 14
+        },
+        "time": 1319.588,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connecting...",
+        "args": [
+          {
+            "preview": "[vite] connecting...",
+            "value": "[vite] connecting..."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 494,
+          "columnNumber": 8
+        },
+        "time": 1338.64,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connected.",
+        "args": [
+          {
+            "preview": "[vite] connected.",
+            "value": "[vite] connected."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 617,
+          "columnNumber": 14
+        },
+        "time": 1369.07,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "info",
+        "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+        "args": [
+          {
+            "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+            "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+          },
+          {
+            "preview": "font-weight:bold",
+            "value": "font-weight:bold"
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/chunk-OOIH53S6.js?v=a002a8cb",
+          "lineNumber": 21548,
+          "columnNumber": 24
+        },
+        "time": 1369.579,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+            "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 1374.229,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+            "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 1374.273,
+        "pageId": "page@e9ea56f1b90938b821f6429fd790ddd5"
+      }
+    ],
+    "non_2xx": [],
+    "errors": []
+  }
+]

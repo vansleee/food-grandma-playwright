@@ -1,0 +1,3 @@
+請沿用 `tests/e2e/chapters/examples/ch25/with-repository.spec.ts` 的寫法與驗收條件，保留原本的 150 元案例，再新增一支把雞腿便當從 100 元改成 180 元的測試。
+
+兩支測試要各自準備餐廳與餐點，能用 1 個 worker 依序執行，也能在同一檔案內用 2 個 worker 平行執行。請輸出修改後的完整檔案。

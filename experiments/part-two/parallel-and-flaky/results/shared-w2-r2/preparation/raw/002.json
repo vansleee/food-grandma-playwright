@@ -1,0 +1,22 @@
+{
+  "n": 2,
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+  "status": 200,
+  "ms": 3.218459023628384,
+  "request": {
+    "name": "PAR shared meal",
+    "short_description": "Both cases edit this same meal",
+    "image": "",
+    "price": 100
+  },
+  "response": {
+    "meal": {
+      "id": 1,
+      "name": "PAR shared meal",
+      "short_description": "Both cases edit this same meal",
+      "image": "",
+      "price": 100
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch30",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch30",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "order-scenarios.spec.ts",
+      "file": "order-scenarios.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "改寫後",
+          "file": "order-scenarios.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH30-T01 搜尋與待取餐篩選同時生效",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1234,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:10:42.591Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "01-both-orders.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after/artifacts/order-scenarios-改寫後-CH30-T01-搜尋與待取餐篩選同時生效/attachments/01-both-orders-png-e6d281648047767f95f362c4942b2bf8a633b522.png"
+                        },
+                        {
+                          "name": "02-ready-search.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after/artifacts/order-scenarios-改寫後-CH30-T01-搜尋與待取餐篩選同時生效/attachments/02-ready-search-png-853c79cf384145169ec34133301328b0d35c38e7.png"
+                        },
+                        {
+                          "name": "comparison.json",
+                          "contentType": "application/json",
+                          "body": "eyJjYXNlIjoiQ0gzMC1UMDEiLCJzb3VyY2VDYXNlIjoiRklORC1UMDMiLCJzdGF0dXNlcyI6WyJDb29raW5nIiwiUmVhZHkiXSwiYWRkcmVzc2VzIjpbIkhhcmJvciBMYW5lIENvbW1vbkNIMzAtVDAxIiwiV2lsbG93IENvdXJ0IENvbW1vbkNIMzAtVDAxIl0sImNvb2tpbmdDdXN0b21lciI6ImN1c3RvbWVyQSBDSDMwLVQwMSIsInJlYWR5Q3VzdG9tZXIiOiJjdXN0b21lckIgQ0gzMC1UMDEiLCJpbml0aWFsQ291bnQiOjIsInJlYWR5TWF0Y2hlcyI6WzJdfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after/artifacts/order-scenarios-改寫後-CH30-T01-搜尋與待取餐篩選同時生效/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after/artifacts/order-scenarios-改寫後-CH30-T01-搜尋與待取餐篩選同時生效/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fe46c0f5067edc2d9f59-c366c070e8caab2ad940",
+              "file": "order-scenarios.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T17:10:42.361Z",
+    "duration": 1650.338,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "case": "FLAKY-T01",
+    "repeat": 1,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1862,
+    "worker_index": 0,
+    "errors": [],
+    "observation": {
+      "repeat": 1,
+      "responseDelayMs": 900,
+      "mealId": 1,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 2,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 2307,
+    "worker_index": 1,
+    "errors": [],
+    "observation": {
+      "repeat": 2,
+      "responseDelayMs": 900,
+      "mealId": 2,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 3,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1797,
+    "worker_index": 2,
+    "errors": [],
+    "observation": {
+      "repeat": 3,
+      "responseDelayMs": 900,
+      "mealId": 3,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 4,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1810,
+    "worker_index": 3,
+    "errors": [],
+    "observation": {
+      "repeat": 4,
+      "responseDelayMs": 900,
+      "mealId": 4,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 5,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1789,
+    "worker_index": 4,
+    "errors": [],
+    "observation": {
+      "repeat": 5,
+      "responseDelayMs": 900,
+      "mealId": 5,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 6,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 980,
+    "worker_index": 5,
+    "errors": [],
+    "observation": {
+      "repeat": 6,
+      "responseDelayMs": 0,
+      "mealId": 6,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 7,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1016,
+    "worker_index": 6,
+    "errors": [],
+    "observation": {
+      "repeat": 7,
+      "responseDelayMs": 0,
+      "mealId": 7,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 8,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 999,
+    "worker_index": 7,
+    "errors": [],
+    "observation": {
+      "repeat": 8,
+      "responseDelayMs": 0,
+      "mealId": 8,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 9,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1867,
+    "worker_index": 8,
+    "errors": [],
+    "observation": {
+      "repeat": 9,
+      "responseDelayMs": 900,
+      "mealId": 9,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 10,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1857,
+    "worker_index": 9,
+    "errors": [],
+    "observation": {
+      "repeat": 10,
+      "responseDelayMs": 900,
+      "mealId": 10,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 11,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 987,
+    "worker_index": 10,
+    "errors": [],
+    "observation": {
+      "repeat": 11,
+      "responseDelayMs": 0,
+      "mealId": 11,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 12,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1045,
+    "worker_index": 11,
+    "errors": [],
+    "observation": {
+      "repeat": 12,
+      "responseDelayMs": 0,
+      "mealId": 12,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 13,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1783,
+    "worker_index": 12,
+    "errors": [],
+    "observation": {
+      "repeat": 13,
+      "responseDelayMs": 900,
+      "mealId": 13,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 14,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 2298,
+    "worker_index": 13,
+    "errors": [],
+    "observation": {
+      "repeat": 14,
+      "responseDelayMs": 900,
+      "mealId": 14,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 15,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 968,
+    "worker_index": 14,
+    "errors": [],
+    "observation": {
+      "repeat": 15,
+      "responseDelayMs": 0,
+      "mealId": 15,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 16,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 958,
+    "worker_index": 15,
+    "errors": [],
+    "observation": {
+      "repeat": 16,
+      "responseDelayMs": 0,
+      "mealId": 16,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 17,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1803,
+    "worker_index": 16,
+    "errors": [],
+    "observation": {
+      "repeat": 17,
+      "responseDelayMs": 900,
+      "mealId": 17,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 18,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 968,
+    "worker_index": 17,
+    "errors": [],
+    "observation": {
+      "repeat": 18,
+      "responseDelayMs": 0,
+      "mealId": 18,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 19,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 950,
+    "worker_index": 18,
+    "errors": [],
+    "observation": {
+      "repeat": 19,
+      "responseDelayMs": 0,
+      "mealId": 19,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  },
+  {
+    "case": "FLAKY-T01",
+    "repeat": 20,
+    "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1003,
+    "worker_index": 19,
+    "errors": [],
+    "observation": {
+      "repeat": 20,
+      "responseDelayMs": 0,
+      "mealId": 20,
+      "expectedPrice": "100",
+      "observedPrice": "100"
+    },
+    "api_requests": 5,
+    "browser_api_requests": 9,
+    "non_2xx": []
+  }
+]

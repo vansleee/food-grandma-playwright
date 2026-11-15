@@ -1,0 +1,11 @@
+
+Running 2 tests using 2 workers
+
+(node:50595) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:50596) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch34/support/price-cases.ts:10:5 › PAR-T01 修改餐點價格為 150 (1.1s)
+  ✓  2 ch34/support/price-cases.ts:10:5 › PAR-T02 修改餐點價格為 180 (1.1s)
+
+  2 passed (1.5s)

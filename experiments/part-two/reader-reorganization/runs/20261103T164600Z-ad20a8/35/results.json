@@ -1,0 +1,1490 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0",
+      "--repeat-each=20"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch35",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts",
+        "repeatEach": 20,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch35",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-load.spec.ts",
+      "file": "meal-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:37.988Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改/attachments/01-loaded-original-png-2d2e5a4b888d89ddefbe72b0d1d84e72175a2af8.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改/attachments/02-list-after-save-png-8c57f0591be4b037498d28b97c416d7232a803fb.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改/attachments/03-reopened-png-c8e84a35a5e5c210d35d0535c2972376d526d2cc.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMzUtVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjEsImRlbGF5TXMiOjkwMH0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-6ad4b8de7525abaff1be",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 936,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:40.642Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat1/attachments/01-loaded-original-png-a9b25b7367ed5e935c391142b4c5cfae934196f5.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat1/attachments/02-list-after-save-png-639c122e5428f5d48f0159eea7d7b8e69bd4833c.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat1/attachments/03-reopened-png-374c540f15c37bc983d0f520ff23febab4d5d0b8.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDIsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDIiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDIsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAyIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyCiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAyLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAyIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjIsImRlbGF5TXMiOjB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat1/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat1/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-c846b1cafe03b5ff9d5f",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:41.975Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat2/attachments/01-loaded-original-png-fefcbfd7acb75b2e8d06de83e2f3b82555c8370e.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat2/attachments/02-list-after-save-png-b715fb99a1a55df1db65288134f6ece94c0c13cb.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat2/attachments/03-reopened-png-e982b893fb7155dfb7b61e9565d2fd900ec20933.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDMsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDMiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDMsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAzIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzCiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDMsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDMiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTUwCiAgfSwKICAicmVvcGVuZWRQcmljZSI6ICIxNTAiCn0="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjMsImRlbGF5TXMiOjkwMH0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat2/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat2/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-3e05e1a2d8d246f4e763",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 938,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:44.628Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat3/attachments/01-loaded-original-png-c21747a2d2483100dc9370bfd6443f484b8871dd.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat3/attachments/02-list-after-save-png-e277d62275de9e108a2bd2e8179e21070af86306.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat3/attachments/03-reopened-png-c44e964fdf156d9ea10128986052e62bae9bfd40.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDQsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDQiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDQsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA0IiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNAogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNAogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogNCwKICAgICJuYW1lIjogIkNIMzUtVDAxIG1lYWwgNCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjQsImRlbGF5TXMiOjB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat3/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat3/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-65454f77f7ff77ce9366",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:45.960Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat4/attachments/01-loaded-original-png-7e2a851c25ec6361ab0bfbd828a672753b5638af.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat4/attachments/02-list-after-save-png-50aa10c41cc9047b6fb6d09af19c4303063b32fd.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat4/attachments/03-reopened-png-93780f93a7027194c134e7476bcc3b4df36c37bc.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDUsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDUiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDUsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA1IiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1CiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiA1LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA1IiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjUsImRlbGF5TXMiOjkwMH0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat4/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat4/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-7a77a5d58342e9c0b27b",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 926,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:48.601Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat5/attachments/01-loaded-original-png-f8660e044861ce88351779da2685c84c12d8ce4f.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat5/attachments/02-list-after-save-png-baea932bcc55f67fdf8971381220d324fa2b488a.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat5/attachments/03-reopened-png-0ac3ec88778481de72c031647f0a55585f216525.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDYsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDYiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDYsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA2IiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2CiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0LAogICAgNSwKICAgIDYKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDYsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDYiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTUwCiAgfSwKICAicmVvcGVuZWRQcmljZSI6ICIxNTAiCn0="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjYsImRlbGF5TXMiOjB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat5/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat5/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-76fde8934457b25a68b2",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:49.918Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat6/attachments/01-loaded-original-png-2ef3c94b96a2002396cd9d61d24c6fd11726a03f.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat6/attachments/02-list-after-save-png-6047ee1fe3c4bafd3fff86af0e229b88bbc0af91.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat6/attachments/03-reopened-png-777a8e6c6634ec451b431902719ef40d82e39a58.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDcsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDciLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDcsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA3IiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNwogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNwogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogNywKICAgICJuYW1lIjogIkNIMzUtVDAxIG1lYWwgNyIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjcsImRlbGF5TXMiOjkwMH0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat6/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat6/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-ed67db142b50fb8c3863",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:52.580Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat7/attachments/01-loaded-original-png-d1fb83abc057bf0f93a9a4b6a65684262bd591d3.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat7/attachments/02-list-after-save-png-0261976902bf9f19238ef5eea864429433a3b26f.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat7/attachments/03-reopened-png-21d0727063fc808b73303807761271b541a193f6.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDgsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDgiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDgsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA4IiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNywKICAgIDgKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4CiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiA4LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA4IiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjgsImRlbGF5TXMiOjB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat7/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat7/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-063519ac101738a1d411",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2249,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:54.004Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat8/attachments/01-loaded-original-png-1c6c8acbe7a493b8da08d9f1a9669b9fb900e61d.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat8/attachments/02-list-after-save-png-cc3170d809ef563f6595715e373387eef5596b20.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat8/attachments/03-reopened-png-48ffca0aa0e1bde471dea98e9eac5a4bae69006a.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDksCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDkiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDksCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCA5IiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNywKICAgIDgsCiAgICA5CiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0LAogICAgNSwKICAgIDYsCiAgICA3LAogICAgOCwKICAgIDkKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDksCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDkiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTUwCiAgfSwKICAicmVvcGVuZWRQcmljZSI6ICIxNTAiCn0="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjksImRlbGF5TXMiOjkwMH0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat8/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat8/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-49fb57dc583336ba09c9",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 935,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:56.659Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat9/attachments/01-loaded-original-png-903e259746fac2294ed806e7657e5198b65b70ad.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat9/attachments/02-list-after-save-png-0f2d881170a3c7f368e17dd5aac109284fd3c67e.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat9/attachments/03-reopened-png-640376ff4955da0650758694fde0fab25cf3fb9e.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEwLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTAsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMCIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwCiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0LAogICAgNSwKICAgIDYsCiAgICA3LAogICAgOCwKICAgIDksCiAgICAxMAogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMTAsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDEwIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjEwLCJkZWxheU1zIjowfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat9/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat9/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-5ec16dff441017d3802f",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2249,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:57.984Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat10/attachments/01-loaded-original-png-4d2fb228b53184e2cb20c885983dc83b2f6b1dac.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat10/attachments/02-list-after-save-png-4bd73f2baf983d544ab72a66059956ff8201fa48.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat10/attachments/03-reopened-png-87be348ffcbde7821447b4fd9324ac6bda1364b4.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDExLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTEsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMSIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDExLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjExLCJkZWxheU1zIjo5MDB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat10/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat10/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-714a7c5a94c5cf7365db",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:00.634Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat11/attachments/01-loaded-original-png-b5362f31bd97519c6118d6b2264e142875796c56.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat11/attachments/02-list-after-save-png-d7826f73cddad852f51b3f9fccf9c45fc0d4aee9.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat11/attachments/03-reopened-png-a4d8a4042b994bafbde4efc10ecca182eca6fc2c.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEyLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMiIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTIsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMiIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMgogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNywKICAgIDgsCiAgICA5LAogICAgMTAsCiAgICAxMSwKICAgIDEyCiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAxMiwKICAgICJuYW1lIjogIkNIMzUtVDAxIG1lYWwgMTIiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTUwCiAgfSwKICAicmVvcGVuZWRQcmljZSI6ICIxNTAiCn0="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjEyLCJkZWxheU1zIjowfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat11/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat11/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-920903077ede0ec641f2",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2252,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:01.985Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat12/attachments/01-loaded-original-png-1a472d54a44eb24595bc415fb18ceeba9d0c5c01.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat12/attachments/02-list-after-save-png-1d75f2a1385f3ea8a2611e85d084770aa926df16.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat12/attachments/03-reopened-png-2887f5c2b327b1a88938dfa6a39d5d622ffa28e8.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEzLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMyIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTMsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxMyIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzCiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0LAogICAgNSwKICAgIDYsCiAgICA3LAogICAgOCwKICAgIDksCiAgICAxMCwKICAgIDExLAogICAgMTIsCiAgICAxMwogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMTMsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDEzIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjEzLCJkZWxheU1zIjo5MDB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat12/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat12/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-169c08d4d70f3801a1ba",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 970,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:04.647Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat13/attachments/01-loaded-original-png-6d3dd8169fd41dc6d786fe53621b03f647097c2d.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat13/attachments/02-list-after-save-png-375d92293897b33058c79e97eef7c4d8b01a8494.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat13/attachments/03-reopened-png-ca86c2206d97226507d05d93ebf088868cf02f64.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDE0LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTQsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNCIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDE0LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjE0LCJkZWxheU1zIjowfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat13/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat13/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-9d198397f18421008a40",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2225,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:06.014Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat14/attachments/01-loaded-original-png-1381c1d42e7af0f20b233393c4c4d419839bed0b.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat14/attachments/02-list-after-save-png-18c0ed56e9b772b4e427f3b8d1df9f2ffb1c3ef6.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat14/attachments/03-reopened-png-7db7bc63132110cc46fe3fc410340f83905998a9.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDE1LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTUsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNSIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNywKICAgIDgsCiAgICA5LAogICAgMTAsCiAgICAxMSwKICAgIDEyLAogICAgMTMsCiAgICAxNCwKICAgIDE1CiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAxNSwKICAgICJuYW1lIjogIkNIMzUtVDAxIG1lYWwgMTUiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTUwCiAgfSwKICAicmVvcGVuZWRQcmljZSI6ICIxNTAiCn0="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjE1LCJkZWxheU1zIjo5MDB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat14/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat14/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-a6d0d7ed96aadf85dd24",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:08.652Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat15/attachments/01-loaded-original-png-3be7c252c81edbcc58ab9cee1c8dfdd06eee1a61.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat15/attachments/02-list-after-save-png-470347bd395deb258616017f2f05a2dcf593b4df.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat15/attachments/03-reopened-png-3911b19f23d18f61fada5ba3785aa78c6ff54978.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDE2LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNiIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTYsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNiIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2CiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0LAogICAgNSwKICAgIDYsCiAgICA3LAogICAgOCwKICAgIDksCiAgICAxMCwKICAgIDExLAogICAgMTIsCiAgICAxMywKICAgIDE0LAogICAgMTUsCiAgICAxNgogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMTYsCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDE2IiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjE2LCJkZWxheU1zIjowfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat15/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat15/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-9e759aee1ac13b7a9381",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:10.039Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat16/attachments/01-loaded-original-png-abdb09e9d55ed51146275089be9060de3b2edebb.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat16/attachments/02-list-after-save-png-e8eeca0a78701d8be7e52dce56cc284c1e90d05b.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat16/attachments/03-reopened-png-8101e0e56d46527bae2ae4dfcd3525b676ad03fa.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDE3LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNyIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTcsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNyIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2LAogICAgMTcKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2LAogICAgMTcKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDE3LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxNyIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjE3LCJkZWxheU1zIjo5MDB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat16/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat16/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-77a88e289ef8b688e872",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 959,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:12.694Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat17/attachments/01-loaded-original-png-04fe863a6c7b08db3b000bb4d77226f8c187d9db.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat17/attachments/02-list-after-save-png-62f8721db27670d1f714df459ff864e5fc9ac2ef.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat17/attachments/03-reopened-png-bcfa540e09393835107eefd0b6fcfb08e7f1af4d.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDE4LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxOCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTgsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxOCIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2LAogICAgMTcsCiAgICAxOAogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNCwKICAgIDUsCiAgICA2LAogICAgNywKICAgIDgsCiAgICA5LAogICAgMTAsCiAgICAxMSwKICAgIDEyLAogICAgMTMsCiAgICAxNCwKICAgIDE1LAogICAgMTYsCiAgICAxNywKICAgIDE4CiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAxOCwKICAgICJuYW1lIjogIkNIMzUtVDAxIG1lYWwgMTgiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTUwCiAgfSwKICAicmVvcGVuZWRQcmljZSI6ICIxNTAiCn0="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjE4LCJkZWxheU1zIjowfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat17/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat17/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-f83ba17f63d3e280bb60",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:14.061Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat18/attachments/01-loaded-original-png-5d4b905059ceb79e94b920f8bbcd45a8ee173075.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat18/attachments/02-list-after-save-png-0b44aeb9cd1e7e50b77a81fb8e7e238c4c6a976c.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat18/attachments/03-reopened-png-69fd27e7f293361eb218e616c26f3cb55d01debc.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDE5LAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxOSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMTksCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAxOSIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2LAogICAgMTcsCiAgICAxOCwKICAgIDE5CiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0LAogICAgNSwKICAgIDYsCiAgICA3LAogICAgOCwKICAgIDksCiAgICAxMCwKICAgIDExLAogICAgMTIsCiAgICAxMywKICAgIDE0LAogICAgMTUsCiAgICAxNiwKICAgIDE3LAogICAgMTgsCiAgICAxOQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMTksCiAgICAibmFtZSI6ICJDSDM1LVQwMSBtZWFsIDE5IiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDM1LVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDE1MAogIH0sCiAgInJlb3BlbmVkUHJpY2UiOiAiMTUwIgp9"
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjE5LCJkZWxheU1zIjo5MDB9"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat18/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat18/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-bf1da9459adf52c135a6",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "CH35-T01 載入時間改變時，仍等原價出現後再修改",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 939,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:47:16.709Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-loaded-original.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat19/attachments/01-loaded-original-png-90cfdcb625361ddd3ec1aba12e3213f50e1476a4.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat19/attachments/02-list-after-save-png-5f3bb66dabf150cd015080b91ea16723062d450a.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat19/attachments/03-reopened-png-24e73c0b847fc5c4085b2dd1dd43519acdc1184e.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzNS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDIwLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAyMCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxMDAKICB9LAogICJleHBlY3RlZFByaWNlIjogMTUwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMjAsCiAgICAgICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAyMCIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzUtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAxNTAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2LAogICAgMTcsCiAgICAxOCwKICAgIDE5LAogICAgMjAKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDEsCiAgICAyLAogICAgMywKICAgIDQsCiAgICA1LAogICAgNiwKICAgIDcsCiAgICA4LAogICAgOSwKICAgIDEwLAogICAgMTEsCiAgICAxMiwKICAgIDEzLAogICAgMTQsCiAgICAxNSwKICAgIDE2LAogICAgMTcsCiAgICAxOCwKICAgIDE5LAogICAgMjAKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDIwLAogICAgIm5hbWUiOiAiQ0gzNS1UMDEgbWVhbCAyMCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "load-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXBlYXQiOjIwLCJkZWxheU1zIjowfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat19/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/35/artifacts/meal-load-CH35-T01-載入時間改變時，仍等原價出現後再修改-repeat19/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "959553f7cb7c0b788f4c-94ee6bb6c0667786a802",
+          "file": "meal-load.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:46:37.716Z",
+    "duration": 40133.341,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

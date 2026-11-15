@@ -1,0 +1,66 @@
+{
+  "date_taipei": "2026-11-07",
+  "case": "CH26-T01",
+  "variants": {
+    "none": {
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 3121,
+      "browser_state_changes": 4,
+      "states": [
+        "Cooking",
+        "Ready",
+        "Delivered"
+      ],
+      "order_id": 1,
+      "driver_id": 15,
+      "total": 120,
+      "quantity": 1,
+      "api_requests": 32,
+      "console_errors": 1
+    },
+    "pom": {
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 2342,
+      "browser_state_changes": 4,
+      "states": [
+        "Cooking",
+        "Ready",
+        "Delivered"
+      ],
+      "order_id": 1,
+      "driver_id": 15,
+      "total": 120,
+      "quantity": 1,
+      "api_requests": 32,
+      "console_errors": 1
+    },
+    "screenplay": {
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 3252,
+      "browser_state_changes": 4,
+      "states": [
+        "Cooking",
+        "Ready",
+        "Delivered"
+      ],
+      "order_id": 1,
+      "driver_id": 15,
+      "total": 120,
+      "quantity": 1,
+      "api_requests": 32,
+      "console_errors": 1
+    }
+  },
+  "original_v1_v2_unchanged": true,
+  "book_unchanged_including_existing_edits": true,
+  "typecheck": "passed",
+  "retry": 0,
+  "passed": 3,
+  "failed": 0,
+  "same_final_database_state": true,
+  "same_lifecycle_snapshots": true,
+  "owned_services_stopped": true
+}

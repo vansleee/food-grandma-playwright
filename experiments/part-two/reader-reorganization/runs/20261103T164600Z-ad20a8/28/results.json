@@ -1,0 +1,219 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch28",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch28",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-prices.spec.ts",
+      "file": "meal-prices.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CH28-T01 將原餐點價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 945,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:20.751Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-editor-before-change.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T01-將原餐點價格由-100-修改為-150/attachments/01-editor-before-change-png-fecb609efa06e8802707b34ebbd9b378963e5f08.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T01-將原餐點價格由-100-修改為-150/attachments/02-list-after-save-png-e52c6a64ab54eda5bb4415a06fbb3e3724c4861f.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T01-將原餐點價格由-100-修改為-150/attachments/03-reopened-png-65189820f0ac045e3fab2cdd26af019c0b0d99a8.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gyOC1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDI4LVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMjgtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gyOC1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gyOC1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMjgtVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gyOC1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T01-將原餐點價格由-100-修改為-150/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T01-將原餐點價格由-100-修改為-150/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "47bbfc740d569dbce98c-c7588158966207a451d4",
+          "file": "meal-prices.spec.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "title": "CH28-T02 將原餐點價格由 100 修改為 0",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:46:21.858Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-editor-before-change.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T02-將原餐點價格由-100-修改為-0/attachments/01-editor-before-change-png-84c890c3b9e2da8e165232b39569e5f8e3aabccb.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T02-將原餐點價格由-100-修改為-0/attachments/02-list-after-save-png-24027ea50e1b355f9f68237c8f195dd6a70e8245.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T02-將原餐點價格由-100-修改為-0/attachments/03-reopened-png-ca1780e429ffc0f7e0581350ba702a99a3bafdf1.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gyOC1UMDIiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDIsCiAgICAibmFtZSI6ICJDSDI4LVQwMiBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMjgtVDAyIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDAsCiAgInNhdmVkIjogewogICAgInN0YXR1cyI6IDIwMCwKICAgICJib2R5IjogewogICAgICAibWVhbCI6IHsKICAgICAgICAiaWQiOiAyLAogICAgICAgICJuYW1lIjogIkNIMjgtVDAyIG1lYWwgMSIsCiAgICAgICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMjgtVDAyIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICAgICAiaW1hZ2UiOiAiIiwKICAgICAgICAicHJpY2UiOiAwCiAgICAgIH0KICAgIH0KICB9LAogICJpZHNCZWZvcmUiOiBbCiAgICAyCiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAyCiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAyLAogICAgIm5hbWUiOiAiQ0gyOC1UMDIgbWVhbCAxIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDI4LVQwMiBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T02-將原餐點價格由-100-修改為-0/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T164600Z-ad20a8/28/artifacts/meal-prices-CH28-T02-將原餐點價格由-100-修改為-0/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "47bbfc740d569dbce98c-1ba49724a85f4c03c971",
+          "file": "meal-prices.spec.ts",
+          "line": 6,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:46:20.476Z",
+    "duration": 2389.085,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

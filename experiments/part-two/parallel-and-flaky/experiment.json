@@ -1,0 +1,40 @@
+{
+  "baseline_rounds": 3,
+  "baseline_workers": [
+    1,
+    4
+  ],
+  "collision_rounds": 3,
+  "collision_workers": [
+    1,
+    2
+  ],
+  "flaky_repeats": 20,
+  "flaky_workers": 1,
+  "fixed_wait_ms": 200,
+  "response_delay_schedule_ms": [
+    900,
+    900,
+    900,
+    900,
+    900,
+    0,
+    0,
+    0,
+    900,
+    900,
+    0,
+    0,
+    900,
+    900,
+    0,
+    0,
+    900,
+    0,
+    0,
+    0
+  ],
+  "schedule_seed": 20261103,
+  "retries": 0,
+  "stop_after_planned_runs": true
+}

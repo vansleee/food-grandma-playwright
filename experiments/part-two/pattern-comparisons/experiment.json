@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-04",
+  "groups": [
+    "page-factory",
+    "workflow",
+    "screenplay",
+    "adapter",
+    "repository"
+  ],
+  "variants": [
+    "before",
+    "after"
+  ],
+  "e2e_scenarios": [
+    {
+      "suffix": "T01",
+      "originalPrice": 100,
+      "newPrice": 150
+    },
+    {
+      "suffix": "T02",
+      "originalPrice": 100,
+      "newPrice": 0
+    }
+  ],
+  "repository_contracts": [
+    "RCON-T01",
+    "RCON-T02",
+    "RCON-T03",
+    "RCON-T04"
+  ],
+  "workers": 1,
+  "retries": 0,
+  "planned_e2e_cases": 20,
+  "planned_api_contracts": 4,
+  "planned_fake_contracts": 4,
+  "fake_runs_without_server_or_password": true
+}

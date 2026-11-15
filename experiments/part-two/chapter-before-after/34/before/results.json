@@ -1,0 +1,228 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch34",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch34",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "parallel-meals.spec.ts",
+      "file": "parallel-meals.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "改寫前",
+          "file": "parallel-meals.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH34-T01 各自建立餐點並循序修改為 150",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 927,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:10:59.598Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "01-editor-before-change.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T01-各自建立餐點並循序修改為-150/attachments/01-editor-before-change-png-c0e4051f0fb8b036999319ca6091ae15f240d906.png"
+                        },
+                        {
+                          "name": "02-list-after-save.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T01-各自建立餐點並循序修改為-150/attachments/02-list-after-save-png-4694816c67d64e4f1cc3af36ad96a6d9efcd2c74.png"
+                        },
+                        {
+                          "name": "03-reopened.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T01-各自建立餐點並循序修改為-150/attachments/03-reopened-png-0c26155583799c6226d790b83fe6fb81c135d277.png"
+                        },
+                        {
+                          "name": "observation.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJjYXNlSWQiOiAiQ0gzNC1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDM0LVQwMSBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzQtVDAxIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE1MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDEsCiAgICAgICAgIm5hbWUiOiAiQ0gzNC1UMDEgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNC1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE1MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMQogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMQogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIkNIMzQtVDAxIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNC1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T01-各自建立餐點並循序修改為-150/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T01-各自建立餐點並循序修改為-150/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c214ec6b61364ac1dc9d-b6930ed911d89ec1d14d",
+              "file": "parallel-meals.spec.ts",
+              "line": 8,
+              "column": 9
+            },
+            {
+              "title": "CH34-T02 各自建立餐點並循序修改為 180",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:11:00.675Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "01-editor-before-change.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T02-各自建立餐點並循序修改為-180/attachments/01-editor-before-change-png-aa53e6376dd38cb8ab274e4dd9a8dbcf6809d506.png"
+                        },
+                        {
+                          "name": "02-list-after-save.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T02-各自建立餐點並循序修改為-180/attachments/02-list-after-save-png-2d4ad69fd1d6c282230194a76e35a81d43a36b65.png"
+                        },
+                        {
+                          "name": "03-reopened.png",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T02-各自建立餐點並循序修改為-180/attachments/03-reopened-png-0f20b0668d04ba1c3b46a509771b44b8023a5f62.png"
+                        },
+                        {
+                          "name": "observation.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJjYXNlSWQiOiAiQ0gzNC1UMDIiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDIsCiAgICAibmFtZSI6ICJDSDM0LVQwMiBtZWFsIDEiLAogICAgInNob3J0X2Rlc2NyaXB0aW9uIjogIkNIMzQtVDAyIG9yaWdpbmFsIGRlc2NyaXB0aW9uIiwKICAgICJpbWFnZSI6ICIiLAogICAgInByaWNlIjogMTAwCiAgfSwKICAiZXhwZWN0ZWRQcmljZSI6IDE4MCwKICAic2F2ZWQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZWFsIjogewogICAgICAgICJpZCI6IDIsCiAgICAgICAgIm5hbWUiOiAiQ0gzNC1UMDIgbWVhbCAxIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNC1UMDIgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDE4MAogICAgICB9CiAgICB9CiAgfSwKICAiaWRzQmVmb3JlIjogWwogICAgMgogIF0sCiAgImlkc0FmdGVyIjogWwogICAgMgogIF0sCiAgInJlYWRCYWNrIjogewogICAgImlkIjogMiwKICAgICJuYW1lIjogIkNIMzQtVDAyIG1lYWwgMSIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzNC1UMDIgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxODAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE4MCIKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T02-各自建立餐點並循序修改為-180/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before/artifacts/parallel-meals-改寫前-CH34-T02-各自建立餐點並循序修改為-180/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c214ec6b61364ac1dc9d-80a06f2411d3ec94f6e6",
+              "file": "parallel-meals.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T17:10:59.367Z",
+    "duration": 2317.19,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

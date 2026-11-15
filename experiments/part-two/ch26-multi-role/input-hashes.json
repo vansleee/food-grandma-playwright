@@ -1,0 +1,7 @@
+{
+  "tests/e2e/chapters/ch26/multi-role-order.spec.ts": "caf3dc3407c3fc8bf34db58481f2220c7dda27984ce451ec684452ad6a550cca",
+  "tests/e2e/chapters/playwright.config.ts": "cba069086cc5d994c14d9d3ecbe185f7cb632a3b5be48eda26e7c147a070bf5a",
+  "tests/e2e/chapters/chapters.json": "215fa0a028d7133760fd47e969db5c68ad1439d3ac507144d0acf6cb59270657",
+  "tests/e2e/chapters/support/pages.ts": "5a1a605c0089f62c2b2035b64507d6ba8ccba9cbb145bac1d1e63cb4c3fa651c",
+  "tests/e2e/chapters/support/api.ts": "425fea1203b5973b7790ec5a40a9bb73b428eddd7cb23d79db3510e95a35fe56"
+}

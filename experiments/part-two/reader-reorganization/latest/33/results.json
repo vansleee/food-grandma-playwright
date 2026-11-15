@@ -1,0 +1,149 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch33",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch33",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "network-failure.spec.ts",
+      "file": "network-failure.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CH33-T01 儲存失敗保留輸入，重新送出後由真實後端儲存",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1051,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:53:39.878Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-before-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/artifacts/network-failure-CH33-T01-儲存失敗保留輸入，重新送出後由真實後端儲存/attachments/01-before-save-png-4cb83f6ceb88ef0b8cb20e680c589fb1179277f3.png"
+                    },
+                    {
+                      "name": "02-failed-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/artifacts/network-failure-CH33-T01-儲存失敗保留輸入，重新送出後由真實後端儲存/attachments/02-failed-save-png-669e059c5ce1c44d3833d51b7e5f17ee00c9fe82.png"
+                    },
+                    {
+                      "name": "03-real-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/artifacts/network-failure-CH33-T01-儲存失敗保留輸入，重新送出後由真實後端儲存/attachments/03-real-save-png-6ebc07f01a76da43bc1761767c4010a585298ffe.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/artifacts/network-failure-CH33-T01-儲存失敗保留輸入，重新送出後由真實後端儲存/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/33/artifacts/network-failure-CH33-T01-儲存失敗保留輸入，重新送出後由真實後端儲存/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3d4cb429b3fb547048fe-6a83f2a689974568fb98",
+          "file": "network-failure.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:53:39.647Z",
+    "duration": 1459.96,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

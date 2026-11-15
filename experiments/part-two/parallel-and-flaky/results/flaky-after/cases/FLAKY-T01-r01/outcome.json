@@ -1,0 +1,20 @@
+{
+  "case": "FLAKY-T01",
+  "repeat": 1,
+  "title": "FLAKY-T01 等待原有餐點資料後，從網頁把價格由 100 修改為 150",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 1862,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "repeat": 1,
+    "responseDelayMs": 900,
+    "mealId": 1,
+    "expectedPrice": "100",
+    "observedPrice": "100"
+  },
+  "api_requests": 5,
+  "browser_api_requests": 9,
+  "non_2xx": []
+}

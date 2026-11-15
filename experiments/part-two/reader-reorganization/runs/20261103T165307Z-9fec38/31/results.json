@@ -1,0 +1,194 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch31",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch31",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-price.spec.ts",
+      "file": "meal-price.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CH31-T01 由 Adapter 轉換餐點欄位後仍從網頁修改價格",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:53:34.674Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-editor-before-change.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts/meal-price-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/attachments/01-editor-before-change-png-2f6521d1bb1abd71d1cf3563056a70539747904d.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts/meal-price-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/attachments/02-list-after-save-png-57a06ee31392f914ba7f01797333e2ba7809e309.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts/meal-price-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/attachments/03-reopened-png-cf6ede1badd11f84f1d1f000c440fb6ad4ad6883.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiQ0gzMS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJDSDMxLVQwMSBtZWFsIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDMxLVQwMSBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDEwMAogIH0sCiAgImV4cGVjdGVkUHJpY2UiOiAxNTAsCiAgInNhdmVkIjogewogICAgInN0YXR1cyI6IDIwMCwKICAgICJib2R5IjogewogICAgICAibWVhbCI6IHsKICAgICAgICAiaWQiOiAxLAogICAgICAgICJuYW1lIjogIkNIMzEtVDAxIG1lYWwiLAogICAgICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJDSDMxLVQwMSBkZXNjcmlwdGlvbiIsCiAgICAgICAgImltYWdlIjogIiIsCiAgICAgICAgInByaWNlIjogMTUwCiAgICAgIH0KICAgIH0KICB9LAogICJpZHNCZWZvcmUiOiBbCiAgICAxCiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxCiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAxLAogICAgIm5hbWUiOiAiQ0gzMS1UMDEgbWVhbCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQ0gzMS1UMDEgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts/meal-price-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts/meal-price-CH31-T01-由-Adapter-轉換餐點欄位後仍從網頁修改價格/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3e8b09834d30066a79b4-3ed66c12904634db3a12",
+          "file": "meal-price.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "CH31-T02 同一個 API client 使用不同認證方式取得角色資料",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:53:35.840Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/reader-project-reorganization-20261104/runs/20261103T165307Z-9fec38/31/artifacts/meal-price-CH31-T02-同一個-API-client-使用不同認證方式取得角色資料/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3e8b09834d30066a79b4-e66a682d66733153aa71",
+          "file": "meal-price.spec.ts",
+          "line": 29,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:53:34.445Z",
+    "duration": 1816.391,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

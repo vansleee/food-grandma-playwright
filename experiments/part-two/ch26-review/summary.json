@@ -1,0 +1,103 @@
+{
+  "date_taipei": "2026-11-07",
+  "cases": [
+    {
+      "variant": "none",
+      "case": "CH26-T01",
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "duration_ms": 3066,
+      "browser_state_changes": 4,
+      "role_screenshots": [
+        "manager-final",
+        "driverA-final",
+        "customerA-final"
+      ],
+      "order_lifecycles": 1,
+      "states": [
+        "Cooking",
+        "Ready",
+        "On the way",
+        "Delivered"
+      ]
+    },
+    {
+      "variant": "pom",
+      "case": "CH26-T01",
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "duration_ms": 2676,
+      "browser_state_changes": 4,
+      "role_screenshots": [
+        "customerA-final",
+        "manager-final",
+        "driverA-final"
+      ],
+      "order_lifecycles": 1,
+      "states": [
+        "Cooking",
+        "Ready",
+        "On the way",
+        "Delivered"
+      ]
+    },
+    {
+      "variant": "screenplay",
+      "case": "CH26-T01",
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "duration_ms": 2308,
+      "browser_state_changes": 4,
+      "role_screenshots": [
+        "manager-final",
+        "driverA-final",
+        "customerA-final"
+      ],
+      "order_lifecycles": 1,
+      "states": [
+        "Cooking",
+        "Ready",
+        "On the way",
+        "Delivered"
+      ]
+    },
+    {
+      "variant": "screenplay",
+      "case": "CH26-T02",
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "duration_ms": 5080,
+      "browser_state_changes": 8,
+      "role_screenshots": [
+        "customerA-final",
+        "driverA-final",
+        "driverB-final",
+        "manager-final",
+        "customerB-final"
+      ],
+      "order_lifecycles": 2,
+      "states": [
+        "Cooking",
+        "Ready",
+        "On the way",
+        "Delivered"
+      ]
+    }
+  ],
+  "original_suites_unchanged": true,
+  "historical_evidence_unchanged": true,
+  "book_unchanged_including_existing_edits": true,
+  "typecheck": "passed",
+  "cleanup_fault_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "e2e_passed": 4,
+  "e2e_failed": 0,
+  "same_primary_case_lifecycles": true,
+  "owned_services_stopped": true
+}

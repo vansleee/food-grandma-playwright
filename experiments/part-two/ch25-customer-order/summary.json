@@ -1,0 +1,66 @@
+{
+  "date_taipei": "2026-11-05",
+  "case": "CH25-T01",
+  "comment_style": "Arrange / Act / Assert",
+  "source": "tests/e2e/chapters/ch25/customer-order.spec.ts",
+  "variants": {
+    "none": {
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "test_duration_ms": 1421,
+      "api_requests": 15,
+      "browser_order_post_status": 200,
+      "browser_order_post_response": {
+        "status": "success"
+      },
+      "orders_in_database": 1,
+      "quantity": 1,
+      "total": 120,
+      "non_2xx_count": 0,
+      "console_errors": 1
+    },
+    "fluent": {
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "test_duration_ms": 1083,
+      "api_requests": 15,
+      "browser_order_post_status": 200,
+      "browser_order_post_response": {
+        "status": "success"
+      },
+      "orders_in_database": 1,
+      "quantity": 1,
+      "total": 120,
+      "non_2xx_count": 0,
+      "console_errors": 1
+    },
+    "workflow": {
+      "passed": 1,
+      "failed": 0,
+      "retry": 0,
+      "test_duration_ms": 1010,
+      "api_requests": 15,
+      "browser_order_post_status": 200,
+      "browser_order_post_response": {
+        "status": "success"
+      },
+      "orders_in_database": 1,
+      "quantity": 1,
+      "total": 120,
+      "non_2xx_count": 0,
+      "console_errors": 1
+    }
+  },
+  "original_v1_v2_unchanged": true,
+  "book_unchanged_including_existing_edits": true,
+  "typecheck": "passed",
+  "passed": 3,
+  "failed": 0,
+  "same_database_state": true,
+  "owned_services_stopped": true,
+  "full_trace_location": "./work/ch25-ordering-20261105/evidence",
+  "same_browser_action_sequence": true,
+  "browser_actions_per_variant": 8
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "browser",
+  "method": "GET",
+  "url": "http://127.0.0.1:18082/api/driver/orders/?status=ready",
+  "status": 200,
+  "ms": 2.722,
+  "started": "2026-11-02T18:32:51.993Z",
+  "request": null,
+  "response": {
+    "orders": [
+      {
+        "id": 3,
+        "customer": {
+          "id": 10,
+          "name": "customerB ROLE-T02",
+          "avatar": "",
+          "address": "ROLE-T02 customerB 示範地址"
+        },
+        "restaurant": {
+          "id": 9,
+          "name": "ROLE-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "ROLE-T02 restaurantA 示範路 1 號"
+        },
+        "driver": null,
+        "order_details": [
+          {
+            "id": 3,
+            "meal": {
+              "id": 2,
+              "name": "Role T02 meal",
+              "price": 80
+            },
+            "quantity": 1,
+            "sub_total": 80
+          }
+        ],
+        "total": 80,
+        "status": "Ready",
+        "address": "role-other-ROLET02n2"
+      }
+    ]
+  },
+  "n": 16
+}

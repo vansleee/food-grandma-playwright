@@ -1,0 +1,7 @@
+fastapi==0.118.0
+uvicorn[standard]==0.37.0
+sqlmodel==0.0.24
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.20
+stripe==15.2.1

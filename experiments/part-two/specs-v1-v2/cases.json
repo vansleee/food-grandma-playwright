@@ -1,0 +1,137 @@
+[
+  {
+    "id": "AUTH-T01",
+    "spec": "./specs/01-restaurant-auth-all.md",
+    "source_row": "| AUTH-T01 | 店家管理者 | 使用有效店家帳密且沒有既存登入狀態 | 登入 `/management/sign-in` | 導向 `/management/orders` 並顯示訂單管理內容 | Acceptance；真實 UI＋後端；現況可觀察 |"
+  },
+  {
+    "id": "AUTH-T02",
+    "spec": "./specs/01-restaurant-auth-all.md",
+    "source_row": "| AUTH-T02 | 店家管理者 | 店家管理站沒有 token | 直接開啟 `/management/orders` | 導向登入頁且不呈現受保護內容 | E2E；現況可觀察 |"
+  },
+  {
+    "id": "AUTH-T03",
+    "spec": "./specs/01-restaurant-auth-all.md",
+    "source_row": "| AUTH-T03 | 店家管理者 | 已登入管理站 | 登出後重新開啟受保護頁面 | 前端清除 token 並導向登入頁 | E2E；不宣稱後端撤銷 token |"
+  },
+  {
+    "id": "ROLE-T01",
+    "spec": "./specs/01-restaurant-auth.md",
+    "source_row": "| ROLE-T01 | 外送員已進入「可接訂單」頁，沒有進行中配送；一筆尚未指派的待取餐訂單顯示在列表中 | 點選該筆訂單的「接取訂單」 | 接單成功後進入「進行中配送」頁，顯示該筆訂單、「配送中」及「確認已送達」操作 | E2E；確認頁面導向與訂單資訊，並以訂單資料回讀接單者及狀態 |"
+  },
+  {
+    "id": "ROLE-T02",
+    "spec": "./specs/01-restaurant-auth.md",
+    "source_row": "| ROLE-T02 | 外送員 B 已有一筆進行中配送；「可接訂單」列表另有一筆未指派的待取餐訂單 | B 點選另一筆訂單的「接取訂單」 | 接單被拒，留在「可接訂單」頁，顯示 `Your outstanding order is not delivered yet.`；原配送仍屬於 B，另一筆訂單仍未指派 | E2E；確認畫面提示，並以訂單資料回讀兩筆訂單的狀態及指派者 |"
+  },
+  {
+    "id": "FIND-T02",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T02 | 分別輸入 ID、姓名、地址片段 | 顯示相應訂單；英文大小寫及前後空白依規則處理 | FIND-02／UI DDT |"
+  },
+  {
+    "id": "FIND-T03",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T03 | 搜尋顧客後選「待取餐」 | 僅顯示同時匹配顧客與 Ready 的列 | FIND-03／UI |"
+  },
+  {
+    "id": "FIND-T04",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T04 | 改搜尋条件 | 頁尾筆數更新；頁籤仍顯示未搜尋前各狀態總數 | FIND-04／UI |"
+  },
+  {
+    "id": "FIND-T05",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T05 | 搜尋不存在的字串 | 無訂單列，顯示無符合結果訊息 | FIND-05／UI |"
+  },
+  {
+    "id": "FIND-T06",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T06 | 空訂單餐廳載入完成 | 顯示尚無訂單，而非搜尋無結果 | FIND-05／UI |"
+  },
+  {
+    "id": "FIND-T07",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T07 | 控制首次回應延遲／失敗 | 分別顯示載入／錯誤，失敗不顯示成功空狀態 | FIND-06／Stub UI |"
+  },
+  {
+    "id": "FIND-T08",
+    "spec": "./specs/02-order-search-filter.md",
+    "source_row": "| FIND-T08 | 固定篩選後重新整理 | 發出新請求，完成後依原條件顯示新資料 | FIND-07／受控 UI |"
+  },
+  {
+    "id": "READY-T02",
+    "spec": "./specs/03-order-mark-ready.md",
+    "source_row": "| READY-T02 | 在 UI 找到指定 Cooking 訂單並完成備餐 | 顯示成功訊息、待取餐、按鈕消失；reload 後仍為待取餐 | READY-02、03／真實 UI |"
+  },
+  {
+    "id": "READY-T05",
+    "spec": "./specs/03-order-mark-ready.md",
+    "source_row": "| READY-T05 | 更新回應尚未完成 | 所有備餐完成按鈕停用，不重複送出 | READY-06／受控 UI |"
+  },
+  {
+    "id": "READY-T06",
+    "spec": "./specs/03-order-mark-ready.md",
+    "source_row": "| READY-T06 | 更新 API 被 Stub 為 500 或 status:failed | 顯示更新失敗，無成功通知；畫面不樂觀改成待取餐 | READY-06／Stub UI |"
+  },
+  {
+    "id": "MEAL-T01",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T01 | 新增餐點，填入名稱、描述與價格 120，圖片網址留空 | 返回列表，確認新餐點的 ID 與內容；重新整理頁面後仍能看到 | MEAL-02、03／UI 搭配真實後端 |"
+  },
+  {
+    "id": "MEAL-T02",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T02 | 開啟既有餐點，把價格改為 150 | 表單先顯示原有資料；儲存後同一個 ID 的餐點顯示新價格，沒有重複新增 | MEAL-04／UI 操作與 API 查詢 |"
+  },
+  {
+    "id": "MEAL-T03",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T03 | 名稱留空，或價格輸入負數、小數 | 瀏覽器的表單驗證不通過，不送出儲存請求 | MEAL-02／UI 資料驅動測試 |"
+  },
+  {
+    "id": "MEAL-T04",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T04 | 新增價格為 0 的餐點 | 可以儲存，透過 API 重新查詢後，價格仍為 0 | MEAL-02／UI |"
+  },
+  {
+    "id": "MEAL-T05",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T05 | 分別輸入名稱或描述中的文字，並切換英文大小寫 | 只顯示符合條件的餐點；沒有符合條件的餐點時，顯示搜尋無結果的提示 | MEAL-05／UI |"
+  },
+  {
+    "id": "MEAL-T06",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T06 | 模擬儲存請求延遲，之後回傳 HTTP 500 | 等待期間停用儲存按鈕；失敗後仍停留在表單，保留輸入資料，並可再次送出 | MEAL-06／模擬 API 回應的 UI 測試 |"
+  },
+  {
+    "id": "MEAL-T08",
+    "spec": "./specs/04-meal-management.md",
+    "source_row": "| MEAL-T08 | 開啟編輯頁時，餐點資料載入失敗 | 顯示載入失敗的提示，不能當成正常的空白新增表單 | MEAL-07／模擬 API 回應的 UI 測試 |"
+  },
+  {
+    "id": "ACCOUNT-T01",
+    "spec": "./specs/05-restaurant-account.md",
+    "source_row": "| ACCOUNT-T01 | 登入 A，開設定頁 | 已知名字、email、餐廳名稱及地址出現在對應欄位 | ACCOUNT-01／UI |"
+  },
+  {
+    "id": "ACCOUNT-T02",
+    "spec": "./specs/05-restaurant-account.md",
+    "source_row": "| ACCOUNT-T02 | 修改電話與地址並保存 | 顯示成功、仍在設定頁；reload 後新值存在，其他欄位保持 | ACCOUNT-03／真實 UI |"
+  },
+  {
+    "id": "ACCOUNT-T03",
+    "spec": "./specs/05-restaurant-account.md",
+    "source_row": "| ACCOUNT-T03 | 逐一清空必填欄位，或輸入明顯錯誤 email | 原生 validity 不通過，沒有保存請求 | ACCOUNT-02／UI DDT |"
+  },
+  {
+    "id": "ACCOUNT-T04",
+    "spec": "./specs/05-restaurant-account.md",
+    "source_row": "| ACCOUNT-T04 | 保存回應尚未完成，後續回應 500 | 等待時按鈕停用；失敗顯示錯誤、沒有本次成功提示，輸入保留 | ACCOUNT-04／Stub UI |"
+  },
+  {
+    "id": "ACCOUNT-T05",
+    "spec": "./specs/05-restaurant-account.md",
+    "source_row": "| ACCOUNT-T05 | 初次 GET 被 Stub 為失敗 | 顯示無法載入設定訊息 | ACCOUNT-05／Stub UI |"
+  }
+]

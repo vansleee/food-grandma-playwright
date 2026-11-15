@@ -1,0 +1,148 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch20",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./tests/e2e/chapters/test-results/20261103T175737Z-fb4e88/20/no-pom/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch20",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./tests/e2e/chapters/test-results/20261103T175737Z-fb4e88/20/no-pom/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-price.spec.ts",
+      "file": "meal-price.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "未使用 POM",
+          "file": "meal-price.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH20-T01 將原餐點價格由 100 修改為 150，保留其他資料且不重複新增",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1246,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T17:57:38.990Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "observation.json",
+                          "contentType": "application/json",
+                          "body": "eyJjYXNlSWQiOiJDSDIwLVQwMSIsIm9yaWdpbmFsIjp7ImlkIjoxLCJuYW1lIjoiQ0gyMC1UMDEgbWVhbCAxIiwic2hvcnRfZGVzY3JpcHRpb24iOiJDSDIwLVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsImltYWdlIjoiIiwicHJpY2UiOjEwMH0sImV4cGVjdGVkUHJpY2UiOjE1MCwic2F2ZWQiOnsic3RhdHVzIjoyMDAsImJvZHkiOnsibWVhbCI6eyJpZCI6MSwibmFtZSI6IkNIMjAtVDAxIG1lYWwgMSIsInNob3J0X2Rlc2NyaXB0aW9uIjoiQ0gyMC1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLCJpbWFnZSI6IiIsInByaWNlIjoxNTB9fX0sImlkc0JlZm9yZSI6WzFdLCJpZHNBZnRlciI6WzFdLCJyZWFkQmFjayI6eyJpZCI6MSwibmFtZSI6IkNIMjAtVDAxIG1lYWwgMSIsInNob3J0X2Rlc2NyaXB0aW9uIjoiQ0gyMC1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLCJpbWFnZSI6IiIsInByaWNlIjoxNTB9LCJyZW9wZW5lZFByaWNlIjoiMTUwIn0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./tests/e2e/chapters/test-results/20261103T175737Z-fb4e88/20/no-pom/artifacts/meal-price-未使用-POM-CH20-T01-將原餐點價格由-100-修改為-150，保留其他資料且不重複新增/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./tests/e2e/chapters/test-results/20261103T175737Z-fb4e88/20/no-pom/artifacts/meal-price-未使用-POM-CH20-T01-將原餐點價格由-100-修改為-150，保留其他資料且不重複新增/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e8b09834d30066a79b4-9d170d6dc9463fbdf721",
+              "file": "meal-price.spec.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T17:57:38.728Z",
+    "duration": 1830.0200000000002,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

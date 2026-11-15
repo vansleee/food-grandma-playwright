@@ -1,0 +1,3262 @@
+[
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/test/config",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "enabled": false,
+      "admin_required": true,
+      "public_demo": false
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/test/config",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "enabled": false,
+      "admin_required": true,
+      "public_demo": false
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/restaurant/orders/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "orders": [
+        {
+          "id": 3,
+          "customer": {
+            "id": 14,
+            "name": "customerB CH25-T02",
+            "avatar": "",
+            "address": "CH25-T02 customerB 示範地址"
+          },
+          "restaurant": {
+            "id": 13,
+            "name": "CH25-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH25-T02 restaurantA 示範路 1 號"
+          },
+          "driver": null,
+          "order_details": [
+            {
+              "id": 3,
+              "meal": {
+                "id": 2,
+                "name": "香煎雞腿便當",
+                "price": 120
+              },
+              "quantity": 1,
+              "sub_total": 120
+            }
+          ],
+          "total": 120,
+          "status": "Cooking",
+          "address": "CH25-T02 測試用配送地址 B"
+        },
+        {
+          "id": 2,
+          "customer": {
+            "id": 13,
+            "name": "customerA CH25-T02",
+            "avatar": "",
+            "address": "CH25-T02 customerA 示範地址"
+          },
+          "restaurant": {
+            "id": 13,
+            "name": "CH25-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH25-T02 restaurantA 示範路 1 號"
+          },
+          "driver": null,
+          "order_details": [
+            {
+              "id": 2,
+              "meal": {
+                "id": 2,
+                "name": "香煎雞腿便當",
+                "price": 120
+              },
+              "quantity": 1,
+              "sub_total": 120
+            }
+          ],
+          "total": 120,
+          "status": "Cooking",
+          "address": "CH25-T02 測試用配送地址 A"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/restaurant/orders/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "orders": [
+        {
+          "id": 3,
+          "customer": {
+            "id": 14,
+            "name": "customerB CH25-T02",
+            "avatar": "",
+            "address": "CH25-T02 customerB 示範地址"
+          },
+          "restaurant": {
+            "id": 13,
+            "name": "CH25-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH25-T02 restaurantA 示範路 1 號"
+          },
+          "driver": null,
+          "order_details": [
+            {
+              "id": 3,
+              "meal": {
+                "id": 2,
+                "name": "香煎雞腿便當",
+                "price": 120
+              },
+              "quantity": 1,
+              "sub_total": 120
+            }
+          ],
+          "total": 120,
+          "status": "Cooking",
+          "address": "CH25-T02 測試用配送地址 B"
+        },
+        {
+          "id": 2,
+          "customer": {
+            "id": 13,
+            "name": "customerA CH25-T02",
+            "avatar": "",
+            "address": "CH25-T02 customerA 示範地址"
+          },
+          "restaurant": {
+            "id": 13,
+            "name": "CH25-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH25-T02 restaurantA 示範路 1 號"
+          },
+          "driver": null,
+          "order_details": [
+            {
+              "id": 2,
+              "meal": {
+                "id": 2,
+                "name": "香煎雞腿便當",
+                "price": 120
+              },
+              "quantity": 1,
+              "sub_total": 120
+            }
+          ],
+          "total": 120,
+          "status": "Cooking",
+          "address": "CH25-T02 測試用配送地址 A"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18081/api/social/token/",
+    "status": 200,
+    "source": "api",
+    "request_body": "username=reader-ch25-t02-restauranta&password=<redacted>",
+    "response_body": {
+      "access_token": "<redacted>",
+      "token_type": "Bearer",
+      "scope": "read write"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18081/api/restaurant/me/",
+    "status": 200,
+    "source": "api",
+    "request_body": null,
+    "response_body": {
+      "restaurant": {
+        "id": 13,
+        "name": "CH25-T02 restaurantA 示範餐廳",
+        "phone": "DEMO-PHONE",
+        "address": "CH25-T02 restaurantA 示範路 1 號",
+        "logo": ""
+      },
+      "user": {
+        "username": "reader-ch25-t02-restauranta",
+        "first_name": "restaurantA",
+        "last_name": "CH25-T02",
+        "email": "reader-ch25-t02-restauranta@example.invalid"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18081/api/restaurant/me/",
+    "status": 200,
+    "source": "api",
+    "request_body": null,
+    "response_body": {
+      "restaurant": {
+        "id": 13,
+        "name": "CH25-T02 restaurantA 示範餐廳",
+        "phone": "DEMO-PHONE",
+        "address": "CH25-T02 restaurantA 示範路 1 號",
+        "logo": ""
+      },
+      "user": {
+        "username": "reader-ch25-t02-restauranta",
+        "first_name": "restaurantA",
+        "last_name": "CH25-T02",
+        "email": "reader-ch25-t02-restauranta@example.invalid"
+      }
+    }
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+    "status": 200,
+    "source": "api",
+    "request_body": {
+      "short_description": "附白飯與三樣配菜",
+      "image": "",
+      "price": 120,
+      "name": "香煎雞腿便當"
+    },
+    "response_body": {
+      "meal": {
+        "id": 2,
+        "name": "香煎雞腿便當",
+        "short_description": "附白飯與三樣配菜",
+        "image": "",
+        "price": 120
+      }
+    }
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18081/api/social/token/",
+    "status": 200,
+    "source": "api",
+    "request_body": "username=reader-ch25-t02-customera&password=<redacted>",
+    "response_body": {
+      "access_token": "<redacted>",
+      "token_type": "Bearer",
+      "scope": "read write"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18081/api/social/token/",
+    "status": 200,
+    "source": "api",
+    "request_body": "username=reader-ch25-t02-customerb&password=<redacted>",
+    "response_body": {
+      "access_token": "<redacted>",
+      "token_type": "Bearer",
+      "scope": "read write"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18081/api/restaurant/orders/",
+    "status": 200,
+    "source": "api",
+    "request_body": null,
+    "response_body": {
+      "orders": [
+        {
+          "id": 3,
+          "customer": {
+            "id": 14,
+            "name": "customerB CH25-T02",
+            "avatar": "",
+            "address": "CH25-T02 customerB 示範地址"
+          },
+          "restaurant": {
+            "id": 13,
+            "name": "CH25-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH25-T02 restaurantA 示範路 1 號"
+          },
+          "driver": null,
+          "order_details": [
+            {
+              "id": 3,
+              "meal": {
+                "id": 2,
+                "name": "香煎雞腿便當",
+                "price": 120
+              },
+              "quantity": 1,
+              "sub_total": 120
+            }
+          ],
+          "total": 120,
+          "status": "Cooking",
+          "address": "CH25-T02 測試用配送地址 B"
+        },
+        {
+          "id": 2,
+          "customer": {
+            "id": 13,
+            "name": "customerA CH25-T02",
+            "avatar": "",
+            "address": "CH25-T02 customerA 示範地址"
+          },
+          "restaurant": {
+            "id": 13,
+            "name": "CH25-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH25-T02 restaurantA 示範路 1 號"
+          },
+          "driver": null,
+          "order_details": [
+            {
+              "id": 2,
+              "meal": {
+                "id": 2,
+                "name": "香煎雞腿便當",
+                "price": 120
+              },
+              "quantity": 1,
+              "sub_total": 120
+            }
+          ],
+          "total": 120,
+          "status": "Cooking",
+          "address": "CH25-T02 測試用配送地址 A"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/meals/13",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "meals": [
+        {
+          "id": 2,
+          "name": "香煎雞腿便當",
+          "short_description": "附白飯與三樣配菜",
+          "image": "",
+          "price": 120
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/meals/13",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "meals": [
+        {
+          "id": 2,
+          "name": "香煎雞腿便當",
+          "short_description": "附白飯與三樣配菜",
+          "image": "",
+          "price": 120
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18082/api/customer/orders/",
+    "status": 200,
+    "source": "browser",
+    "request_body": "------WebKitFormBoundary0t1qAHXCuMGdHYuG\r\nContent-Disposition: form-data; name=\"access_token\"\r\n\r\n<redacted>\r\n------WebKitFormBoundary0t1qAHXCuMGdHYuG\r\nContent-Disposition: form-data; name=\"restaurant_id\"\r\n\r\n13\r\n------WebKitFormBoundary0t1qAHXCuMGdHYuG\r\nContent-Disposition: form-data; name=\"address\"\r\n\r\nCH25-T02 測試用配送地址 B\r\n------WebKitFormBoundary0t1qAHXCuMGdHYuG\r\nContent-Disposition: form-data; name=\"order_details\"\r\n\r\n[{\"meal_id\":2,\"quantity\":1}]\r\n------WebKitFormBoundary0t1qAHXCuMGdHYuG--\r\n",
+    "response_body": {
+      "status": "success"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/orders/latest?access_token=<redacted>",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "last_order": {
+        "id": 3,
+        "customer": {
+          "id": 14,
+          "name": "customerB CH25-T02",
+          "avatar": "",
+          "address": "CH25-T02 customerB 示範地址"
+        },
+        "restaurant": {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號"
+        },
+        "driver": null,
+        "order_details": [
+          {
+            "id": 3,
+            "meal": {
+              "id": 2,
+              "name": "香煎雞腿便當",
+              "price": 120
+            },
+            "quantity": 1,
+            "sub_total": 120
+          }
+        ],
+        "total": 120,
+        "status": "Cooking",
+        "address": "CH25-T02 測試用配送地址 B"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/orders/latest?access_token=<redacted>",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "last_order": {
+        "id": 3,
+        "customer": {
+          "id": 14,
+          "name": "customerB CH25-T02",
+          "avatar": "",
+          "address": "CH25-T02 customerB 示範地址"
+        },
+        "restaurant": {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號"
+        },
+        "driver": null,
+        "order_details": [
+          {
+            "id": 3,
+            "meal": {
+              "id": 2,
+              "name": "香煎雞腿便當",
+              "price": 120
+            },
+            "quantity": 1,
+            "sub_total": 120
+          }
+        ],
+        "total": 120,
+        "status": "Cooking",
+        "address": "CH25-T02 測試用配送地址 B"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/meals/13",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "meals": [
+        {
+          "id": 2,
+          "name": "香煎雞腿便當",
+          "short_description": "附白飯與三樣配菜",
+          "image": "",
+          "price": 120
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/meals/13",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "meals": [
+        {
+          "id": 2,
+          "name": "香煎雞腿便當",
+          "short_description": "附白飯與三樣配菜",
+          "image": "",
+          "price": 120
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/restaurants/",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "restaurants": [
+        {
+          "id": 46,
+          "name": "CH36-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 45,
+          "name": "CH36-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH36-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 44,
+          "name": "CH35-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 43,
+          "name": "CH35-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH35-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 42,
+          "name": "CH34-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 41,
+          "name": "CH34-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 40,
+          "name": "CH34-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 39,
+          "name": "CH34-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH34-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 38,
+          "name": "CH33-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 37,
+          "name": "CH33-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH33-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 36,
+          "name": "CH32-T03 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 35,
+          "name": "CH32-T03 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T03 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 34,
+          "name": "CH32-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 33,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 32,
+          "name": "CH32-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 31,
+          "name": "CH32-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 30,
+          "name": "CH31-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 29,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 28,
+          "name": "CH31-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 27,
+          "name": "CH31-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 26,
+          "name": "CH30-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 25,
+          "name": "CH30-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH30-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 24,
+          "name": "CH29-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 23,
+          "name": "CH29-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH29-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 22,
+          "name": "CH28-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 21,
+          "name": "CH28-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 20,
+          "name": "CH28-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 19,
+          "name": "CH28-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH28-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 18,
+          "name": "CH27-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 17,
+          "name": "CH27-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH27-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 16,
+          "name": "CH26-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 15,
+          "name": "CH26-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH26-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 14,
+          "name": "CH25-T02 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 12,
+          "name": "CH25-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 11,
+          "name": "CH25-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 10,
+          "name": "CH24-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 9,
+          "name": "CH24-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH24-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 8,
+          "name": "CH23-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 7,
+          "name": "CH23-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH23-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 6,
+          "name": "CH22-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 5,
+          "name": "CH22-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH22-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 4,
+          "name": "CH21-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 3,
+          "name": "CH21-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH21-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 2,
+          "name": "CH20-T01 restaurantB 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantB 示範路 1 號",
+          "logo": ""
+        },
+        {
+          "id": 1,
+          "name": "CH20-T01 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH20-T01 restaurantA 示範路 1 號",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:18082/api/customer/orders/",
+    "status": 200,
+    "source": "browser",
+    "request_body": "------WebKitFormBoundaryoPd19lyNtThlU4yq\r\nContent-Disposition: form-data; name=\"access_token\"\r\n\r\n<redacted>\r\n------WebKitFormBoundaryoPd19lyNtThlU4yq\r\nContent-Disposition: form-data; name=\"restaurant_id\"\r\n\r\n13\r\n------WebKitFormBoundaryoPd19lyNtThlU4yq\r\nContent-Disposition: form-data; name=\"address\"\r\n\r\nCH25-T02 測試用配送地址 A\r\n------WebKitFormBoundaryoPd19lyNtThlU4yq\r\nContent-Disposition: form-data; name=\"order_details\"\r\n\r\n[{\"meal_id\":2,\"quantity\":1}]\r\n------WebKitFormBoundaryoPd19lyNtThlU4yq--\r\n",
+    "response_body": {
+      "status": "success"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/orders/latest?access_token=<redacted>",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "last_order": {
+        "id": 2,
+        "customer": {
+          "id": 13,
+          "name": "customerA CH25-T02",
+          "avatar": "",
+          "address": "CH25-T02 customerA 示範地址"
+        },
+        "restaurant": {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號"
+        },
+        "driver": null,
+        "order_details": [
+          {
+            "id": 2,
+            "meal": {
+              "id": 2,
+              "name": "香煎雞腿便當",
+              "price": 120
+            },
+            "quantity": 1,
+            "sub_total": 120
+          }
+        ],
+        "total": 120,
+        "status": "Cooking",
+        "address": "CH25-T02 測試用配送地址 A"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:18082/api/customer/orders/latest?access_token=<redacted>",
+    "status": 200,
+    "source": "browser",
+    "request_body": null,
+    "response_body": {
+      "last_order": {
+        "id": 2,
+        "customer": {
+          "id": 13,
+          "name": "customerA CH25-T02",
+          "avatar": "",
+          "address": "CH25-T02 customerA 示範地址"
+        },
+        "restaurant": {
+          "id": 13,
+          "name": "CH25-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH25-T02 restaurantA 示範路 1 號"
+        },
+        "driver": null,
+        "order_details": [
+          {
+            "id": 2,
+            "meal": {
+              "id": 2,
+              "name": "香煎雞腿便當",
+              "price": 120
+            },
+            "quantity": 1,
+            "sub_total": 120
+          }
+        ],
+        "total": 120,
+        "status": "Cooking",
+        "address": "CH25-T02 測試用配送地址 A"
+      }
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "restaurant_id": 11,
+      "customer_id": 11,
+      "address": "CH25-T01 測試用配送地址",
+      "total": 120,
+      "status": 1
+    }
+  ],
+  "details": [
+    {
+      "order_id": 1,
+      "meal_id": 1,
+      "quantity": 1,
+      "sub_total": 120
+    }
+  ],
+  "meals": [
+    {
+      "id": 1,
+      "name": "香煎雞腿便當",
+      "price": 120,
+      "restaurant_id": 11
+    }
+  ]
+}

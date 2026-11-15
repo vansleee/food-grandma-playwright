@@ -1,0 +1,187 @@
+[
+  {
+    "chapter": 5,
+    "topic": "測試程式碼模組化",
+    "variants": ["before", "after"]
+  },
+  {
+    "chapter": 15,
+    "topic": "Page Object Model",
+    "file": "ch15/meal-price.spec.ts",
+    "variants": [
+      "no-pom",
+      "v1",
+      "v2"
+    ],
+    "optional_variants": ["exercises"],
+    "additional_files": ["ch15/exercises.spec.ts"],
+    "workers": 1,
+    "repeat_each": 1
+  },
+  {
+    "chapter": 16,
+    "topic": "定位元素與頁面就緒條件",
+    "file": "ch16/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "optional_variants": ["first-row", "order-id"],
+    "additional_files": [
+      "ch16/page-readiness.spec.ts",
+      "ch16/order-readiness.spec.ts"
+    ]
+  },
+  {
+    "chapter": 17,
+    "topic": "Page Factory",
+    "file": "ch17/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  },
+  {
+    "chapter": 18,
+    "topic": "Component Object Model",
+    "file": "ch18/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  },
+  {
+    "chapter": 19,
+    "topic": "Workflow Facade 與 Fluent",
+    "file": "ch19/customer-order.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "fluent",
+      "workflow"
+    ]
+  },
+  {
+    "chapter": 20,
+    "topic": "Screenplay",
+    "file": "ch20/multi-role-order.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "pom",
+      "screenplay"
+    ]
+  },
+  {
+    "chapter": 21,
+    "topic": "Fixture 與資料隔離",
+    "file": "ch21/driver-claim.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "general-fixture",
+      "focused-fixtures"
+    ]
+  },
+  {
+    "chapter": 22,
+    "topic": "資料驅動測試",
+    "file": "ch22/meal-create.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "before",
+      "after"
+    ],
+    "optional_variants": [
+      "ai-exercise"
+    ]
+  },
+  {
+    "chapter": 23,
+    "topic": "Test Data Builder 與 Object Mother",
+    "file": "ch23/order-quantity.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "before",
+      "after",
+      "none",
+      "v1",
+      "v2"
+    ],
+    "additional_files": [
+      "ch23/order-scenarios.spec.ts"
+    ]
+  },
+  {
+    "chapter": 24,
+    "topic": "Strategy 與 Adapter",
+    "file": "ch24/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  },
+  {
+    "chapter": 25,
+    "topic": "Repository 與 Fake",
+    "file": "ch25/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  },
+  {
+    "chapter": 26,
+    "topic": "平行執行",
+    "file": "ch26/parallel-meals.spec.ts",
+    "workers": 2,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  },
+  {
+    "chapter": 27,
+    "topic": "Flaky Test 與條件等待",
+    "file": "ch27/meal-load.spec.ts",
+    "workers": 1,
+    "repeat_each": 20,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  },
+  {
+    "chapter": 28,
+    "topic": "審查與整理測試程式",
+    "file": "ch28/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ]
+  }
+]

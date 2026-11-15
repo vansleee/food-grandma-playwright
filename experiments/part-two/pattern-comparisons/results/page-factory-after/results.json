@@ -1,0 +1,219 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/v1-pattern-labs/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/v1-pattern-labs/playwright.config.ts",
+    "rootDir": "./tests/e2e/v1-pattern-labs/examples/page-factory",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v1-pattern-labs/examples/page-factory",
+        "testIgnore": [],
+        "testMatch": [
+          "**/after.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "after.spec.ts",
+      "file": "after.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FACTORY-T01 從網頁將既有餐點價格由 100 修改為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:11:53.081Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-editor-before-change.png",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T01-從網頁將既有餐點價格由-100-修改為-150/attachments/01-editor-before-change-png-893def1d16f203095316ccf7b003ffbe47f1d3cd.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T01-從網頁將既有餐點價格由-100-修改為-150/attachments/02-list-after-save-png-2d2694b39ba17c486cf6260c759b40b9731cd715.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T01-從網頁將既有餐點價格由-100-修改為-150/attachments/03-reopened-png-d6bdc6afe016cb8abe85404d5c4cd6d2c2ef7b71.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiRkFDVE9SWS1UMDEiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDEsCiAgICAibmFtZSI6ICJGQUNUT1JZLVQwMSBtZWFsIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJGQUNUT1JZLVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDEwMAogIH0sCiAgImV4cGVjdGVkUHJpY2UiOiAxNTAsCiAgInNhdmVkIjogewogICAgInN0YXR1cyI6IDIwMCwKICAgICJib2R5IjogewogICAgICAibWVhbCI6IHsKICAgICAgICAiaWQiOiAxLAogICAgICAgICJuYW1lIjogIkZBQ1RPUlktVDAxIG1lYWwiLAogICAgICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJGQUNUT1JZLVQwMSBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAgICAgImltYWdlIjogIiIsCiAgICAgICAgInByaWNlIjogMTUwCiAgICAgIH0KICAgIH0KICB9LAogICJpZHNCZWZvcmUiOiBbCiAgICAxCiAgXSwKICAiaWRzQWZ0ZXIiOiBbCiAgICAxCiAgXSwKICAicmVhZEJhY2siOiB7CiAgICAiaWQiOiAxLAogICAgIm5hbWUiOiAiRkFDVE9SWS1UMDEgbWVhbCIsCiAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiRkFDVE9SWS1UMDEgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgImltYWdlIjogIiIsCiAgICAicHJpY2UiOiAxNTAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjE1MCIKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T01-從網頁將既有餐點價格由-100-修改為-150/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T01-從網頁將既有餐點價格由-100-修改為-150/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "60092348a7c7bd8bd1d0-e2c779defcd215ef8573",
+          "file": "after.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "FACTORY-T02 從網頁將既有餐點價格由 100 修改為 0",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 878,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T16:11:54.192Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "01-editor-before-change.png",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T02-從網頁將既有餐點價格由-100-修改為-0/attachments/01-editor-before-change-png-e122b77aa44098216451d3fc0161adda5f49510f.png"
+                    },
+                    {
+                      "name": "02-list-after-save.png",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T02-從網頁將既有餐點價格由-100-修改為-0/attachments/02-list-after-save-png-99cedc5c8c5a7201fdf23e9d3fb73795dad456f1.png"
+                    },
+                    {
+                      "name": "03-reopened.png",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T02-從網頁將既有餐點價格由-100-修改為-0/attachments/03-reopened-png-2c6a7adc931927582dd9fd4964f6d626dddb3e58.png"
+                    },
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiRkFDVE9SWS1UMDIiLAogICJvcmlnaW5hbCI6IHsKICAgICJpZCI6IDIsCiAgICAibmFtZSI6ICJGQUNUT1JZLVQwMiBtZWFsIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJGQUNUT1JZLVQwMiBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDEwMAogIH0sCiAgImV4cGVjdGVkUHJpY2UiOiAwLAogICJzYXZlZCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lYWwiOiB7CiAgICAgICAgImlkIjogMiwKICAgICAgICAibmFtZSI6ICJGQUNUT1JZLVQwMiBtZWFsIiwKICAgICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiRkFDVE9SWS1UMDIgb3JpZ2luYWwgZGVzY3JpcHRpb24iLAogICAgICAgICJpbWFnZSI6ICIiLAogICAgICAgICJwcmljZSI6IDAKICAgICAgfQogICAgfQogIH0sCiAgImlkc0JlZm9yZSI6IFsKICAgIDIKICBdLAogICJpZHNBZnRlciI6IFsKICAgIDIKICBdLAogICJyZWFkQmFjayI6IHsKICAgICJpZCI6IDIsCiAgICAibmFtZSI6ICJGQUNUT1JZLVQwMiBtZWFsIiwKICAgICJzaG9ydF9kZXNjcmlwdGlvbiI6ICJGQUNUT1JZLVQwMiBvcmlnaW5hbCBkZXNjcmlwdGlvbiIsCiAgICAiaW1hZ2UiOiAiIiwKICAgICJwcmljZSI6IDAKICB9LAogICJyZW9wZW5lZFByaWNlIjogIjAiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T02-從網頁將既有餐點價格由-100-修改為-0/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-pattern-extensions-20261104/evidence/page-factory-after/test-results/after-FACTORY-T02-從網頁將既有餐點價格由-100-修改為-0/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "60092348a7c7bd8bd1d0-65fdc1bf607d3a162c6b",
+          "file": "after.spec.ts",
+          "line": 7,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T16:11:52.816Z",
+    "duration": 2338.337,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

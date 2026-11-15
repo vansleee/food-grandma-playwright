@@ -1,0 +1,50 @@
+{
+  "case": "ADAPT-T01",
+  "repeat": 1,
+  "title": "ADAPT-T01 從網頁將既有餐點價格由 100 修改為 150",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 1147,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "caseId": "ADAPT-T01",
+    "original": {
+      "id": 1,
+      "name": "ADAPT-T01 meal",
+      "short_description": "ADAPT-T01 original description",
+      "image": "",
+      "price": 100
+    },
+    "expectedPrice": 150,
+    "saved": {
+      "status": 200,
+      "body": {
+        "meal": {
+          "id": 1,
+          "name": "ADAPT-T01 meal",
+          "short_description": "ADAPT-T01 original description",
+          "image": "",
+          "price": 150
+        }
+      }
+    },
+    "idsBefore": [
+      1
+    ],
+    "idsAfter": [
+      1
+    ],
+    "readBack": {
+      "id": 1,
+      "name": "ADAPT-T01 meal",
+      "short_description": "ADAPT-T01 original description",
+      "image": "",
+      "price": 150
+    },
+    "reopenedPrice": "150"
+  },
+  "api_requests": 5,
+  "browser_api_requests": 11,
+  "non_2xx": []
+}

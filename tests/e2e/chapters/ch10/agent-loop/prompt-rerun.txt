@@ -1,0 +1,1 @@
+請讀取 ch09/agent-loop/plan-rerun.md，使用 Playwright Generator 工具將計畫寫成 ch10/agent-loop/restaurant-mark-ready.spec.ts。探索網頁時使用 ch09/agent-loop/seed.spec.ts；正式測試直接匯入第 09 章的 order-fixture，沿用它提供的訂單編號及已登入的頁面。只寫這支測試，以 AAA 結構保留計畫中的三項檢查，透過網頁標記備餐完成。完成後執行該測試，不修改其他檔案。

@@ -1,0 +1,17 @@
+node_modules/
+.venv/
+.env
+.DS_Store
+.idea/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.spec-ci-runtime/
+
+.env.demo-admin
+
+.playwright-mcp/
+__pycache__/
+*.pyc
+*.tsbuildinfo

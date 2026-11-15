@@ -1,0 +1,17 @@
+{
+  "command": [
+    "node",
+    "./tests/e2e/chapters/node_modules/playwright/cli.js",
+    "test",
+    "--config",
+    "playwright.config.ts",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "cwd": "./tests/e2e/chapters",
+  "target": "32",
+  "variant": "v2",
+  "database": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/32-v2.db",
+  "password_source": "TEST_PASSWORD",
+  "source_instrumented": false
+}

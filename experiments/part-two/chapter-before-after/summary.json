@@ -1,0 +1,343 @@
+{
+  "date_taipei": "2026-11-04",
+  "chapters": {
+    "20": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1813.944,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/20/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1338.236,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/20/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "21": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1305.999,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/21/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1393.7759999999998,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/21/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "22": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1401.641,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1373.802,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/22/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "23": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1324.6039999999998,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/23/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1320.715,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/23/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "24": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1386.522,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/24/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1475.57,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/24/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "25": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1392.029,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/25/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1357.8899999999999,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/25/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "26": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1360.6550000000002,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/26/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1487.077,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/26/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "27": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1433.1680000000001,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/27/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1346.7359999999999,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/27/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "28": {
+      "before": {
+        "executions": 2,
+        "passed": 2,
+        "failed": 0,
+        "duration_ms": 2296.721,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/28/before"
+      },
+      "after": {
+        "executions": 2,
+        "passed": 2,
+        "failed": 0,
+        "duration_ms": 2331.27,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/28/after"
+      },
+      "matched_pairs": 2,
+      "supplementary_fake": 0
+    },
+    "29": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1375.886,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1422.087,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/29/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "30": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1773.431,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1650.338,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/30/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "31": {
+      "before": {
+        "executions": 2,
+        "passed": 2,
+        "failed": 0,
+        "duration_ms": 1784.098,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/before"
+      },
+      "after": {
+        "executions": 2,
+        "passed": 2,
+        "failed": 0,
+        "duration_ms": 1732.926,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/31/after"
+      },
+      "matched_pairs": 2,
+      "supplementary_fake": 0
+    },
+    "32": {
+      "before": {
+        "executions": 3,
+        "passed": 3,
+        "failed": 0,
+        "duration_ms": 1797.125,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/32/before"
+      },
+      "after": {
+        "executions": 5,
+        "passed": 5,
+        "failed": 0,
+        "duration_ms": 1836.7649999999999,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/32/after"
+      },
+      "matched_pairs": 3,
+      "supplementary_fake": 2
+    },
+    "33": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1379.225,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/33/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1331.43,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/33/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    },
+    "34": {
+      "before": {
+        "executions": 2,
+        "passed": 2,
+        "failed": 0,
+        "duration_ms": 2317.19,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/before"
+      },
+      "after": {
+        "executions": 2,
+        "passed": 2,
+        "failed": 0,
+        "duration_ms": 1623.431,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/34/after"
+      },
+      "matched_pairs": 2,
+      "supplementary_fake": 0,
+      "parallel_overlap_ms": 992.0
+    },
+    "35": {
+      "before": {
+        "executions": 20,
+        "passed": 20,
+        "failed": 0,
+        "duration_ms": 39737.789,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/35/before"
+      },
+      "after": {
+        "executions": 20,
+        "passed": 20,
+        "failed": 0,
+        "duration_ms": 39952.089,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/35/after"
+      },
+      "matched_pairs": 20,
+      "supplementary_fake": 0
+    },
+    "36": {
+      "before": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1422,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/36/before"
+      },
+      "after": {
+        "executions": 1,
+        "passed": 1,
+        "failed": 0,
+        "duration_ms": 1327.362,
+        "source": "./work/chapter-before-after-20261104/runs/20261103T170953Z-cc2245/36/after"
+      },
+      "matched_pairs": 1,
+      "supplementary_fake": 0
+    }
+  },
+  "original_versions": {
+    "v1": {
+      "executions": 27,
+      "passed": 26,
+      "failed": 1,
+      "duration_ms": 33557.694,
+      "source": "./work/chapter-before-after-20261104/runs/20261103T171241Z-2962bd/v1"
+    },
+    "v2": {
+      "executions": 27,
+      "passed": 26,
+      "failed": 1,
+      "duration_ms": 33412.693,
+      "source": "./work/chapter-before-after-20261104/runs/20261103T171326Z-76cf97/v2"
+    }
+  },
+  "manuscript_modified": false,
+  "original_v1_v2_modified": false,
+  "typecheck": "passed",
+  "limitations": [
+    "教學對照由 v1 擷取並統一資料與驗收，不是原始 v1 的逐字副本",
+    "原始 v1 已有 POM、Fixture、依編號定位、資料表與條件等待",
+    "未測量長期維護成本"
+  ],
+  "chapter_executions": 84,
+  "matched_pairs": 41,
+  "paired_payloads_equal": true,
+  "supplementary_fake_executions": 2,
+  "all_chapter_executions_passed": true,
+  "initial_snapshot_sha256": "c2ee81d5a3100dd7d548757bfa5a3d438695f09628714211d00cea29a66a8d76",
+  "owned_services_stopped": true
+}

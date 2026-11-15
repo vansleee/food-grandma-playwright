@@ -1,0 +1,250 @@
+{
+  "AUTH-T01": {
+    "restaurantA": "spec-auth-t01-restauranta",
+    "restaurantB": "spec-auth-t01-restaurantb",
+    "customerA": "spec-auth-t01-customera",
+    "customerB": "spec-auth-t01-customerb",
+    "driverA": "spec-auth-t01-drivera",
+    "driverB": "spec-auth-t01-driverb"
+  },
+  "AUTH-T02": {
+    "restaurantA": "spec-auth-t02-restauranta",
+    "restaurantB": "spec-auth-t02-restaurantb",
+    "customerA": "spec-auth-t02-customera",
+    "customerB": "spec-auth-t02-customerb",
+    "driverA": "spec-auth-t02-drivera",
+    "driverB": "spec-auth-t02-driverb"
+  },
+  "AUTH-T03": {
+    "restaurantA": "spec-auth-t03-restauranta",
+    "restaurantB": "spec-auth-t03-restaurantb",
+    "customerA": "spec-auth-t03-customera",
+    "customerB": "spec-auth-t03-customerb",
+    "driverA": "spec-auth-t03-drivera",
+    "driverB": "spec-auth-t03-driverb"
+  },
+  "ROLE-T01": {
+    "restaurantA": "spec-role-t01-restauranta",
+    "restaurantB": "spec-role-t01-restaurantb",
+    "customerA": "spec-role-t01-customera",
+    "customerB": "spec-role-t01-customerb",
+    "driverA": "spec-role-t01-drivera",
+    "driverB": "spec-role-t01-driverb"
+  },
+  "ROLE-T02": {
+    "restaurantA": "spec-role-t02-restauranta",
+    "restaurantB": "spec-role-t02-restaurantb",
+    "customerA": "spec-role-t02-customera",
+    "customerB": "spec-role-t02-customerb",
+    "driverA": "spec-role-t02-drivera",
+    "driverB": "spec-role-t02-driverb"
+  },
+  "FIND-T02": {
+    "restaurantA": "spec-find-t02-restauranta",
+    "restaurantB": "spec-find-t02-restaurantb",
+    "customerA": "spec-find-t02-customera",
+    "customerB": "spec-find-t02-customerb",
+    "driverA": "spec-find-t02-drivera",
+    "driverB": "spec-find-t02-driverb"
+  },
+  "FIND-T03": {
+    "restaurantA": "spec-find-t03-restauranta",
+    "restaurantB": "spec-find-t03-restaurantb",
+    "customerA": "spec-find-t03-customera",
+    "customerB": "spec-find-t03-customerb",
+    "driverA": "spec-find-t03-drivera",
+    "driverB": "spec-find-t03-driverb"
+  },
+  "FIND-T04": {
+    "restaurantA": "spec-find-t04-restauranta",
+    "restaurantB": "spec-find-t04-restaurantb",
+    "customerA": "spec-find-t04-customera",
+    "customerB": "spec-find-t04-customerb",
+    "driverA": "spec-find-t04-drivera",
+    "driverB": "spec-find-t04-driverb"
+  },
+  "FIND-T05": {
+    "restaurantA": "spec-find-t05-restauranta",
+    "restaurantB": "spec-find-t05-restaurantb",
+    "customerA": "spec-find-t05-customera",
+    "customerB": "spec-find-t05-customerb",
+    "driverA": "spec-find-t05-drivera",
+    "driverB": "spec-find-t05-driverb"
+  },
+  "FIND-T06": {
+    "restaurantA": "spec-find-t06-restauranta",
+    "restaurantB": "spec-find-t06-restaurantb",
+    "customerA": "spec-find-t06-customera",
+    "customerB": "spec-find-t06-customerb",
+    "driverA": "spec-find-t06-drivera",
+    "driverB": "spec-find-t06-driverb"
+  },
+  "FIND-T07": {
+    "restaurantA": "spec-find-t07-restauranta",
+    "restaurantB": "spec-find-t07-restaurantb",
+    "customerA": "spec-find-t07-customera",
+    "customerB": "spec-find-t07-customerb",
+    "driverA": "spec-find-t07-drivera",
+    "driverB": "spec-find-t07-driverb"
+  },
+  "FIND-T08": {
+    "restaurantA": "spec-find-t08-restauranta",
+    "restaurantB": "spec-find-t08-restaurantb",
+    "customerA": "spec-find-t08-customera",
+    "customerB": "spec-find-t08-customerb",
+    "driverA": "spec-find-t08-drivera",
+    "driverB": "spec-find-t08-driverb"
+  },
+  "READY-T02": {
+    "restaurantA": "spec-ready-t02-restauranta",
+    "restaurantB": "spec-ready-t02-restaurantb",
+    "customerA": "spec-ready-t02-customera",
+    "customerB": "spec-ready-t02-customerb",
+    "driverA": "spec-ready-t02-drivera",
+    "driverB": "spec-ready-t02-driverb"
+  },
+  "READY-T05": {
+    "restaurantA": "spec-ready-t05-restauranta",
+    "restaurantB": "spec-ready-t05-restaurantb",
+    "customerA": "spec-ready-t05-customera",
+    "customerB": "spec-ready-t05-customerb",
+    "driverA": "spec-ready-t05-drivera",
+    "driverB": "spec-ready-t05-driverb"
+  },
+  "READY-T06": {
+    "restaurantA": "spec-ready-t06-restauranta",
+    "restaurantB": "spec-ready-t06-restaurantb",
+    "customerA": "spec-ready-t06-customera",
+    "customerB": "spec-ready-t06-customerb",
+    "driverA": "spec-ready-t06-drivera",
+    "driverB": "spec-ready-t06-driverb"
+  },
+  "MEAL-T01": {
+    "restaurantA": "spec-meal-t01-restauranta",
+    "restaurantB": "spec-meal-t01-restaurantb",
+    "customerA": "spec-meal-t01-customera",
+    "customerB": "spec-meal-t01-customerb",
+    "driverA": "spec-meal-t01-drivera",
+    "driverB": "spec-meal-t01-driverb"
+  },
+  "MEAL-T02": {
+    "restaurantA": "spec-meal-t02-restauranta",
+    "restaurantB": "spec-meal-t02-restaurantb",
+    "customerA": "spec-meal-t02-customera",
+    "customerB": "spec-meal-t02-customerb",
+    "driverA": "spec-meal-t02-drivera",
+    "driverB": "spec-meal-t02-driverb"
+  },
+  "MEAL-T03": {
+    "restaurantA": "spec-meal-t03-restauranta",
+    "restaurantB": "spec-meal-t03-restaurantb",
+    "customerA": "spec-meal-t03-customera",
+    "customerB": "spec-meal-t03-customerb",
+    "driverA": "spec-meal-t03-drivera",
+    "driverB": "spec-meal-t03-driverb"
+  },
+  "MEAL-T04": {
+    "restaurantA": "spec-meal-t04-restauranta",
+    "restaurantB": "spec-meal-t04-restaurantb",
+    "customerA": "spec-meal-t04-customera",
+    "customerB": "spec-meal-t04-customerb",
+    "driverA": "spec-meal-t04-drivera",
+    "driverB": "spec-meal-t04-driverb"
+  },
+  "MEAL-T05": {
+    "restaurantA": "spec-meal-t05-restauranta",
+    "restaurantB": "spec-meal-t05-restaurantb",
+    "customerA": "spec-meal-t05-customera",
+    "customerB": "spec-meal-t05-customerb",
+    "driverA": "spec-meal-t05-drivera",
+    "driverB": "spec-meal-t05-driverb"
+  },
+  "MEAL-T06": {
+    "restaurantA": "spec-meal-t06-restauranta",
+    "restaurantB": "spec-meal-t06-restaurantb",
+    "customerA": "spec-meal-t06-customera",
+    "customerB": "spec-meal-t06-customerb",
+    "driverA": "spec-meal-t06-drivera",
+    "driverB": "spec-meal-t06-driverb"
+  },
+  "MEAL-T08": {
+    "restaurantA": "spec-meal-t08-restauranta",
+    "restaurantB": "spec-meal-t08-restaurantb",
+    "customerA": "spec-meal-t08-customera",
+    "customerB": "spec-meal-t08-customerb",
+    "driverA": "spec-meal-t08-drivera",
+    "driverB": "spec-meal-t08-driverb"
+  },
+  "ACCOUNT-T01": {
+    "restaurantA": "spec-account-t01-restauranta",
+    "restaurantB": "spec-account-t01-restaurantb",
+    "customerA": "spec-account-t01-customera",
+    "customerB": "spec-account-t01-customerb",
+    "driverA": "spec-account-t01-drivera",
+    "driverB": "spec-account-t01-driverb"
+  },
+  "ACCOUNT-T02": {
+    "restaurantA": "spec-account-t02-restauranta",
+    "restaurantB": "spec-account-t02-restaurantb",
+    "customerA": "spec-account-t02-customera",
+    "customerB": "spec-account-t02-customerb",
+    "driverA": "spec-account-t02-drivera",
+    "driverB": "spec-account-t02-driverb"
+  },
+  "ACCOUNT-T03": {
+    "restaurantA": "spec-account-t03-restauranta",
+    "restaurantB": "spec-account-t03-restaurantb",
+    "customerA": "spec-account-t03-customera",
+    "customerB": "spec-account-t03-customerb",
+    "driverA": "spec-account-t03-drivera",
+    "driverB": "spec-account-t03-driverb"
+  },
+  "ACCOUNT-T04": {
+    "restaurantA": "spec-account-t04-restauranta",
+    "restaurantB": "spec-account-t04-restaurantb",
+    "customerA": "spec-account-t04-customera",
+    "customerB": "spec-account-t04-customerb",
+    "driverA": "spec-account-t04-drivera",
+    "driverB": "spec-account-t04-driverb"
+  },
+  "ACCOUNT-T05": {
+    "restaurantA": "spec-account-t05-restauranta",
+    "restaurantB": "spec-account-t05-restaurantb",
+    "customerA": "spec-account-t05-customera",
+    "customerB": "spec-account-t05-customerb",
+    "driverA": "spec-account-t05-drivera",
+    "driverB": "spec-account-t05-driverb"
+  },
+  "PAR-SHARED": {
+    "restaurantA": "lab-par-shared-restauranta",
+    "restaurantB": "lab-par-shared-restaurantb",
+    "customerA": "lab-par-shared-customera",
+    "customerB": "lab-par-shared-customerb",
+    "driverA": "lab-par-shared-drivera",
+    "driverB": "lab-par-shared-driverb"
+  },
+  "PAR-T01": {
+    "restaurantA": "lab-par-t01-restauranta",
+    "restaurantB": "lab-par-t01-restaurantb",
+    "customerA": "lab-par-t01-customera",
+    "customerB": "lab-par-t01-customerb",
+    "driverA": "lab-par-t01-drivera",
+    "driverB": "lab-par-t01-driverb"
+  },
+  "PAR-T02": {
+    "restaurantA": "lab-par-t02-restauranta",
+    "restaurantB": "lab-par-t02-restaurantb",
+    "customerA": "lab-par-t02-customera",
+    "customerB": "lab-par-t02-customerb",
+    "driverA": "lab-par-t02-drivera",
+    "driverB": "lab-par-t02-driverb"
+  },
+  "FLAKY-T01": {
+    "restaurantA": "lab-flaky-t01-restauranta",
+    "restaurantB": "lab-flaky-t01-restaurantb",
+    "customerA": "lab-flaky-t01-customera",
+    "customerB": "lab-flaky-t01-customerb",
+    "driverA": "lab-flaky-t01-drivera",
+    "driverB": "lab-flaky-t01-driverb"
+  }
+}

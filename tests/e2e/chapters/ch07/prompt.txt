@@ -1,0 +1,16 @@
+請用 TypeScript 和 Playwright 為 Food Grandma 各寫一支 API 測試和網頁測試。延續第 06 章的一份 100 元招牌便當。兩支測試分開存放在本章 tests/ 的 order-api.spec.ts 和 order-ui.spec.ts，每支依照 Arrange、Act、Assert 組織。
+
+API 測試（CH07-T01）
+顧客已有一筆未完成的訂單，再用另一個示範地址送出一份招牌便當。確認 POST /api/customer/orders/ 回傳 HTTP 200，回應中的 status 為 failed、error 為 Your last order must be completed.。再查同一家餐廳的訂單清單，確認仍只有原本的訂單編號和配送地址。
+
+網頁測試（CH07-T02）
+顧客沒有未完成的訂單。從網頁把一份招牌便當加入購物車，前往結帳，填入示範地址並送出。確認進到「訂單進度」，而且畫面上的配送地址、金額與訂單編號符合這次下單的結果。可以從餐廳的訂單清單依地址找回這次的訂單編號，再和畫面核對。
+
+可使用的專案資訊
+- 測試從 @playwright/test 匯入 test 和 expect。request fixture 的 baseURL 已指向本機網站，網站也代理 /api。從兩支測試檔可分別用 ../../support/api 與 ../../support/base-fixtures 匯入 Api 和 World。
+- 用 new World(new Api(request), 'CH07-T01') 或 'CH07-T02' 取得各案例獨立的帳號。可用 world.restaurant()、world.meal(restaurant, { name: '招牌便當', price: 100 })、world.token('customerA') 準備資料。可用 world.order(restaurant, 'customerA', address, meal.id) 準備已有的訂單並取得 id，或用 api.listOrders(restaurant.token) 取得訂單陣列，裡面有 id、address 和 total。
+- 下單 API 使用表單欄位 access_token、restaurant_id、address、order_details。restaurant_id 傳字串，order_details 傳 JSON.stringify([{ meal_id, quantity: 1 }])。
+- 網頁測試從 /customer/restaurants/{restaurantId}/meals 開始，載入頁面後可把測試顧客的 token 寫入 localStorage 的 food_alpaca_customer_token，準備好登入狀態。用 meal-card 測試標記找到招牌便當，再點「加入購物車」、「查看購物車」、「前往結帳」。結帳頁有「配送地址」欄位和「確認送出訂單」按鈕。
+- 送出成功會到 /customer/delivery。delivery-card 測試標記內顯示「訂單 #編號」、配送地址和 100.00 的餐點合計。
+
+請直接輸出兩支完整的 TypeScript 測試，依順序用兩個程式碼區塊呈現，不需修改專案或執行測試。

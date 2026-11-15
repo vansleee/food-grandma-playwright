@@ -1,0 +1,172 @@
+[
+  {
+    "chapter": 20,
+    "variants": [
+      "no-pom",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 21,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 22,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 23,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 24,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 25,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 26,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 27,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 28,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 29,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 30,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 31,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 32,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 33,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 34,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  },
+  {
+    "chapter": 35,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": false,
+    "exception": "Fixed 200 ms waiting fails for the ten 900 ms responses"
+  },
+  {
+    "chapter": 36,
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "same_final_state": true,
+    "exception": null
+  }
+]

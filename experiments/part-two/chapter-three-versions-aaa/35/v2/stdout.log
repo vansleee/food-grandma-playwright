@@ -1,0 +1,65 @@
+
+Running 20 tests using 1 worker
+
+(node:83000) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83018) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (869ms)
+(node:83026) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (812ms)
+(node:83042) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83065) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (903ms)
+(node:83093) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83105) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (833ms)
+(node:83111) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.2s)
+(node:83123) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (842ms)
+(node:83131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83153) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (868ms)
+(node:83159) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83170) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (796ms)
+(node:83176) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.1s)
+(node:83183) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (882ms)
+(node:83201) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  17 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.2s)
+(node:83210) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (839ms)
+(node:83217) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (2.2s)
+(node:83226) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 ch35/meal-load.spec.ts:79:7 › v2 › CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料 (798ms)
+
+  20 passed (37.0s)

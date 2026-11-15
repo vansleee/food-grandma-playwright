@@ -1,0 +1,1 @@
+請使用 Playwright Generator 工具，依 ch13/generator/plan.md 產生三支 Food Grandma API 測試，各用計畫指定的檔名。先用 ch13/generator/seed.spec.ts 建立資料並開啟 API 文件。可用瀏覽器工具從同源頁面送出實際 API 請求核對狀態碼和回應。正式測試用 Playwright 的 request fixture 直接呼叫 API，並使用 demo-fixture.ts 為每支測試重建資料。請用 generator_write_test 儲存各檔，保留計畫的驗收條件。只寫這三支測試。

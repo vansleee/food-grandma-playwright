@@ -1,0 +1,68 @@
+{
+  "kind": "api",
+  "method": "PUT",
+  "url": "http://127.0.0.1:18081/api/restaurant/meals/1",
+  "request_headers": [
+    {
+      "name": "user-agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "accept",
+      "value": "*/*"
+    },
+    {
+      "name": "accept-encoding",
+      "value": "gzip,deflate,br"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    },
+    {
+      "name": "content-length",
+      "value": "102"
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 15:49:46 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    },
+    {
+      "name": "content-length",
+      "value": "118"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    }
+  ],
+  "ms": 2.9729999999999563,
+  "started": "2026-11-03T15:49:46.920Z",
+  "request": {
+    "name": "PAR shared meal",
+    "short_description": "Both cases edit this same meal",
+    "image": "",
+    "price": 100
+  },
+  "response": {
+    "meal": {
+      "id": 1,
+      "name": "PAR shared meal",
+      "short_description": "Both cases edit this same meal",
+      "image": "",
+      "price": 100
+    }
+  },
+  "n": 3
+}

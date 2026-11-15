@@ -1,0 +1,13 @@
+{
+  "kind": "api",
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/driver/orders/2/claim",
+  "status": 200,
+  "ms": 1.8499999999985448,
+  "started": "2026-11-02T18:32:51.797Z",
+  "request": "access_token=<redacted>",
+  "response": {
+    "status": "success"
+  },
+  "n": 14
+}

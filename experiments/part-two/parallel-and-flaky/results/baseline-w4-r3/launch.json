@@ -1,0 +1,17 @@
+{
+  "command": [
+    "node",
+    "node_modules/playwright/cli.js",
+    "test",
+    "--config",
+    "playwright.baseline.config.ts",
+    "--workers=4",
+    "--fully-parallel",
+    "--retries=0"
+  ],
+  "cwd": "./tests/e2e/v1-labs",
+  "database": "./work/v1-ch34-ch35-20261103/baseline-w4-r3.db",
+  "password_source": "TEST_PASSWORD",
+  "variant": null,
+  "source_instrumented": false
+}

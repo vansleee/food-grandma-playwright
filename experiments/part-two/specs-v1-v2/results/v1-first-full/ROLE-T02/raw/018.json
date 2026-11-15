@@ -1,0 +1,88 @@
+{
+  "kind": "browser",
+  "method": "GET",
+  "url": "http://127.0.0.1:18082/api/driver/orders/active?access_token=<redacted>",
+  "status": 200,
+  "ms": 3.466,
+  "started": "2026-11-02T18:32:52.109Z",
+  "request": null,
+  "response": {
+    "orders": [
+      {
+        "id": 3,
+        "customer": {
+          "id": 10,
+          "name": "customerB ROLE-T02",
+          "avatar": "",
+          "address": "ROLE-T02 customerB 示範地址"
+        },
+        "restaurant": {
+          "id": 9,
+          "name": "ROLE-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "ROLE-T02 restaurantA 示範路 1 號"
+        },
+        "driver": {
+          "id": 10,
+          "name": "driverB ROLE-T02",
+          "avatar": "",
+          "car_model": "Demo",
+          "plate_number": "DEMO-000"
+        },
+        "order_details": [
+          {
+            "id": 3,
+            "meal": {
+              "id": 2,
+              "name": "Role T02 meal",
+              "price": 80
+            },
+            "quantity": 1,
+            "sub_total": 80
+          }
+        ],
+        "total": 80,
+        "status": "On the way",
+        "address": "role-other-ROLET02n2"
+      },
+      {
+        "id": 2,
+        "customer": {
+          "id": 9,
+          "name": "customerA ROLE-T02",
+          "avatar": "",
+          "address": "ROLE-T02 customerA 示範地址"
+        },
+        "restaurant": {
+          "id": 9,
+          "name": "ROLE-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "ROLE-T02 restaurantA 示範路 1 號"
+        },
+        "driver": {
+          "id": 10,
+          "name": "driverB ROLE-T02",
+          "avatar": "",
+          "car_model": "Demo",
+          "plate_number": "DEMO-000"
+        },
+        "order_details": [
+          {
+            "id": 2,
+            "meal": {
+              "id": 2,
+              "name": "Role T02 meal",
+              "price": 80
+            },
+            "quantity": 1,
+            "sub_total": 80
+          }
+        ],
+        "total": 80,
+        "status": "On the way",
+        "address": "role-current-ROLET02n1"
+      }
+    ]
+  },
+  "n": 18
+}

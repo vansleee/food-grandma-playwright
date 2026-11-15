@@ -1,0 +1,26 @@
+{
+  "implementation": "fake",
+  "mutatedReturnedMeal": {
+    "id": 1,
+    "name": "Changed only in the caller",
+    "short_description": "Keep this description",
+    "image": "",
+    "price": 100
+  },
+  "mutatedList": [
+    {
+      "id": 1,
+      "name": "Stored meal",
+      "short_description": "Keep this description",
+      "image": "",
+      "price": 999
+    }
+  ],
+  "stored": {
+    "id": 1,
+    "name": "Stored meal",
+    "short_description": "Keep this description",
+    "image": "",
+    "price": 100
+  }
+}

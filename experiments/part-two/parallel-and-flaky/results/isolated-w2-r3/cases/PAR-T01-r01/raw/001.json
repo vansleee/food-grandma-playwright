@@ -1,0 +1,55 @@
+{
+  "kind": "api",
+  "method": "POST",
+  "url": "http://127.0.0.1:18081/api/social/token/",
+  "request_headers": [
+    {
+      "name": "user-agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "accept",
+      "value": "*/*"
+    },
+    {
+      "name": "accept-encoding",
+      "value": "gzip,deflate,br"
+    },
+    {
+      "name": "content-type",
+      "value": "application/x-www-form-urlencoded"
+    },
+    {
+      "name": "content-length",
+      "value": "74"
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 15:49:48 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    },
+    {
+      "name": "content-length",
+      "value": "105"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    }
+  ],
+  "ms": 219.74099999999987,
+  "started": "2026-11-03T15:49:49.010Z",
+  "request": "username=lab-par-t01-restauranta&password=<redacted>",
+  "response": {
+    "access_token": "<redacted>",
+    "token_type": "Bearer",
+    "scope": "read write"
+  },
+  "n": 1
+}

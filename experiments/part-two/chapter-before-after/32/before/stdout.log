@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:69158) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch32/meal-price.spec.ts:12:7 › 改寫前 › CH32-T01 從 v1 擷取的餐點修改流程 (946ms)
+  ✓  2 ch32/meal-price.spec.ts:13:7 › 改寫前 › CH32-T02 直接呼叫 API 建立並查詢餐點 (195ms)
+  ✓  3 ch32/meal-price.spec.ts:14:7 › 改寫前 › CH32-T03 直接呼叫 API 更新原餐點 (197ms)
+
+  3 passed (1.8s)

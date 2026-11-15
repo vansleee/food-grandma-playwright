@@ -1,0 +1,18 @@
+{
+  "case": "RCON-T03",
+  "repeat": 1,
+  "title": "RCON-T03 找不到的餐點回傳 undefined，更新時不新增資料",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 0,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "implementation": "fake",
+    "missingId": 999999,
+    "meals": []
+  },
+  "api_requests": 0,
+  "browser_api_requests": 0,
+  "non_2xx": []
+}

@@ -1,0 +1,999 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0",
+      "--repeat-each=20"
+    ],
+    "configFile": "./tests/e2e/chapters/playwright.config.ts",
+    "rootDir": "./tests/e2e/chapters/ch35",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts",
+        "repeatEach": 20,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/chapters/ch35",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "meal-load.spec.ts",
+      "file": "meal-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "v1",
+          "file": "meal-load.spec.ts",
+          "line": 40,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2111,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:45.407Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-f5d3639b6b0c0737ee63",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 808,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:47.875Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat1/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat1/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-cc76f228b9cb74deee00",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2116,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:49.040Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat2/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat2/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-d3d35c2636eac2a64415",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 804,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:51.512Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat3/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat3/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-09776556332cf6a37a31",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2094,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:52.668Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat4/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat4/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-3c598e6e3134a4732d03",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 861,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:55.119Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat5/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat5/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-bc89df25a494eaa21b23",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2184,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:56.334Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat6/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat6/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-a499e80ada858caae453",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 899,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:22:58.874Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat7/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat7/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-de96ba8109decfe96950",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2132,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:00.141Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat8/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat8/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-f10ec658e7c1c4379df0",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 882,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:02.627Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat9/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat9/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-685c65ed90ba24d6a517",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2127,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:03.865Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat10/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat10/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-97236512430b06358da5",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 847,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:06.349Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat11/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat11/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-2bbb75ca621e22cf8c41",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:07.570Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat12/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat12/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-f7a0a77981beb03440c6",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 875,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:10.058Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat13/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat13/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-ad391171a4771837e328",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2108,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:11.282Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat14/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat14/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-0007c5a6ab85e70f850f",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 894,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:13.745Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat15/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat15/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-257f2736f40348fa4344",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2158,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:14.989Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat16/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat16/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-9163880decbcd06b86bd",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 831,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:17.503Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat17/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat17/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-6cc10737e677313cae3d",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2104,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:18.690Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat18/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat18/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-6500fcbe862878806414",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "CH35-T01 將原價格 100 修改為 150，保留原餐點及其他資料",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 914,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T18:23:21.148Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat19/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "./work/chapter-three-versions-aaa-20261104/runs/20261103T182039Z-a2008d/35/v1/artifacts/meal-load-v1-CH35-T01-將原價格-100-修改為-150，保留原餐點及其他資料-repeat19/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "959553f7cb7c0b788f4c-f8812aec0f421299686a",
+              "file": "meal-load.spec.ts",
+              "line": 41,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T18:22:45.183Z",
+    "duration": 37037.895000000004,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

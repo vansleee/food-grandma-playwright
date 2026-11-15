@@ -1,0 +1,141 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/chapters/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.config.ts",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/v2/playwright.config.ts",
+    "rootDir": "./tests/e2e/v2/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/reader-project-reorganization-20261104/runs/20261103T165008Z-02f1be/v2/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v2/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/reader-project-reorganization-20261104/runs/20261103T165008Z-02f1be/v2/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.",
+      "stack": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.\n    at _TestTypeImpl._currentSuite (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2224:13)\n    at _TestTypeImpl._describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2266:24)\n    at Function.describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:1154:12)\n    at Object.<anonymous> (./tests/e2e/v2/tests/specs/account.spec.ts:10:6)",
+      "location": {
+        "file": "./tests/e2e/v2/tests/specs/account.spec.ts",
+        "column": 6,
+        "line": 10
+      },
+      "snippet": "\u001b[90m   at \u001b[39mspecs/account.spec.ts:10\n\n   8 | const PROFILE_API = '**/api/restaurant/me/';\n   9 |\n> 10 | test.describe('餐廳設定', () => {\n     |      ^\n  11 |   test.use({ session: 'restaurantA' });\n  12 |\n  13 |   test('ACCOUNT-T01 開啟設定頁時欄位顯示目前的名字、email、餐廳名稱與地址', async ({ page, stage }) => {"
+    },
+    {
+      "message": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.",
+      "stack": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.\n    at _TestTypeImpl._currentSuite (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2224:13)\n    at _TestTypeImpl._describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2266:24)\n    at Function.describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:1154:12)\n    at Object.<anonymous> (./tests/e2e/v2/tests/specs/auth.spec.ts:7:6)",
+      "location": {
+        "file": "./tests/e2e/v2/tests/specs/auth.spec.ts",
+        "column": 6,
+        "line": 7
+      },
+      "snippet": "\u001b[90m   at \u001b[39mspecs/auth.spec.ts:7\n\n   5 |\n   6 | // 規格：specs/01-restaurant-auth-all.md（ROLE-04、ROLE-06）。三個案例都從「沒有登入狀態」開始。\n>  7 | test.describe('店家管理者認證', () => {\n     |      ^\n   8 |   test('AUTH-T01 有效店家帳密登入後導向訂單管理', async ({ page, stage }) => {\n   9 |     const signIn = new SignInPage(page);\n  10 |     const orders = new OrdersPage(page);"
+    },
+    {
+      "message": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.",
+      "stack": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.\n    at _TestTypeImpl._currentSuite (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2224:13)\n    at _TestTypeImpl._describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2266:24)\n    at Function.describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:1154:12)\n    at Object.<anonymous> (./tests/e2e/v2/tests/specs/driver-claim.spec.ts:8:6)",
+      "location": {
+        "file": "./tests/e2e/v2/tests/specs/driver-claim.spec.ts",
+        "column": 6,
+        "line": 8
+      },
+      "snippet": "\u001b[90m   at \u001b[39mspecs/driver-claim.spec.ts:8\n\n   6 | // 外送員頁面沒有登入 UI，所以以 session 預載該案例外送員的真實 token；接單操作本身走真實 UI。\n   7 |\n>  8 | test.describe('外送員 A 接單', () => {\n     |      ^\n   9 |   test.use({ session: 'driverA' });\n  10 |\n  11 |   test('ROLE-T01 接取待取餐訂單後進入進行中配送', async ({ page, stage }) => {"
+    },
+    {
+      "message": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.",
+      "stack": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.\n    at _TestTypeImpl._currentSuite (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2224:13)\n    at _TestTypeImpl._describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2266:24)\n    at Function.describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:1154:12)\n    at Object.<anonymous> (./tests/e2e/v2/tests/specs/meals.spec.ts:9:6)",
+      "location": {
+        "file": "./tests/e2e/v2/tests/specs/meals.spec.ts",
+        "column": 6,
+        "line": 9
+      },
+      "snippet": "\u001b[90m   at \u001b[39mspecs/meals.spec.ts:9\n\n   7 | const CREATE_MEAL = '**/api/restaurant/meals/';\n   8 |\n>  9 | test.describe('餐點管理', () => {\n     |      ^\n  10 |   test.use({ session: 'restaurantA' });\n  11 |\n  12 |   test('MEAL-T01 新增餐點（價格 120、圖片網址留空）後出現在列表，重新整理仍在', async ({ page, stage }) => {"
+    },
+    {
+      "message": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.",
+      "stack": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.\n    at _TestTypeImpl._currentSuite (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2224:13)\n    at _TestTypeImpl._describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2266:24)\n    at Function.describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:1154:12)\n    at Object.<anonymous> (./tests/e2e/v2/tests/specs/order-ready.spec.ts:11:6)",
+      "location": {
+        "file": "./tests/e2e/v2/tests/specs/order-ready.spec.ts",
+        "column": 6,
+        "line": 11
+      },
+      "snippet": "\u001b[90m   at \u001b[39mspecs/order-ready.spec.ts:11\n\n   9 | const FAILURE_MESSAGE = '更新訂單失敗，請稍後重試。';\n  10 |\n> 11 | test.describe('備餐完成', () => {\n     |      ^\n  12 |   test.use({ session: 'restaurantA' });\n  13 |\n  14 |   test('READY-T02 在 UI 完成備餐後顯示待取餐，重新載入仍為待取餐', async ({ page, stage }) => {"
+    },
+    {
+      "message": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.",
+      "stack": "Error: Playwright Test did not expect test.describe() to be called here.\nMost common reasons include:\n- You are calling test.describe() in a configuration file.\n- You are calling test.describe() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n- You are calling test.describe() from an async test.describe() block. Only sync ones are supported.\n    at _TestTypeImpl._currentSuite (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2224:13)\n    at _TestTypeImpl._describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:2266:24)\n    at Function.describe (./tests/e2e/ai-agent/food-grandma-fastapi/node_modules/playwright/lib/common/index.js:1154:12)\n    at Object.<anonymous> (./tests/e2e/v2/tests/specs/order-search.spec.ts:13:6)",
+      "location": {
+        "file": "./tests/e2e/v2/tests/specs/order-search.spec.ts",
+        "column": 6,
+        "line": 13
+      },
+      "snippet": "\u001b[90m   at \u001b[39mspecs/order-search.spec.ts:13\n\n  11 | const LIST_ORDERS = '**/api/restaurant/orders/';\n  12 |\n> 13 | test.describe('訂單搜尋與篩選', () => {\n     |      ^\n  14 |   test.use({ session: 'restaurantA' });\n  15 |\n  16 |   test('FIND-T02 分別以 ID、姓名、地址片段搜尋（含大小寫與前後空白）', async ({ page, stage }) => {"
+    },
+    {
+      "message": "Error: No tests found",
+      "stack": "Error: No tests found"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-11-03T16:50:10.556Z",
+    "duration": 25.386000000000024,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,368 @@
+[
+  {
+    "chapter": 15,
+    "topic": "Page Object Model",
+    "file": "ch15/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "元素定位直接寫在測試、由 POM 提供定位器、由 POM 提供任務方法，各自讓讀者看到哪些細節？",
+    "change": "直接定位／定位器 POM／方法型 POM",
+    "tradeoff": "直接寫定位器容易看見步驟；v1 集中定位器，v2 命名常用步驟但增加餐點列類別。未模擬網頁改版，不推算維護時間。",
+    "variants": [
+      "no-pom",
+      "v1",
+      "v2"
+    ],
+    "source_v2": "tests/e2e/v2/tests/specs/meals.spec.ts",
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture 與相同 API 結果檢查；POM 定義直接列在本章",
+    "v2_provenance": "從原始 v2 相關做法整理，統一非本章的準備與驗收"
+  },
+  {
+    "chapter": 16,
+    "topic": "定位元素",
+    "file": "ch16/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "v1 的 row(original.id) 已能找到正確餐點；要討論的是元素定位放在頁面物件，還是直接寫在測試裡。",
+    "change": "第一列／依編號 CSS／依編號組合定位器",
+    "tradeoff": "沒有修復錯誤定位。直接寫在測試裡較容易看到條件，但將來屬性改名時可能需要修改多個測試；保留 v1 的封裝也合理。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "從原始 v2 相關做法整理，統一非本章的準備與驗收",
+    "limitation": "未使用版以第一列定位，本輪只有一筆餐點；未實測重排或多筆資料的穩定性"
+  },
+  {
+    "chapter": 17,
+    "topic": "Page Factory",
+    "file": "ch17/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "只有兩個頁面物件時，直接 new 是否已足夠？集中建立物件後，讀者還能否清楚知道目前取得哪個頁面？",
+    "change": "直接建立／直接建立／Page Factory",
+    "tradeoff": "Factory 多了一個建立物件的地方，這個小案例沒有顯示少寫多少程式；頁面數量與建立方式穩定時，可以保留直接建立。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "教學延伸：Page Factory 未全部出現在原始 v2；本章以同一案例補上"
+  },
+  {
+    "chapter": 18,
+    "topic": "Component Object Model",
+    "file": "ch18/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "餐點列內的按鈕與欄位，是否已經多到值得整理成獨立物件？",
+    "change": "列內連結／列內連結／MealRow 元件",
+    "tradeoff": "多了 MealRow 類別。只有一個編輯連結時，原來的一行也很清楚；這輪沒有模擬元件改版或跨頁重用。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "從原始 v2 相關做法整理，統一非本章的準備與驗收"
+  },
+  {
+    "chapter": 16,
+    "topic": "功能就緒",
+    "file": "ch16/page-readiness.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "開啟編輯頁面後，等到哪些內容才算可以修改？v1 已等待名稱、描述及價格，這些判斷值得保留。",
+    "change": "直接檢查／直接檢查／具名就緒方法",
+    "tradeoff": "等待條件越多，程式越長，但能避免在資料尚未載入時修改。這輪不能當成 v1 原本不穩定的證據。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "從原始 v2 相關做法整理，統一非本章的準備與驗收",
+    "limitation": "未使用版仍有條件檢查，指未抽成就緒方法，不代表完全沒有等待"
+  },
+  {
+    "chapter": 19,
+    "topic": "Workflow Facade 與流暢介面（Fluent Interface）",
+    "file": "ch19/customer-order.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "CH25-T01：顧客搜尋餐廳並完成訂單",
+    "provenance": "依 Food Grandma 現有顧客網站新增的教學情境，三版皆使用相同 POM；不是原始 v1、v2 的輸出",
+    "source": "food-grandma-web/src/pages/customer/Restaurants.tsx",
+    "ui_sources": [
+      "food-grandma-web/src/pages/customer/Restaurants.tsx",
+      "food-grandma-web/src/pages/customer/Meals.tsx",
+      "food-grandma-web/src/pages/customer/Cart.tsx",
+      "food-grandma-web/src/pages/customer/Checkout.tsx",
+      "food-grandma-web/src/pages/customer/Delivery.tsx"
+    ],
+    "question": "測試需要列出每個顧客步驟，還是只要表達完成一筆訂單？哪種寫法較符合這支測試的目的？",
+    "change": "逐步呼叫 POM／行雲流水模式／Workflow Facade",
+    "tradeoff": "三版沿用相同 POM 與驗收。行雲流水保留行為順序，但需維護記錄及依序執行步驟的程式；Facade 集中完整流程，適合其他測試準備訂單時重複使用。",
+    "variants": [
+      "none",
+      "fluent",
+      "workflow"
+    ],
+    "variant_labels": [
+      "POM（逐步執行）",
+      "流暢介面（Fluent Interface）",
+      "Workflow Facade"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "獨立帳號、同一初始資料庫、相同餐點、四個 POM 與畫面／API 驗收；價格 120、數量 1，只新增一筆訂單",
+    "terminology": "Fluent Interface 使用流暢介面一詞",
+    "limitation": "本次只驗證正常訂購流程，沒有量測長期維護時間或比較不同模式的執行速度",
+    "additional_cases": [
+      "CH25-T02：使用兩位顧客的獨立環境準備訂單，再由餐廳管理者搜尋指定地址"
+    ]
+  },
+  {
+    "chapter": 20,
+    "topic": "Screenplay 與多角色流程",
+    "file": "ch20/multi-role-order.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "CH26-T01：顧客下單、餐廳備餐完成、外送員接單並確認送達",
+    "provenance": "兩版共用 page.ts 的頁面物件及 CustomerOrderingWorkflow，以 CH26-T03 比較同一組操作如何由不同角色重複使用",
+    "source": "food-grandma-web/src/pages/customer/Checkout.tsx",
+    "question": "同一段訂單流程，如何用頁面物件或 Screenplay 安排三個角色的步驟？",
+    "change": "POM 加 Workflow／Screenplay",
+    "tradeoff": "兩版使用相同 POM、獨立角色登入環境及驗收條件。Screenplay 把角色與任務寫進測試步驟，也增加了 Actor、Ability 和 Task 等程式結構。",
+    "variants": [
+      "pom",
+      "screenplay"
+    ],
+    "variant_labels": [
+      "POM（角色分工）",
+      "Screenplay"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "同一個 CH26-T01、獨立登入環境、四個顧客頁面 POM、共用訂餐 Workflow、四階段狀態及三個角色畫面驗收",
+    "limitation": "CH26-T01 用於介紹 Screenplay，CH26-T03 用於比較兩版如何安排雙訂單流程。",
+    "additional_cases": [
+      "CH26-T03：兩位顧客、兩位外送員與一位管理者，以五個 context 重複使用 PlaceOrder、MarkOrderReady、ClaimOrder、ConfirmDelivered，B 先送達時 A 仍配送中"
+    ],
+    "cleanup_checks": "scripts/check-role-sessions.mjs：五個失敗注入檢查；建立頁面、截圖及附件失敗仍關閉環境；關閉失敗仍繼續清理其他環境且不覆蓋原錯誤"
+  },
+  {
+    "chapter": 21,
+    "topic": "Fixture 與資料隔離",
+    "file": "ch21/driver-claim.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "CH27-T02：外送員接單後可以在配送頁面看到這筆訂單",
+    "question": "接單測試需要準備哪些資源？哪些頁面可以省略？",
+    "change": "General Fixture／按用途拆分的 Fixture",
+    "variants": [
+      "general-fixture",
+      "focused-fixtures"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "每版使用獨立的本機資料庫，外送員從網頁接取指定訂單，確認配送頁面顯示同一筆訂單。",
+    "limitation": "兩版都使用 Playwright Fixture，差別在準備工作的範圍與分工。"
+  },
+  {
+    "chapter": 22,
+    "topic": "資料驅動測試",
+    "file": "ch22/meal-create.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T01、MEAL-T04",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 17,
+    "provenance": "以既有的一般餐點與零元餐點新增案例重新整理，兩版使用相同資料與驗收。",
+    "question": "新增步驟相同時，如何讓每列資料產生一支獨立測試？",
+    "change": "逐一宣告兩支測試／從 CSV 宣告兩支測試",
+    "variants": [
+      "before",
+      "after"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "獨立的餐廳帳號、相同 POM、網頁新增餐點、API 核對資料及重新整理後的列表驗收。",
+    "data_file": "ch22/meal-cases.csv",
+    "previous_example": "ch22/meal-prices.spec.ts"
+  },
+  {
+    "chapter": 23,
+    "topic": "Test Data Builder",
+    "file": "ch23/order-quantity.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "延伸 CH25-T01 的訂餐流程",
+    "question": "如何準備一份與兩份雞腿便當的訂餐資料，讓閱讀程式碼的人一眼看到數量差異？",
+    "change": "直接寫訂餐資料／使用 OrderBuilder",
+    "variants": [
+      "before",
+      "after"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "各案例獨立帳號、同一套網頁訂餐流程、核對訂單編號、單價、數量與金額。",
+    "previous_example": "ch23/meal-price.legacy.ts"
+  },
+  {
+    "chapter": 23,
+    "topic": "Object Mother",
+    "file": "ch23/order-scenarios.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "FIND-T03",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/order-search.spec.ts",
+    "source_line": 48,
+    "question": "測試需要一筆備餐中與一筆待取餐訂單時，建立餐點、顧客下單及標記備餐完成的細節，是否遮住了要驗證的搜尋與篩選？",
+    "change": "逐步建立／seedTwoOrders／OrderMother",
+    "tradeoff": "增加 OrderMother。預設餐點與建立流程集中後，仍需讓讀者找得到其內容；這組沒有直接改資料庫狀態，也沒有省略原案例的搜尋要求。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "從原始 v2 相關做法整理，統一非本章的準備與驗收"
+  },
+  {
+    "chapter": 24,
+    "topic": "Strategy 與 Adapter",
+    "file": "ch24/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02；角色查詢為 API 延伸",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "認證方式不同，與欄位名稱不同，是兩個問題，是否應各自處理？",
+    "change": "直接映射與認證／API 包裝／Adapter 與認證 Strategy",
+    "tradeoff": "Adapter 的 title／amount 呼叫端是教學情境，並非現有網站多出第二套 API。角色查詢只驗證兩個 me 端點，沒有宣稱驗證所有角色權限。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "教學延伸：Adapter 未全部出現在原始 v2；本章以同一案例補上"
+  },
+  {
+    "chapter": 25,
+    "topic": "Repository 與 Fake",
+    "file": "ch25/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02；另有兩個資料存取案例",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "資料準備與查詢是否需要一個明確介面？用 Fake 執行資料存取檢查時，哪些網站行為仍須透過真實服務驗證？",
+    "change": "直接 API／API 包裝／Repository 與 Fake 補充",
+    "tradeoff": "增加 Repository、Fake 與切換用的 Fixture。Fake 的兩次執行是補充結果，不放進 E2E 前後對照，也不能代表網頁、認證或後端已驗證。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "教學延伸：Repository Fake 未全部出現在原始 v2；本章以同一案例補上"
+  },
+  {
+    "chapter": 26,
+    "topic": "平行執行",
+    "file": "ch26/parallel-meals.spec.ts",
+    "workers": 2,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02，第二個價格 180 為教學延伸",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "測試已經有獨立帳號與餐點，是否能直接平行執行？增加 worker 後，有沒有真的同時執行及互相修改資料？",
+    "change": "循序／循序／兩個 worker",
+    "tradeoff": "多個 worker 會增加啟動與資源成本，少量案例未必更快。共用餐點的故意失敗情境仍在歷史實驗區，不當成原始 v1 的錯誤。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "教學延伸：平行執行 未全部出現在原始 v2；本章以同一案例補上"
+  },
+  {
+    "chapter": 27,
+    "topic": "Flaky Test 與條件等待",
+    "file": "ch27/meal-load.spec.ts",
+    "workers": 1,
+    "repeat_each": 20,
+    "source_case": "MEAL-T02，加上受控制的載入延遲",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "載入偶爾慢 900 毫秒時，v1 的條件等待是否已足夠？是否真的需要再抽出等待函式？",
+    "change": "固定等待／條件等待／具名條件等待",
+    "tradeoff": "這組是在檢查原有做法，不預設改寫後較穩定。固定等待的失敗反例是另一個教學實驗，不能混入本輪 v1 的結果。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "從原始 v2 相關做法整理，統一非本章的準備與驗收",
+    "limitation": "固定等待為刻意安排的反例；每版二十次，延遲依 900／0 毫秒交替，不將反例視為原始 v1 的錯誤"
+  },
+  {
+    "chapter": 28,
+    "topic": "審查與整理測試程式",
+    "file": "ch28/meal-price.spec.ts",
+    "workers": 1,
+    "repeat_each": 1,
+    "source_case": "MEAL-T02",
+    "provenance": "未使用版為教學對照；v1、v2 只抽取本章相關做法並統一共用基礎，非原始專案的逐字副本",
+    "source": "tests/e2e/v1/tests/meals.spec.ts",
+    "source_line": 61,
+    "question": "學完各種模式後，這個案例真正需要留下哪些結構？讀者能否直接說出資料準備、修改價格與預期結果？",
+    "change": "直接組合／POM／具名 Workflow",
+    "tradeoff": "測試本身變短，仍需要閱讀輔助程式才能了解細節。這是作者整理的章節範例；原始 v2 仍是另一個獨立 session 的輸出，不能互相冒充。",
+    "variants": [
+      "none",
+      "v1",
+      "v2"
+    ],
+    "comment_style": "Arrange / Act / Assert",
+    "shared_basis": "帳號、餐點資料 Fixture、既有 POM 與相同 API 結果檢查；每份測試直接呈現 AAA 流程",
+    "v2_provenance": "教學延伸：Workflow 重構 未全部出現在原始 v2；本章以同一案例補上"
+  }
+]

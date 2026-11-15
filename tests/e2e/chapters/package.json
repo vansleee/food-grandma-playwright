@@ -1,0 +1,16 @@
+{
+  "name": "food-grandma-part-two-chapters",
+  "private": true,
+  "scripts": {
+    "chapter": "node scripts/run-chapter.mjs",
+    "test": "node scripts/run-chapter.mjs all",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^26.6.5",
+    "csv-parse": "7.0.3",
+    "playwright-bdd": "9.2.1",
+    "typescript": "^5.5.4"
+  }
+}

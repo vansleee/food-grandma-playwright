@@ -1,0 +1,60 @@
+[
+  {
+    "case": "PAR-T01",
+    "repeat": 1,
+    "title": "PAR-T01 修改餐點價格為 150",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1108,
+    "worker_index": 0,
+    "errors": [],
+    "observation": {
+      "caseId": "PAR-T01",
+      "mealId": 2,
+      "expectedPrice": 150,
+      "observedPrice": 150,
+      "saveResponse": {
+        "meal": {
+          "id": 2,
+          "name": "PAR-T01 meal",
+          "short_description": "PAR-T01 original description",
+          "image": "",
+          "price": 150
+        }
+      },
+      "workers": 2
+    },
+    "api_requests": 4,
+    "browser_api_requests": 11,
+    "non_2xx": []
+  },
+  {
+    "case": "PAR-T02",
+    "repeat": 1,
+    "title": "PAR-T02 修改餐點價格為 180",
+    "status": "passed",
+    "retry": 0,
+    "duration_ms": 1128,
+    "worker_index": 1,
+    "errors": [],
+    "observation": {
+      "caseId": "PAR-T02",
+      "mealId": 1,
+      "expectedPrice": 180,
+      "observedPrice": 180,
+      "saveResponse": {
+        "meal": {
+          "id": 1,
+          "name": "PAR-T02 meal",
+          "short_description": "PAR-T02 original description",
+          "image": "",
+          "price": 180
+        }
+      },
+      "workers": 2
+    },
+    "api_requests": 4,
+    "browser_api_requests": 11,
+    "non_2xx": []
+  }
+]

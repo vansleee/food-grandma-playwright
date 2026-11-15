@@ -1,0 +1,7 @@
+{
+  "tests/e2e/chapters/ch26/multi-role-order.spec.ts": "a6242127880f197e7faad8533d35e13d081aac59ab0c265cac5754c4b46bc061",
+  "tests/e2e/chapters/ch26/role-sessions.ts": "7a2e8f66b02db949dd595d56e49ed668e203745dd8cd35217567dc1ba2e7514f",
+  "tests/e2e/chapters/scripts/check-role-sessions.mjs": "05a880a9ccdfbfc63434f72bac3f00390fc8b66ae78089d66263d36f9e135e25",
+  "tests/e2e/chapters/data/accounts.json": "132d34a8214f86060754265e09be5ed217cc96331b42add4cce08c9d103217b3",
+  "tests/e2e/chapters/playwright.config.ts": "cba069086cc5d994c14d9d3ecbe185f7cb632a3b5be48eda26e7c147a070bf5a"
+}

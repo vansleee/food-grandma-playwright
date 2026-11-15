@@ -1,0 +1,7 @@
+{
+  "repeat": 1,
+  "responseDelayMs": 900,
+  "mealId": 1,
+  "expectedPrice": "100",
+  "observedPrice": "100"
+}

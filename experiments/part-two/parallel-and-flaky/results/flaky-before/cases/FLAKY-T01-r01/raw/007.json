@@ -1,0 +1,50 @@
+{
+  "kind": "browser",
+  "method": "GET",
+  "url": "http://127.0.0.1:18082/api/restaurant/meals/1",
+  "request_headers": [
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Referer",
+      "value": "http://127.0.0.1:18082/management/meals/1/edit"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "sec-ch-ua",
+      "value": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+    },
+    {
+      "name": "sec-ch-ua-mobile",
+      "value": "?0"
+    },
+    {
+      "name": "sec-ch-ua-platform",
+      "value": "\"Windows\""
+    }
+  ],
+  "status": -1,
+  "response_headers": [],
+  "ms": -1,
+  "started": "2026-11-03T15:49:51.836Z",
+  "request": null,
+  "response": null,
+  "n": 7
+}

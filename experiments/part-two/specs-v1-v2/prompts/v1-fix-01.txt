@@ -1,0 +1,5 @@
+延續本 session。第一個案例的實際執行結果如下：
+AUTH-T01 在 tests/support/env.ts:17 的 accountsFor() 失敗：
+ENOENT: no such file or directory, open './tests/spec-comparison/accounts.json'
+共同帳號檔實際位於 ./tests/e2e/spec-comparison/accounts.json。
+請閱讀目前版本並修正這個測試程式的路徑計算問題。只修改目前 tests/ 下必要程式，不修改設定、規格、產品或預期。不要讀取其他版本。本輪仍不執行命令，由外部驗證。

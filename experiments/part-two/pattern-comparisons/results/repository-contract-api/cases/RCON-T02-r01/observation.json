@@ -1,0 +1,32 @@
+{
+  "implementation": "api",
+  "first": {
+    "id": 2,
+    "name": "First meal",
+    "short_description": "First description",
+    "image": "",
+    "price": 100
+  },
+  "second": {
+    "id": 3,
+    "name": "Second meal",
+    "short_description": "Second description",
+    "image": "",
+    "price": 80
+  },
+  "updated": {
+    "id": 2,
+    "name": "First meal",
+    "short_description": "First description",
+    "image": "",
+    "price": 150
+  },
+  "before": [
+    2,
+    3
+  ],
+  "after": [
+    2,
+    3
+  ]
+}

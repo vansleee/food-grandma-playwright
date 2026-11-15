@@ -1,0 +1,105 @@
+{
+  "case": "CH31-T02",
+  "title": "CH31-T02 使用餐廳與外送員的認證查詢資料",
+  "execution_index": 1,
+  "status": "passed",
+  "retry": 0,
+  "fake": false,
+  "duration_ms": 362,
+  "start_time": "2026-11-03T18:21:52.980Z",
+  "worker": 0,
+  "requests": [
+    {
+      "kind": "api",
+      "method": "POST",
+      "url": "http://127.0.0.1:18081/api/social/token/",
+      "status": 200,
+      "ms": 175.09400000000005,
+      "request": "username=reader-ch31-t02-restauranta&password=<redacted>",
+      "response": {
+        "access_token": "<redacted>",
+        "token_type": "Bearer",
+        "scope": "read write"
+      }
+    },
+    {
+      "kind": "api",
+      "method": "GET",
+      "url": "http://127.0.0.1:18081/api/restaurant/me/",
+      "status": 200,
+      "ms": 1.1929999999999836,
+      "request": null,
+      "response": {
+        "restaurant": {
+          "id": 27,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        "user": {
+          "username": "reader-ch31-t02-restauranta",
+          "first_name": "restaurantA",
+          "last_name": "CH31-T02",
+          "email": "reader-ch31-t02-restauranta@example.invalid"
+        }
+      }
+    },
+    {
+      "kind": "api",
+      "method": "POST",
+      "url": "http://127.0.0.1:18081/api/social/token/",
+      "status": 200,
+      "ms": 173.52200000000016,
+      "request": "username=reader-ch31-t02-drivera&password=<redacted>",
+      "response": {
+        "access_token": "<redacted>",
+        "token_type": "Bearer",
+        "scope": "read write"
+      }
+    },
+    {
+      "kind": "api",
+      "method": "GET",
+      "url": "http://127.0.0.1:18081/api/restaurant/me/",
+      "status": 200,
+      "ms": 1.109000000000151,
+      "request": null,
+      "response": {
+        "restaurant": {
+          "id": 27,
+          "name": "CH31-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH31-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        "user": {
+          "username": "reader-ch31-t02-restauranta",
+          "first_name": "restaurantA",
+          "last_name": "CH31-T02",
+          "email": "reader-ch31-t02-restauranta@example.invalid"
+        }
+      }
+    },
+    {
+      "kind": "api",
+      "method": "GET",
+      "url": "http://127.0.0.1:18081/api/driver/me/?access_token=<redacted>",
+      "status": 200,
+      "ms": 1.4529999999999745,
+      "request": null,
+      "response": {
+        "driver": {
+          "id": 27,
+          "name": "driverA CH31-T02",
+          "avatar": "",
+          "car_model": "Demo",
+          "plate_number": "DEMO-000"
+        }
+      }
+    }
+  ],
+  "console": [],
+  "non_2xx": [],
+  "errors": []
+}

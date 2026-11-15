@@ -1,0 +1,14 @@
+.git
+**/.git
+**/node_modules
+**/dist
+**/__pycache__
+**/.venv
+**/.env
+**/*.db
+**/*.db-*
+tests
+specs
+.claude
+.agents
+.codex

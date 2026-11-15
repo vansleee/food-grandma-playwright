@@ -1,0 +1,218 @@
+{
+  "config": {
+    "argv": [
+      "node",
+      "./tests/e2e/v1-labs/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "playwright.parallel.config.ts",
+      "--workers=2",
+      "--retries=0"
+    ],
+    "configFile": "./tests/e2e/v1-labs/playwright.parallel.config.ts",
+    "rootDir": "./tests/e2e/v1-labs/ch34/before",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "",
+        "name": "",
+        "testDir": "./tests/e2e/v1-labs/ch34/before",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "price-edit.spec.ts",
+      "file": "price-edit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PAR-T01 修改餐點價格為 150",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1029,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:49:41.795Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiUEFSLVQwMSIsCiAgIm1lYWxJZCI6IDEsCiAgImV4cGVjdGVkUHJpY2UiOiAxNTAsCiAgIm9ic2VydmVkUHJpY2UiOiAxNTAsCiAgInNhdmVSZXNwb25zZSI6IHsKICAgICJtZWFsIjogewogICAgICAiaWQiOiAxLAogICAgICAibmFtZSI6ICJQQVIgc2hhcmVkIG1lYWwiLAogICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQm90aCBjYXNlcyBlZGl0IHRoaXMgc2FtZSBtZWFsIiwKICAgICAgImltYWdlIjogIiIsCiAgICAgICJwcmljZSI6IDE1MAogICAgfQogIH0sCiAgIndvcmtlcnMiOiAyCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/test-results/price-edit-PAR-T01-修改餐點價格為-150/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/test-results/price-edit-PAR-T01-修改餐點價格為-150/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-bbb9ee543fc1f90181ae",
+          "file": "../support/price-cases.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "PAR-T02 修改餐點價格為 180",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 966,
+                  "error": {
+                    "message": "Error: 餐點 1 應保留本案例儲存的價格\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m180\u001b[39m\nReceived: \u001b[31m150\u001b[39m",
+                    "stack": "Error: 餐點 1 應保留本案例儲存的價格\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m180\u001b[39m\nReceived: \u001b[31m150\u001b[39m\n    at ./tests/e2e/v1-labs/ch34/support/price-cases.ts:42:58",
+                    "location": {
+                      "file": "./tests/e2e/v1-labs/ch34/support/price-cases.ts",
+                      "column": 58,
+                      "line": 42
+                    },
+                    "snippet": "  40 |       });\n  41 |       await page.screenshot({ path: testInfo.outputPath('02-after-save.png') });\n> 42 |       expect(actual?.price, `餐點 ${meal.id} 應保留本案例儲存的價格`).toBe(scenario.price);\n     |                                                          ^\n  43 |       expect(actual).toMatchObject({ id: meal.id, name: meal.name, short_description: meal.short_description });\n  44 |       expect(all).toHaveLength(1);\n  45 |       await expect(meals.row(meal.id)).toContainText(`$${scenario.price}`);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "./tests/e2e/v1-labs/ch34/support/price-cases.ts",
+                        "column": 58,
+                        "line": 42
+                      },
+                      "message": "Error: 餐點 1 應保留本案例儲存的價格\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m180\u001b[39m\nReceived: \u001b[31m150\u001b[39m\n\n  40 |       });\n  41 |       await page.screenshot({ path: testInfo.outputPath('02-after-save.png') });\n> 42 |       expect(actual?.price, `餐點 ${meal.id} 應保留本案例儲存的價格`).toBe(scenario.price);\n     |                                                          ^\n  43 |       expect(actual).toMatchObject({ id: meal.id, name: meal.name, short_description: meal.short_description });\n  44 |       expect(all).toHaveLength(1);\n  45 |       await expect(meals.row(meal.id)).toContainText(`$${scenario.price}`);\n    at ./tests/e2e/v1-labs/ch34/support/price-cases.ts:42:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T15:49:41.796Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observation.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlSWQiOiAiUEFSLVQwMiIsCiAgIm1lYWxJZCI6IDEsCiAgImV4cGVjdGVkUHJpY2UiOiAxODAsCiAgIm9ic2VydmVkUHJpY2UiOiAxNTAsCiAgInNhdmVSZXNwb25zZSI6IHsKICAgICJtZWFsIjogewogICAgICAiaWQiOiAxLAogICAgICAibmFtZSI6ICJQQVIgc2hhcmVkIG1lYWwiLAogICAgICAic2hvcnRfZGVzY3JpcHRpb24iOiAiQm90aCBjYXNlcyBlZGl0IHRoaXMgc2FtZSBtZWFsIiwKICAgICAgImltYWdlIjogIiIsCiAgICAgICJwcmljZSI6IDE4MAogICAgfQogIH0sCiAgIndvcmtlcnMiOiAyCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/test-results/price-edit-PAR-T02-修改餐點價格為-180/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/test-results/price-edit-PAR-T02-修改餐點價格為-180/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "./work/v1-ch34-ch35-20261103/evidence/shared-w2-r2/test-results/price-edit-PAR-T02-修改餐點價格為-180/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "./tests/e2e/v1-labs/ch34/support/price-cases.ts",
+                    "column": 58,
+                    "line": 42
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b74c3848ad15e89925db-7d19ed1ed1032e81092c",
+          "file": "../support/price-cases.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T15:49:41.559Z",
+    "duration": 1465.243,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

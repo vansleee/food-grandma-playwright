@@ -1,0 +1,894 @@
+[
+  {
+    "case": "CH32-T01",
+    "title": "CH32-T01 以真實 Repository 準備資料後從網頁更新原餐點",
+    "status": "passed",
+    "retry": 0,
+    "start_time": "2026-11-03T17:10:52.679Z",
+    "duration_ms": 1000,
+    "worker": 0,
+    "supplementary_fake": false,
+    "payload": {
+      "caseId": "CH32-T01",
+      "original": {
+        "id": 1,
+        "name": "CH32-T01 meal 1",
+        "short_description": "CH32-T01 original description",
+        "image": "",
+        "price": 100
+      },
+      "expectedPrice": 150,
+      "saved": {
+        "status": 200,
+        "body": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 150
+          }
+        }
+      },
+      "idsBefore": [
+        1
+      ],
+      "idsAfter": [
+        1
+      ],
+      "readBack": {
+        "id": 1,
+        "name": "CH32-T01 meal 1",
+        "short_description": "CH32-T01 original description",
+        "image": "",
+        "price": 150
+      },
+      "reopenedPrice": "150"
+    },
+    "load_timing": null,
+    "requests": [
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/test/config",
+        "status": 200,
+        "ms": 2.939,
+        "request": null,
+        "response": {
+          "enabled": false,
+          "admin_required": true,
+          "public_demo": false
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/test/config",
+        "status": 200,
+        "ms": 3.646,
+        "request": null,
+        "response": {
+          "enabled": false,
+          "admin_required": true,
+          "public_demo": false
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/",
+        "status": 200,
+        "ms": 3.576,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 1,
+              "name": "CH32-T01 meal 1",
+              "short_description": "CH32-T01 original description",
+              "image": "",
+              "price": 100
+            }
+          ]
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/",
+        "status": 200,
+        "ms": 4.928,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 1,
+              "name": "CH32-T01 meal 1",
+              "short_description": "CH32-T01 original description",
+              "image": "",
+              "price": 100
+            }
+          ]
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/1",
+        "status": 200,
+        "ms": 4.325,
+        "request": null,
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 100
+          }
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/1",
+        "status": 200,
+        "ms": 6.132,
+        "request": null,
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 100
+          }
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "PUT",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/1",
+        "status": 200,
+        "ms": 5.8740000000000006,
+        "request": {
+          "id": 1,
+          "name": "CH32-T01 meal 1",
+          "short_description": "CH32-T01 original description",
+          "image": "",
+          "price": 150
+        },
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 150
+          }
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/",
+        "status": 200,
+        "ms": 4.226,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 1,
+              "name": "CH32-T01 meal 1",
+              "short_description": "CH32-T01 original description",
+              "image": "",
+              "price": 150
+            }
+          ]
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/",
+        "status": 200,
+        "ms": 6.340999999999999,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 1,
+              "name": "CH32-T01 meal 1",
+              "short_description": "CH32-T01 original description",
+              "image": "",
+              "price": 150
+            }
+          ]
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/1",
+        "status": 200,
+        "ms": 4.099,
+        "request": null,
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 150
+          }
+        }
+      },
+      {
+        "kind": "browser",
+        "method": "GET",
+        "url": "http://127.0.0.1:18082/api/restaurant/meals/1",
+        "status": 200,
+        "ms": 6.135,
+        "request": null,
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 150
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/social/token/",
+        "status": 200,
+        "ms": 211.66199999999992,
+        "request": "username=reader-ch32-t01-restauranta&password=<redacted>",
+        "response": {
+          "access_token": "<redacted>",
+          "token_type": "Bearer",
+          "scope": "read write"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/me/",
+        "status": 200,
+        "ms": 2.75,
+        "request": null,
+        "response": {
+          "restaurant": {
+            "id": 29,
+            "name": "CH32-T01 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH32-T01 restaurantA 示範路 1 號",
+            "logo": ""
+          },
+          "user": {
+            "username": "reader-ch32-t01-restauranta",
+            "first_name": "restaurantA",
+            "last_name": "CH32-T01",
+            "email": "reader-ch32-t01-restauranta@example.invalid"
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 3.0730000000000928,
+        "request": {
+          "short_description": "CH32-T01 original description",
+          "image": "",
+          "price": 100,
+          "name": "CH32-T01 meal 1"
+        },
+        "response": {
+          "meal": {
+            "id": 1,
+            "name": "CH32-T01 meal 1",
+            "short_description": "CH32-T01 original description",
+            "image": "",
+            "price": 100
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 1.7039999999999509,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 1,
+              "name": "CH32-T01 meal 1",
+              "short_description": "CH32-T01 original description",
+              "image": "",
+              "price": 100
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 1.3829999999998108,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 1,
+              "name": "CH32-T01 meal 1",
+              "short_description": "CH32-T01 original description",
+              "image": "",
+              "price": 150
+            }
+          ]
+        }
+      }
+    ],
+    "console": [
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connecting...",
+        "args": [
+          {
+            "preview": "[vite] connecting...",
+            "value": "[vite] connecting..."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 494,
+          "columnNumber": 8
+        },
+        "time": 911.494,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "info",
+        "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+        "args": [
+          {
+            "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+            "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+          },
+          {
+            "preview": "font-weight:bold",
+            "value": "font-weight:bold"
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/chunk-OOIH53S6.js?v=a002a8cb",
+          "lineNumber": 21548,
+          "columnNumber": 24
+        },
+        "time": 924.139,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+            "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 951.683,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+            "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 951.723,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connected.",
+        "args": [
+          {
+            "preview": "[vite] connected.",
+            "value": "[vite] connected."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 617,
+          "columnNumber": 14
+        },
+        "time": 952.047,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connecting...",
+        "args": [
+          {
+            "preview": "[vite] connecting...",
+            "value": "[vite] connecting..."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 494,
+          "columnNumber": 8
+        },
+        "time": 969.355,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "debug",
+        "text": "[vite] connected.",
+        "args": [
+          {
+            "preview": "[vite] connected.",
+            "value": "[vite] connected."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/@vite/client",
+          "lineNumber": 617,
+          "columnNumber": 14
+        },
+        "time": 969.865,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "info",
+        "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+        "args": [
+          {
+            "preview": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools",
+            "value": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools"
+          },
+          {
+            "preview": "font-weight:bold",
+            "value": "font-weight:bold"
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/chunk-OOIH53S6.js?v=a002a8cb",
+          "lineNumber": 21548,
+          "columnNumber": 24
+        },
+        "time": 999.663,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+            "value": "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 1003.916,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      },
+      {
+        "type": "console",
+        "messageType": "warning",
+        "text": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+        "args": [
+          {
+            "preview": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+            "value": "⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+          }
+        ],
+        "location": {
+          "url": "http://127.0.0.1:18082/management/node_modules/.vite/deps/react-router-dom.js?v=a002a8cb",
+          "lineNumber": 4414,
+          "columnNumber": 12
+        },
+        "time": 1003.964,
+        "pageId": "page@3fff3be609c17bc5abf56e4cef5d1909"
+      }
+    ],
+    "non_2xx": [],
+    "errors": []
+  },
+  {
+    "case": "CH32-T02",
+    "title": "CH32-T02 建立資料後能依回傳編號查到原餐點",
+    "status": "passed",
+    "retry": 0,
+    "start_time": "2026-11-03T17:10:53.840Z",
+    "duration_ms": 196,
+    "worker": 0,
+    "supplementary_fake": false,
+    "payload": {
+      "case": "CH32-T02",
+      "original": {
+        "id": 2,
+        "name": "Repository meal",
+        "short_description": "Original description",
+        "image": "",
+        "price": 100
+      },
+      "ids": [
+        2
+      ]
+    },
+    "load_timing": null,
+    "requests": [
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/social/token/",
+        "status": 200,
+        "ms": 181.69100000000003,
+        "request": "username=reader-ch32-t02-restauranta&password=<redacted>",
+        "response": {
+          "access_token": "<redacted>",
+          "token_type": "Bearer",
+          "scope": "read write"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/me/",
+        "status": 200,
+        "ms": 1.2049999999999272,
+        "request": null,
+        "response": {
+          "restaurant": {
+            "id": 31,
+            "name": "CH32-T02 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH32-T02 restaurantA 示範路 1 號",
+            "logo": ""
+          },
+          "user": {
+            "username": "reader-ch32-t02-restauranta",
+            "first_name": "restaurantA",
+            "last_name": "CH32-T02",
+            "email": "reader-ch32-t02-restauranta@example.invalid"
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 2.0420000000001437,
+        "request": {
+          "short_description": "Original description",
+          "image": "",
+          "price": 100,
+          "name": "Repository meal"
+        },
+        "response": {
+          "meal": {
+            "id": 2,
+            "name": "Repository meal",
+            "short_description": "Original description",
+            "image": "",
+            "price": 100
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 0.9080000000001291,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 2,
+              "name": "Repository meal",
+              "short_description": "Original description",
+              "image": "",
+              "price": 100
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 1.0090000000000146,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 2,
+              "name": "Repository meal",
+              "short_description": "Original description",
+              "image": "",
+              "price": 100
+            }
+          ]
+        }
+      }
+    ],
+    "console": [],
+    "non_2xx": [],
+    "errors": []
+  },
+  {
+    "case": "CH32-T03",
+    "title": "CH32-T03 更新原餐點而不新增資料",
+    "status": "passed",
+    "retry": 0,
+    "start_time": "2026-11-03T17:10:54.043Z",
+    "duration_ms": 202,
+    "worker": 0,
+    "supplementary_fake": false,
+    "payload": {
+      "case": "CH32-T03",
+      "original": {
+        "id": 3,
+        "name": "Price contract",
+        "short_description": "",
+        "image": "",
+        "price": 100
+      },
+      "updated": {
+        "id": 3,
+        "name": "Price contract",
+        "short_description": "",
+        "image": "",
+        "price": 150
+      },
+      "ids": [
+        3
+      ]
+    },
+    "load_timing": null,
+    "requests": [
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/social/token/",
+        "status": 200,
+        "ms": 185.6500000000001,
+        "request": "username=reader-ch32-t03-restauranta&password=<redacted>",
+        "response": {
+          "access_token": "<redacted>",
+          "token_type": "Bearer",
+          "scope": "read write"
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/me/",
+        "status": 200,
+        "ms": 1.1030000000000655,
+        "request": null,
+        "response": {
+          "restaurant": {
+            "id": 33,
+            "name": "CH32-T03 restaurantA 示範餐廳",
+            "phone": "DEMO-PHONE",
+            "address": "CH32-T03 restaurantA 示範路 1 號",
+            "logo": ""
+          },
+          "user": {
+            "username": "reader-ch32-t03-restauranta",
+            "first_name": "restaurantA",
+            "last_name": "CH32-T03",
+            "email": "reader-ch32-t03-restauranta@example.invalid"
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "POST",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 1.5340000000001055,
+        "request": {
+          "short_description": "",
+          "image": "",
+          "price": 100,
+          "name": "Price contract"
+        },
+        "response": {
+          "meal": {
+            "id": 3,
+            "name": "Price contract",
+            "short_description": "",
+            "image": "",
+            "price": 100
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 1.0610000000001492,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 3,
+              "name": "Price contract",
+              "short_description": "",
+              "image": "",
+              "price": 100
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "PUT",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/3",
+        "status": 200,
+        "ms": 1.5830000000000837,
+        "request": {
+          "name": "Price contract",
+          "short_description": "",
+          "image": "",
+          "price": 150
+        },
+        "response": {
+          "meal": {
+            "id": 3,
+            "name": "Price contract",
+            "short_description": "",
+            "image": "",
+            "price": 150
+          }
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 0.8300000000001546,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 3,
+              "name": "Price contract",
+              "short_description": "",
+              "image": "",
+              "price": 150
+            }
+          ]
+        }
+      },
+      {
+        "kind": "api",
+        "method": "GET",
+        "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+        "status": 200,
+        "ms": 0.7210000000000036,
+        "request": null,
+        "response": {
+          "meals": [
+            {
+              "id": 3,
+              "name": "Price contract",
+              "short_description": "",
+              "image": "",
+              "price": 150
+            }
+          ]
+        }
+      }
+    ],
+    "console": [],
+    "non_2xx": [],
+    "errors": []
+  },
+  {
+    "case": "CH32-T02",
+    "title": "CH32-T02 建立資料後能依回傳編號查到原餐點",
+    "status": "passed",
+    "retry": 0,
+    "start_time": "2026-11-03T17:10:54.253Z",
+    "duration_ms": 0,
+    "worker": 0,
+    "supplementary_fake": true,
+    "payload": {
+      "case": "CH32-T02",
+      "original": {
+        "id": 1,
+        "name": "Repository meal",
+        "short_description": "Original description",
+        "image": "",
+        "price": 100
+      },
+      "ids": [
+        1
+      ]
+    },
+    "load_timing": null,
+    "requests": [],
+    "console": [],
+    "non_2xx": [],
+    "errors": []
+  },
+  {
+    "case": "CH32-T03",
+    "title": "CH32-T03 更新原餐點而不新增資料",
+    "status": "passed",
+    "retry": 0,
+    "start_time": "2026-11-03T17:10:54.257Z",
+    "duration_ms": 0,
+    "worker": 0,
+    "supplementary_fake": true,
+    "payload": {
+      "case": "CH32-T03",
+      "original": {
+        "id": 1,
+        "name": "Price contract",
+        "short_description": "",
+        "image": "",
+        "price": 100
+      },
+      "updated": {
+        "id": 1,
+        "name": "Price contract",
+        "short_description": "",
+        "image": "",
+        "price": 150
+      },
+      "ids": [
+        1
+      ]
+    },
+    "load_timing": null,
+    "requests": [],
+    "console": [],
+    "non_2xx": [],
+    "errors": []
+  }
+]

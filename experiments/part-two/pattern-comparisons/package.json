@@ -1,0 +1,13 @@
+{
+  "name": "food-grandma-v1-pattern-extensions",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.5.4"
+  }
+}

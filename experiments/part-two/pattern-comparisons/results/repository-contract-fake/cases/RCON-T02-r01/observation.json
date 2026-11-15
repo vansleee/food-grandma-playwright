@@ -1,0 +1,32 @@
+{
+  "implementation": "fake",
+  "first": {
+    "id": 1,
+    "name": "First meal",
+    "short_description": "First description",
+    "image": "",
+    "price": 100
+  },
+  "second": {
+    "id": 2,
+    "name": "Second meal",
+    "short_description": "Second description",
+    "image": "",
+    "price": 80
+  },
+  "updated": {
+    "id": 1,
+    "name": "First meal",
+    "short_description": "First description",
+    "image": "",
+    "price": 150
+  },
+  "before": [
+    1,
+    2
+  ],
+  "after": [
+    1,
+    2
+  ]
+}

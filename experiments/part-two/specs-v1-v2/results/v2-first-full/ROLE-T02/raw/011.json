@@ -1,0 +1,51 @@
+{
+  "kind": "api",
+  "method": "GET",
+  "url": "http://127.0.0.1:18081/api/restaurant/orders/",
+  "status": 200,
+  "ms": 1.368000000000393,
+  "started": "2026-11-02T18:34:49.267Z",
+  "request": null,
+  "response": {
+    "orders": [
+      {
+        "id": 2,
+        "customer": {
+          "id": 9,
+          "name": "customerA ROLE-T02",
+          "avatar": "",
+          "address": "ROLE-T02 customerA 示範地址"
+        },
+        "restaurant": {
+          "id": 9,
+          "name": "ROLE-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "ROLE-T02 restaurantA 示範路 1 號"
+        },
+        "driver": {
+          "id": 10,
+          "name": "driverB ROLE-T02",
+          "avatar": "",
+          "car_model": "Demo",
+          "plate_number": "DEMO-000"
+        },
+        "order_details": [
+          {
+            "id": 2,
+            "meal": {
+              "id": 2,
+              "name": "ROLE-T02 Meal",
+              "price": 100
+            },
+            "quantity": 1,
+            "sub_total": 100
+          }
+        ],
+        "total": 100,
+        "status": "On the way",
+        "address": "ROLE-T02 Alpha Road 1"
+      }
+    ]
+  },
+  "n": 11
+}

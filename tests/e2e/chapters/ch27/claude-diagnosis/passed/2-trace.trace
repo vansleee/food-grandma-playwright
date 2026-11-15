@@ -1,0 +1,26 @@
+{"type": "before", "callId": "call@40", "startTime": 3248.75, "class": "Frame", "method": "click", "params": {"selector": "[data-testid=\"meal-row\"][data-meal-id=\"2\"] >> internal:testid=[data-testid=\"meal-edit-link\"s]", "strict": true}, "stepId": "pw:api@58"}
+{"type": "log", "callId": "call@40", "time": 3249.35, "message": "waiting for locator('[data-testid=\"meal-row\"][data-meal-id=\"2\"]').getByTestId('meal-edit-link')"}
+{"type": "log", "callId": "call@40", "time": 3250.324, "message": "  locator resolved to <a class=\"meal-name\" data-testid=\"meal-edit-link\" href=\"/management/meals/2/edit\">…</a>"}
+{"type": "log", "callId": "call@40", "time": 3250.713, "message": "attempting click action"}
+{"type": "log", "callId": "call@40", "time": 3250.835, "message": "  waiting for element to be visible, enabled and stable"}
+{"type": "log", "callId": "call@40", "time": 3295.516, "message": "  element is not stable"}
+{"type": "log", "callId": "call@40", "time": 3295.525, "message": "retrying click action"}
+{"type": "log", "callId": "call@40", "time": 3295.554, "message": "  waiting for element to be visible, enabled and stable"}
+{"type": "log", "callId": "call@40", "time": 3305.604, "message": "  element is visible, enabled and stable"}
+{"type": "log", "callId": "call@40", "time": 3305.635, "message": "  scrolling into view if needed"}
+{"type": "log", "callId": "call@40", "time": 3308.931, "message": "  done scrolling"}
+{"type": "log", "callId": "call@40", "time": 3311.608, "message": "  performing click action"}
+{"type": "log", "callId": "call@40", "time": 3318.698, "message": "  click action done"}
+{"type": "log", "callId": "call@40", "time": 3318.701, "message": "  waiting for scheduled navigations to finish"}
+{"type": "log", "callId": "call@40", "time": 3318.955, "message": "  navigations have finished"}
+{"type": "after", "callId": "call@40", "endTime": 3319.009}
+{"type": "before", "callId": "call@42", "startTime": 3319.711, "class": "Route", "method": "continue", "params": {"isFallback": false}, "stepId": "pw:api@59"}
+{"type": "before", "callId": "call@44", "startTime": 3319.823, "class": "Route", "method": "continue", "params": {"isFallback": false}, "stepId": "pw:api@60"}
+{"type": "after", "callId": "call@42", "endTime": 3320.209}
+{"type": "after", "callId": "call@44", "endTime": 3320.235}
+{"type": "before", "callId": "call@46", "startTime": 3320.284, "class": "Frame", "method": "waitForTimeout", "params": {"waitTimeout": 200}, "stepId": "pw:api@61"}
+{"type": "after", "callId": "call@46", "endTime": 3520.342}
+{"type": "before", "callId": "call@48", "startTime": 3522.025, "class": "Frame", "method": "inputValue", "params": {"selector": "internal:testid=[data-testid=\"meal-name\"s]", "strict": true}, "stepId": "pw:api@62"}
+{"type": "log", "callId": "call@48", "time": 3522.813, "message": "waiting for getByTestId('meal-name')"}
+{"type": "log", "callId": "call@48", "time": 3523.822, "message": "  locator resolved to <input id=\"name\" required=\"\" data-testid=\"meal-name\" value=\"CH35-T01 meal 2\"/>"}
+{"type": "after", "callId": "call@48", "endTime": 3523.835, "result": {"value": "CH35-T01 meal 2"}}

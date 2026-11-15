@@ -1,0 +1,9 @@
+請直接閱讀範例專案 `./specs/README.md`，以及 `./tests/e2e/spec-comparison/cases.json` 列出的每一份原始 specs，根據原規格撰寫 Food Grandma 的 Playwright TypeScript E2E 測試。
+先閱讀 `./tests/e2e/spec-comparison/cases.md` 與 environment.md、accounts.json 了解共同範圍與執行前提；這些不是取代 specs 的新產品規格。
+精確實作清單中的 27 個原案例，每個案例 ID 對應一個 test，標題含唯一 ID。原案例包含多種輸入或回應時，在同一個 test 內完整驗證，可使用 test.step；不能刪除、增加、跳過案例或省略子條件。
+測試與必要共用程式只寫入目前工作目錄的 tests/。可以自行決定程式結構，讓程式容易閱讀。不要修改已提供的設定、共同資料或 specs，更不能修改產品。
+原前後端程式只用於確認定位元素、真實 API 與資料準備方式。若產品不符規格，保留原預期與失敗，不要讓產品現況覆蓋規格。不可使用 test.skip、fixme、預期失敗註記、刪斷言、改預期或模擬核心成功結果來求通過。
+所有選取案例要求的網頁步驟都要真正執行，API 僅用來準備與查詢。與案例目的無關的程式輸入不可用固定等待取代就緒檢查。
+本輪只產生程式碼，由外部執行測試；不連線、不執行命令、不輸出憑證。不讀其他測試版本、舊實驗或既有 manual/ai-agent 測試。
+
+請將產出實際寫入目前的 `tests/e2e/v1/tests/`（也就是目前工作目錄的 tests/）。最後說明產出檔案及尚未執行的事項。

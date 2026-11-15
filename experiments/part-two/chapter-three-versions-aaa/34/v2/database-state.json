@@ -1,0 +1,21 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "name": "CH34-T01 meal 1",
+      "short_description": "CH34-T01 original description",
+      "image": "",
+      "price": 150,
+      "owner": "reader-ch34-t01-restauranta"
+    },
+    {
+      "id": 2,
+      "name": "CH34-T02 meal 1",
+      "short_description": "CH34-T02 original description",
+      "image": "",
+      "price": 180,
+      "owner": "reader-ch34-t02-restauranta"
+    }
+  ],
+  "orders": []
+}

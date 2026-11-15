@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:68819) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch21/meal-price.spec.ts:12:7 › 改寫後 › CH21-T01 依餐點編號定位要修改的那一列 (996ms)
+
+  1 passed (1.4s)

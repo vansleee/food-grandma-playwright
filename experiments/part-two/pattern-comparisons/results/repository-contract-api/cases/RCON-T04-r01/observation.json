@@ -1,0 +1,26 @@
+{
+  "implementation": "api",
+  "mutatedReturnedMeal": {
+    "id": 4,
+    "name": "Changed only in the caller",
+    "short_description": "Keep this description",
+    "image": "",
+    "price": 100
+  },
+  "mutatedList": [
+    {
+      "id": 4,
+      "name": "Stored meal",
+      "short_description": "Keep this description",
+      "image": "",
+      "price": 999
+    }
+  ],
+  "stored": {
+    "id": 4,
+    "name": "Stored meal",
+    "short_description": "Keep this description",
+    "image": "",
+    "price": 100
+  }
+}

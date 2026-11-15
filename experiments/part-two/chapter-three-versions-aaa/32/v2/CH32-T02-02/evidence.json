@@ -1,0 +1,15 @@
+{
+  "case": "CH32-T02",
+  "title": "CH32-T02 Fake 補充：相同資料存取行為",
+  "execution_index": 2,
+  "status": "passed",
+  "retry": 0,
+  "fake": true,
+  "duration_ms": 0,
+  "start_time": "2026-11-03T18:22:02.498Z",
+  "worker": 0,
+  "requests": [],
+  "console": [],
+  "non_2xx": [],
+  "errors": []
+}

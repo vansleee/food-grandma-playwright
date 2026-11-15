@@ -1,0 +1,45 @@
+{
+  "case": "RCON-T02",
+  "repeat": 1,
+  "title": "RCON-T02 更新原餐點價格，其他欄位與另一筆餐點保持不變",
+  "status": "passed",
+  "retry": 0,
+  "duration_ms": 1,
+  "worker_index": 0,
+  "errors": [],
+  "observation": {
+    "implementation": "fake",
+    "first": {
+      "id": 1,
+      "name": "First meal",
+      "short_description": "First description",
+      "image": "",
+      "price": 100
+    },
+    "second": {
+      "id": 2,
+      "name": "Second meal",
+      "short_description": "Second description",
+      "image": "",
+      "price": 80
+    },
+    "updated": {
+      "id": 1,
+      "name": "First meal",
+      "short_description": "First description",
+      "image": "",
+      "price": 150
+    },
+    "before": [
+      1,
+      2
+    ],
+    "after": [
+      1,
+      2
+    ]
+  },
+  "api_requests": 0,
+  "browser_api_requests": 0,
+  "non_2xx": []
+}

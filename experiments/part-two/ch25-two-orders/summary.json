@@ -1,0 +1,53 @@
+{
+  "date_taipei": "2026-11-06",
+  "tests": [
+    {
+      "variant": "none",
+      "title": "CH25-T01 顧客搜尋餐廳、選擇餐點並完成訂單",
+      "duration_ms": 2328,
+      "retry": 0,
+      "status": "passed"
+    },
+    {
+      "variant": "fluent",
+      "title": "CH25-T01 顧客搜尋餐廳、選擇餐點並完成訂單",
+      "duration_ms": 1113,
+      "retry": 0,
+      "status": "passed"
+    },
+    {
+      "variant": "workflow",
+      "title": "CH25-T01 顧客搜尋餐廳、選擇餐點並完成訂單",
+      "duration_ms": 1149,
+      "retry": 0,
+      "status": "passed"
+    },
+    {
+      "variant": "workflow",
+      "title": "CH25-T02 餐廳管理者從兩筆訂單中搜尋指定配送地址",
+      "duration_ms": 2288,
+      "retry": 0,
+      "status": "passed"
+    }
+  ],
+  "passed": 4,
+  "failed": 0,
+  "browser_order_posts": 2,
+  "orders": [
+    {
+      "id": 2,
+      "customer_id": 13,
+      "address": "CH25-T02 測試用配送地址 A",
+      "total": 120
+    },
+    {
+      "id": 3,
+      "customer_id": 14,
+      "address": "CH25-T02 測試用配送地址 B",
+      "total": 120
+    }
+  ],
+  "book_unchanged_including_existing_edits": true,
+  "typecheck": "passed",
+  "owned_services_stopped": true
+}

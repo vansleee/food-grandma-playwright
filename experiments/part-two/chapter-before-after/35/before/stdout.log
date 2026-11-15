@@ -1,0 +1,65 @@
+
+Running 20 tests using 1 worker
+
+(node:69259) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.3s)
+(node:69276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (958ms)
+(node:69282) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.2s)
+(node:69294) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (936ms)
+(node:69318) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.2s)
+(node:69325) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (912ms)
+(node:69334) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.2s)
+(node:69341) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (958ms)
+(node:69347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.2s)
+(node:69368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (924ms)
+(node:69375) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.3s)
+(node:69382) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (955ms)
+(node:69390) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.2s)
+(node:69397) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (970ms)
+(node:69416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.3s)
+(node:69425) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (963ms)
+(node:69431) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  17 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.2s)
+(node:69438) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (937ms)
+(node:69446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (2.3s)
+(node:69465) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 ch35/meal-load.spec.ts:8:7 › 改寫前 › CH35-T01 載入時間改變時，仍等原價出現後再修改 (956ms)
+
+  20 passed (39.7s)

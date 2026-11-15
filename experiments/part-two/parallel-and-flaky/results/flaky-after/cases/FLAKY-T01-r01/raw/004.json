@@ -1,0 +1,57 @@
+{
+  "kind": "api",
+  "method": "GET",
+  "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+  "request_headers": [
+    {
+      "name": "user-agent",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "name": "accept",
+      "value": "*/*"
+    },
+    {
+      "name": "accept-encoding",
+      "value": "gzip,deflate,br"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer <redacted>"
+    }
+  ],
+  "status": 200,
+  "response_headers": [
+    {
+      "name": "date",
+      "value": "Tue, 03 Nov 2026 15:50:21 GMT"
+    },
+    {
+      "name": "server",
+      "value": "uvicorn"
+    },
+    {
+      "name": "content-length",
+      "value": "123"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json"
+    }
+  ],
+  "ms": 1.34699999999998,
+  "started": "2026-11-03T15:50:22.661Z",
+  "request": null,
+  "response": {
+    "meals": [
+      {
+        "id": 1,
+        "name": "FLAKY-T01 repeat 0",
+        "short_description": "Keep the original description",
+        "image": "",
+        "price": 100
+      }
+    ]
+  },
+  "n": 4
+}

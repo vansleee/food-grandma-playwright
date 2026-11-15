@@ -1,0 +1,93 @@
+{
+  "case": "CH32-T02",
+  "title": "CH32-T02 建立後可以依編號查詢餐點",
+  "execution_index": 1,
+  "status": "passed",
+  "retry": 0,
+  "fake": false,
+  "duration_ms": 187,
+  "start_time": "2026-11-03T18:22:02.107Z",
+  "worker": 0,
+  "requests": [
+    {
+      "kind": "api",
+      "method": "POST",
+      "url": "http://127.0.0.1:18081/api/social/token/",
+      "status": 200,
+      "ms": 174.1339999999998,
+      "request": "username=reader-ch32-t02-restauranta&password=<redacted>",
+      "response": {
+        "access_token": "<redacted>",
+        "token_type": "Bearer",
+        "scope": "read write"
+      }
+    },
+    {
+      "kind": "api",
+      "method": "GET",
+      "url": "http://127.0.0.1:18081/api/restaurant/me/",
+      "status": 200,
+      "ms": 1.1679999999998927,
+      "request": null,
+      "response": {
+        "restaurant": {
+          "id": 31,
+          "name": "CH32-T02 restaurantA 示範餐廳",
+          "phone": "DEMO-PHONE",
+          "address": "CH32-T02 restaurantA 示範路 1 號",
+          "logo": ""
+        },
+        "user": {
+          "username": "reader-ch32-t02-restauranta",
+          "first_name": "restaurantA",
+          "last_name": "CH32-T02",
+          "email": "reader-ch32-t02-restauranta@example.invalid"
+        }
+      }
+    },
+    {
+      "kind": "api",
+      "method": "POST",
+      "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+      "status": 200,
+      "ms": 1.6020000000000891,
+      "request": {
+        "short_description": "Original description",
+        "image": "",
+        "price": 100,
+        "name": "Repository meal"
+      },
+      "response": {
+        "meal": {
+          "id": 2,
+          "name": "Repository meal",
+          "short_description": "Original description",
+          "image": "",
+          "price": 100
+        }
+      }
+    },
+    {
+      "kind": "api",
+      "method": "GET",
+      "url": "http://127.0.0.1:18081/api/restaurant/meals/",
+      "status": 200,
+      "ms": 0.9349999999999454,
+      "request": null,
+      "response": {
+        "meals": [
+          {
+            "id": 2,
+            "name": "Repository meal",
+            "short_description": "Original description",
+            "image": "",
+            "price": 100
+          }
+        ]
+      }
+    }
+  ],
+  "console": [],
+  "non_2xx": [],
+  "errors": []
+}

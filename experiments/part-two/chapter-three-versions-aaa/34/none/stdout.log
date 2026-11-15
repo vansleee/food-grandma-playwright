@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:82502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch34/parallel-meals.spec.ts:7:9 › 未使用平行執行 › CH34-T01 將原價格 100 修改為 150 (866ms)
+  ✓  2 ch34/parallel-meals.spec.ts:7:9 › 未使用平行執行 › CH34-T02 將原價格 100 修改為 180 (797ms)
+
+  2 passed (2.1s)

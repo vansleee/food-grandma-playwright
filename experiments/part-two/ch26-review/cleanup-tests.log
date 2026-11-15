@@ -1,0 +1,13 @@
+✔ partial setup failure still closes every created context (0.619458ms)
+✔ screenshot failure is recorded and does not block closing other roles (0.13425ms)
+✔ attachment failure still closes the context (0.103208ms)
+✔ a close failure does not skip closing the remaining contexts (0.214334ms)
+✔ cleanup failure does not replace the original test error (0.120209ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 227.4025

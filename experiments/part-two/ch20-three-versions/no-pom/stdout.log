@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:78032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ch20/meal-price.spec.ts:8:7 › 未使用 POM › CH20-T01 將原餐點價格由 100 修改為 150，保留其他資料且不重複新增 (1.2s)
+
+  1 passed (1.8s)

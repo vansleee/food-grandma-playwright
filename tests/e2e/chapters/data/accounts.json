@@ -1,0 +1,279 @@
+{
+  "CH04": {
+    "restaurantA": "reader-ch04-restauranta",
+    "restaurantB": "reader-ch04-restaurantb"
+  },
+  "CH05": {
+    "restaurantA": "reader-ch05-restauranta",
+    "customerA": "reader-ch05-customera",
+    "customerB": "reader-ch05-customerb"
+  },
+  "CH06-T01": {
+    "restaurantA": "reader-ch06-t01-restauranta",
+    "customerA": "reader-ch06-t01-customera"
+  },
+  "CH06-T02": {
+    "restaurantA": "reader-ch06-t02-restauranta",
+    "customerA": "reader-ch06-t02-customera"
+  },
+  "CH06-T03": {
+    "restaurantA": "reader-ch06-t03-restauranta",
+    "customerA": "reader-ch06-t03-customera"
+  },
+  "CH07-T01": {
+    "restaurantA": "reader-ch07-t01-restauranta",
+    "customerA": "reader-ch07-t01-customera"
+  },
+  "CH07-T02": {
+    "restaurantA": "reader-ch07-t02-restauranta",
+    "customerA": "reader-ch07-t02-customera"
+  },
+  "CH15-T04": {
+    "restaurantA": "reader-ch15-t04-restauranta",
+    "restaurantB": "reader-ch15-t04-restaurantb",
+    "customerA": "reader-ch15-t04-customera",
+    "customerB": "reader-ch15-t04-customerb",
+    "driverA": "reader-ch15-t04-drivera",
+    "driverB": "reader-ch15-t04-driverb"
+  },
+  "CH20-T01": {
+    "restaurantA": "reader-ch20-t01-restauranta",
+    "restaurantB": "reader-ch20-t01-restaurantb",
+    "customerA": "reader-ch20-t01-customera",
+    "customerB": "reader-ch20-t01-customerb",
+    "driverA": "reader-ch20-t01-drivera",
+    "driverB": "reader-ch20-t01-driverb"
+  },
+  "CH21-T01": {
+    "restaurantA": "reader-ch21-t01-restauranta",
+    "restaurantB": "reader-ch21-t01-restaurantb",
+    "customerA": "reader-ch21-t01-customera",
+    "customerB": "reader-ch21-t01-customerb",
+    "driverA": "reader-ch21-t01-drivera",
+    "driverB": "reader-ch21-t01-driverb"
+  },
+  "CH22-T01": {
+    "restaurantA": "reader-ch22-t01-restauranta",
+    "restaurantB": "reader-ch22-t01-restaurantb",
+    "customerA": "reader-ch22-t01-customera",
+    "customerB": "reader-ch22-t01-customerb",
+    "driverA": "reader-ch22-t01-drivera",
+    "driverB": "reader-ch22-t01-driverb"
+  },
+  "CH23-T01": {
+    "restaurantA": "reader-ch23-t01-restauranta",
+    "restaurantB": "reader-ch23-t01-restaurantb",
+    "customerA": "reader-ch23-t01-customera",
+    "customerB": "reader-ch23-t01-customerb",
+    "driverA": "reader-ch23-t01-drivera",
+    "driverB": "reader-ch23-t01-driverb"
+  },
+  "CH24-T01": {
+    "restaurantA": "reader-ch24-t01-restauranta",
+    "restaurantB": "reader-ch24-t01-restaurantb",
+    "customerA": "reader-ch24-t01-customera",
+    "customerB": "reader-ch24-t01-customerb",
+    "driverA": "reader-ch24-t01-drivera",
+    "driverB": "reader-ch24-t01-driverb"
+  },
+  "CH25-T01": {
+    "restaurantA": "reader-ch25-t01-restauranta",
+    "restaurantB": "reader-ch25-t01-restaurantb",
+    "customerA": "reader-ch25-t01-customera",
+    "customerB": "reader-ch25-t01-customerb",
+    "driverA": "reader-ch25-t01-drivera",
+    "driverB": "reader-ch25-t01-driverb"
+  },
+  "CH25-T02": {
+    "restaurantA": "reader-ch25-t02-restauranta",
+    "restaurantB": "reader-ch25-t02-restaurantb",
+    "customerA": "reader-ch25-t02-customera",
+    "customerB": "reader-ch25-t02-customerb",
+    "driverA": "reader-ch25-t02-drivera",
+    "driverB": "reader-ch25-t02-driverb"
+  },
+  "CH26-T01": {
+    "restaurantA": "reader-ch26-t01-restauranta",
+    "restaurantB": "reader-ch26-t01-restaurantb",
+    "customerA": "reader-ch26-t01-customera",
+    "customerB": "reader-ch26-t01-customerb",
+    "driverA": "reader-ch26-t01-drivera",
+    "driverB": "reader-ch26-t01-driverb"
+  },
+  "CH26-T03": {
+    "restaurantA": "reader-ch26-t03-restauranta",
+    "restaurantB": "reader-ch26-t03-restaurantb",
+    "customerA": "reader-ch26-t03-customera",
+    "customerB": "reader-ch26-t03-customerb",
+    "driverA": "reader-ch26-t03-drivera",
+    "driverB": "reader-ch26-t03-driverb"
+  },
+  "CH28-T01": {
+    "restaurantA": "reader-ch28-t01-restauranta",
+    "restaurantB": "reader-ch28-t01-restaurantb",
+    "customerA": "reader-ch28-t01-customera",
+    "customerB": "reader-ch28-t01-customerb",
+    "driverA": "reader-ch28-t01-drivera",
+    "driverB": "reader-ch28-t01-driverb"
+  },
+  "CH28-T02": {
+    "restaurantA": "reader-ch28-t02-restauranta",
+    "restaurantB": "reader-ch28-t02-restaurantb",
+    "customerA": "reader-ch28-t02-customera",
+    "customerB": "reader-ch28-t02-customerb",
+    "driverA": "reader-ch28-t02-drivera",
+    "driverB": "reader-ch28-t02-driverb"
+  },
+  "CH28-T03": {
+    "restaurantA": "reader-ch28-t03-restauranta",
+    "restaurantB": "reader-ch28-t03-restaurantb",
+    "customerA": "reader-ch28-t03-customera",
+    "customerB": "reader-ch28-t03-customerb",
+    "driverA": "reader-ch28-t03-drivera",
+    "driverB": "reader-ch28-t03-driverb"
+  },
+  "CH28-T04": {
+    "restaurantA": "reader-ch28-t04-restauranta",
+    "restaurantB": "reader-ch28-t04-restaurantb",
+    "customerA": "reader-ch28-t04-customera",
+    "customerB": "reader-ch28-t04-customerb",
+    "driverA": "reader-ch28-t04-drivera",
+    "driverB": "reader-ch28-t04-driverb"
+  },
+  "CH28-T05": {
+    "restaurantA": "reader-ch28-t05-restauranta",
+    "restaurantB": "reader-ch28-t05-restaurantb",
+    "customerA": "reader-ch28-t05-customera",
+    "customerB": "reader-ch28-t05-customerb",
+    "driverA": "reader-ch28-t05-drivera",
+    "driverB": "reader-ch28-t05-driverb"
+  },
+  "CH28-T06": {
+    "restaurantA": "reader-ch28-t06-restauranta",
+    "restaurantB": "reader-ch28-t06-restaurantb",
+    "customerA": "reader-ch28-t06-customera",
+    "customerB": "reader-ch28-t06-customerb",
+    "driverA": "reader-ch28-t06-drivera",
+    "driverB": "reader-ch28-t06-driverb"
+  },
+  "CH28-T07": {
+    "restaurantA": "reader-ch28-t07-restauranta",
+    "restaurantB": "reader-ch28-t07-restaurantb",
+    "customerA": "reader-ch28-t07-customera",
+    "customerB": "reader-ch28-t07-customerb",
+    "driverA": "reader-ch28-t07-drivera",
+    "driverB": "reader-ch28-t07-driverb"
+  },
+  "CH29-T01": {
+    "restaurantA": "reader-ch29-t01-restauranta",
+    "restaurantB": "reader-ch29-t01-restaurantb",
+    "customerA": "reader-ch29-t01-customera",
+    "customerB": "reader-ch29-t01-customerb",
+    "driverA": "reader-ch29-t01-drivera",
+    "driverB": "reader-ch29-t01-driverb"
+  },
+  "CH29-T02": {
+    "restaurantA": "reader-ch29-t02-restauranta",
+    "restaurantB": "reader-ch29-t02-restaurantb",
+    "customerA": "reader-ch29-t02-customera",
+    "customerB": "reader-ch29-t02-customerb",
+    "driverA": "reader-ch29-t02-drivera",
+    "driverB": "reader-ch29-t02-driverb"
+  },
+  "CH29-T03": {
+    "restaurantA": "reader-ch29-t03-restauranta",
+    "restaurantB": "reader-ch29-t03-restaurantb",
+    "customerA": "reader-ch29-t03-customera",
+    "customerB": "reader-ch29-t03-customerb",
+    "driverA": "reader-ch29-t03-drivera",
+    "driverB": "reader-ch29-t03-driverb"
+  },
+  "CH30-T01": {
+    "restaurantA": "reader-ch30-t01-restauranta",
+    "restaurantB": "reader-ch30-t01-restaurantb",
+    "customerA": "reader-ch30-t01-customera",
+    "customerB": "reader-ch30-t01-customerb",
+    "driverA": "reader-ch30-t01-drivera",
+    "driverB": "reader-ch30-t01-driverb"
+  },
+  "CH31-T01": {
+    "restaurantA": "reader-ch31-t01-restauranta",
+    "restaurantB": "reader-ch31-t01-restaurantb",
+    "customerA": "reader-ch31-t01-customera",
+    "customerB": "reader-ch31-t01-customerb",
+    "driverA": "reader-ch31-t01-drivera",
+    "driverB": "reader-ch31-t01-driverb"
+  },
+  "CH31-T02": {
+    "restaurantA": "reader-ch31-t02-restauranta",
+    "restaurantB": "reader-ch31-t02-restaurantb",
+    "customerA": "reader-ch31-t02-customera",
+    "customerB": "reader-ch31-t02-customerb",
+    "driverA": "reader-ch31-t02-drivera",
+    "driverB": "reader-ch31-t02-driverb"
+  },
+  "CH32-T01": {
+    "restaurantA": "reader-ch32-t01-restauranta",
+    "restaurantB": "reader-ch32-t01-restaurantb",
+    "customerA": "reader-ch32-t01-customera",
+    "customerB": "reader-ch32-t01-customerb",
+    "driverA": "reader-ch32-t01-drivera",
+    "driverB": "reader-ch32-t01-driverb"
+  },
+  "CH32-T02": {
+    "restaurantA": "reader-ch32-t02-restauranta",
+    "restaurantB": "reader-ch32-t02-restaurantb",
+    "customerA": "reader-ch32-t02-customera",
+    "customerB": "reader-ch32-t02-customerb",
+    "driverA": "reader-ch32-t02-drivera",
+    "driverB": "reader-ch32-t02-driverb"
+  },
+  "CH32-T03": {
+    "restaurantA": "reader-ch32-t03-restauranta",
+    "restaurantB": "reader-ch32-t03-restaurantb",
+    "customerA": "reader-ch32-t03-customera",
+    "customerB": "reader-ch32-t03-customerb",
+    "driverA": "reader-ch32-t03-drivera",
+    "driverB": "reader-ch32-t03-driverb"
+  },
+  "CH33-T01": {
+    "restaurantA": "reader-ch33-t01-restauranta",
+    "restaurantB": "reader-ch33-t01-restaurantb",
+    "customerA": "reader-ch33-t01-customera",
+    "customerB": "reader-ch33-t01-customerb",
+    "driverA": "reader-ch33-t01-drivera",
+    "driverB": "reader-ch33-t01-driverb"
+  },
+  "CH34-T01": {
+    "restaurantA": "reader-ch34-t01-restauranta",
+    "restaurantB": "reader-ch34-t01-restaurantb",
+    "customerA": "reader-ch34-t01-customera",
+    "customerB": "reader-ch34-t01-customerb",
+    "driverA": "reader-ch34-t01-drivera",
+    "driverB": "reader-ch34-t01-driverb"
+  },
+  "CH34-T02": {
+    "restaurantA": "reader-ch34-t02-restauranta",
+    "restaurantB": "reader-ch34-t02-restaurantb",
+    "customerA": "reader-ch34-t02-customera",
+    "customerB": "reader-ch34-t02-customerb",
+    "driverA": "reader-ch34-t02-drivera",
+    "driverB": "reader-ch34-t02-driverb"
+  },
+  "CH35-T01": {
+    "restaurantA": "reader-ch35-t01-restauranta",
+    "restaurantB": "reader-ch35-t01-restaurantb",
+    "customerA": "reader-ch35-t01-customera",
+    "customerB": "reader-ch35-t01-customerb",
+    "driverA": "reader-ch35-t01-drivera",
+    "driverB": "reader-ch35-t01-driverb"
+  },
+  "CH36-T01": {
+    "restaurantA": "reader-ch36-t01-restauranta",
+    "restaurantB": "reader-ch36-t01-restaurantb",
+    "customerA": "reader-ch36-t01-customera",
+    "customerB": "reader-ch36-t01-customerb",
+    "driverA": "reader-ch36-t01-drivera",
+    "driverB": "reader-ch36-t01-driverb"
+  }
+}
