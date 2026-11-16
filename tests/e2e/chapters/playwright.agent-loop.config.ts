@@ -5,6 +5,7 @@ export default defineConfig({
   testMatch: [
     '**/ch{09,10,11}/agent-loop/*.spec.ts',
     '**/ch{13,16}/generator/*.spec.ts',
+    '**/ch15/exercise/*.spec.ts',
     '**/ch16/comparison/*.spec.ts',
   ],
   workers: 1,
