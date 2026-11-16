@@ -162,7 +162,9 @@ Healer 修復後，重跑上方第 11 章的 Playwright 指令。
 | 第 15 章 | [餐廳後台登入](ch15/practice/management-setup.spec.ts) |
 | 第 16 章 | [UI 手寫版](ch16/practice/ui-manual.spec.ts)、[Generator 計畫與程式碼](ch16/generator/)、[實跑紀錄](ch16/generator/results.md) |
 
-第 12、13 章需要本機 API（8081），第 15、16 章還需要網站入口（8082）。測試會重設並重建資料，請使用專用的本機測試資料庫，依序執行。請先依第 09 章的步驟安裝套件、Chromium 和 Agent。同一資料夾也收錄第二部分的範例。`npm run chapter -- 15` 和 `npm run chapter -- 16` 分別對應書中第 17、18 章。
+第 12、13 章需要本機 API（8081），第 15、16 章還需要網站入口（8082）。測試會重設並重建資料，請使用專用的本機測試資料庫，依序執行。請先依第 09 章的步驟安裝套件、Chromium 和 Agent。書中第 17 章的 POM 範例放在 [ch15/pom/](ch15/pom/)，第 18 章的定位與等待範例放在 [ch16/locators/](ch16/locators/)。執行指令分別是 `npm run chapter -- 15` 和 `npm run chapter -- 16`。
+
+第 15、16 章的新對照選了登入、指定訂單備餐完成和跨角色確認送達，兩版使用同一份[驗收條件](ch16/comparison/plan.md)。手寫版在 [ch15/comparison/](ch15/comparison/)，Generator 版在 [ch16/comparison/](ch16/comparison/)。[執行指令和比較結果](ch16/comparison/results.md)列出這三個案例各自的檢查。
 
 從 `tests/e2e/chapters` 執行第 13 章的兩版測試：
 
@@ -223,8 +225,8 @@ npm run chapter -- 15
 
 | 書中章號 | 主題 | 主要測試檔 | 指令 |
 | --- | --- | --- | --- |
-| 17 | Page Object Model | [直接寫登入步驟](ch15/restaurant-management.direct.spec.ts)、[使用頁面物件](ch15/restaurant-management.pom.spec.ts)、[修改餐點價格三版本](ch15/meal-price.spec.ts) | `npm run chapter -- 15` |
-| 18 | 定位元素與頁面就緒 | [定位](ch16/meal-price.spec.ts)、[頁面就緒](ch16/page-readiness.spec.ts) | `npm run chapter -- 16` |
+| 17 | Page Object Model | [直接寫登入步驟](ch15/pom/restaurant-management.direct.spec.ts)、[使用頁面物件](ch15/pom/restaurant-management.pom.spec.ts)、[修改餐點價格三版本](ch15/pom/meal-price.spec.ts) | `npm run chapter -- 15` |
+| 18 | 定位元素與頁面就緒 | [定位](ch16/locators/meal-price.spec.ts)、[頁面就緒](ch16/locators/page-readiness.spec.ts) | `npm run chapter -- 16` |
 | 19 | Page Factory | [本章範例](ch17/meal-price.spec.ts) | `npm run chapter -- 17` |
 | 20 | Component Object Model | [本章範例](ch18/meal-price.spec.ts) | `npm run chapter -- 18` |
 | 21 | 流暢介面與 Workflow Facade | [顧客訂餐三版本](ch19/customer-order.spec.ts) | `npm run chapter -- 19` |

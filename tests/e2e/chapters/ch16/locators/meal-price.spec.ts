@@ -1,6 +1,6 @@
-import { expectStoredMeal } from '../support/meal-assertions';
-import { MealFormPage, MealsPage, openManagementAs } from '../support/pages';
-import { expect, test } from '../support/test';
+import { expectStoredMeal } from '../../support/meal-assertions';
+import { MealFormPage, MealsPage, openManagementAs } from '../../support/pages';
+import { expect, test } from '../../support/test';
 
 test.describe('未使用依編號定位', () => {
   test('CH21-T01 將原價格 100 修改為 150，保留原餐點及其他資料', async ({ page, api, restaurant, subject }, info) => {

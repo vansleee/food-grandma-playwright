@@ -1,8 +1,8 @@
 import { expect, type Page } from '@playwright/test';
-import type { OrderView } from '../support/api';
-import { restaurantCredentials, test as base } from '../ch15/fixtures';
-import { OrdersPage } from '../ch15/orders-page';
-import { SignInPage } from '../ch15/sign-in-page';
+import type { OrderView } from '../../support/api';
+import { restaurantCredentials, test as base } from '../../ch15/pom/fixtures';
+import { OrdersPage } from '../../ch15/pom/orders-page';
+import { SignInPage } from '../../ch15/pom/sign-in-page';
 
 const test = base.extend<{
   orderPair: { target: OrderView; other: OrderView };

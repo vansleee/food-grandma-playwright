@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
-import type { MealView, OrderView } from '../support/api';
-import { test as base, World, type Restaurant } from '../support/base-fixtures';
-import { accountsFor, testPassword } from '../support/env';
+import type { MealView, OrderView } from '../../support/api';
+import { test as base, World, type Restaurant } from '../../support/base-fixtures';
+import { accountsFor, testPassword } from '../../support/env';
 
 const accountSet = 'CH20-T01';
 

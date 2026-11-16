@@ -23,7 +23,7 @@ const variantPatterns: Record<string, RegExp> = {
 
 export default defineConfig({
   testDir: chapter ? `./ch${chapter}` : '.',
-  testMatch: '**/ch??/*.spec.ts',
+  testMatch: ['**/ch??/*.spec.ts', '**/ch15/pom/*.spec.ts', '**/ch16/locators/*.spec.ts'],
   grep: process.env.CHAPTER_VARIANT ? variantPatterns[process.env.CHAPTER_VARIANT] : undefined,
   workers: 1,
   fullyParallel: false,

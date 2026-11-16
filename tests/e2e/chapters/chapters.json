@@ -7,21 +7,21 @@
   {
     "chapter": 15,
     "topic": "Page Object Model",
-    "file": "ch15/meal-price.spec.ts",
+    "file": "ch15/pom/meal-price.spec.ts",
     "variants": [
       "no-pom",
       "v1",
       "v2"
     ],
     "optional_variants": ["exercises"],
-    "additional_files": ["ch15/exercises.spec.ts"],
+    "additional_files": ["ch15/pom/exercises.spec.ts"],
     "workers": 1,
     "repeat_each": 1
   },
   {
     "chapter": 16,
     "topic": "定位元素與頁面就緒條件",
-    "file": "ch16/meal-price.spec.ts",
+    "file": "ch16/locators/meal-price.spec.ts",
     "workers": 1,
     "repeat_each": 1,
     "variants": [
@@ -31,8 +31,8 @@
     ],
     "optional_variants": ["first-row", "order-id"],
     "additional_files": [
-      "ch16/page-readiness.spec.ts",
-      "ch16/order-readiness.spec.ts"
+      "ch16/locators/page-readiness.spec.ts",
+      "ch16/locators/order-readiness.spec.ts"
     ]
   },
   {

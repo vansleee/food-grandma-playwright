@@ -1,7 +1,7 @@
 import type { Locator, Page } from '@playwright/test';
-import { expectStoredMeal } from '../support/meal-assertions';
-import { openManagementAs } from '../support/pages';
-import { expect, test } from '../support/test';
+import { expectStoredMeal } from '../../support/meal-assertions';
+import { openManagementAs } from '../../support/pages';
+import { expect, test } from '../../support/test';
 type Meal = { id: number; name: string; short_description: string; image: string; price: number };
 
 test.describe('未使用 POM', () => {

@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: '.',
-  testMatch: '**/ch{08,12,13,15,16}/practice/*.spec.ts',
+  testMatch: ['**/ch{08,12,13,15,16}/practice/*.spec.ts', '**/ch15/comparison/*.spec.ts'],
   workers: 1,
   retries: 0,
   reporter: 'list',
