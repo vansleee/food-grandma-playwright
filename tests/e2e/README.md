@@ -28,7 +28,7 @@
 
 Page Factory、Workflow Facade、Screenplay、Adapter、Repository Fake 等未完整出現在原始 v2 的部分，會標示為教學延伸。章節中的 v2 不代表原始 AI 已經選用了所有模式。
 
-例如：餐點價格修改可以先對照 [v1 的餐點測試](v1/tests/meals.spec.ts) 與 [v2 的餐點測試](v2/tests/specs/meals.spec.ts)，再閱讀 [書中第 17 章的 POM 三版本](chapters/ch15/pom/meal-price.spec.ts)。各章主題、案例與來源見 [素材對照表](../../experiments/part-two/chapter-example-map.md)。章節內不另設 COMPARISON.md。
+例如：餐點價格修改可以先對照 [v1 的餐點測試](v1/tests/meals.spec.ts) 與 [v2 的餐點測試](v2/tests/specs/meals.spec.ts)，再閱讀 [書中第 17 章的 POM 三版本](chapters/ch17/pom/meal-price.spec.ts)。各章主題、案例與來源見 [素材對照表](../../experiments/part-two/chapter-example-map.md)。章節內不另設 COMPARISON.md。
 
 ### 從同一個入口執行
 

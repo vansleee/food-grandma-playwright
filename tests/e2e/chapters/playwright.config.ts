@@ -1,7 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
+import { posix } from 'node:path';
+import chapters from './chapters.json';
 
 const chapter = process.env.CHAPTER;
 if (chapter && !/^(1[5-9]|2[0-8])$/.test(chapter)) throw new Error('章號必須介於 15～28');
+const chapterDefinition = chapters.find((entry) => entry.chapter === Number(chapter));
+const chapterDirectory = chapterDefinition?.file ? posix.dirname(chapterDefinition.file) : undefined;
 const variantPatterns: Record<string, RegExp> = {
   before: /改寫前/,
   exercises: /第 15 章練習/,
@@ -22,8 +26,11 @@ const variantPatterns: Record<string, RegExp> = {
 };
 
 export default defineConfig({
-  testDir: chapter ? `./ch${chapter}` : '.',
-  testMatch: ['**/ch??/*.spec.ts', '**/ch15/pom/*.spec.ts', '**/ch16/locators/*.spec.ts'],
+  testIgnore: ['**/test-results/**'],
+  testDir: chapterDirectory ?? '.',
+  testMatch: chapterDirectory
+    ? [`${chapterDirectory}/*.spec.ts`]
+    : ['**/ch??/*.spec.ts', '**/ch17/pom/*.spec.ts', '**/ch18/locators/*.spec.ts'],
   grep: process.env.CHAPTER_VARIANT ? variantPatterns[process.env.CHAPTER_VARIANT] : undefined,
   workers: 1,
   fullyParallel: false,

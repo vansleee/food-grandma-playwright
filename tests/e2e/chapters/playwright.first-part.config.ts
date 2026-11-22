@@ -3,7 +3,11 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testIgnore: ['**/test-results/**'],
   testDir: '.',
-  testMatch: ['**/ch{08,12,13,15,16}/practice/*.spec.ts', '**/ch15/comparison/*.spec.ts', '**/ch15/manual/*.spec.ts'],
+  testMatch: [
+    '**/ch{08,12,13}/practice/*.spec.ts',
+    '**/ch15/manual/*.spec.ts',
+    '**/ch15/manual/examples/{1-2,1-3}/*.spec.ts',
+  ],
   workers: 1,
   retries: 0,
   reporter: 'list',

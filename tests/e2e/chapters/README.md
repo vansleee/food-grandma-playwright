@@ -159,12 +159,12 @@ Healer 修復後，重跑上方第 11 章的 Playwright 指令。
 | --- | --- |
 | 第 12 章 | [API 啟動與資料準備](ch12/practice/api-setup.spec.ts) |
 | 第 13 章 | [API 手寫版](ch13/practice/api-manual.spec.ts)、[Generator 計畫與程式碼](ch13/generator/)、[實跑紀錄](ch13/generator/results.md) |
-| 第 15 章 | [餐廳後台登入](ch15/practice/management-setup.spec.ts) |
-| 第 16 章 | [UI 手寫版](ch16/practice/ui-manual.spec.ts)、[Generator 計畫與程式碼](ch16/generator/)、[實跑紀錄](ch16/generator/results.md) |
+| 第 15 章 | [手寫正文範例](ch15/manual/)、[練習](ch15/manual/examples/1-1/)、[啟動確認](ch15/manual/examples/1-2/management-setup.spec.ts) |
+| 第 16 章 | [Generator 正文範例](ch16/generated/)、[練習](ch16/generated/examples/1-1/) |
 
-第 12、13 章需要本機 API（8081），第 15、16 章還需要網站入口（8082）。測試會重設並重建資料，請使用專用的本機測試資料庫，依序執行。請先依第 09 章的步驟安裝套件、Chromium 和 Agent。書中第 17 章的 POM 範例放在 [ch15/pom/](ch15/pom/)，第 18 章的定位與等待範例放在 [ch16/locators/](ch16/locators/)。執行指令分別是 `npm run chapter -- 15` 和 `npm run chapter -- 16`。
+第 12、13 章需要本機 API（8081），第 15、16 章還需要網站入口（8082）。測試會重設並重建資料，請使用專用的本機測試資料庫，依序執行。請先依第 09 章的步驟安裝套件、Chromium 和 Agent。書中第 17 章的 POM 範例放在 [ch17/pom/](ch17/pom/)，第 18 章的定位與等待範例放在 [ch18/locators/](ch18/locators/)。執行指令分別是 `npm run chapter -- 15` 和 `npm run chapter -- 16`。
 
-第 15、16 章的新對照選了登入、指定訂單備餐完成和跨角色確認送達，兩版使用同一份[驗收條件](ch16/comparison/plan.md)。手寫版在 [ch15/comparison/](ch15/comparison/)，Generator 版在 [ch16/comparison/](ch16/comparison/)。[執行指令和比較結果](ch16/comparison/results.md)列出這三個案例各自的檢查。
+第 15 章的手寫範例放在 manual/，第 16 章的 Generator 範例放在 generated/。兩邊都用 examples/ 下的編號目錄放練習或環境確認。測試呼叫的頁面物件、Fixture、資料準備與流程程式，也各自放在 manual/ 或 generated/ 內。兩章比較登入、指定訂單備餐完成和跨角色確認送達三個案例，使用相同的[測試案例與驗收條件](ch16/generated/test-cases.md)。第 16 章的 generated/ 再分成 original/（原始產出）與 revised/（加入白話要求後的產出）。下方列出執行指令，[實驗資料](../../../experiments/ch16/)保留完整比較。
 
 從 `tests/e2e/chapters` 執行第 13 章的兩版測試：
 
@@ -173,14 +173,16 @@ npx playwright test -c playwright.first-part.config.ts ch13/practice/api-manual.
 npx playwright test -c playwright.agent-loop.config.ts ch13/generator/latest-order-without-token.spec.ts ch13/generator/list-restaurants.spec.ts ch13/generator/reject-second-order.spec.ts
 ```
 
-在同一個目錄執行第 16 章的兩版測試：
+在同一個目錄先執行第 15 章手寫版，再執行第 16 章的原始產出、白話提示詞產出與練習：
 
 ```bash
-npx playwright test -c playwright.first-part.config.ts ch16/practice/ui-manual.spec.ts
-npx playwright test -c playwright.agent-loop.config.ts ch16/generator/mark-order-ready.spec.ts ch16/generator/open-meals.spec.ts ch16/generator/sign-in.spec.ts
+npx playwright test -c playwright.first-part.config.ts ch15/manual/ui-manual.spec.ts
+npx playwright test -c playwright.agent-loop.config.ts ch16/generated/original --grep 'CH15-T0[123]'
+npx playwright test -c playwright.agent-loop.config.ts ch16/generated/revised --grep 'CH15-T0[123]'
+npx playwright test -c playwright.agent-loop.config.ts ch16/generated/examples/1-1/wrong-password.spec.ts
 ```
 
-若要自行產生測試，請在練習副本為各章開啟新的 Claude Code Generator 對話，再貼上各章的 `generator/prompt.txt`。提示詞會要求將產出寫到上述對應檔名。
+若要自行產生測試，請在獨立的練習副本開啟新的 Claude Code Generator 對話。第 13 章使用 `ch13/generator/prompt.txt`。第 16 章依閱讀順序使用 `ch16/generated/original/prompt.txt` 和 `ch16/generated/revised/prompt.txt`，再閱讀產出的差異。
 
 ## 開始執行
 
@@ -225,8 +227,8 @@ npm run chapter -- 15
 
 | 書中章號 | 主題 | 主要測試檔 | 指令 |
 | --- | --- | --- | --- |
-| 17 | Page Object Model | [直接寫登入步驟](ch15/pom/restaurant-management.direct.spec.ts)、[使用頁面物件](ch15/pom/restaurant-management.pom.spec.ts)、[修改餐點價格三版本](ch15/pom/meal-price.spec.ts) | `npm run chapter -- 15` |
-| 18 | 定位元素與頁面就緒 | [定位](ch16/locators/meal-price.spec.ts)、[頁面就緒](ch16/locators/page-readiness.spec.ts) | `npm run chapter -- 16` |
+| 17 | Page Object Model | [直接寫登入步驟](ch17/pom/restaurant-management.direct.spec.ts)、[使用頁面物件](ch17/pom/restaurant-management.pom.spec.ts)、[修改餐點價格三版本](ch17/pom/meal-price.spec.ts) | `npm run chapter -- 15` |
+| 18 | 定位元素與頁面就緒 | [定位](ch18/locators/meal-price.spec.ts)、[頁面就緒](ch18/locators/page-readiness.spec.ts) | `npm run chapter -- 16` |
 | 19 | Page Factory | [本章範例](ch17/meal-price.spec.ts) | `npm run chapter -- 17` |
 | 20 | Component Object Model | [本章範例](ch18/meal-price.spec.ts) | `npm run chapter -- 18` |
 | 21 | 流暢介面與 Workflow Facade | [顧客訂餐三版本](ch19/customer-order.spec.ts) | `npm run chapter -- 19` |

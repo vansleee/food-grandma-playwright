@@ -1,0 +1,17 @@
+請使用 Playwright Generator，依 ch15/manual/examples/1-1/plan.md
+撰寫 Food Grandma 的餐廳設定 E2E 測試。先用計畫指定的種子測試呼叫
+generator_setup_page，確認網頁操作與結果。讀取 generator_read_log
+後，用 generator_write_test 儲存正式的 .spec.ts。
+
+登入頁與餐廳設定頁各有自己的 Page Object，只管理各自頁面的
+定位器和操作。請用 Fixture 呼叫登入頁的操作，登入後開啟餐廳
+設定頁，再把設定頁物件交給測試。把 expect 留在測試裡。
+
+整支測試只用一組 Arrange、Act、Assert，每段各有一則說明意圖的
+註解。Arrange 準備資料並記下原餐廳名稱。Act 修改電話與地址並
+儲存。Assert 分別確認設定頁標題仍可見、畫面顯示「已儲存設定」，
+再重新整理並核對電話、地址和名稱。
+
+保留案例編號 CH15-E01。請在同一個對話完成共用程式與測試，
+所有新增的檔案都放在計畫指定的資料夾。
+寫完後用 Playwright 執行這支測試，回報結果並保留所有驗收條件。

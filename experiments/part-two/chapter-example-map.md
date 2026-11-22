@@ -10,11 +10,11 @@
 
 | 章 | 主題 | 各版主要差異 | 範例 | 實測（同一順序） |
 | --- | --- | --- | --- | --- |
-| 15 | Page Object Model | 直接定位／定位器 POM／方法型 POM | [完整測試](../../tests/e2e/chapters/ch15/pom/meal-price.spec.ts) | 1 通過／1 通過／1 通過 |
-| 16 | 定位元素 | 第一列／依編號 CSS／依編號組合定位器 | [完整測試](../../tests/e2e/chapters/ch16/locators/meal-price.spec.ts) | 1 通過／1 通過／1 通過 |
+| 15 | Page Object Model | 直接定位／定位器 POM／方法型 POM | [完整測試](../../tests/e2e/chapters/ch17/pom/meal-price.spec.ts) | 1 通過／1 通過／1 通過 |
+| 16 | 定位元素 | 第一列／依編號 CSS／依編號組合定位器 | [完整測試](../../tests/e2e/chapters/ch18/locators/meal-price.spec.ts) | 1 通過／1 通過／1 通過 |
 | 17 | Page Factory | 直接建立／直接建立／Page Factory（延伸） | [完整測試](../../tests/e2e/chapters/ch17/meal-price.spec.ts) | 1 通過／1 通過／1 通過 |
 | 18 | Component Object Model | 列內連結／列內連結／MealRow 元件 | [完整測試](../../tests/e2e/chapters/ch18/meal-price.spec.ts) | 1 通過／1 通過／1 通過 |
-| 16 | 功能就緒 | 直接檢查／直接檢查／具名就緒方法 | [完整測試](../../tests/e2e/chapters/ch16/locators/page-readiness.spec.ts) | 1 通過／1 通過／1 通過 |
+| 16 | 功能就緒 | 直接檢查／直接檢查／具名就緒方法 | [完整測試](../../tests/e2e/chapters/ch18/locators/page-readiness.spec.ts) | 1 通過／1 通過／1 通過 |
 | 19 | 流暢介面與 Workflow Facade | 逐步呼叫 POM／流暢介面／Workflow Facade（新增情境） | [顧客訂餐測試](../../tests/e2e/chapters/ch19/customer-order.spec.ts) | 1 通過／1 通過／2 通過（含 CH25-T02，11 月 6 日） |
 | 20 | Screenplay | POM 加 Workflow／Screenplay（兩版皆有單筆與雙筆訂單） | [完整測試](../../tests/e2e/chapters/ch20/multi-role-order.spec.ts) | 2 通過／2 通過；另有 5 個清理檢查 |
 | 21 | Fixture 與資料隔離 | General Fixture／按用途拆分的 Fixture | [外送員接單兩版](../../tests/e2e/chapters/ch21/driver-claim.spec.ts) | 各 1 支通過 |

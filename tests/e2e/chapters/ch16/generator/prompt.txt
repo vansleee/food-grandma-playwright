@@ -1,1 +1,0 @@
-請使用 Playwright Generator 工具，依 ch16/generator/plan.md 產生三支 Food Grandma UI 測試，各用計畫指定的檔名。先用 ch16/generator/seed.spec.ts 開啟餐廳登入頁，再用瀏覽器工具確認操作及畫面結果。正式測試使用 demo-fixture.ts 為每支測試重建資料，所有登入、備餐及導覽步驟都從網頁執行。請用 generator_write_test 儲存各檔，保留計畫的驗收條件。只寫這三支測試。

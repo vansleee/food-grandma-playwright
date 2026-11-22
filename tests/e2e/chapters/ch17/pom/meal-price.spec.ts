@@ -2,7 +2,6 @@ import type { Locator, Page } from '@playwright/test';
 import { expectStoredMeal } from '../../support/meal-assertions';
 import { openManagementAs } from '../../support/pages';
 import { expect, test } from '../../support/test';
-type Meal = { id: number; name: string; short_description: string; image: string; price: number };
 
 test.describe('未使用 POM', () => {
   test('CH20-T01 修改原餐點價格為 150', async ({ page, api, restaurant, subject }, info) => {
@@ -32,9 +31,12 @@ test.describe('v1', () => {
   class MealsPage {
     constructor(private readonly page: Page) { }
 
-    async waitUntilLoaded() {
-      await expect(this.page.getByTestId('meal-table')).toBeVisible();
-      await expect(this.page.getByText('正在載入菜單…')).toHaveCount(0);
+    table() {
+      return this.page.getByTestId('meal-table');
+    }
+
+    loadingMessage() {
+      return this.page.getByText('正在載入菜單…');
     }
 
     row(id: number) {
@@ -56,7 +58,8 @@ test.describe('v1', () => {
     const meals = new MealsPage(page);
     const form = new MealFormPage(page);
     await openManagementAs(page, restaurant.token, '/management/meals');
-    await meals.waitUntilLoaded();
+    await expect(meals.table()).toBeVisible();
+    await expect(meals.loadingMessage()).toHaveCount(0);
     await meals.row(original.id).getByTestId('meal-edit-link').click();
     await expect(form.name()).toHaveValue(original.name);
     await expect(form.description()).toHaveValue(original.short_description);
@@ -91,14 +94,18 @@ test.describe('v2', () => {
 
     async goto() {
       await this.page.goto('/management/meals');
-      await this.waitUntilReady();
     }
 
-    async waitUntilReady() {
-      await expect(this.page).toHaveURL(/\/management\/meals$/);
-      await expect(this.page.getByRole('heading', { name: '餐點管理', level: 1 })).toBeVisible();
-      await expect(this.page.getByTestId('meal-table')).toBeVisible();
-      await expect(this.page.getByText('正在載入菜單…')).toBeHidden();
+    heading() {
+      return this.page.getByRole('heading', { name: '餐點管理', level: 1 });
+    }
+
+    table() {
+      return this.page.getByTestId('meal-table');
+    }
+
+    loadingMessage() {
+      return this.page.getByText('正在載入菜單…');
     }
 
     meal(id: number) {
@@ -121,12 +128,8 @@ test.describe('v2', () => {
       this.submit = page.getByTestId('meal-submit');
     }
 
-    async expectLoaded(meal: Meal) {
-      await expect(this.page.getByRole('heading', { name: '編輯餐點', level: 1 })).toBeVisible();
-      await expect(this.name).toHaveValue(meal.name);
-      await expect(this.description).toHaveValue(meal.short_description);
-      await expect(this.image).toHaveValue(meal.image);
-      await expect(this.price).toHaveValue(String(meal.price));
+    heading() {
+      return this.page.getByRole('heading', { name: '編輯餐點', level: 1 });
     }
 
     async fill(draft: { name?: string; short_description?: string; image?: string; price?: string }) {
@@ -147,8 +150,16 @@ test.describe('v2', () => {
     const form = new MealFormPage(page);
     await openManagementAs(page, restaurant.token, '/management/meals');
     await meals.goto();
+    await expect(page).toHaveURL(/\/management\/meals$/);
+    await expect(meals.heading()).toBeVisible();
+    await expect(meals.table()).toBeVisible();
+    await expect(meals.loadingMessage()).toBeHidden();
     await meals.meal(original.id).openEditor();
-    await form.expectLoaded(original);
+    await expect(form.heading()).toBeVisible();
+    await expect(form.name).toHaveValue(original.name);
+    await expect(form.description).toHaveValue(original.short_description);
+    await expect(form.image).toHaveValue(original.image);
+    await expect(form.price).toHaveValue(String(original.price));
 
     // Act：從網頁修改價格並儲存。
     await form.fill({ price: '150' });
@@ -159,6 +170,10 @@ test.describe('v2', () => {
     await expect(meals.meal(original.id).root).toContainText('$150');
     await expectStoredMeal(api, restaurant.token, original, idsBefore, 150);
     await meals.meal(original.id).openEditor();
-    await form.expectLoaded({ ...original, price: 150 });
+    await expect(form.heading()).toBeVisible();
+    await expect(form.name).toHaveValue(original.name);
+    await expect(form.description).toHaveValue(original.short_description);
+    await expect(form.image).toHaveValue(original.image);
+    await expect(form.price).toHaveValue('150');
   });
 });

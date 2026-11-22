@@ -2,7 +2,7 @@
   {
     "chapter": 15,
     "topic": "Page Object Model",
-    "file": "ch15/pom/meal-price.spec.ts",
+    "file": "ch17/pom/meal-price.spec.ts",
     "workers": 1,
     "repeat_each": 1,
     "source_case": "MEAL-T02",
@@ -25,7 +25,7 @@
   {
     "chapter": 16,
     "topic": "定位元素",
-    "file": "ch16/locators/meal-price.spec.ts",
+    "file": "ch18/locators/meal-price.spec.ts",
     "workers": 1,
     "repeat_each": 1,
     "source_case": "MEAL-T02",
@@ -92,7 +92,7 @@
   {
     "chapter": 16,
     "topic": "功能就緒",
-    "file": "ch16/locators/page-readiness.spec.ts",
+    "file": "ch18/locators/page-readiness.spec.ts",
     "workers": 1,
     "repeat_each": 1,
     "source_case": "MEAL-T02",
