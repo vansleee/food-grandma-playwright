@@ -1,0 +1,5 @@
+請依 ch16/generated/test-cases.md 的三個測試案例，使用 Playwright Generator
+產生並執行 Food Grandma 的網頁測試，保留每個測試案例的前置、步驟與預期結果。
+
+請勿參考 ch15 的手寫測試、其他版本的測試或第二部分書稿。
+請將三支測試放在 ch16/generated/original/ui-generated.spec.ts，並回報執行結果。

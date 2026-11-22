@@ -1,0 +1,244 @@
+{
+  "date": "2026-11-23",
+  "environment": {
+    "headless": true,
+    "workers": 1,
+    "retries": 0,
+    "dedicated_local_sqlite": true,
+    "claude_code": "2.1.311",
+    "playwright": "1.63.0",
+    "node": "v26.9.0"
+  },
+  "generation": {
+    "q2": {
+      "metadata": {
+        "model": "claude-sonnet-5-5",
+        "session_id": "40535ced-e5c3-433a-97cd-daafda819993",
+        "claude_code_version": "2.1.311",
+        "subtype": "success",
+        "is_error": false,
+        "duration_ms": 52344,
+        "num_turns": 22
+      },
+      "tool_call_counts": {
+        "Read": 8,
+        "Glob": 1,
+        "ToolSearch": 2,
+        "mcp__playwright-test__generator_setup_page": 1,
+        "mcp__playwright-test__browser_navigate": 1,
+        "mcp__playwright-test__browser_click": 3,
+        "mcp__playwright-test__browser_snapshot": 1,
+        "mcp__playwright-test__generator_read_log": 1,
+        "Write": 1,
+        "mcp__playwright-test__generator_write_test": 1,
+        "mcp__playwright-test__test_run": 1
+      },
+      "read_paths": [
+        "<workspace-q2>/ch16/generated/examples/1-2/test-case.md",
+        "<workspace-q2>/ch16/generated/examples/1-2/prompt.txt",
+        "<workspace-q2>/ch16/generated/examples/1-2/seed.spec.ts",
+        "<workspace-q2>/ch16/generated/revised/ui-generated.spec.ts",
+        "<workspace-q2>/ch16/generated/revised/pages/locators.ts",
+        "<workspace-q2>/ch16/generated/revised/pages/actions.ts",
+        "<workspace-q2>/ch16/generated/revised/fixtures/roles.ts",
+        "<workspace-q2>/ch16/generated/fixtures/demo.ts"
+      ],
+      "mcp_test_results": [
+        "1 passed (7.6s)"
+      ],
+      "tool_errors": []
+    },
+    "q3": {
+      "metadata": {
+        "model": "claude-sonnet-5-5",
+        "session_id": "270c0673-ba87-459e-836a-d499b8f365b1",
+        "claude_code_version": "2.1.311",
+        "subtype": "success",
+        "is_error": false,
+        "duration_ms": 49453,
+        "num_turns": 22
+      },
+      "tool_call_counts": {
+        "Read": 10,
+        "ToolSearch": 1,
+        "Glob": 3,
+        "mcp__playwright-test__generator_setup_page": 1,
+        "mcp__playwright-test__browser_fill_form": 1,
+        "mcp__playwright-test__browser_click": 1,
+        "mcp__playwright-test__generator_read_log": 1,
+        "mcp__playwright-test__generator_write_test": 2,
+        "mcp__playwright-test__test_run": 1
+      },
+      "read_paths": [
+        "<workspace-q3>/ch15/manual/ui-manual.spec.ts",
+        "<workspace-q3>/ch15/manual/pages/sign-in-page.ts",
+        "<workspace-q3>/ch15/manual/fixtures/demo.ts",
+        "<workspace-q3>/ch15/manual/fixtures.ts",
+        "<workspace-q3>/ch16/generated/fixtures/demo.ts",
+        "<workspace-q3>/ch16/generated/examples/1-3/seed.spec.ts",
+        "<workspace-q3>/ch16/generated/examples/1-3/test-case.md",
+        "<workspace-q3>/playwright.config.ts",
+        "<workspace-q3>/ch16/generated/examples/1-3/prompt.txt",
+        "<workspace-q3>/.playwright-mcp/page-2026-11-22T16-25-46-417Z.yml"
+      ],
+      "mcp_test_results": [
+        "1 passed (6.8s)"
+      ],
+      "tool_errors": [
+        "\"Error: Test file did not match any of the test dirs:\""
+      ]
+    }
+  },
+  "runs": {
+    "public-q1-manual": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 7.614,
+      "tests": [
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "status": "passed",
+          "file": "ch15/manual/ui-manual.spec.ts",
+          "duration_ms": 7059
+        }
+      ]
+    },
+    "public-q1-original": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 7.098,
+      "tests": [
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "status": "passed",
+          "file": "ch16/generated/original/ui-generated.spec.ts",
+          "duration_ms": 6675
+        }
+      ]
+    },
+    "public-q1-revised": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 7.078,
+      "tests": [
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "status": "passed",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "duration_ms": 6661
+        }
+      ]
+    },
+    "public-q2": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 6.927,
+      "tests": [
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "status": "passed",
+          "file": "ch16/generated/examples/1-2/driver-confirm-delivery.spec.ts",
+          "duration_ms": 6493
+        }
+      ]
+    },
+    "public-q3": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 6.511,
+      "tests": [
+        {
+          "title": "CH16-E03 錯誤密碼登入後顯示錯誤訊息，仍在登入頁且表單可再使用",
+          "status": "passed",
+          "file": "ch16/generated/examples/1-3/wrong-password-sign-in.spec.ts",
+          "duration_ms": 6112
+        }
+      ]
+    },
+    "synced-q2": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 7.303,
+      "tests": [
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "status": "passed",
+          "file": "ch16/generated/examples/1-2/driver-confirm-delivery.spec.ts",
+          "duration_ms": 6873
+        }
+      ]
+    },
+    "synced-q3": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 6.475,
+      "tests": [
+        {
+          "title": "CH16-E03 錯誤密碼登入後顯示錯誤訊息，仍在登入頁且表單可再使用",
+          "status": "passed",
+          "file": "ch16/generated/examples/1-3/wrong-password-sign-in.spec.ts",
+          "duration_ms": 6073
+        }
+      ]
+    }
+  },
+  "commands": {
+    "public-q1-manual": {
+      "config": "<example-project>/tests/e2e/chapters/playwright.first-part.config.ts",
+      "file": "ch15/manual/ui-manual.spec.ts",
+      "grep": "CH15-T03",
+      "exit_code": 0
+    },
+    "public-q1-original": {
+      "config": "<example-project>/tests/e2e/chapters/playwright.agent-loop.config.ts",
+      "file": "ch16/generated/original/ui-generated.spec.ts",
+      "grep": "CH15-T03",
+      "exit_code": 0
+    },
+    "public-q1-revised": {
+      "config": "<example-project>/tests/e2e/chapters/playwright.agent-loop.config.ts",
+      "file": "ch16/generated/revised/ui-generated.spec.ts",
+      "grep": "CH15-T03",
+      "exit_code": 0
+    },
+    "public-q2": {
+      "config": "<example-project>/tests/e2e/chapters/playwright.agent-loop.config.ts",
+      "file": "ch16/generated/examples/1-2/driver-confirm-delivery.spec.ts",
+      "grep": null,
+      "exit_code": 0
+    },
+    "public-q3": {
+      "config": "<example-project>/tests/e2e/chapters/playwright.agent-loop.config.ts",
+      "file": "ch16/generated/examples/1-3/wrong-password-sign-in.spec.ts",
+      "grep": null,
+      "exit_code": 0
+    },
+    "synced-q2": {
+      "config": "<home>/workspace/books-and-courses/grandma-playwright-ai-agent-testing-patterns/tests/e2e/chapters/playwright.agent-loop.config.ts",
+      "file": "ch16/generated/examples/1-2/driver-confirm-delivery.spec.ts",
+      "grep": null,
+      "exit_code": 0
+    },
+    "synced-q3": {
+      "config": "<home>/workspace/books-and-courses/grandma-playwright-ai-agent-testing-patterns/tests/e2e/chapters/playwright.agent-loop.config.ts",
+      "file": "ch16/generated/examples/1-3/wrong-password-sign-in.spec.ts",
+      "grep": null,
+      "exit_code": 0
+    }
+  },
+  "typecheck": {
+    "public": "passed",
+    "synced": "passed",
+    "q2_isolated": "passed",
+    "q3_isolated": "passed"
+  },
+  "preserved": [
+    "all existing chapter15 manual files",
+    "all existing chapter16 generated files, including original and revised"
+  ],
+  "transformations": "None: exercise files were copied verbatim from isolated generation output. Only chapter config glob added 1-2 and 1-3.",
+  "review": {
+    "q2": "Card heading exact match, then button inside card. Existing roles reused; both UI expectations retained. Only original one-active-delivery case executed.",
+    "q3": "Existing SignInPage imported directly, one AAA group, valid seeded username and different password; error/URL/editable fields/enabled button checked. Some selectors remain in test."
+  }
+}

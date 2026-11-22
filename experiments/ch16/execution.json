@@ -1,0 +1,320 @@
+{
+  "date": "2026-11-22",
+  "prompt_source": "本對話最新精簡提示詞，265 字元（含換行，不含結尾換行）；未修改書稿。",
+  "environment": {
+    "headless_generation": true,
+    "headless_tests": true,
+    "dedicated_sqlite": true,
+    "workers": 1,
+    "retries": 0,
+    "playwright": "1.63.0",
+    "claude_code": "2.1.311",
+    "node": "v26.9.0",
+    "platform": "macOS"
+  },
+  "isolation": {
+    "fresh_session": true,
+    "excluded": [
+      "manual",
+      "original",
+      "previous revised",
+      "part-two manuscript"
+    ],
+    "input_sha256": {
+      "mcp.config.json": "57a510160ba341edf8b8ba032e8bb8ce5fa2c5c02b376da2abfada8ce80fb87e",
+      "agents.config.json": "b6370a9a88f752db4da745840f739a81079d7fbce62458d9a3d5ae69c600b63e",
+      "session-id.txt": "62691e42c9566736cf3681bbeb96cfa7a49e805fbfdf723db54c003f17ae25c2",
+      "package.json": "6b2b7364a11b3cfc4ea20f3fca2cffc92f036da52a5c1741a0452f1db71b867a",
+      "tsconfig.json": "b48da8bbf5e3fc01391e576fc19a524fa2d03ef0a1d3d36d7f8ada82fff643dd",
+      "playwright.config.ts": "12bea3a303f18cb18b0c447b33b079b39ce90fe6861a3fe7a58eb5c28a4408c7",
+      "ch16/generated/seed.spec.ts": "e11d45ab5b53ccc8a57440378eb21d079ea8188cffd71f9a16b5f8aff4bf1f00",
+      "ch16/generated/test-cases.md": "ac533373b2eccec8ea08446b9e934ecd64df2ad2de520c62afdeec28a15acefe",
+      "ch16/generated/revised/prompt.txt": "ff21e7ddd24a7d0050fab4bbb8f040761ac4388f0410e31c16f0952c16b53552",
+      "ch16/generated/fixtures/demo.ts": "f3d84d53537f528afc40f3e902a1bea7087757457057b6c15cbc543d6c57b0e7"
+    }
+  },
+  "generation": {
+    "original": {
+      "session_id": "c3fad756-f936-4ef9-9377-63d93cdd84d5",
+      "model": "claude-sonnet-5-5",
+      "tool_call_counts": {
+        "Glob": 1,
+        "ToolSearch": 2,
+        "Read": 5,
+        "mcp__playwright-test__generator_setup_page": 1,
+        "mcp__playwright-test__browser_evaluate": 1,
+        "mcp__playwright-test__browser_type": 2,
+        "mcp__playwright-test__browser_click": 5,
+        "mcp__playwright-test__browser_snapshot": 4,
+        "mcp__playwright-test__browser_navigate": 2,
+        "mcp__playwright-test__generator_read_log": 1,
+        "mcp__playwright-test__generator_write_test": 3,
+        "mcp__playwright-test__test_run": 1
+      },
+      "read_paths": [
+        "<workspace-original>/ch16/generated/original/test-cases.md",
+        "<workspace-original>/ch16/generated/original/seed.spec.ts",
+        "<workspace-original>/ch16/generated/original/prompt.txt",
+        "<workspace-original>/ch16/generated/fixtures/demo.ts",
+        "<workspace-original>/playwright.config.ts"
+      ],
+      "mcp_test_results": [
+        "4 passed (27.1s)"
+      ],
+      "tool_error_count": 0,
+      "headless": true,
+      "formal_test_cases": 3,
+      "seed_executed_by_mcp": true,
+      "manual_code_edits": false
+    },
+    "revised": {
+      "session_id": "a51ba391-f161-407e-aef9-4a91caf6446b",
+      "model": "claude-sonnet-5-5",
+      "read_paths": [
+        "<workspace-revised>/ch16/generated/test-cases.md",
+        "<workspace-revised>/ch16/generated/fixtures/demo.ts",
+        "<workspace-revised>/ch16/generated/seed.spec.ts",
+        "<workspace-revised>/ch16/generated/revised/prompt.txt",
+        "<workspace-revised>/playwright.config.ts",
+        "<workspace-revised>/package.json",
+        "<workspace-revised>/mcp.config.json",
+        "<workspace-revised>/agents.config.json"
+      ],
+      "tool_call_counts": {
+        "Glob": 2,
+        "Read": 8,
+        "ToolSearch": 2,
+        "mcp__playwright-test__generator_setup_page": 2,
+        "mcp__playwright-test__browser_run_code_unsafe": 3,
+        "mcp__playwright-test__browser_fill_form": 1,
+        "mcp__playwright-test__browser_click": 5,
+        "mcp__playwright-test__browser_snapshot": 2,
+        "mcp__playwright-test__browser_evaluate": 4,
+        "mcp__playwright-test__browser_navigate": 1,
+        "mcp__playwright-test__generator_write_test": 6,
+        "Edit": 1,
+        "mcp__playwright-test__test_run": 1
+      },
+      "mcp_results": [
+        "4 passed (26.0s)"
+      ],
+      "tool_errors": [
+        "\"Error: Error: MCP backend is not initialized\""
+      ]
+    }
+  },
+  "validation": {
+    "initial_mcp": "4 passed (26.0s): three formal cases plus seed",
+    "first_isolated_typecheck": "passed",
+    "diagnostic_followup_needed": false,
+    "final_isolated_typecheck": "passed",
+    "packaging_issue": "合併時重複匯入造成 SyntaxError；已合併同模組的具名匯入，不改測試區塊與共用程式邏輯，重跑公開專案三支正式測試通過。"
+  },
+  "review": {
+    "aaa_counts": {
+      "ch15-t01-restaurant-login-shows-orders.spec.ts": {
+        "Arrange": 1,
+        "Act": 1,
+        "Assert": 1
+      },
+      "ch15-t02-order-becomes-ready-for-pickup.spec.ts": {
+        "Arrange": 1,
+        "Act": 1,
+        "Assert": 1
+      },
+      "ch15-t03-driver-delivery-shows-delivered-to-restaurant.spec.ts": {
+        "Arrange": 1,
+        "Act": 1,
+        "Assert": 1
+      }
+    },
+    "expect_calls_in_pages": {
+      "pages/actions.ts": 0,
+      "pages/locators.ts": 0
+    },
+    "structure_metrics": {
+      "previous": {
+        "typescript_files": 8,
+        "typescript_lines_including_comments_and_blank_lines": 232
+      },
+      "current": {
+        "typescript_files": 4,
+        "typescript_lines_including_comments_and_blank_lines": 176
+      },
+      "manual": {
+        "typescript_files": 7,
+        "typescript_lines_including_comments_and_blank_lines": 215
+      }
+    },
+    "improved": [
+      "One AAA group for each test",
+      "Driver environment is provided via fixture parameter and finally closed",
+      "Wait for driver completion UI before refreshing manager orders"
+    ],
+    "remaining_differences": [
+      "Global complete-delivery button is not scoped to order ID",
+      "Locator and action factories are separate objects; manual page classes combine these",
+      "Restaurant row still uses formatted display text",
+      "T03 wait and manager refresh stay in Act; manual places them in Assert"
+    ]
+  },
+  "output_handling": {
+    "raw_specs": [
+      "ch15-t01-restaurant-login-shows-orders.spec.ts",
+      "ch15-t02-order-becomes-ready-for-pickup.spec.ts",
+      "ch15-t03-driver-delivery-shows-delivered-to-restaurant.spec.ts"
+    ],
+    "transformations": [
+      "merged test.describe blocks verbatim",
+      "unified test import to lazy roles fixture extension; T01 does not request role fixtures",
+      "moved generated pages and roles under revised; changed only roles import of shared demo"
+    ],
+    "manual_logic_changes": false
+  },
+  "runs": {
+    "public-revised": {
+      "passed": 3,
+      "failed": 0,
+      "duration_seconds": 21.255,
+      "tests": [
+        {
+          "title": "CH15-T01 餐廳管理者登入後看到訂單管理",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6834
+        },
+        {
+          "title": "CH15-T02 指定訂單變成待取餐",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6626
+        },
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6988
+        }
+      ]
+    },
+    "public-original": {
+      "passed": 3,
+      "failed": 0,
+      "duration_seconds": 20.349,
+      "tests": [
+        {
+          "title": "CH15-T01 餐廳管理者登入後看到訂單管理",
+          "file": "ch16/generated/original/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6560
+        },
+        {
+          "title": "CH15-T02 指定訂單變成待取餐",
+          "file": "ch16/generated/original/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6454
+        },
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "file": "ch16/generated/original/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6769
+        }
+      ]
+    },
+    "public-manual": {
+      "passed": 3,
+      "failed": 0,
+      "duration_seconds": 19.76,
+      "tests": [
+        {
+          "title": "CH15-T01 餐廳管理者登入後看到訂單管理",
+          "file": "ch15/manual/ui-manual.spec.ts",
+          "status": "passed",
+          "duration_ms": 6388
+        },
+        {
+          "title": "CH15-T02 指定訂單變成待取餐",
+          "file": "ch15/manual/ui-manual.spec.ts",
+          "status": "passed",
+          "duration_ms": 6199
+        },
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "file": "ch15/manual/ui-manual.spec.ts",
+          "status": "passed",
+          "duration_ms": 6602
+        }
+      ]
+    },
+    "public-exercise": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 7.118,
+      "tests": [
+        {
+          "title": "餐廳管理者用錯誤密碼登入會看到錯誤訊息並留在登入頁",
+          "file": "ch16/generated/examples/1-1/wrong-password.spec.ts",
+          "status": "passed",
+          "duration_ms": 6646
+        }
+      ]
+    },
+    "synced-revised": {
+      "passed": 3,
+      "failed": 0,
+      "duration_seconds": 19.897,
+      "tests": [
+        {
+          "title": "CH15-T01 餐廳管理者登入後看到訂單管理",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6237
+        },
+        {
+          "title": "CH15-T02 指定訂單變成待取餐",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6277
+        },
+        {
+          "title": "CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達",
+          "file": "ch16/generated/revised/ui-generated.spec.ts",
+          "status": "passed",
+          "duration_ms": 6741
+        }
+      ]
+    },
+    "synced-exercise": {
+      "passed": 1,
+      "failed": 0,
+      "duration_seconds": 6.814,
+      "tests": [
+        {
+          "title": "餐廳管理者用錯誤密碼登入會看到錯誤訊息並留在登入頁",
+          "file": "ch16/generated/examples/1-1/wrong-password.spec.ts",
+          "status": "passed",
+          "duration_ms": 6378
+        }
+      ]
+    }
+  },
+  "typecheck": {
+    "public": "passed",
+    "synced": "passed",
+    "isolated": "passed"
+  },
+  "sha256": {
+    "revised": {
+      "ui-generated.spec.ts": "a23ba34aeb09ac9b5a7f9a92d7918cffac5a0c6848ca99a74d324827eceb84fe",
+      "prompt.txt": "ff21e7ddd24a7d0050fab4bbb8f040761ac4388f0410e31c16f0952c16b53552",
+      "fixtures/roles.ts": "7c5c21a3c8cd9c5bbb6d5b7ea8d4812420bf4e277832f1fd6b6571763b0a1342",
+      "pages/actions.ts": "1748174a24e3c16558a4bd7884dc69eee9de85ca2186375d20ec580412eeb7b8",
+      "pages/locators.ts": "6ab93919f952a938502d7eb85522221be28457560426c8277faaf284caf10c0e"
+    },
+    "original": {
+      "ui-generated.spec.ts": "e9f8600c8b71cc4b4e56795ac8082d1d236d51a101854b396e35b4ab3f4bba6c",
+      "prompt.txt": "6471a82063ae5634ef1975046873181d09fbff4fdceebaf3cd18703cd2139866"
+    }
+  }
+}

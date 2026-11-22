@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+  ✓  1 ch16/generated/revised/ui-generated.spec.ts:8:7 › CH15-T01 餐廳管理者登入後看到訂單管理 › CH15-T01 餐廳管理者登入後看到訂單管理 (6.8s)
+  ✓  2 ch16/generated/revised/ui-generated.spec.ts:28:7 › CH15-T02 指定訂單變成待取餐 › CH15-T02 指定訂單變成待取餐 (6.6s)
+  ✓  3 ch16/generated/revised/ui-generated.spec.ts:47:7 › CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達 › CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達 (7.0s)
+
+  3 passed (21.3s)
+(node:91334) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

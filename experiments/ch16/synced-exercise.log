@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+  ✓  1 ch16/generated/examples/1-1/wrong-password.spec.ts:4:5 › 餐廳管理者用錯誤密碼登入會看到錯誤訊息並留在登入頁 (6.4s)
+
+  1 passed (6.8s)
+(node:91168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

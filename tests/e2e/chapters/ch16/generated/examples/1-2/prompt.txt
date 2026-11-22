@@ -1,0 +1,7 @@
+請依 ch16/generated/examples/1-2/test-case.md，沿用 ch16/generated/revised/ 的寫法，
+重新產生外送員確認送達的測試。
+
+先依訂單編號找到對應卡片，只按下卡片內的送達按鈕。
+使用一組 AAA，保留原有驗收、共用登入與環境清理，expect 留在測試裡。
+新增程式放在 ch16/generated/examples/1-2/，不要修改 revised。
+請使用 Playwright Generator，以 headless 執行並回報結果。

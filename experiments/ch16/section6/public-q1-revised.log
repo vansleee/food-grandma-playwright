@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+  ✓  1 ch16/generated/revised/ui-generated.spec.ts:47:7 › CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達 › CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達 (6.7s)
+
+  1 passed (7.1s)
+(node:1098) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

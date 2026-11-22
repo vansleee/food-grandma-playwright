@@ -1,0 +1,23 @@
+SyntaxError: <example-project>/tests/e2e/chapters/ch16/generated/revised/ui-generated.spec.ts: Identifier 'restaurantOrdersActions' has already been declared. (7:24)
+
+   5 | import { restaurantOrdersLocators } from './pages/locators';
+   6 | import { restaurantOrdersActions } from './pages/actions';
+>  7 | import { driverActions, restaurantOrdersActions } from './pages/actions';
+     |                         ^
+   8 | import { driverDeliveryLocators, restaurantOrdersLocators } from './pages/locators';
+   9 |
+  10 | test.describe('CH15-T01 餐廳管理者登入後看到訂單管理', () => {
+
+   at ch16/generated/revised/ui-generated.spec.ts:7
+
+   5 | import { restaurantOrdersLocators } from './pages/locators';
+   6 | import { restaurantOrdersActions } from './pages/actions';
+>  7 | import { driverActions, restaurantOrdersActions } from './pages/actions';
+     |                        ^
+   8 | import { driverDeliveryLocators, restaurantOrdersLocators } from './pages/locators';
+   9 |
+  10 | test.describe('CH15-T01 餐廳管理者登入後看到訂單管理', () => {
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+

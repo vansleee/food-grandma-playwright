@@ -1,0 +1,7 @@
+請使用 Playwright Generator，依 ch16/generated/examples/1-1/plan.md 撰寫錯誤密碼登入測試。
+先用種子測試呼叫 generator_setup_page，在網站確認錯誤訊息，
+讀取 generator_read_log 後用 generator_write_test 儲存正式測試。
+
+使用一組 AAA，從程式碼看得出輸入了錯誤密碼，以及登入失敗後要核對什麼。
+沿用既有登入頁物件，把 expect 留在測試裡，保留計畫所有驗收條件。
+新增檔案都放在 ch16/generated/examples/1-1/。寫完後執行測試並回報結果。

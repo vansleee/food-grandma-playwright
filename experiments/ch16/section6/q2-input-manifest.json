@@ -1,0 +1,18 @@
+{
+  "mcp.config.json": "57a510160ba341edf8b8ba032e8bb8ce5fa2c5c02b376da2abfada8ce80fb87e",
+  "agents.config.json": "95537bc56ae37e4e6ccb1bdb8638042923b901f0fb70684a237ec78f0fe975e4",
+  "prompt.txt": "4036f79813adae69f5670c63917e42552861fd97a856c38662ecf466ce388e88",
+  "session-id.txt": "76d73c41a7baca6370bf3aff1d1689ef35e4e7515ab90db7b8a7a2466ed3683b",
+  "package.json": "6b2b7364a11b3cfc4ea20f3fca2cffc92f036da52a5c1741a0452f1db71b867a",
+  "tsconfig.json": "b48da8bbf5e3fc01391e576fc19a524fa2d03ef0a1d3d36d7f8ada82fff643dd",
+  "playwright.config.ts": "b716efba743d332bda1c138a2c61b8c1193cdc235c021cdd72e784f1e9736ef6",
+  "ch16/generated/revised/ui-generated.spec.ts": "a23ba34aeb09ac9b5a7f9a92d7918cffac5a0c6848ca99a74d324827eceb84fe",
+  "ch16/generated/revised/prompt.txt": "ff21e7ddd24a7d0050fab4bbb8f040761ac4388f0410e31c16f0952c16b53552",
+  "ch16/generated/fixtures/demo.ts": "f3d84d53537f528afc40f3e902a1bea7087757457057b6c15cbc543d6c57b0e7",
+  "ch16/generated/examples/1-2/test-case.md": "68e96cf6109126a45fb9c2aec4bbdf45006036bd4ae6e17a5269efac2c8c5d00",
+  "ch16/generated/examples/1-2/prompt.txt": "4036f79813adae69f5670c63917e42552861fd97a856c38662ecf466ce388e88",
+  "ch16/generated/examples/1-2/seed.spec.ts": "40f06111afe4bb7a9b4c569b4e42de8f6c268e53c219cbc441cb21fedadb2fcc",
+  "ch16/generated/revised/fixtures/roles.ts": "7c5c21a3c8cd9c5bbb6d5b7ea8d4812420bf4e277832f1fd6b6571763b0a1342",
+  "ch16/generated/revised/pages/actions.ts": "1748174a24e3c16558a4bd7884dc69eee9de85ca2186375d20ec580412eeb7b8",
+  "ch16/generated/revised/pages/locators.ts": "6ab93919f952a938502d7eb85522221be28457560426c8277faaf284caf10c0e"
+}

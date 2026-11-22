@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "model": "claude-sonnet-5-5",
+    "session_id": "c3fad756-f936-4ef9-9377-63d93cdd84d5",
+    "claude_code_version": "2.1.311",
+    "subtype": "success",
+    "is_error": false,
+    "duration_ms": 92501,
+    "num_turns": 29
+  },
+  "tool_call_counts": {
+    "Glob": 1,
+    "ToolSearch": 2,
+    "Read": 5,
+    "mcp__playwright-test__generator_setup_page": 1,
+    "mcp__playwright-test__browser_evaluate": 1,
+    "mcp__playwright-test__browser_type": 2,
+    "mcp__playwright-test__browser_click": 5,
+    "mcp__playwright-test__browser_snapshot": 4,
+    "mcp__playwright-test__browser_navigate": 2,
+    "mcp__playwright-test__generator_read_log": 1,
+    "mcp__playwright-test__generator_write_test": 3,
+    "mcp__playwright-test__test_run": 1
+  },
+  "read_paths": [
+    "<workspace-original>/ch16/generated/original/test-cases.md",
+    "<workspace-original>/ch16/generated/original/seed.spec.ts",
+    "<workspace-original>/ch16/generated/original/prompt.txt",
+    "<workspace-original>/ch16/generated/fixtures/demo.ts",
+    "<workspace-original>/playwright.config.ts"
+  ],
+  "tool_errors": [],
+  "mcp_test_results": [
+    "4 passed (27.1s)"
+  ],
+  "events": [
+    {
+      "type": "tool_use",
+      "id": "toolu_01Wm96SY44NN1UFMGdSwU3wC",
+      "name": "Glob",
+      "input": {
+        "pattern": "**/*",
+        "path": "<workspace-original>"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01Wm96SY44NN1UFMGdSwU3wC",
+      "is_error": false,
+      "content": "package.json\nch16/generated/fixtures/demo.ts\nch16/generated/original/test-cases.md\nch16/generated/original/seed.spec.ts\nch16/generated/original/prompt.txt\ntsconfig.json\nplaywright.config.ts\nmcp.config.json\nagents.config.json\nsession-id.txt"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01UvQDWsaWd5wVCW5UJ9pFzK",
+      "name": "ToolSearch",
+      "input": {
+        "query": "select:mcp__playwright-test__generator_setup_page,mcp__playwright-test__generator_read_log,mcp__playwright-test__generator_write_test,mcp__playwright-test__test_run,mcp__playwright-test__browser_snapshot,mcp__playwright-test__browser_click,mcp__playwright-test__browser_type,mcp__playwright-test__browser_navigate",
+        "max_results": 10
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01UvQDWsaWd5wVCW5UJ9pFzK",
+      "is_error": false,
+      "content": [
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__generator_setup_page"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__generator_read_log"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__generator_write_test"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__test_run"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__browser_snapshot"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__browser_click"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__browser_type"
+        },
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__browser_navigate"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_016KH66XLueWq79RAnf2V1qa",
+      "name": "Read",
+      "input": {
+        "file_path": "<workspace-original>/ch16/generated/original/test-cases.md"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_016KH66XLueWq79RAnf2V1qa",
+      "is_error": false,
+      "content": "1\t# Food Grandma 的三個網頁測試\n2\t\n3\t## CH15-T01 餐廳管理者登入後看到訂單管理\n4\t\n5\t前置：有可用的餐廳管理帳號，目前尚未登入。\n6\t\n7\t步驟：\n8\t1. 開啟餐廳後台登入頁面。\n9\t2. 輸入正確的帳號與密碼，按下「登入」。\n10\t\n11\t預期結果：\n12\t- 頁面路徑為 `/management/orders`。\n13\t- 顯示「訂單管理」標題與訂單表格。\n14\t\n15\t## CH15-T02 指定訂單變成待取餐\n16\t\n17\t前置：餐廳管理者已登入訂單管理頁面。餐廳有一筆「備餐中」的訂單，並已記下訂單編號。\n18\t\n19\t步驟：\n20\t1. 依訂單編號找到指定訂單，確認目前為「備餐中」。\n21\t2. 按下該筆訂單的「備餐完成」。\n22\t\n23\t預期結果：\n24\t- 同一筆訂單顯示「待取餐」。\n25\t- 該筆訂單的「備餐完成」按鈕消失。\n26\t\n27\t## CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達\n28\t\n29\t前置：餐廳管理者已登入訂單管理頁面。外送員只有一筆進行中的配送，並已記下訂單編號。管理者與外送員各自使用獨立的瀏覽器登入環境。\n30\t\n31\t步驟：\n32\t1. 餐廳管理者依訂單編號確認該筆訂單顯示「配送中」。\n33\t2. 外送員從「體驗登入」進入工作台，再開啟進行中配送，確認指定編號的訂單出現在清單中。\n34\t3. 外送員按下該筆訂單的「確認已送達」。\n35\t4. 餐廳管理者重新整理訂單清單，查看同一筆訂單。\n36\t\n37\t預期結果：\n38\t- 外送員畫面顯示「目前沒有進行中的配送」。\n39\t- 餐廳後台原訂單編號的狀態為「已送達」。\n40\t"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01VM9dkvzExtdzeKDnYgX9xN",
+      "name": "Read",
+      "input": {
+        "file_path": "<workspace-original>/ch16/generated/original/seed.spec.ts"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01VM9dkvzExtdzeKDnYgX9xN",
+      "is_error": false,
+      "content": "1\timport { test } from '../fixtures/demo';\n2\t\n3\ttest('seed', async ({ page, demo }) => {\n4\t  await page.goto('/management/sign-in');\n5\t});\n6\t"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01CNGPXPAXDfkXC39sLxrLUp",
+      "name": "Read",
+      "input": {
+        "file_path": "<workspace-original>/ch16/generated/original/prompt.txt"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01CNGPXPAXDfkXC39sLxrLUp",
+      "is_error": false,
+      "content": "1\t請依 ch16/generated/original/test-cases.md 的三個測試案例，使用 Playwright Generator\n2\t產生並執行 Food Grandma 的網頁測試，保留每個測試案例的前置、步驟與預期結果。\n3\t\n4\t請勿參考 ch15 的手寫測試、其他版本的測試或第二部分書稿。\n5\t請將三支測試存到 ch16/generated/original/，並回報執行結果。\n6\t"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01WrYqr58S99tgjFFGgWQKLe",
+      "name": "Read",
+      "input": {
+        "file_path": "<workspace-original>/ch16/generated/fixtures/demo.ts"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01WrYqr58S99tgjFFGgWQKLe",
+      "is_error": false,
+      "content": "1\timport { expect, test as base } from '@playwright/test';\n2\t\n3\ttype Demo = {\n4\t  restaurant_login: { username: string; password: string };\n5\t  driver_access_token: string;\n6\t  seeded_order_id: number;\n7\t};\n8\t\n9\tconst apiURL = process.env.API_BASE_URL ?? 'http://localhost:8081';\n10\tconst headers = { 'X-Demo-Reset-Key': process.env.DEMO_RESET_KEY ?? 'local-dev-reset-key' };\n11\t\n12\texport const test = base.extend<{ demo: Demo; deliveryOrderId: number }>({\n13\t  demo: async ({ request }, use) => {\n14\t    const reset = await request.post(`${apiURL}/api/test/reset`, { headers });\n15\t    await expect(reset, '重設本機練習資料庫').toBeOK();\n16\t    const seed = await request.post(`${apiURL}/api/test/seed`, { headers });\n17\t    await expect(seed, '建立本次練習資料').toBeOK();\n18\t    await use(await seed.json());\n19\t  },\n20\t\n21\t  deliveryOrderId: async ({ demo, request }, use) => {\n22\t    const active = await request.get(`${apiURL}/api/driver/orders/active`, {\n23\t      params: { access_token: demo.driver_access_token },\n24\t    });\n25\t    await expect(active, '查詢外送員的起始配送資料').toBeOK();\n26\t    const { orders } = await active.json() as { orders: { id: number }[] };\n27\t    expect(orders, '練習開始前，外送員只有一筆進行中的配送').toHaveLength(1);\n28\t    await use(orders[0].id);\n29\t  },\n30\t});\n31\t\n32\texport { expect };\n33\t"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01ENwbWS29JiZ7yMMyQDnq4K",
+      "name": "Read",
+      "input": {
+        "file_path": "<workspace-original>/playwright.config.ts"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01ENwbWS29JiZ7yMMyQDnq4K",
+      "is_error": false,
+      "content": "1\timport { defineConfig } from '@playwright/test';\n2\texport default defineConfig({ testDir: '.', testIgnore: ['**/test-results/**'], testMatch: ['**/ch16/generated/original/*.spec.ts'], workers: 1, retries: 0, reporter: [['list'], ['json', { outputFile: 'test-results/results.json' }]], outputDir: 'test-results/artifacts', use: { headless: true, baseURL: 'http://localhost:8082', trace: 'on', screenshot: 'on' } });\n3\t"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01Dg8LP165Fnp6o7ebRv5C6L",
+      "name": "mcp__playwright-test__generator_setup_page",
+      "input": {
+        "plan": "CH15-T01 餐廳管理者登入後看到訂單管理: open /management/sign-in, login with demo.restaurant_login, expect /management/orders and heading 訂單管理 and table.",
+        "seedFile": "ch16/generated/original/seed.spec.ts"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01Dg8LP165Fnp6o7ebRv5C6L",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "\nRunning 1 test using 1 worker\n[err] (node:46414) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n### Paused at end of test. ready for interaction\n\n### Page state\n- Page URL: http://localhost:8082/management/sign-in\n- Page Title: Food Grandma｜餐廳管理後台\n- Page Snapshot:\n```yaml\n- generic [ref=e2]:\n  - note [ref=e3]: 網站示範，資料可能定期重設。請勿輸入真實姓名、地址、電話或付款資訊；配送地址使用假資料。\n  - generic [ref=e4]:\n    - banner [ref=e5]:\n      - link \"Food Grandma 首頁\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - generic [ref=e22]:\n          - text: Food Grandma\n          - generic [ref=e23]: 阿嬤的好食光 · 餐廳管理\n      - paragraph [ref=e24]: 阿嬤不怕你餓，就怕你吃不飽。\n      - link \"返回訂餐網站 ↗\" [ref=e25] [cursor=pointer]:\n        - /url: /\n    - main [ref=e26]:\n      - generic [ref=e27]:\n        - heading \"餐廳管理登入\" [level=1] [ref=e28]\n        - paragraph [ref=e29]: 登入以管理餐點、處理訂單與查看營運報表。\n        - generic [ref=e30]:\n          - generic [ref=e31]: 帳號\n          - textbox \"帳號\" [ref=e32]\n          - generic [ref=e33]: 密碼\n          - textbox \"密碼\" [ref=e34]\n          - button \"登入\" [ref=e35] [cursor=pointer]\n        - paragraph [ref=e36]:\n          - link \"還沒有帳號？註冊餐廳\" [ref=e37] [cursor=pointer]:\n            - /url: /management/sign-up\n```\n"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_014spU81VR5C9exD2NYYitnW",
+      "name": "ToolSearch",
+      "input": {
+        "query": "select:mcp__playwright-test__browser_evaluate",
+        "max_results": 1
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_014spU81VR5C9exD2NYYitnW",
+      "is_error": false,
+      "content": [
+        {
+          "type": "tool_reference",
+          "tool_name": "mcp__playwright-test__browser_evaluate"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_019JJycUftG5VS4EgYau5bdr",
+      "name": "mcp__playwright-test__browser_evaluate",
+      "input": {
+        "intent": "Obtain demo seed data as the fixture does (reset + seed local demo DB)",
+        "function": "async () => { const h={'X-Demo-Reset-Key':'local-dev-reset-key'}; const r=await fetch('http://localhost:8081/api/test/reset',{method:'POST',headers:h}); const s=await fetch('http://localhost:8081/api/test/seed',{method:'POST',headers:h}); return {r:r.status, s:s.status, body: await s.text()}; }"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_019JJycUftG5VS4EgYau5bdr",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Result\n{\n  \"r\": 200,\n  \"s\": 200,\n  \"body\": \"{\\\"status\\\":\\\"seeded\\\",\\\"restaurants\\\":6,\\\"meals\\\":22,\\\"orders\\\":24,\\\"order_states\\\":{\\\"Cooking\\\":6,\\\"Ready\\\":6,\\\"Delivered\\\":11,\\\"On the way\\\":1},\\\"restaurant_login\\\":{\\\"username\\\":\\\"admin\\\",\\\"password\\\":\\\"password@321\\\"},\\\"customer_access_token\\\":\\\"e2e-customer-token\\\",\\\"driver_access_token\\\":\\\"e2e-driver-token\\\",\\\"seeded_order_id\\\":1,\\\"seeded_order_status\\\":\\\"COOKING\\\"}\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('async () => { const h={\\'X-Demo-Reset-Key\\':\\'local-dev-reset-key\\'}; const r=await fetch(\\'http://localhost:8081/api/test/reset\\',{method:\\'POST\\',headers:h}); const s=await fetch(\\'http://localhost:8081/api/test/seed\\',{method:\\'POST\\',headers:h}); return {r:r.status, s:s.status, body: await s.text()}; }');\n```\n### Page\n- Page URL: http://localhost:8082/management/sign-in\n- Page Title: Food Grandma｜餐廳管理後台\n- Console: 0 errors, 2 warnings\n### Events\n- New console entries: .playwright-mcp/console-2026-11-22T03-47-33-030Z.log#L1-L3"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_0118fREDjcHBDdwZmDpPHFm7",
+      "name": "mcp__playwright-test__browser_type",
+      "input": {
+        "target": "e32",
+        "text": "admin",
+        "intent": "Enter username"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_0118fREDjcHBDdwZmDpPHFm7",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('sign-in-username').fill('admin');\n```"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01Sv88dD5kvmMww2sA15NzpP",
+      "name": "mcp__playwright-test__browser_type",
+      "input": {
+        "target": "e34",
+        "text": "password@321",
+        "intent": "Enter password"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01Sv88dD5kvmMww2sA15NzpP",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('sign-in-password').fill('password@321');\n```"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01TszqgR7TCH1REqm1YunE3M",
+      "name": "mcp__playwright-test__browser_click",
+      "input": {
+        "target": "e35",
+        "intent": "Click 登入"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01TszqgR7TCH1REqm1YunE3M",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('sign-in-submit').click();\n```\n### Page\n- Page URL: http://localhost:8082/management/orders\n- Page Title: Food Grandma｜餐廳管理後台\n- Console: 0 errors, 2 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-42-793Z.yml)"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01S1rPpRmXZYXjRAMutF1Y5x",
+      "name": "mcp__playwright-test__browser_snapshot",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01S1rPpRmXZYXjRAMutF1Y5x",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Page\n- Page URL: http://localhost:8082/management/orders\n- Page Title: Food Grandma｜餐廳管理後台\n- Console: 0 errors, 2 warnings\n### Snapshot\n```yaml\n- generic [ref=e2]:\n  - note [ref=e3]: 網站示範，資料可能定期重設。請勿輸入真實姓名、地址、電話或付款資訊；配送地址使用假資料。\n  - generic [ref=e38]:\n    - link \"跳至主要內容\" [ref=e39] [cursor=pointer]:\n      - /url: \"#main-content\"\n    - navigation [ref=e40]:\n      - link \"Food Grandma 首頁\" [ref=e41] [cursor=pointer]:\n        - /url: /\n        - generic [ref=e57]:\n          - text: Food Grandma\n          - generic [ref=e58]: 阿嬤的好食光 · 餐廳管理\n      - generic [ref=e59]: 餐廳營運\n      - list [ref=e60]:\n        - listitem [ref=e61]:\n          - link \"▤ 訂單管理\" [ref=e62] [cursor=pointer]:\n            - /url: /management/orders\n            - generic [ref=e63]: ▤\n            - text: 訂單管理\n        - listitem [ref=e64]:\n          - link \"◫ 餐點管理\" [ref=e65] [cursor=pointer]:\n            - /url: /management/meals\n            - generic [ref=e66]: ◫\n            - text: 餐點管理\n        - listitem [ref=e67]:\n          - link \"▥ 營運報表\" [ref=e68] [cursor=pointer]:\n            - /url: /management/report\n            - generic [ref=e69]: ▥\n            - text: 營運報表\n        - listitem [ref=e70]:\n          - link \"⚙ 餐廳設定\" [ref=e71] [cursor=pointer]:\n            - /url: /management/account\n            - generic [ref=e72]: ⚙\n            - text: 餐廳設定\n        - listitem [ref=e73]:\n          - button \"↩︎ 登出帳號\" [ref=e74] [cursor=pointer]:\n            - generic [ref=e75]: ↩︎\n            - text: 登出帳號\n      - link \"查看訂餐網站 ↗\" [ref=e77] [cursor=pointer]:\n        - /url: /\n    - generic [ref=e78]:\n      - banner [ref=e79]:\n        - generic [ref=e80]: 管理後台 / 訂單管理\n        - link \"返回訂餐網站 ↗\" [ref=e81] [cursor=pointer]:\n          - /url: /\n      - main [ref=e82]:\n        - generic [ref=e83]:\n          - generic [ref=e84]:\n            - generic [ref=e85]:\n              - heading \"訂單管理\" [level=1] [ref=e86]\n              - paragraph [ref=e87]: 查看訂單進度，處理備餐與取餐。\n            - button \"↻ 重新整理\" [ref=e89] [cursor=pointer]\n          - generic [ref=e90]:\n            - generic [ref=e91]:\n              - generic [ref=e92]:\n                - heading \"所有訂單 4\" [level=2] [ref=e93]:\n                  - text: 所有訂單\n                  - generic [ref=e94]: \"4\"\n                - paragraph [ref=e95]: 顯示這間餐廳的訂單紀錄\n              - generic [ref=e96]:\n                - generic [aria-hidden] [ref=e97]: ⌕\n                - textbox \"搜尋訂單\" [ref=e98]:\n                  - /placeholder: 搜尋訂單編號、顧客或地址\n            - generic \"依訂單狀態篩選\" [ref=e99]:\n              - button \"全部4\" [pressed] [ref=e100] [cursor=pointer]\n              - button \"備餐中1\" [ref=e101] [cursor=pointer]\n              - button \"待取餐1\" [ref=e102] [cursor=pointer]\n              - button \"配送中1\" [ref=e103] [cursor=pointer]\n              - button \"已送達1\" [ref=e104] [cursor=pointer]\n            - table [ref=e106]:\n              - rowgroup [ref=e107]:\n                - row [ref=e108]:\n                  - columnheader \"訂單編號\" [ref=e109]\n                  - columnheader \"餐點明細\" [ref=e110]\n                  - columnheader \"顧客／送達地址\" [ref=e111]\n                  - columnheader \"外送員\" [ref=e112]\n                  - columnheader \"金額\" [ref=e113]\n                  - columnheader \"狀態\" [ref=e114]\n                  - columnheader \"操作\" [ref=e115]\n              - rowgroup [ref=e116]:\n                - row [ref=e117]:\n                  - cell [ref=e118]:\n                    - strong [ref=e119]: \"#0024\"\n                  - cell \"Margherita × 2 · $20\" [ref=e120]:\n                    - list [ref=e121]:\n                      - listitem [ref=e122]:\n                        - strong [ref=e123]: Margherita\n                        - generic [ref=e124]: × 2 · $20\n                  - cell \"Demo Delivered 14 Demo St, Taipei\" [ref=e125]:\n                    - strong [ref=e126]: Demo Delivered\n                    - generic [ref=e127]: 14 Demo St, Taipei\n                  - cell \"Dan Driver\" [ref=e128]\n                  - cell \"$20\" [ref=e129]\n                  - cell \"已送達\" [ref=e130]:\n                    - generic \"Delivered\" [ref=e131]: 已送達\n                  - cell \"—\" [ref=e132]\n                - row [ref=e133]:\n                  - cell [ref=e134]:\n                    - strong [ref=e135]: \"#0023\"\n                  - cell \"Margherita × 2 · $20\" [ref=e136]:\n                    - list [ref=e137]:\n                      - listitem [ref=e138]:\n                        - strong [ref=e139]: Margherita\n                        - generic [ref=e140]: × 2 · $20\n                  - cell \"Demo On the way 13 Demo St, Taipei\" [ref=e141]:\n                    - strong [ref=e142]: Demo On the way\n                    - generic [ref=e143]: 13 Demo St, Taipei\n                  - cell \"Dan Driver\" [ref=e144]\n                  - cell \"$20\" [ref=e145]\n                  - cell \"配送中\" [ref=e146]:\n                    - generic \"On the way\" [ref=e147]: 配送中\n                  - cell \"—\" [ref=e148]\n                - row [ref=e149]:\n                  - cell [ref=e150]:\n                    - strong [ref=e151]: \"#0022\"\n                  - cell \"Margherita × 2 · $20\" [ref=e152]:\n                    - list [ref=e153]:\n                      - listitem [ref=e154]:\n                        - strong [ref=e155]: Margherita\n                        - generic [ref=e156]: × 2 · $20\n                  - cell \"Demo Ready 12 Demo St, Taipei\" [ref=e157]:\n                    - strong [ref=e158]: Demo Ready\n                    - generic [ref=e159]: 12 Demo St, Taipei\n                  - cell \"尚未指派\" [ref=e160]\n                  - cell \"$20\" [ref=e161]\n                  - cell \"待取餐\" [ref=e162]:\n                    - generic \"Ready\" [ref=e163]: 待取餐\n                  - cell \"—\" [ref=e164]\n                - row [ref=e165]:\n                  - cell [ref=e166]:\n                    - strong [ref=e167]: \"#0001\"\n                  - cell \"Margherita × 2 · $20\" [ref=e168]:\n                    - list [ref=e169]:\n                      - listitem [ref=e170]:\n                        - strong [ref=e171]: Margherita\n                        - generic [ref=e172]: × 2 · $20\n                  - cell \"Cathy Customer 3 Demo St, Taipei\" [ref=e173]:\n                    - strong [ref=e174]: Cathy Customer\n                    - generic [ref=e175]: 3 Demo St, Taipei\n                  - cell \"尚未指派\" [ref=e176]\n                  - cell \"$20\" [ref=e177]\n                  - cell \"備餐中\" [ref=e178]:\n                    - generic \"Cooking\" [ref=e179]: 備餐中\n                  - cell [ref=e180]:\n                    - button \"備餐完成 →\" [ref=e181] [cursor=pointer]\n            - generic [ref=e182]:\n              - text: 共 4 筆符合條件的訂單\n              - generic [ref=e183]: 資料依最近一次更新顯示\n      - contentinfo [ref=e184]: Food Grandma · 餐廳管理系統\n```"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01LbWnpR8dr19n9BqExnBEKD",
+      "name": "mcp__playwright-test__browser_click",
+      "input": {
+        "target": "e181",
+        "intent": "Click 備餐完成 on order #0001"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01LbWnpR8dr19n9BqExnBEKD",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('order-ready-button').click();\n```\n### Page\n- Page URL: http://localhost:8082/management/orders\n- Page Title: Food Grandma｜餐廳管理後台\n- Console: 0 errors, 2 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-46-678Z.yml)"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01Lq8CoxQLMk5UpvMhSf5UNC",
+      "name": "mcp__playwright-test__browser_navigate",
+      "input": {
+        "url": "http://localhost:8082/driver",
+        "intent": "Explore driver entry"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01Lq8CoxQLMk5UpvMhSf5UNC",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.goto('http://localhost:8082/driver');\n```\n### Page\n- Page URL: http://localhost:8082/driver\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 2 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-48-231Z.yml)\n### Events\n- New console entries: .playwright-mcp/console-2026-11-22T03-47-47-900Z.log#L1-L3"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_013w6Jjeg49HTikPYWwhbi3F",
+      "name": "mcp__playwright-test__browser_snapshot",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_013w6Jjeg49HTikPYWwhbi3F",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Page\n- Page URL: http://localhost:8082/driver\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 2 warnings\n### Snapshot\n```yaml\n- generic [ref=f1e2]:\n  - note [ref=f1e3]: 網站示範，資料可能定期重設。請勿輸入真實姓名、地址、電話或付款資訊；配送地址使用假資料。\n  - generic [ref=f1e4]:\n    - link \"跳到主要內容\" [ref=f1e5] [cursor=pointer]:\n      - /url: \"#main-content\"\n    - banner [ref=f1e6]:\n      - link \"Food Grandma 首頁\" [ref=f1e7] [cursor=pointer]:\n        - /url: /\n        - generic [ref=f1e22]: Food Grandma\n        - generic [ref=f1e23]: 阿嬤的好食光\n      - link \"管理後台 ↗\" [ref=f1e24] [cursor=pointer]:\n        - /url: /management/\n      - link \"體驗登入 ↗\" [ref=f1e25] [cursor=pointer]:\n        - /url: /account\n    - main [ref=f1e26]:\n      - generic [ref=f1e27]:\n        - heading \"找不到這個頁面\" [level=1] [ref=f1e28]\n        - link \"返回餐廳列表\" [ref=f1e29] [cursor=pointer]:\n          - /url: /customer/restaurants\n    - contentinfo [ref=f1e30]:\n      - strong [ref=f1e31]: Food Grandma\n      - generic [ref=f1e32]: 阿嬤不怕你餓，就怕你吃不飽。\n      - generic [ref=f1e33]:\n        - text: 料理照片為示意圖 · Photos from\n        - link \"Unsplash\" [ref=f1e34] [cursor=pointer]:\n          - /url: https://unsplash.com\n    - navigation \"外送員導覽\" [ref=f1e35]:\n      - link \"可接訂單\" [ref=f1e36] [cursor=pointer]:\n        - /url: /driver/orders\n      - link \"進行中配送\" [ref=f1e37] [cursor=pointer]:\n        - /url: /driver/delivery\n      - link \"本週紀錄\" [ref=f1e38] [cursor=pointer]:\n        - /url: /driver/earnings\n```"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_012tfM6eobjA12vWfptUxsNA",
+      "name": "mcp__playwright-test__browser_navigate",
+      "input": {
+        "url": "http://localhost:8082/account",
+        "intent": "Open 體驗登入 page"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_012tfM6eobjA12vWfptUxsNA",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.goto('http://localhost:8082/account');\n```\n### Page\n- Page URL: http://localhost:8082/account\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 2 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-50-539Z.yml)\n### Events\n- New console entries: .playwright-mcp/console-2026-11-22T03-47-50-434Z.log#L1-L3"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01EuYdjHqyXMfBA5nkdjxXLM",
+      "name": "mcp__playwright-test__browser_snapshot",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01EuYdjHqyXMfBA5nkdjxXLM",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Page\n- Page URL: http://localhost:8082/account\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 2 warnings\n### Snapshot\n```yaml\n- generic [ref=f2e2]:\n  - note [ref=f2e3]: 網站示範，資料可能定期重設。請勿輸入真實姓名、地址、電話或付款資訊；配送地址使用假資料。\n  - generic [ref=f2e4]:\n    - link \"跳到主要內容\" [ref=f2e5] [cursor=pointer]:\n      - /url: \"#main-content\"\n    - complementary [ref=f2e6]:\n      - link \"Food Grandma 首頁\" [ref=f2e7] [cursor=pointer]:\n        - /url: /\n        - generic [ref=f2e22]: Food Grandma\n        - generic [ref=f2e23]: 阿嬤的好食光\n      - generic [ref=f2e24]: 外送營運\n      - navigation \"外送員導覽\" [ref=f2e25]:\n        - link \"可接訂單\" [ref=f2e26] [cursor=pointer]:\n          - /url: /driver/orders\n          - generic [aria-hidden] [ref=f2e27]: ▤\n          - text: 可接訂單\n        - link \"進行中配送\" [ref=f2e28] [cursor=pointer]:\n          - /url: /driver/delivery\n          - generic [aria-hidden] [ref=f2e29]: ◫\n          - text: 進行中配送\n        - link \"本週紀錄\" [ref=f2e30] [cursor=pointer]:\n          - /url: /driver/earnings\n          - generic [aria-hidden] [ref=f2e31]: ▥\n          - text: 本週紀錄\n        - link \"體驗登入\" [ref=f2e32] [cursor=pointer]:\n          - /url: /account\n          - generic [aria-hidden] [ref=f2e33]: ⚙\n          - text: 體驗登入\n      - link \"店家管理後台 ↗\" [ref=f2e34] [cursor=pointer]:\n        - /url: /management/\n    - generic [ref=f2e35]:\n      - banner [ref=f2e36]:\n        - generic [ref=f2e37]: 管理工作區 / 體驗登入\n        - link \"返回訂餐網站 ↗\" [ref=f2e38] [cursor=pointer]:\n          - /url: /\n      - main [ref=f2e39]:\n        - generic [ref=f2e40]:\n          - heading \"體驗登入\" [level=1] [ref=f2e41]\n          - paragraph [ref=f2e42]: 選擇工作身分，進入對應的服務與管理介面。\n          - generic [ref=f2e43]: 示範環境 · 顧客與外送員使用預設體驗帳號，尚未提供正式會員登入。\n          - region \"選擇身分\" [ref=f2e44]:\n            - article [ref=f2e45]:\n              - generic [ref=f2e46]:\n                - heading \"顧客\" [level=2] [ref=f2e47]\n                - paragraph [ref=f2e48]: 瀏覽餐廳、訂購餐點及追蹤配送進度。\n              - button \"以顧客身分開始\" [ref=f2e49] [cursor=pointer]\n            - article [ref=f2e50]:\n              - generic [ref=f2e51]:\n                - heading \"外送員\" [level=2] [ref=f2e52]\n                - paragraph [ref=f2e53]: 接取訂單、更新配送位置及查看配送紀錄。\n              - button \"進入外送員工作台\" [ref=f2e54] [cursor=pointer]\n            - article [ref=f2e55]:\n              - generic [ref=f2e56]:\n                - heading \"店家管理\" [level=2] [ref=f2e57]\n                - paragraph [ref=f2e58]: 管理餐點、處理訂單及查看營運報表。\n              - link \"登入店家後台 ↗\" [ref=f2e59] [cursor=pointer]:\n                - /url: /management/\n          - status\n      - contentinfo [ref=f2e60]: Food Grandma · 外送管理系統\n```"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01CCWdeBKgcpHkceJAh4ESYZ",
+      "name": "mcp__playwright-test__browser_click",
+      "input": {
+        "target": "f2e54",
+        "intent": "進入外送員工作台"
+      }
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01HF7sm7Go2LF7foDH9jC6dM",
+      "name": "mcp__playwright-test__browser_click",
+      "input": {
+        "target": "f2e28",
+        "intent": "開啟進行中配送"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01CCWdeBKgcpHkceJAh4ESYZ",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('continue-as-driver').click();\n```\n### Page\n- Page URL: http://localhost:8082/driver/orders\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 2 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-53-643Z.yml)"
+        }
+      ]
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01HF7sm7Go2LF7foDH9jC6dM",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('nav-driver-delivery').click();\n```\n### Page\n- Page URL: http://localhost:8082/driver/delivery\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 2 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-54-193Z.yml)"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_0137PD7d4tBJzKuz9JShBcMP",
+      "name": "mcp__playwright-test__browser_snapshot",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_0137PD7d4tBJzKuz9JShBcMP",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Page\n- Page URL: http://localhost:8082/driver/delivery\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 6 warnings\n### Snapshot\n```yaml\n- generic [ref=f2e2]:\n  - note [ref=f2e3]: 網站示範，資料可能定期重設。請勿輸入真實姓名、地址、電話或付款資訊；配送地址使用假資料。\n  - generic [ref=f2e4]:\n    - link \"跳到主要內容\" [ref=f2e5] [cursor=pointer]:\n      - /url: \"#main-content\"\n    - complementary [ref=f2e6]:\n      - link \"Food Grandma 首頁\" [ref=f2e7] [cursor=pointer]:\n        - /url: /\n        - generic [ref=f2e22]: Food Grandma\n        - generic [ref=f2e23]: 阿嬤的好食光\n      - generic [ref=f2e24]: 外送營運\n      - navigation \"外送員導覽\" [ref=f2e25]:\n        - link \"可接訂單\" [ref=f2e26] [cursor=pointer]:\n          - /url: /driver/orders\n          - generic [aria-hidden] [ref=f2e27]: ▤\n          - text: 可接訂單\n        - link \"進行中配送\" [active] [ref=f2e28] [cursor=pointer]:\n          - /url: /driver/delivery\n          - generic [aria-hidden] [ref=f2e29]: ◫\n          - text: 進行中配送\n        - link \"本週紀錄\" [ref=f2e30] [cursor=pointer]:\n          - /url: /driver/earnings\n          - generic [aria-hidden] [ref=f2e31]: ▥\n          - text: 本週紀錄\n        - link \"體驗登入\" [ref=f2e32] [cursor=pointer]:\n          - /url: /account\n          - generic [aria-hidden] [ref=f2e33]: ⚙\n          - text: 體驗登入\n      - link \"店家管理後台 ↗\" [ref=f2e34] [cursor=pointer]:\n        - /url: /management/\n    - generic [ref=f2e35]:\n      - banner [ref=f2e36]:\n        - generic [ref=f2e37]: 管理工作區 / 進行中配送\n        - link \"返回訂餐網站 ↗\" [ref=f2e38] [cursor=pointer]:\n          - /url: /\n      - main [ref=f2e39]:\n        - generic [ref=f2e161]:\n          - heading \"進行中配送\" [level=1] [ref=f2e162]\n          - status\n          - generic [ref=f2e163]:\n            - generic [ref=f2e164]:\n              - region \"配送位置地圖\" [ref=f2e165]:\n                - generic [ref=f2e166]:\n                  - generic [ref=f2e167]:\n                    - heading \"配送地圖\" [level=2] [ref=f2e168]\n                    - paragraph [ref=f2e169]: 台北市概覽 · 尚未設定外送員位置\n                  - link \"開啟大地圖 ↗\" [ref=f2e170] [cursor=pointer]:\n                    - /url: https://www.openstreetmap.org/?#map=15/25.033/121.5654\n                - iframe [ref=f2e171]:\n                  - generic [ref=f3e2]:\n                    - region \"Map\" [ref=f3e3]\n                    - generic:\n                      - generic [ref=f3e4]:\n                        - button \"Zoom In\" [ref=f3e5] [cursor=pointer]\n                        - button \"Zoom Out\" [ref=f3e7] [cursor=pointer]\n                      - group [ref=f3e9]:\n                        - generic [ref=f3e10]:\n                          - link \"Report a problem\" [ref=f3e11] [cursor=pointer]:\n                            - /url: /fixthemap?lat=25.03300&lon=121.56540&zoom=14\n                          - text: \"| ©\"\n                          - link \"OpenStreetMap contributors\" [ref=f3e12] [cursor=pointer]:\n                            - /url: /copyright\n                          - text: ♥️\n                          - link \"Make a Donation\" [ref=f3e13] [cursor=pointer]:\n                            - /url: https://supporting.openstreetmap.org\n                          - text: .\n                          - link \"Website and API terms\" [ref=f3e14] [cursor=pointer]:\n                            - /url: https://wiki.osmfoundation.org/wiki/Terms_of_Use\n                - paragraph [ref=f2e172]: 使用下方定位按鈕或輸入經緯度，即可在地圖標記位置。 · 地圖無法載入時可使用「開啟大地圖」。\n              - generic [ref=f2e173]:\n                - generic [ref=f2e174]: 外送員位置（緯度,經度）\n                - textbox \"外送員位置（緯度,經度）\" [ref=f2e175]:\n                  - /placeholder: 例如 25.0330,121.5654\n                - generic [ref=f2e176]:\n                  - button \"使用示範位置\" [ref=f2e177] [cursor=pointer]\n                  - button \"更新位置\" [ref=f2e178] [cursor=pointer]\n            - complementary [ref=f2e179]:\n              - generic [ref=f2e180]: 配送中\n              - 'heading \"訂單 #23\" [level=2] [ref=f2e181]'\n              - generic [ref=f2e182]:\n                - text: 取餐地點\n                - heading \"Pizza Palace\" [level=3] [ref=f2e183]\n                - paragraph [ref=f2e184]: 1 Demo St, Taipei\n                - link \"導航至餐廳 ↗\" [ref=f2e185] [cursor=pointer]:\n                  - /url: https://www.google.com/maps/dir/?api=1&destination=1%20Demo%20St%2C%20Taipei\n              - generic [ref=f2e186]:\n                - text: 送達地點\n                - heading \"Demo On the way\" [level=3] [ref=f2e187]\n                - paragraph [ref=f2e188]: 13 Demo St, Taipei\n                - link \"導航至送達地址 ↗\" [ref=f2e189] [cursor=pointer]:\n                  - /url: https://www.google.com/maps/dir/?api=1&destination=13%20Demo%20St%2C%20Taipei\n              - paragraph [ref=f2e190]: 示範地址可能無法定位，請以導航服務搜尋結果為準。\n              - button \"確認已送達\" [ref=f2e191] [cursor=pointer]\n      - contentinfo [ref=f2e60]: Food Grandma · 外送管理系統\n```\n### Events\n- New console entries: .playwright-mcp/console-2026-11-22T03-47-50-434Z.log#L4-L7"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01LzRivvxpDfs9xPGykhAoT1",
+      "name": "mcp__playwright-test__browser_click",
+      "input": {
+        "target": "f2e191",
+        "intent": "確認已送達"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01LzRivvxpDfs9xPGykhAoT1",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Ran Playwright code\n```js\nawait page.getByTestId('complete-delivery').click();\n```\n### Page\n- Page URL: http://localhost:8082/driver/delivery\n- Page Title: Food Grandma 阿嬤的好食光｜暖心家常料理\n- Console: 0 errors, 6 warnings\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-11-22T03-47-57-171Z.yml)"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01SZhHsx9zmCav4BZpyq97wT",
+      "name": "mcp__playwright-test__generator_read_log",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01SZhHsx9zmCav4BZpyq97wT",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "# Plan\n\nCH15-T01 餐廳管理者登入後看到訂單管理: open /management/sign-in, login with demo.restaurant_login, expect /management/orders and heading 訂單管理 and table.\n\n# Seed file: ch16/generated/original/seed.spec.ts\n\n```ts\n\nimport { test } from '../fixtures/demo';\n\ntest('seed', async ({ page, demo }) => {\n  await page.goto('/management/sign-in');\n});\n\n\n```\n\n# Steps\n\n### Obtain demo seed data as the fixture does (reset + seed local demo DB)\n```ts\nawait page.evaluate('async () => { const h={\\'X-Demo-Reset-Key\\':\\'local-dev-reset-key\\'}; const r=await fetch(\\'http://localhost:8081/api/test/reset\\',{method:\\'POST\\',headers:h}); const s=await fetch(\\'http://localhost:8081/api/test/seed\\',{method:\\'POST\\',headers:h}); return {r:r.status, s:s.status, body: await s.text()}; }');\n```\n\n### Enter username\n```ts\nawait page.getByTestId('sign-in-username').fill('admin');\n```\n\n### Enter password\n```ts\nawait page.getByTestId('sign-in-password').fill('password@321');\n```\n\n### Click 登入\n```ts\nawait page.getByTestId('sign-in-submit').click();\n```\n\n### Click 備餐完成 on order #0001\n```ts\nawait page.getByTestId('order-ready-button').click();\n```\n\n### Explore driver entry\n```ts\nawait page.goto('http://localhost:8082/driver');\n```\n\n### Open 體驗登入 page\n```ts\nawait page.goto('http://localhost:8082/account');\n```\n\n### 進入外送員工作台\n```ts\nawait page.getByTestId('continue-as-driver').click();\n```\n\n### 開啟進行中配送\n```ts\nawait page.getByTestId('nav-driver-delivery').click();\n```\n\n### 確認已送達\n```ts\nawait page.getByTestId('complete-delivery').click();\n```\n\n\n# Best practices\n- Do not improvise, do not add directives that were not asked for\n- Use clear, descriptive assertions to validate the expected behavior\n- Use reliable locators from this log\n- Use local variables for locators that are used multiple times\n- Use Playwright waiting assertions and best practices from this log\n- NEVER! use page.waitForLoadState()\n- NEVER! use page.waitForNavigation()\n- NEVER! use page.waitForTimeout()\n- NEVER! use page.evaluate()\n"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01SdxbPgELgUZTL2gdxwbDtt",
+      "name": "mcp__playwright-test__generator_write_test",
+      "input": {
+        "fileName": "ch16/generated/original/restaurant-login-shows-orders.spec.ts",
+        "code": "// spec: ch16/generated/original/test-cases.md\n// seed: ch16/generated/original/seed.spec.ts\nimport { expect, test } from '../fixtures/demo';\n\ntest.describe('CH15-T01 餐廳管理者登入後看到訂單管理', () => {\n  test('CH15-T01 餐廳管理者登入後看到訂單管理', async ({ page, demo }) => {\n    // 前置：有可用的餐廳管理帳號（demo fixture 提供），目前尚未登入。\n\n    // 1. 開啟餐廳後台登入頁面。\n    await page.goto('/management/sign-in');\n\n    // 2. 輸入正確的帳號與密碼，按下「登入」。\n    await page.getByTestId('sign-in-username').fill(demo.restaurant_login.username);\n    await page.getByTestId('sign-in-password').fill(demo.restaurant_login.password);\n    await page.getByTestId('sign-in-submit').click();\n\n    // 預期結果：頁面路徑為 /management/orders。\n    await expect(page).toHaveURL(/\\/management\\/orders$/);\n\n    // 預期結果：顯示「訂單管理」標題與訂單表格。\n    await expect(page.getByRole('heading', { name: '訂單管理', level: 1 })).toBeVisible();\n    await expect(page.getByRole('table')).toBeVisible();\n  });\n});\n"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01SdxbPgELgUZTL2gdxwbDtt",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Result\nTest written to ch16/generated/original/restaurant-login-shows-orders.spec.ts"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_011SsSEDKnh4hkNgeAnbMRQQ",
+      "name": "mcp__playwright-test__generator_write_test",
+      "input": {
+        "fileName": "ch16/generated/original/order-becomes-ready.spec.ts",
+        "code": "// spec: ch16/generated/original/test-cases.md\n// seed: ch16/generated/original/seed.spec.ts\nimport { expect, test } from '../fixtures/demo';\n\ntest.describe('CH15-T02 指定訂單變成待取餐', () => {\n  test('CH15-T02 指定訂單變成待取餐', async ({ page, demo }) => {\n    // 前置：餐廳管理者已登入訂單管理頁面，並記下「備餐中」的訂單編號。\n    const orderNo = `#${String(demo.seeded_order_id).padStart(4, '0')}`;\n    await page.goto('/management/sign-in');\n    await page.getByTestId('sign-in-username').fill(demo.restaurant_login.username);\n    await page.getByTestId('sign-in-password').fill(demo.restaurant_login.password);\n    await page.getByTestId('sign-in-submit').click();\n    await expect(page).toHaveURL(/\\/management\\/orders$/);\n\n    // 1. 依訂單編號找到指定訂單，確認目前為「備餐中」。\n    const row = page.getByRole('row').filter({ has: page.getByText(orderNo, { exact: true }) });\n    await expect(row).toContainText('備餐中');\n\n    // 2. 按下該筆訂單的「備餐完成」。\n    await row.getByTestId('order-ready-button').click();\n\n    // 預期結果：同一筆訂單顯示「待取餐」。\n    await expect(row).toContainText('待取餐');\n\n    // 預期結果：該筆訂單的「備餐完成」按鈕消失。\n    await expect(row.getByTestId('order-ready-button')).toHaveCount(0);\n  });\n});\n"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_011SsSEDKnh4hkNgeAnbMRQQ",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Result\nTest written to ch16/generated/original/order-becomes-ready.spec.ts"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01HeGu35w1XGLuq3a1pX5h6p",
+      "name": "mcp__playwright-test__generator_write_test",
+      "input": {
+        "fileName": "ch16/generated/original/delivery-confirmed-shows-delivered.spec.ts",
+        "code": "// spec: ch16/generated/original/test-cases.md\n// seed: ch16/generated/original/seed.spec.ts\nimport { expect, test } from '../fixtures/demo';\n\ntest.describe('CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達', () => {\n  test('CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達', async ({ page, browser, demo, deliveryOrderId }, testInfo) => {\n    // 前置：管理者已登入訂單管理頁面；外送員只有一筆進行中配送（deliveryOrderId）。\n    // 管理者與外送員各自使用獨立的瀏覽器登入環境。\n    const orderNo = `#${String(deliveryOrderId).padStart(4, '0')}`;\n    await page.goto('/management/sign-in');\n    await page.getByTestId('sign-in-username').fill(demo.restaurant_login.username);\n    await page.getByTestId('sign-in-password').fill(demo.restaurant_login.password);\n    await page.getByTestId('sign-in-submit').click();\n    await expect(page).toHaveURL(/\\/management\\/orders$/);\n\n    const driverContext = await browser.newContext({ baseURL: testInfo.project.use.baseURL });\n    const driverPage = await driverContext.newPage();\n\n    // 1. 餐廳管理者依訂單編號確認該筆訂單顯示「配送中」。\n    const row = page.getByRole('row').filter({ has: page.getByText(orderNo, { exact: true }) });\n    await expect(row).toContainText('配送中');\n\n    // 2. 外送員從「體驗登入」進入工作台，再開啟進行中配送，確認指定編號的訂單出現在清單中。\n    await driverPage.goto('/account');\n    await driverPage.getByTestId('continue-as-driver').click();\n    await driverPage.getByTestId('nav-driver-delivery').click();\n    await expect(driverPage.getByRole('heading', { name: `訂單 #${deliveryOrderId}`, level: 2 })).toBeVisible();\n\n    // 3. 外送員按下該筆訂單的「確認已送達」。\n    await driverPage.getByTestId('complete-delivery').click();\n\n    // 預期結果：外送員畫面顯示「目前沒有進行中的配送」。\n    await expect(driverPage.getByText('目前沒有進行中的配送')).toBeVisible();\n\n    // 4. 餐廳管理者重新整理訂單清單，查看同一筆訂單。\n    await page.getByRole('button', { name: /重新整理/ }).click();\n\n    // 預期結果：餐廳後台原訂單編號的狀態為「已送達」。\n    await expect(row).toContainText('已送達');\n\n    await driverContext.close();\n  });\n});\n"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01HeGu35w1XGLuq3a1pX5h6p",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "### Result\nTest written to ch16/generated/original/delivery-confirmed-shows-delivered.spec.ts"
+        }
+      ]
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_01VDHRzWyj1yjSfbRgdi97F4",
+      "name": "mcp__playwright-test__test_run",
+      "input": {
+        "locations": [
+          "ch16/generated/original"
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01VDHRzWyj1yjSfbRgdi97F4",
+      "is_error": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "\nRunning 4 tests using 1 worker\n[err] (node:46538) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n  ✓  1 [id=05b2e86f55ead34c0bb1-0cc0ef4a5ec02085bdec] ch16/generated/original/delivery-confirmed-shows-delivered.spec.ts:6:7 › CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達 › CH15-T03 外送員確認送達後，餐廳看到同一筆訂單已送達 (7.3s)\n  ✓  2 [id=56ce028f89da981c5e08-6c302b45862814c9ee5e] ch16/generated/original/order-becomes-ready.spec.ts:6:7 › CH15-T02 指定訂單變成待取餐 › CH15-T02 指定訂單變成待取餐 (6.3s)\n  ✓  3 [id=36b07d5d920b37c36059-b3a26dc32642311bfbf9] ch16/generated/original/restaurant-login-shows-orders.spec.ts:6:7 › CH15-T01 餐廳管理者登入後看到訂單管理 › CH15-T01 餐廳管理者登入後看到訂單管理 (6.4s)\n  ✓  4 [id=e3b9df3ea706092d0761-bce279392808a166d2fe] ch16/generated/original/seed.spec.ts:3:5 › seed (6.3s)\n  4 passed (27.1s)"
+        }
+      ]
+    }
+  ]
+}
